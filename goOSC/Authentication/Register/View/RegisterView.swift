@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginView: UIViewController {
+class RegisterView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

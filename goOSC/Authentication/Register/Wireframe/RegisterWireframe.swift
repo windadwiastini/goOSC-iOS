@@ -9,7 +9,7 @@
 
 import UIKit
 
-class LoginWireframe: UIViewController {
+class RegisterWireframe: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

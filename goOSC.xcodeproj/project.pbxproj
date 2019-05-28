@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960BB229CBAF3000F4F5E /* AppDelegate.swift */; };
-		2A6960BE229CBAF3000F4F5E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960BD229CBAF3000F4F5E /* LoginView.swift */; };
+		2A6960BE229CBAF3000F4F5E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960BD229CBAF3000F4F5E /* RegisterView.swift */; };
 		2A6960C1229CBAF3000F4F5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6960BF229CBAF3000F4F5E /* Main.storyboard */; };
 		2A6960C3229CBAF3000F4F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6960C2229CBAF3000F4F5E /* Assets.xcassets */; };
 		2A6960C6229CBAF3000F4F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6960C4229CBAF3000F4F5E /* LaunchScreen.storyboard */; };
-		2A6960D3229CC9DE000F4F5E /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D2229CC9DE000F4F5E /* LoginWireframe.swift */; };
+		2A6960D3229CC9DE000F4F5E /* RegisterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D2229CC9DE000F4F5E /* RegisterWireframe.swift */; };
 		2A6960D5229CCA11000F4F5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D4229CCA11000F4F5E /* User.swift */; };
-		2A6960D8229CCA71000F4F5E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D7229CCA71000F4F5E /* LoginPresenter.swift */; };
-		2A6960DA229CCA82000F4F5E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D9229CCA82000F4F5E /* LoginInteractor.swift */; };
+		2A6960D8229CCA71000F4F5E /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D7229CCA71000F4F5E /* RegisterPresenter.swift */; };
+		2A6960DA229CCA82000F4F5E /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D9229CCA82000F4F5E /* RegisterInteractor.swift */; };
 		2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF22330229CE2DA0081AD1C /* Customer.swift */; };
 		2AF22333229CE3D00081AD1C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF22332229CE3D00081AD1C /* Login.swift */; };
 		CF64581DBD214554826F4E18 /* Pods_goOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0AAA52CD26F0ECC10A5A07 /* Pods_goOSC.framework */; };
@@ -24,15 +24,15 @@
 /* Begin PBXFileReference section */
 		2A6960B8229CBAF3000F4F5E /* goOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6960BB229CBAF3000F4F5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A6960BD229CBAF3000F4F5E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2A6960BD229CBAF3000F4F5E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		2A6960C0229CBAF3000F4F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A6960C2229CBAF3000F4F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A6960C5229CBAF3000F4F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A6960C7229CBAF3000F4F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A6960D2229CC9DE000F4F5E /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		2A6960D2229CC9DE000F4F5E /* RegisterWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireframe.swift; sourceTree = "<group>"; };
 		2A6960D4229CCA11000F4F5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		2A6960D7229CCA71000F4F5E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		2A6960D9229CCA82000F4F5E /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		2A6960D7229CCA71000F4F5E /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		2A6960D9229CCA82000F4F5E /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		2AF22330229CE2DA0081AD1C /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		2AF22332229CE3D00081AD1C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		2D0AAA52CD26F0ECC10A5A07 /* Pods_goOSC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goOSC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,12 +73,7 @@
 		2A6960BA229CBAF3000F4F5E /* goOSC */ = {
 			isa = PBXGroup;
 			children = (
-				2AF22329229CE1030081AD1C /* Login */,
-				2A6960CD229CC40A000F4F5E /* View */,
-				2A6960D1229CC434000F4F5E /* Wireframe */,
-				2A6960D0229CC42A000F4F5E /* Entity */,
-				2A6960CF229CC420000F4F5E /* Presenter */,
-				2A6960CE229CC415000F4F5E /* Interactor */,
+				2AEEB732229D0DF50079C231 /* Authentication */,
 				2A6960BB229CBAF3000F4F5E /* AppDelegate.swift */,
 				2A6960BF229CBAF3000F4F5E /* Main.storyboard */,
 				2A6960C2229CBAF3000F4F5E /* Assets.xcassets */,
@@ -91,7 +86,7 @@
 		2A6960CD229CC40A000F4F5E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2A6960BD229CBAF3000F4F5E /* LoginView.swift */,
+				2A6960BD229CBAF3000F4F5E /* RegisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,7 +94,7 @@
 		2A6960CE229CC415000F4F5E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				2A6960D9229CCA82000F4F5E /* LoginInteractor.swift */,
+				2A6960D9229CCA82000F4F5E /* RegisterInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -107,7 +102,7 @@
 		2A6960CF229CC420000F4F5E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				2A6960D7229CCA71000F4F5E /* LoginPresenter.swift */,
+				2A6960D7229CCA71000F4F5E /* RegisterPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -123,9 +118,30 @@
 		2A6960D1229CC434000F4F5E /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				2A6960D2229CC9DE000F4F5E /* LoginWireframe.swift */,
+				2A6960D2229CC9DE000F4F5E /* RegisterWireframe.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		2AEEB732229D0DF50079C231 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2AF22329229CE1030081AD1C /* Login */,
+				2AEEB733229D0EF70079C231 /* Register */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2AEEB733229D0EF70079C231 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2A6960CD229CC40A000F4F5E /* View */,
+				2A6960D1229CC434000F4F5E /* Wireframe */,
+				2A6960D0229CC42A000F4F5E /* Entity */,
+				2A6960CF229CC420000F4F5E /* Presenter */,
+				2A6960CE229CC415000F4F5E /* Interactor */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		2AF22329229CE1030081AD1C /* Login */ = {
@@ -199,7 +215,6 @@
 				D2AE22C07AECE8E8F92F8F1E /* Pods-goOSC.debug.xcconfig */,
 				717CC5FF925DD19B3AAF0624 /* Pods-goOSC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,15 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-goOSC/Pods-goOSC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -300,15 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-goOSC-checkManifestLockResult.txt",
 			);
@@ -326,11 +333,11 @@
 			files = (
 				2A6960D5229CCA11000F4F5E /* User.swift in Sources */,
 				2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */,
-				2A6960BE229CBAF3000F4F5E /* LoginView.swift in Sources */,
-				2A6960DA229CCA82000F4F5E /* LoginInteractor.swift in Sources */,
+				2A6960BE229CBAF3000F4F5E /* RegisterView.swift in Sources */,
+				2A6960DA229CCA82000F4F5E /* RegisterInteractor.swift in Sources */,
 				2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */,
-				2A6960D3229CC9DE000F4F5E /* LoginWireframe.swift in Sources */,
-				2A6960D8229CCA71000F4F5E /* LoginPresenter.swift in Sources */,
+				2A6960D3229CC9DE000F4F5E /* RegisterWireframe.swift in Sources */,
+				2A6960D8229CCA71000F4F5E /* RegisterPresenter.swift in Sources */,
 				2AF22333229CE3D00081AD1C /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
