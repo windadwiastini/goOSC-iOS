@@ -12,6 +12,10 @@
 		2A6960C1229CBAF3000F4F5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6960BF229CBAF3000F4F5E /* Main.storyboard */; };
 		2A6960C3229CBAF3000F4F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6960C2229CBAF3000F4F5E /* Assets.xcassets */; };
 		2A6960C6229CBAF3000F4F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6960C4229CBAF3000F4F5E /* LaunchScreen.storyboard */; };
+		2A6960D3229CC9DE000F4F5E /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D2229CC9DE000F4F5E /* LoginWireframe.swift */; };
+		2A6960D5229CCA11000F4F5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D4229CCA11000F4F5E /* User.swift */; };
+		2A6960D8229CCA71000F4F5E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D7229CCA71000F4F5E /* LoginPresenter.swift */; };
+		2A6960DA229CCA82000F4F5E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D9229CCA82000F4F5E /* LoginInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		2A6960C2229CBAF3000F4F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A6960C5229CBAF3000F4F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A6960C7229CBAF3000F4F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A6960D2229CC9DE000F4F5E /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		2A6960D4229CCA11000F4F5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2A6960D7229CCA71000F4F5E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		2A6960D9229CCA82000F4F5E /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		2A6960CE229CC415000F4F5E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				2A6960D9229CCA82000F4F5E /* LoginInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -86,6 +95,7 @@
 		2A6960CF229CC420000F4F5E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				2A6960D7229CCA71000F4F5E /* LoginPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -93,6 +103,7 @@
 		2A6960D0229CC42A000F4F5E /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				2A6960D4229CCA11000F4F5E /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -100,6 +111,7 @@
 		2A6960D1229CC434000F4F5E /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				2A6960D2229CC9DE000F4F5E /* LoginWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -176,8 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A6960D5229CCA11000F4F5E /* User.swift in Sources */,
 				2A6960BE229CBAF3000F4F5E /* LoginView.swift in Sources */,
+				2A6960DA229CCA82000F4F5E /* LoginInteractor.swift in Sources */,
 				2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */,
+				2A6960D3229CC9DE000F4F5E /* LoginWireframe.swift in Sources */,
+				2A6960D8229CCA71000F4F5E /* LoginPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
