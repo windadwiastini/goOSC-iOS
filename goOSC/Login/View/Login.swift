@@ -22,5 +22,9 @@ class Login: UIViewController {
     }
     
     @IBAction func doLogin(_ sender: Any) {
+        let username = usernameField.text
+        let pasword = passwordField.text
+        print(username)
+        print(pasword)
     }
 }
