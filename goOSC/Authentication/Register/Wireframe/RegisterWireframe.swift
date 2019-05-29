@@ -9,14 +9,19 @@
 
 import UIKit
 
-class RegisterWireframe: UIViewController {
+class RegisterWireframe: RegisterRouterProtocol {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func pushToLogin(with identifier: String, from view: UIViewController) {
+//        let loginView = view.storyboard?.instantiateViewController(withIdentifier: identifier) as! Login
+//        RegisterWireframe
+    }
+    
+    static func createRegisterModule(registerViewRef: RegisterView) {
+        let presenter: RegisterPresenterProtocol = RegisterPresenter()
         
+        registerViewRef.presenter = presenter
+        registerViewRef.presenter?.wireframe = RegisterWireframe()
+        registerViewRef.presenter?.interactor = RegisterInteractor()
+        registerViewRef.presenter?.interactor?.presenter = presenter
     }
-    
-    func createRegisterModule(with registerRef: RegisterView) {
-    }
-    
 }
