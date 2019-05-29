@@ -8,9 +8,16 @@
 
 import UIKit
 
-class Login: UIViewController {
+class Login: UIViewController, LoginViewProtocol {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    var presenter: LoginPresenterProtocol?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        LoginWireframe.createLoginModule(self)
+        presenter?.viewDidLoad()
+    }
     
     @IBAction func redirectToForgotPassword(_ sender: Any) {
     }
@@ -19,12 +26,19 @@ class Login: UIViewController {
     }
     
     @IBAction func moveToRegister(_ sender: Any) {
+        presenter?.wireFrame?.routeToRegister(from: self)
     }
     
     @IBAction func doLogin(_ sender: Any) {
         let username = usernameField.text
         let pasword = passwordField.text
-        print(username)
-        print(pasword)
+        let user = Customer(name: "", email: username!, password: pasword!)
+        print("login clicked")
+        presenter?.interactor?.doLogin(user)
+    }
+    
+    func openAlert(_ title: String, _ context: String) {
+        print("alertnyaa")
+        Alert().informationAlert(title: title, message: context, ui: self)
     }
 }

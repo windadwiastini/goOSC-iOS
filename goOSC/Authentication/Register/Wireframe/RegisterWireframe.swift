@@ -16,4 +16,7 @@ class RegisterWireframe: UIViewController {
         
     }
     
+    func createRegisterModule(with registerRef: RegisterView) {
+    }
+    
 }
