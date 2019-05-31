@@ -13,7 +13,12 @@ class LoginPresenter: LoginPresenterProtocol {
     var view: LoginViewProtocol?
     var interactor: LoginInputInteractorProtocol?
     var presenter: LoginPresenterProtocol?
+    
     func viewDidLoad() {
+    }
+    
+    func loginWithSocialMedia(type: String) {
+        interactor?.loginWithSocialMedia(type: type)
     }
 }
 

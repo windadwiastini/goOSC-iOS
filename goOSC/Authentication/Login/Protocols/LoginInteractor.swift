@@ -36,4 +36,19 @@ class LoginInteractor: LoginInputInteractorProtocol {
             }
         }
     }
+    
+    func loginWithSocialMedia(type: String) {
+        var requestUrl: String
+        if type == "twitter" {
+            requestUrl = "\(Config().url)/auth/twitter"
+        } else if type == "google" {
+            requestUrl = "\(Config().url)/auth/google"
+        } else {
+            requestUrl = "\(Config().url)/auth/facebook"
+        }
+        
+        Alamofire.request(requestUrl, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
+            print(response)
+        }
+    }
 }

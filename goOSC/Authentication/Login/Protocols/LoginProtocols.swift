@@ -17,6 +17,7 @@ protocol LoginPresenterProtocol {
     var view: LoginViewProtocol? {get set}
     var interactor: LoginInputInteractorProtocol? {get set}
     func viewDidLoad()
+    func loginWithSocialMedia(type: String)
 }
 
 protocol LoginWireFrameProtocol {
@@ -26,6 +27,7 @@ protocol LoginWireFrameProtocol {
 protocol LoginInputInteractorProtocol {
     var presenter : LoginOutputInteractorProtocol? {get set}
     func doLogin(_ customer: Customer.Request)
+    func loginWithSocialMedia(type: String)
 }
 
 protocol LoginOutputInteractorProtocol {

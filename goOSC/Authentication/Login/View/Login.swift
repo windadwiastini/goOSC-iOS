@@ -20,10 +20,21 @@ class Login: UIViewController, LoginViewProtocol {
     }
     
     @IBAction func redirectToForgotPassword(_ sender: Any) {
+        
     }
     
-    @IBAction func loginWithSosMed(_ sender: Any) {
+    @IBAction func loginWithTwitterBtnWasPressed(_ sender: Any) {
+        presenter?.loginWithSocialMedia(type: "twitter")
     }
+    
+    @IBAction func loginWithGoogleBtnWasPressed(_ sender: Any) {
+        presenter?.loginWithSocialMedia(type: "google")
+    }
+    
+    @IBAction func loginWithFacebookBtnWasPressed(_ sender: Any) {
+        presenter?.loginWithSocialMedia(type: "facebook")
+    }
+    
     
     @IBAction func doLogin(_ sender: Any) {
         let username = usernameField.text
