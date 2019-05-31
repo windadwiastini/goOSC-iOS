@@ -10,6 +10,11 @@
 		2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */; };
 		2A0520BF229E371900C4ECE3 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520BE229E371900C4ECE3 /* LoginWireframe.swift */; };
 		2A0520C1229E37FC00C4ECE3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520C0229E37FC00C4ECE3 /* LoginPresenter.swift */; };
+		2A49087622A0D06C00AD2310 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49087522A0D06C00AD2310 /* HomePageView.swift */; };
+		2A49087822A0D09000AD2310 /* HomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49087722A0D09000AD2310 /* HomePageInteractor.swift */; };
+		2A49087A22A0D0A200AD2310 /* HomePagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49087922A0D0A200AD2310 /* HomePagePresenter.swift */; };
+		2A49087C22A0D0BF00AD2310 /* HomePageWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49087B22A0D0BF00AD2310 /* HomePageWireFrame.swift */; };
+		2A49087E22A0D0D100AD2310 /* HomePageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49087D22A0D0D100AD2310 /* HomePageProtocols.swift */; };
 		2A4F7030229E406300CCF2AD /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F702F229E406300CCF2AD /* LoginInteractor.swift */; };
 		2A4F7033229E553A00CCF2AD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F7032229E553A00CCF2AD /* Config.swift */; };
 		2A4F7036229E60FB00CCF2AD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F7035229E60FB00CCF2AD /* Alert.swift */; };
@@ -32,6 +37,11 @@
 		2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		2A0520BE229E371900C4ECE3 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginWireframe.swift; path = goOSC/Authentication/Login/Protocols/LoginWireframe.swift; sourceTree = SOURCE_ROOT; };
 		2A0520C0229E37FC00C4ECE3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = goOSC/Authentication/Login/Protocols/LoginPresenter.swift; sourceTree = SOURCE_ROOT; };
+		2A49087522A0D06C00AD2310 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		2A49087722A0D09000AD2310 /* HomePageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageInteractor.swift; sourceTree = "<group>"; };
+		2A49087922A0D0A200AD2310 /* HomePagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagePresenter.swift; sourceTree = "<group>"; };
+		2A49087B22A0D0BF00AD2310 /* HomePageWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageWireFrame.swift; sourceTree = "<group>"; };
+		2A49087D22A0D0D100AD2310 /* HomePageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageProtocols.swift; sourceTree = "<group>"; };
 		2A4F702F229E406300CCF2AD /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginInteractor.swift; path = goOSC/Authentication/Login/Protocols/LoginInteractor.swift; sourceTree = SOURCE_ROOT; };
 		2A4F7032229E553A00CCF2AD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2A4F7035229E60FB00CCF2AD /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -74,6 +84,74 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		2A49086D22A0CF6E00AD2310 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				2A49087422A0D00A00AD2310 /* View */,
+				2A49087322A0CFF500AD2310 /* Interactor */,
+				2A49087222A0CFEB00AD2310 /* Presenter */,
+				2A49087122A0CFE100AD2310 /* Entity */,
+				2A49087022A0CFD000AD2310 /* WireFrame */,
+				2A49086F22A0CFC900AD2310 /* Protocols */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		2A49086E22A0CFB300AD2310 /* Guest View */ = {
+			isa = PBXGroup;
+			children = (
+				2A49086D22A0CF6E00AD2310 /* Home Page */,
+			);
+			path = "Guest View";
+			sourceTree = "<group>";
+		};
+		2A49086F22A0CFC900AD2310 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2A49087D22A0D0D100AD2310 /* HomePageProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2A49087022A0CFD000AD2310 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				2A49087B22A0D0BF00AD2310 /* HomePageWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		2A49087122A0CFE100AD2310 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2A49087222A0CFEB00AD2310 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A49087922A0D0A200AD2310 /* HomePagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A49087322A0CFF500AD2310 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2A49087722A0D09000AD2310 /* HomePageInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2A49087422A0D00A00AD2310 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A49087522A0D06C00AD2310 /* HomePageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2A4F7031229E552800CCF2AD /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +189,7 @@
 		2A6960BA229CBAF3000F4F5E /* goOSC */ = {
 			isa = PBXGroup;
 			children = (
+				2A49086E22A0CFB300AD2310 /* Guest View */,
 				2A4F7034229E608800CCF2AD /* Alert */,
 				2A4F7031229E552800CCF2AD /* Configuration */,
 				2AEEB732229D0DF50079C231 /* Authentication */,
@@ -378,6 +457,8 @@
 			files = (
 				2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */,
 				2A6960D5229CCA11000F4F5E /* UserData.swift in Sources */,
+				2A49087C22A0D0BF00AD2310 /* HomePageWireFrame.swift in Sources */,
+				2A49087A22A0D0A200AD2310 /* HomePagePresenter.swift in Sources */,
 				2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */,
 				2A6960BE229CBAF3000F4F5E /* RegisterView.swift in Sources */,
 				2A0520C1229E37FC00C4ECE3 /* LoginPresenter.swift in Sources */,
@@ -388,9 +469,12 @@
 				2A6960DA229CCA82000F4F5E /* RegisterInteractor.swift in Sources */,
 				2A4F7036229E60FB00CCF2AD /* Alert.swift in Sources */,
 				2A4F7033229E553A00CCF2AD /* Config.swift in Sources */,
+				2A49087822A0D09000AD2310 /* HomePageInteractor.swift in Sources */,
 				2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */,
+				2A49087622A0D06C00AD2310 /* HomePageView.swift in Sources */,
 				2A6960D3229CC9DE000F4F5E /* RegisterWireframe.swift in Sources */,
 				2A4F7030229E406300CCF2AD /* LoginInteractor.swift in Sources */,
+				2A49087E22A0D0D100AD2310 /* HomePageProtocols.swift in Sources */,
 				2A6960D8229CCA71000F4F5E /* RegisterPresenter.swift in Sources */,
 				2A0520BF229E371900C4ECE3 /* LoginWireframe.swift in Sources */,
 				2AF22333229CE3D00081AD1C /* Login.swift in Sources */,

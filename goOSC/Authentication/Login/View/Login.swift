@@ -32,13 +32,12 @@ class Login: UIViewController, LoginViewProtocol {
     @IBAction func doLogin(_ sender: Any) {
         let username = usernameField.text
         let pasword = passwordField.text
-        let user = Customer(name: "", email: username!, password: pasword!)
+        let user = Customer.Request(name: "", email: username!, password: pasword!)
         print("login clicked")
         presenter?.interactor?.doLogin(user)
     }
     
     func openAlert(_ title: String, _ context: String) {
-        print("alertnyaa")
         Alert().informationAlert(title: title, message: context, ui: self)
     }
 }

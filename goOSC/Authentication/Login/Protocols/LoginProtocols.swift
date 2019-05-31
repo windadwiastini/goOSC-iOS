@@ -25,9 +25,9 @@ protocol LoginWireFrameProtocol {
 
 protocol LoginInputInteractorProtocol {
     var presenter : LoginOutputInteractorProtocol? {get set}
-    func doLogin(_ customer: Customer)
+    func doLogin(_ customer: Customer.Request)
 }
 
 protocol LoginOutputInteractorProtocol {
-    func response()
+    func response(_ resp: Customer.Response )
 }
