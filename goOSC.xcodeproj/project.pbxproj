@@ -530,15 +530,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */,
-				2A6960D5229CCA11000F4F5E /* User.swift in Sources */,
+	
 				2A49087C22A0D0BF00AD2310 /* HomePageWireFrame.swift in Sources */,
 				2A49087A22A0D0A200AD2310 /* HomePagePresenter.swift in Sources */,
 				2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */,
 				2A6960BE229CBAF3000F4F5E /* RegisterView.swift in Sources */,
 				2A0520C1229E37FC00C4ECE3 /* LoginPresenter.swift in Sources */,
 				2A6960D5229CCA11000F4F5E /* UserData.swift in Sources */,
-				2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */,
-				2A6960BE229CBAF3000F4F5E /* RegisterView.swift in Sources */,
 				2A35474122A4A4FD00F9F32E /* ForgotPasswordPresenter.swift in Sources */,
 				2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */,
 				2A35474322A4A50E00F9F32E /* ForgotPasswordEntity.swift in Sources */,

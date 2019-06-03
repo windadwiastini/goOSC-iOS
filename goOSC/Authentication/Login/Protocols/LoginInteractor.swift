@@ -47,8 +47,15 @@ class LoginInteractor: LoginInputInteractorProtocol {
             requestUrl = "\(Config().url)/auth/facebook"
         }
         
-        Alamofire.request(requestUrl, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
-            print(response)
+        let delegate = Alamofire.SessionManager.default.delegate
+        delegate.taskWillPerformHTTPRedirection = nil
+        
+        Alamofire.request(requestUrl, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { response in
+            guard let url = response.response?.url else { return }
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            print("response response")
+            print(response.response?.url)
+            
         }
     }
 }
