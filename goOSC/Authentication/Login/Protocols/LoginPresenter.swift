@@ -25,6 +25,5 @@ class LoginPresenter: LoginPresenterProtocol {
 extension LoginPresenter: LoginOutputInteractorProtocol {
     func response(_ resp: Customer.Response ) {
         view?.openAlert("Login", resp.message)
-        wireFrame?.routeToRegister(from: view as! UIViewController)
     }
 }
