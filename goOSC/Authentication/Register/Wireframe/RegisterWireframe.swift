@@ -12,8 +12,12 @@ import UIKit
 class RegisterWireframe: RegisterRouterProtocol {
     
     func pushToLogin(with identifier: String, from view: UIViewController) {
-//        let loginView = view.storyboard?.instantiateViewController(withIdentifier: identifier) as! Login
-//        RegisterWireframe
+        view.dismiss(animated: true, completion: nil)
+//        print("show login in wireframe. Identifier \(identifier)")
+//        let loginView = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
+//        LoginWireframe.createLoginModule(loginView)
+//        view.present(loginView, animated: true, completion: nil)
+//        view.navigationController?.pushViewController(loginView, animated: true)
     }
     
     static func createRegisterModule(registerViewRef: RegisterView) {
@@ -21,6 +25,7 @@ class RegisterWireframe: RegisterRouterProtocol {
         
         registerViewRef.presenter = presenter
         registerViewRef.presenter?.wireframe = RegisterWireframe()
+        registerViewRef.presenter?.view = registerViewRef
         registerViewRef.presenter?.interactor = RegisterInteractor()
         registerViewRef.presenter?.interactor?.presenter = presenter
     }

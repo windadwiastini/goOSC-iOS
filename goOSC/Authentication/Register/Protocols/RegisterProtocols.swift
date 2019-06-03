@@ -8,27 +8,29 @@
 
 import UIKit
 
-protocol RegisterViewProtocol: class {
-    
+protocol RegisterViewProtocol {
+    func lauchAlert(_ title: String, _ context: String, _ withClosure: Bool)
+    func showLoginView()
 }
 
-protocol RegisterPresenterProtocol: class {
+protocol RegisterPresenterProtocol {
     var interactor: RegisterInteractorProtocol? { get set }
     var view: RegisterViewProtocol? { get set }
     var wireframe: RegisterRouterProtocol? { get set }
     
     func verifyInput(email: String, password: String, repeatPassword: String, firstName: String, lastName: String)
+    func showLoginView(from view: UIViewController)
 }
 
-protocol RegisterInteractorProtocol: class {
+protocol RegisterInteractorProtocol {
     var presenter: RegisterPresenterProtocol? { get set }
     
     func checkPassword(password: String, repeatPassword: String) -> Bool
-    func verifyInput(email: String, password: String, repeatPassword: String, firstName: String, lastName: String, handler: @escaping (_ complete: Bool, _ user: UserData?) -> ())
-    func sendRegistrationRequest(endpoint: String, user: UserData)
+    func verifyInput(email: String, password: String, repeatPassword: String, firstName: String, lastName: String, handler: @escaping (_ complete: Bool, _ user: User.UserData?) -> ())
+    func sendRegistrationRequest(endpoint: String, user: User.UserData, handler: @escaping (_ success: Bool, _ error: Error?, _ message: String) -> ())
 }
 
-protocol RegisterRouterProtocol: class {
+protocol RegisterRouterProtocol {
     func pushToLogin(with identifier: String, from view: UIViewController)
     static func createRegisterModule(registerViewRef: RegisterView)
 }

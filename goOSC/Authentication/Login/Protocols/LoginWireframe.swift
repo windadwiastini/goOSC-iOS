@@ -18,6 +18,7 @@ class LoginWireframe: LoginWireFrameProtocol {
     }
     
     class func createLoginModule(_ loginRef: Login) {
+        print("masuk createLoginModule")
         let presenter: LoginPresenterProtocol & LoginOutputInteractorProtocol = LoginPresenter()
         loginRef.presenter = presenter
         loginRef.presenter?.wireFrame = LoginWireframe()
