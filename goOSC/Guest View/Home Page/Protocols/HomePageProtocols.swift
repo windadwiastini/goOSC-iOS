@@ -10,6 +10,7 @@ import UIKit
 
 protocol HomePageViewProtocol {
 //    func openAlert(_ title: String, _ context: String)
+    func updateData(response: HomePage.Response)
 }
 
 protocol HomePagePresenterProtocol {
@@ -20,12 +21,15 @@ protocol HomePagePresenterProtocol {
 }
 
 protocol HomePageWireFrameProtocol {
+    
 }
 
 protocol HomePageInputInteractorProtocol {
     var presenter : HomePageOutputInteractorProtocol? {get set}
+    
+    func sendHomePageRequest()
 }
 
 protocol HomePageOutputInteractorProtocol {
-//    func response(_ resp: Customer.Response )
+    func response(_ response: HomePage.Response)
 }

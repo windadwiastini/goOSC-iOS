@@ -46,6 +46,14 @@ class Login: UIViewController, LoginViewProtocol {
     }
     
     func openAlert(_ title: String, _ context: String) {
-        Alert().informationAlert(title: title, message: context, ui: self)
+        let alert = UIAlertController(title: title, message: context, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {resp in
+            if UserDefaults.standard.bool(forKey: "loggedIn") {
+                self.presenter?.wireFrame?.routeToRegister(from: self)
+            }
+        }))
+        present(alert, animated: true)
     }
+    
+    
 }

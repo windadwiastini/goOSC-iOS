@@ -9,13 +9,21 @@
 import UIKit
 
 class HomePagePresenter: HomePagePresenterProtocol {
+    
     var wireFrame: HomePageWireFrameProtocol?
     var view: HomePageViewProtocol?
     var interactor: HomePageInputInteractorProtocol?
     var presenter: HomePagePresenterProtocol?
+    
     func viewDidLoad() {
+        interactor?.sendHomePageRequest()
     }
 }
 
 extension HomePagePresenter: HomePageOutputInteractorProtocol {
+    func response(_ response: HomePage.Response) {
+        view?.updateData(response: response)
+    }
+    
+    
 }
