@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLX-ha-lDZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLX-ha-lDZ">
                                 <rect key="frame" x="47" y="227" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -53,6 +53,7 @@
                                 <state key="normal" title="Forgot Password"/>
                                 <connections>
                                     <action selector="redirectToForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OK7-4N-fSN"/>
+                                    <segue destination="kIZ-h5-yJI" kind="presentation" id="Nxe-hw-6uk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCU-b7-dd2">
@@ -137,6 +138,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwi-TX-NTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="866"/>
+        </scene>
+        <!--ForgotPassword-->
+        <scene sceneID="ByA-NU-MPV">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPassword" title="ForgotPassword" id="kIZ-h5-yJI" customClass="ForgotPasswordView" customModule="goOSC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fCF-Vo-9MV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OSC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59L-DH-Ikr">
+                                <rect key="frame" x="151" y="192" width="73" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5J-Av-g9h">
+                                <rect key="frame" x="37" y="277" width="301" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8v8-f1-h9K">
+                                <rect key="frame" x="37" y="318" width="301" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doActionForgotPassword:" destination="kIZ-h5-yJI" eventType="touchUpInside" id="1wb-Ph-Waj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iCZ-7I-lXT" firstAttribute="trailing" secondItem="59L-DH-Ikr" secondAttribute="trailing" constant="151" id="2UP-oQ-0Wx"/>
+                            <constraint firstItem="iCZ-7I-lXT" firstAttribute="trailing" secondItem="t5J-Av-g9h" secondAttribute="trailing" constant="37" id="3LJ-WK-TBY"/>
+                            <constraint firstItem="8v8-f1-h9K" firstAttribute="leading" secondItem="iCZ-7I-lXT" secondAttribute="leading" constant="37" id="AAz-B5-ozL"/>
+                            <constraint firstItem="59L-DH-Ikr" firstAttribute="top" secondItem="iCZ-7I-lXT" secondAttribute="top" constant="172" id="FZe-pd-fSa"/>
+                            <constraint firstItem="t5J-Av-g9h" firstAttribute="leading" secondItem="iCZ-7I-lXT" secondAttribute="leading" constant="37" id="Ggj-Ad-HZB"/>
+                            <constraint firstItem="59L-DH-Ikr" firstAttribute="leading" secondItem="iCZ-7I-lXT" secondAttribute="leading" constant="151" id="GzS-LD-nbx"/>
+                            <constraint firstItem="8v8-f1-h9K" firstAttribute="top" secondItem="t5J-Av-g9h" secondAttribute="bottom" constant="11" id="Yky-B2-Wy4"/>
+                            <constraint firstItem="iCZ-7I-lXT" firstAttribute="trailing" secondItem="8v8-f1-h9K" secondAttribute="trailing" constant="37" id="jB6-ZE-GRL"/>
+                            <constraint firstItem="t5J-Av-g9h" firstAttribute="top" secondItem="59L-DH-Ikr" secondAttribute="bottom" constant="43" id="kaX-Wk-yWO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iCZ-7I-lXT"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailText" destination="t5J-Av-g9h" id="m95-h6-pok"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfW-yW-D6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="-521.28935532233891"/>
         </scene>
         <!--Register View-->
         <scene sceneID="Pr1-ex-fhd">

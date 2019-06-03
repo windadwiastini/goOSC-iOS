@@ -15,7 +15,6 @@ class LoginWireframe: LoginWireFrameProtocol {
         let registerController = view.storyboard?.instantiateViewController(withIdentifier: "HomePage") as! HomePageView
         HomePageWireFrame.createHomePageModule(registerController)
         view.present(registerController , animated: true, completion: nil)
-//        view.navigationController?.pushViewController(registerController, animated: true)
     }
     
     class func createLoginModule(_ loginRef: Login) {
