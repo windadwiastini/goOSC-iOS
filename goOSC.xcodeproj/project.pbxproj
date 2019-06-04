@@ -10,6 +10,7 @@
 		2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */; };
 		2A0520BF229E371900C4ECE3 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520BE229E371900C4ECE3 /* LoginWireframe.swift */; };
 		2A0520C1229E37FC00C4ECE3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520C0229E37FC00C4ECE3 /* LoginPresenter.swift */; };
+		2A30974F22A5FBB70061D4DF /* IntSeparatorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30974E22A5FBB70061D4DF /* IntSeparatorExt.swift */; };
 		2A35473D22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35473C22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift */; };
 		2A35473F22A4A4EE00F9F32E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35473E22A4A4EE00F9F32E /* ForgotPasswordView.swift */; };
 		2A35474122A4A4FD00F9F32E /* ForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35474022A4A4FD00F9F32E /* ForgotPasswordPresenter.swift */; };
@@ -45,6 +46,7 @@
 		2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		2A0520BE229E371900C4ECE3 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginWireframe.swift; path = goOSC/Authentication/Login/Protocols/LoginWireframe.swift; sourceTree = SOURCE_ROOT; };
 		2A0520C0229E37FC00C4ECE3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = goOSC/Authentication/Login/Protocols/LoginPresenter.swift; sourceTree = SOURCE_ROOT; };
+		2A30974E22A5FBB70061D4DF /* IntSeparatorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntSeparatorExt.swift; sourceTree = "<group>"; };
 		2A35473C22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordInteractor.swift; sourceTree = "<group>"; };
 		2A35473E22A4A4EE00F9F32E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		2A35474022A4A4FD00F9F32E /* ForgotPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPresenter.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 				2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2A30974D22A5FB7F0061D4DF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2A30974E22A5FBB70061D4DF /* IntSeparatorExt.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		2A35473422A4A46F00F9F32E /* Forgot Password */ = {
@@ -268,6 +278,7 @@
 		2A6960BA229CBAF3000F4F5E /* goOSC */ = {
 			isa = PBXGroup;
 			children = (
+				2A30974D22A5FB7F0061D4DF /* Extension */,
 				2A49086E22A0CFB300AD2310 /* Guest View */,
 				2A4F7034229E608800CCF2AD /* Alert */,
 				2A4F7031229E552800CCF2AD /* Configuration */,
@@ -555,6 +566,7 @@
 				2A35474522A4A52300F9F32E /* ForgotPasswordWireFrame.swift in Sources */,
 				2A35473D22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift in Sources */,
 				2A49087622A0D06C00AD2310 /* HomePageView.swift in Sources */,
+				2A30974F22A5FBB70061D4DF /* IntSeparatorExt.swift in Sources */,
 				2A62F76C22A50BEC00D56CC0 /* HomePage.swift in Sources */,
 				2A35473F22A4A4EE00F9F32E /* ForgotPasswordView.swift in Sources */,
 				2A6960D3229CC9DE000F4F5E /* RegisterWireframe.swift in Sources */,

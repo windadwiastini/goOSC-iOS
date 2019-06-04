@@ -26,7 +26,7 @@ class HomePageCell: UITableViewCell {
             }
         }
         nameLabel.text = data.name
-        priceLabel.text = "\(data.price)"
+        priceLabel.text = "\((data.price).formattedWithSeparator)"
     }
     
 }
