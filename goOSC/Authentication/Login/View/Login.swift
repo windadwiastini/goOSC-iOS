@@ -7,17 +7,38 @@
 //
 
 import UIKit
+import Foundation
 
-class Login: UIViewController, LoginViewProtocol {
+import WebKit
+
+extension String {
+    func parse<D>(to type: D.Type) -> D? where D: Decodable {
+        let data: Data = self.data(using: .utf8)!
+        let decoder = JSONDecoder()
+        
+        do {
+            let _object = try decoder.decode(type, from: data)
+            return _object
+        } catch {
+            return nil
+        }
+    }
+}
+
+class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
     
+    var webView: WKWebView!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     var presenter: LoginPresenterProtocol?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         LoginWireframe.createLoginModule(self)
         presenter?.viewDidLoad()
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        webView.customUserAgent = "Chrome/56.0.0.0 Mobile"
+//        webView.getSettings().setUserAgentString("Chrome/56.0.0.0 Mobile");
     }
     
     @IBAction func redirectToForgotPassword(_ sender: Any) {
@@ -53,5 +74,34 @@ class Login: UIViewController, LoginViewProtocol {
         present(alert, animated: true)
     }
     
+    func loadWeb(_ url: URL) {
+        print("sampai view load")
+        let frame = view.frame
+        webView.frame = CGRect(x: 0, y: 0, width: frame.maxX, height: frame.maxY)
+        webView.sizeToFit()
+        view.addSubview(webView)
+        let request = URLRequest(url: url)
+        webView.load(request)
+    }
     
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("Page Did Finished")
+        let urlString = webView.url?.absoluteString
+        if (urlString?.contains("callback"))! {
+            print(urlString)
+            webView.evaluateJavaScript("document.getElementsByTagName('pre')[0].innerHTML.toString()", completionHandler: { result, error in
+                print(result!)
+                let jsonDecode = (result! as! String).parse(to: Customer.Response.self)
+//                let jsonDecode = try! JSONDecoder().decode(Customer.Response.self, from: result! as! Data)
+                print(jsonDecode?.data?.user?.firstname)
+                self.webView.removeFromSuperview()
+                if jsonDecode?.code == 200 {
+                    self.presenter?.wireFrame?.routeToRegister(from: self)
+                } else {
+                    self.openAlert("Login", jsonDecode!.message)
+                }
+
+            })
+        }
+    }
 }

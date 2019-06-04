@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Bold</string>
-            <string>AvenirNext-Medium</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Medium</string>
-        </array>
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Thin</string>
-        </array>
-        <array key="Menlo.ttc">
-            <string>Menlo-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -358,7 +341,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register New Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZ6-nt-yqZ">
-                                        <rect key="frame" x="63" y="95" width="250" height="40"/>
+                                        <rect key="frame" x="62.5" y="95" width="250" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="WAp-G4-Sa9"/>
                                             <constraint firstAttribute="width" constant="250" id="zuO-Aw-6qe"/>
@@ -371,7 +354,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1Hw-ij-ClR">
-                                                <rect key="frame" x="83" y="30" width="210" height="30"/>
+                                                <rect key="frame" x="82.5" y="30" width="210" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ONE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiK-jN-GXV">
                                                         <rect key="frame" x="0.0" y="0.0" width="49.5" height="30"/>
