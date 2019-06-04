@@ -24,11 +24,11 @@ enum Customer {
         var code: Int
         var message: String
         var data: ResponseData?
-        
     }
     
     struct ResponseData: Decodable {
         var user: SingleUser?
+        var token: String
     }
     
     struct SingleUser: Decodable {

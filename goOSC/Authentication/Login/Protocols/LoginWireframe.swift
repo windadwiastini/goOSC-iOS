@@ -12,9 +12,10 @@ import Alamofire
 class LoginWireframe: LoginWireFrameProtocol {
     func routeToRegister(from view: UIViewController) {
         print("go to home page")
-        let registerController = view.storyboard?.instantiateViewController(withIdentifier: "HomePage") as! HomePageView
-        HomePageWireFrame.createHomePageModule(registerController)
-        view.present(registerController , animated: true, completion: nil)
+        let tabController = view.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! UIViewController
+        let homePageController = view.storyboard?.instantiateViewController(withIdentifier: "HomePage") as! HomePageView
+        HomePageWireFrame.createHomePageModule(homePageController)
+        view.present(tabController , animated: true, completion: nil)
     }
     
     class func createLoginModule(_ loginRef: Login) {
