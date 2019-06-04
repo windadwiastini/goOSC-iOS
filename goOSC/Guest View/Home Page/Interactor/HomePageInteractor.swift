@@ -28,7 +28,7 @@ class HomePageInteractor: HomePageInputInteractorProtocol {
                 let resp = HomePage.Response(code: 401, message: "Not Found", data: [], length: 0)
                 self.presenter?.response(resp)
             case .some(_):
-                let resp = Customer.Response(code: 401, message: "Some error occured", data: nil)
+                let resp = HomePage.Response(code: 401, message: "Some error occured", data: [], length: 0)
                 self.presenter?.response(resp)
             }
         }
