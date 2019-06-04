@@ -8,5 +8,4 @@ target 'goOSC' do
   # Pods for goOSC
 
   pod 'Alamofire'
-
 end

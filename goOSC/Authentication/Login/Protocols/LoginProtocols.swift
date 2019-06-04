@@ -10,6 +10,7 @@ import UIKit
 
 protocol LoginViewProtocol {
     func openAlert(_ title: String, _ context: String)
+    func loadWeb(_ url: URL)
 }
 
 protocol LoginPresenterProtocol {
@@ -18,6 +19,7 @@ protocol LoginPresenterProtocol {
     var interactor: LoginInputInteractorProtocol? {get set}
     func viewDidLoad()
     func loginWithSocialMedia(type: String)
+    func showWebViews(_ web: URL)
 }
 
 protocol LoginWireFrameProtocol {
@@ -32,4 +34,5 @@ protocol LoginInputInteractorProtocol {
 
 protocol LoginOutputInteractorProtocol {
     func response(_ resp: Customer.Response )
+    func showWebView(_ url: URL)
 }

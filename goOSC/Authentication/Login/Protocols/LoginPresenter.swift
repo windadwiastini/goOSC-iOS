@@ -20,10 +20,18 @@ class LoginPresenter: LoginPresenterProtocol {
     func loginWithSocialMedia(type: String) {
         interactor?.loginWithSocialMedia(type: type)
     }
+    
+    func showWebViews(_ web: URL) {
+        view?.loadWeb(web)
+    }
 }
 
 extension LoginPresenter: LoginOutputInteractorProtocol {
     func response(_ resp: Customer.Response ) {
         view?.openAlert("Login", resp.message)
+    }
+    
+    func showWebView(_ url: URL) {
+        view?.loadWeb(url)
     }
 }
