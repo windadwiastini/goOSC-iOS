@@ -5,8 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -197,14 +196,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-picture-100" translatesAutoresizingMaskIntoConstraints="NO" id="2Ys-pu-240">
-                                                    <rect key="frame" x="25" y="14.5" width="70" height="70"/>
+                                                    <rect key="frame" x="25" y="15" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="FCL-VL-VTU"/>
                                                         <constraint firstAttribute="height" constant="70" id="H9N-nN-w20"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hy0-Io-N0o">
-                                                    <rect key="frame" x="105" y="23" width="245" height="55"/>
+                                                    <rect key="frame" x="105" y="22.5" width="245" height="55"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="END-aw-46m">
                                                             <rect key="frame" x="0.0" y="0.0" width="245" height="25"/>
@@ -274,7 +273,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9Ma-O5-NXH">
-                                        <rect key="frame" x="83" y="30" width="210" height="30"/>
+                                        <rect key="frame" x="82.5" y="30" width="210" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ONE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTw-Nl-eNH">
                                                 <rect key="frame" x="0.0" y="0.0" width="49.5" height="30"/>
@@ -355,7 +354,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Vh4-gz-ak1">
-                                        <rect key="frame" x="83" y="30" width="210" height="30"/>
+                                        <rect key="frame" x="82.5" y="30" width="210" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ONE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAI-hx-bz0">
                                                 <rect key="frame" x="0.0" y="0.0" width="49.5" height="30"/>
@@ -414,6 +413,7 @@
                     <tabBarItem key="tabBarItem" title="Chat" image="icons8-collaboration-26" selectedImage="icons8-collaboration-26" id="Fcg-Fq-O8b">
                         <color key="badgeColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="rDk-JM-tuH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ymy-2D-G2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -431,7 +431,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tAp-KC-KK0">
-                                        <rect key="frame" x="83" y="30" width="210" height="30"/>
+                                        <rect key="frame" x="82.5" y="30" width="210" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ONE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-Dc-zU9">
                                                 <rect key="frame" x="0.0" y="0.0" width="49.5" height="30"/>
@@ -505,7 +505,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JLw-cX-sOJ">
-                                        <rect key="frame" x="83" y="30" width="210" height="30"/>
+                                        <rect key="frame" x="82.5" y="30" width="210" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ONE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-PT-bjf">
                                                 <rect key="frame" x="0.0" y="0.0" width="49.5" height="30"/>
@@ -562,6 +562,7 @@
                         <viewLayoutGuide key="safeArea" id="RTM-2W-gBC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cart" image="icons8-shopping-basket-star-24" selectedImage="icons8-shopping-basket-star-24" id="GE8-A3-dWh"/>
+                    <navigationItem key="navigationItem" id="etF-GA-Jx1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J04-zt-orB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -586,7 +587,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECK-kw-8iG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215" y="939"/>
+            <point key="canvasLocation" x="1186" y="1021"/>
         </scene>
         <!--ForgotPassword-->
         <scene sceneID="ByA-NU-MPV">
