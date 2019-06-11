@@ -12,7 +12,7 @@ import Alamofire
 class HomePageInteractor: HomePageInputInteractorProtocol {
     
     var presenter: HomePageOutputInteractorProtocol?
-    let url = "\(Config().url)/homepage?page=0&size=20"
+    let url = "\(Config().url)/homepage?page=0&size=50"
     
     func sendHomePageRequest() {
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in

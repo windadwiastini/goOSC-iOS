@@ -16,10 +16,10 @@ class DetailView: UIViewController, DetailViewProtocol {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageDetail: UIImageView!
     @IBOutlet weak var desc: UITextView!
-    @IBOutlet weak var videoSpace: UIView!
     
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var viewVount: UILabel!
+    let playerViewController = AVPlayerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +39,12 @@ class DetailView: UIViewController, DetailViewProtocol {
         
         desc.text = data.description
         let urlAV = URL(string: "\(Config().url)\(data.preview.String)")
+        print("\(Config().url)\(data.preview.String)")
         let moviePlayer1 = AVPlayer(url: urlAV!)
-        let moviePlayer = AVPlayerLayer(player: moviePlayer1)
-        moviePlayer.frame = videoSpace.bounds
-        videoSpace.layer.addSublayer(moviePlayer)
-        moviePlayer1.play()
+        playerViewController.player = moviePlayer1
+        self.present(playerViewController, animated: true) {
+            self.playerViewController.player!.play()
+        }
         
         likeCount.text = String(data.like_count)
         viewVount.text = String(data.view_count)
@@ -51,6 +52,13 @@ class DetailView: UIViewController, DetailViewProtocol {
     
     @IBAction func goBackToHomePage(_ sender: Any) {
         presenter?.wireFrame?.routeToHomePage(from: self)
+    }
+    
+    
+    @IBAction func showPreview(_ sender: Any) {
+        self.present(playerViewController, animated: true) {
+            self.playerViewController.player!.play()
+        }
     }
     
 }
