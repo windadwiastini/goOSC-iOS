@@ -18,9 +18,9 @@ class LoginInteractor: LoginInputInteractorProtocol {
             "password" : customer.password
         ]
         Alamofire.request("\(Config().url)/auth", method: .post, parameters: parameters, encoding: JSONEncoding.default ).responseJSON {response in
-//            print(response.response?.statusCode)
             let defaults = UserDefaults.standard
             defaults.set(false, forKey: "loggedIn")
+            print(response.response?.statusCode)
             switch response.response?.statusCode {
             case 401?:
                 let resp = Customer.Response(code: 401, message: "Email or password is not valid", data: nil)
@@ -35,7 +35,7 @@ class LoginInteractor: LoginInputInteractorProtocol {
                 defaults.set(jsonDecode.data!.user!.firstname, forKey: "firstname")
                 defaults.set(jsonDecode.data!.user!.lastname, forKey: "lastname")
                 defaults.set(jsonDecode.data!.user!.role_id, forKey: "roleId")
-                defaults.set(jsonDecode.data!.user!.role_name, forKey: "userName")
+                defaults.set(jsonDecode.data!.user!.role_name, forKey: "roleName")
                 defaults.set(true, forKey: "loggedIn")
                 self.presenter?.response(jsonDecode)
             case .none:

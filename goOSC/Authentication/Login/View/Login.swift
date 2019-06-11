@@ -34,11 +34,13 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         LoginWireframe.createLoginModule(self)
-        presenter?.viewDidLoad()
         webView = WKWebView()
         webView.navigationDelegate = self
         webView.customUserAgent = "Chrome/56.0.0.0 Mobile"
-//        webView.getSettings().setUserAgentString("Chrome/56.0.0.0 Mobile");
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        presenter?.viewDidLoad()
     }
     
     @IBAction func redirectToForgotPassword(_ sender: Any) {
@@ -68,11 +70,7 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
     
     func openAlert(_ title: String, _ context: String) {
         let alert = UIAlertController(title: title, message: context, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {resp in
-            if UserDefaults.standard.bool(forKey: "loggedIn") {
-                self.presenter?.wireFrame?.routeToRegister(from: self)
-            }
-        }))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true)
     }
     
