@@ -15,6 +15,9 @@ class LoginPresenter: LoginPresenterProtocol {
     var presenter: LoginPresenterProtocol?
     
     func viewDidLoad() {
+        if UserDefaults.standard.bool(forKey: "loggedIn") {
+            wireFrame?.routeToRegister(from: view as! UIViewController)
+        }
     }
     
     func loginWithSocialMedia(type: String) {
@@ -28,7 +31,11 @@ class LoginPresenter: LoginPresenterProtocol {
 
 extension LoginPresenter: LoginOutputInteractorProtocol {
     func response(_ resp: Customer.Response ) {
-        view?.openAlert("Login", resp.message)
+        if resp.code == 200 {
+            self.wireFrame?.routeToRegister(from: view as! UIViewController)
+        } else {
+            view?.openAlert("Login", resp.message)
+        }
     }
     
     func showWebView(_ url: URL) {

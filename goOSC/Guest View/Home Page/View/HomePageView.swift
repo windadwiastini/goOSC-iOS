@@ -19,13 +19,20 @@ class HomePageView: UIViewController, HomePageViewProtocol {
         tableView.dataSource = self
         HomePageWireFrame.createHomePageModule(self)
         presenter?.viewDidLoad()
-        print("Homepage loaded")
     }
     
     func updateData(response: HomePage.Response) {
         homePageData = response
         self.tableView.reloadData()
     }
+    
+    @IBAction func doSignOut(_ sender: Any) {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+        presenter?.wireFrame?.routeToSignIn(from: self)
+    }
+    
 }
 
 extension HomePageView: UITableViewDelegate, UITableViewDataSource {
@@ -42,5 +49,9 @@ extension HomePageView: UITableViewDelegate, UITableViewDataSource {
         let data = homePageData.data[indexPath.row]
         cell.configureCell(data: data!)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.wireFrame?.routeToDetail(from: self, with: homePageData.data[indexPath.row]!)
     }
 }

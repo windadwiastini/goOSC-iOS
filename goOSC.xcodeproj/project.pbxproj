@@ -25,6 +25,12 @@
 		2A4F7030229E406300CCF2AD /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F702F229E406300CCF2AD /* LoginInteractor.swift */; };
 		2A4F7033229E553A00CCF2AD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F7032229E553A00CCF2AD /* Config.swift */; };
 		2A4F7036229E60FB00CCF2AD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F7035229E60FB00CCF2AD /* Alert.swift */; };
+		2A521D1A22AE038900514651 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A521D1922AE038900514651 /* DetailProtocols.swift */; };
+		2A521D1C22AE03A100514651 /* DetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A521D1B22AE03A100514651 /* DetailWireFrame.swift */; };
+		2A521D1E22AE03B300514651 /* DetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A521D1D22AE03B300514651 /* DetailEntity.swift */; };
+		2A521D2022AE03DC00514651 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A521D1F22AE03DC00514651 /* DetailPresenter.swift */; };
+		2A521D2222AE041300514651 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A521D2122AE041300514651 /* DetailInteractor.swift */; };
+		2A521D2422AE044C00514651 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A521D2322AE044C00514651 /* DetailView.swift */; };
 		2A62F76A22A503AC00D56CC0 /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A62F76922A503AC00D56CC0 /* HomePageCell.swift */; };
 		2A62F76C22A50BEC00D56CC0 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A62F76B22A50BEC00D56CC0 /* HomePage.swift */; };
 		2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960BB229CBAF3000F4F5E /* AppDelegate.swift */; };
@@ -61,6 +67,12 @@
 		2A4F702F229E406300CCF2AD /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginInteractor.swift; path = goOSC/Authentication/Login/Protocols/LoginInteractor.swift; sourceTree = SOURCE_ROOT; };
 		2A4F7032229E553A00CCF2AD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2A4F7035229E60FB00CCF2AD /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2A521D1922AE038900514651 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		2A521D1B22AE03A100514651 /* DetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireFrame.swift; sourceTree = "<group>"; };
+		2A521D1D22AE03B300514651 /* DetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEntity.swift; sourceTree = "<group>"; };
+		2A521D1F22AE03DC00514651 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		2A521D2122AE041300514651 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		2A521D2322AE044C00514651 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2A62F76922A503AC00D56CC0 /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		2A62F76B22A50BEC00D56CC0 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePage.swift; path = "goOSC/Guest View/Home Page/WireFrame/HomePage.swift"; sourceTree = SOURCE_ROOT; };
 		2A6960B8229CBAF3000F4F5E /* goOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +199,7 @@
 		2A49086E22A0CFB300AD2310 /* Guest View */ = {
 			isa = PBXGroup;
 			children = (
+				2A521D1222AE024C00514651 /* Detail Product */,
 				2A49086D22A0CF6E00AD2310 /* Home Page */,
 			);
 			path = "Guest View";
@@ -255,6 +268,67 @@
 				2A4F7035229E60FB00CCF2AD /* Alert.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		2A521D1222AE024C00514651 /* Detail Product */ = {
+			isa = PBXGroup;
+			children = (
+				2A521D1822AE02AC00514651 /* Protocols */,
+				2A521D1722AE02A200514651 /* WireFrame */,
+				2A521D1622AE029900514651 /* Entity */,
+				2A521D1522AE028B00514651 /* Presenter */,
+				2A521D1422AE028100514651 /* Interactor */,
+				2A521D1322AE027400514651 /* View */,
+			);
+			path = "Detail Product";
+			sourceTree = "<group>";
+		};
+		2A521D1322AE027400514651 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A521D2322AE044C00514651 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A521D1422AE028100514651 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2A521D2122AE041300514651 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2A521D1522AE028B00514651 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A521D1F22AE03DC00514651 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A521D1622AE029900514651 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2A521D1D22AE03B300514651 /* DetailEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2A521D1722AE02A200514651 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				2A521D1B22AE03A100514651 /* DetailWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		2A521D1822AE02AC00514651 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2A521D1922AE038900514651 /* DetailProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		2A6960AF229CBAF3000F4F5E = {
@@ -549,6 +623,7 @@
 				2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */,
 				2A49087C22A0D0BF00AD2310 /* HomePageWireFrame.swift in Sources */,
 				2A49087A22A0D0A200AD2310 /* HomePagePresenter.swift in Sources */,
+				2A521D2422AE044C00514651 /* DetailView.swift in Sources */,
 				2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */,
 				2A6960BE229CBAF3000F4F5E /* RegisterView.swift in Sources */,
 				2A0520C1229E37FC00C4ECE3 /* LoginPresenter.swift in Sources */,
@@ -559,6 +634,7 @@
 				2A35474322A4A50E00F9F32E /* ForgotPasswordEntity.swift in Sources */,
 				2A35474722A4A53500F9F32E /* ForgotPasswordProtocols.swift in Sources */,
 				2A6960DA229CCA82000F4F5E /* RegisterInteractor.swift in Sources */,
+				2A521D2222AE041300514651 /* DetailInteractor.swift in Sources */,
 				2A4F7036229E60FB00CCF2AD /* Alert.swift in Sources */,
 				2A4F7033229E553A00CCF2AD /* Config.swift in Sources */,
 				2A49087822A0D09000AD2310 /* HomePageInteractor.swift in Sources */,
@@ -572,8 +648,12 @@
 				2A6960D3229CC9DE000F4F5E /* RegisterWireframe.swift in Sources */,
 				2A4F7030229E406300CCF2AD /* LoginInteractor.swift in Sources */,
 				2A49087E22A0D0D100AD2310 /* HomePageProtocols.swift in Sources */,
+				2A521D2022AE03DC00514651 /* DetailPresenter.swift in Sources */,
+				2A521D1C22AE03A100514651 /* DetailWireFrame.swift in Sources */,
 				2A6960D8229CCA71000F4F5E /* RegisterPresenter.swift in Sources */,
 				2A0520BF229E371900C4ECE3 /* LoginWireframe.swift in Sources */,
+				2A521D1E22AE03B300514651 /* DetailEntity.swift in Sources */,
+				2A521D1A22AE038900514651 /* DetailProtocols.swift in Sources */,
 				2AF22333229CE3D00081AD1C /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
