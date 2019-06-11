@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 class HomePageWireFrame: HomePageWireFrameProtocol {
     class func createHomePageModule(_ homePageRef: HomePageView) {
         let presenter: HomePagePresenterProtocol & HomePageOutputInteractorProtocol = HomePagePresenter()

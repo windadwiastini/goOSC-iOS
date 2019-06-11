@@ -19,7 +19,7 @@ class HomePageView: UIViewController, HomePageViewProtocol {
         tableView.dataSource = self
         HomePageWireFrame.createHomePageModule(self)
         presenter?.viewDidLoad()
-        print("Homepage loaded")
+//        print("Homepage loaded")
     }
     
     func updateData(response: HomePage.Response) {
