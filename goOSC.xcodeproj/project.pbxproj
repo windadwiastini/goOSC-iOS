@@ -43,6 +43,13 @@
 		2A6960D5229CCA11000F4F5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D4229CCA11000F4F5E /* User.swift */; };
 		2A6960D8229CCA71000F4F5E /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D7229CCA71000F4F5E /* RegisterPresenter.swift */; };
 		2A6960DA229CCA82000F4F5E /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6960D9229CCA82000F4F5E /* RegisterInteractor.swift */; };
+		2A7134DF22AF738B0053F2B1 /* CategoryProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7134DE22AF738B0053F2B1 /* CategoryProductView.swift */; };
+		2A7134E122AF73D80053F2B1 /* CategoryProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7134E022AF73D80053F2B1 /* CategoryProductCell.swift */; };
+		2A7134EA22AF799F0053F2B1 /* CategoryProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7134E922AF799F0053F2B1 /* CategoryProductInteractor.swift */; };
+		2A7134EC22AF79D20053F2B1 /* CategoryProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7134EB22AF79D20053F2B1 /* CategoryProductPresenter.swift */; };
+		2A7134EF22AF79FE0053F2B1 /* CategoryProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7134EE22AF79FE0053F2B1 /* CategoryProduct.swift */; };
+		2A7134F122AF7A240053F2B1 /* CategoryProductWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7134F022AF7A240053F2B1 /* CategoryProductWireFrame.swift */; };
+		2A7134F322AF7A460053F2B1 /* CategoryProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7134F222AF7A460053F2B1 /* CategoryProductProtocol.swift */; };
 		2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB735229D1B460079C231 /* RegisterProtocols.swift */; };
 		2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF22330229CE2DA0081AD1C /* Customer.swift */; };
 		2AF22333229CE3D00081AD1C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF22332229CE3D00081AD1C /* Login.swift */; };
@@ -88,6 +95,13 @@
 		2A6960D4229CCA11000F4F5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2A6960D7229CCA71000F4F5E /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		2A6960D9229CCA82000F4F5E /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		2A7134DE22AF738B0053F2B1 /* CategoryProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductView.swift; sourceTree = "<group>"; };
+		2A7134E022AF73D80053F2B1 /* CategoryProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductCell.swift; sourceTree = "<group>"; };
+		2A7134E922AF799F0053F2B1 /* CategoryProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductInteractor.swift; sourceTree = "<group>"; };
+		2A7134EB22AF79D20053F2B1 /* CategoryProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductPresenter.swift; sourceTree = "<group>"; };
+		2A7134EE22AF79FE0053F2B1 /* CategoryProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProduct.swift; sourceTree = "<group>"; };
+		2A7134F022AF7A240053F2B1 /* CategoryProductWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductWireFrame.swift; sourceTree = "<group>"; };
+		2A7134F222AF7A460053F2B1 /* CategoryProductProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductProtocol.swift; sourceTree = "<group>"; };
 		2AEEB735229D1B460079C231 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
 		2AF22330229CE2DA0081AD1C /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		2AF22332229CE3D00081AD1C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -263,6 +277,7 @@
 		2A49086E22A0CFB300AD2310 /* Guest View */ = {
 			isa = PBXGroup;
 			children = (
+				2A7134E222AF792E0053F2B1 /* Category Product */,
 				2A10DAB722ADED49005D7B81 /* Category Page */,
 				2A49086D22A0CF6E00AD2310 /* Home Page */,
 			);
@@ -355,10 +370,10 @@
 		2A6960BA229CBAF3000F4F5E /* goOSC */ = {
 			isa = PBXGroup;
 			children = (
-				2A30974D22A5FB7F0061D4DF /* Extension */,
-				2A49086E22A0CFB300AD2310 /* Guest View */,
 				2A4F7034229E608800CCF2AD /* Alert */,
 				2A4F7031229E552800CCF2AD /* Configuration */,
+				2A30974D22A5FB7F0061D4DF /* Extension */,
+				2A49086E22A0CFB300AD2310 /* Guest View */,
 				2AEEB732229D0DF50079C231 /* Authentication */,
 				2A6960BB229CBAF3000F4F5E /* AppDelegate.swift */,
 				2A6960BF229CBAF3000F4F5E /* Main.storyboard */,
@@ -407,6 +422,68 @@
 				2A6960D2229CC9DE000F4F5E /* RegisterWireframe.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		2A7134E222AF792E0053F2B1 /* Category Product */ = {
+			isa = PBXGroup;
+			children = (
+				2A7134E822AF79750053F2B1 /* View */,
+				2A7134E722AF796A0053F2B1 /* Interactor */,
+				2A7134E622AF795C0053F2B1 /* Presenter */,
+				2A7134E522AF79520053F2B1 /* Entity */,
+				2A7134E422AF79460053F2B1 /* WireFrame */,
+				2A7134E322AF79410053F2B1 /* Protocols */,
+			);
+			path = "Category Product";
+			sourceTree = "<group>";
+		};
+		2A7134E322AF79410053F2B1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2A7134F222AF7A460053F2B1 /* CategoryProductProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2A7134E422AF79460053F2B1 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				2A7134F022AF7A240053F2B1 /* CategoryProductWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		2A7134E522AF79520053F2B1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2A7134EE22AF79FE0053F2B1 /* CategoryProduct.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2A7134E622AF795C0053F2B1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A7134EB22AF79D20053F2B1 /* CategoryProductPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A7134E722AF796A0053F2B1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2A7134E922AF799F0053F2B1 /* CategoryProductInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2A7134E822AF79750053F2B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A7134DE22AF738B0053F2B1 /* CategoryProductView.swift */,
+				2A7134E022AF73D80053F2B1 /* CategoryProductCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2AEEB732229D0DF50079C231 /* Authentication */ = {
@@ -623,12 +700,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7134EC22AF79D20053F2B1 /* CategoryProductPresenter.swift in Sources */,
 				2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */,
 				2A49087C22A0D0BF00AD2310 /* HomePageWireFrame.swift in Sources */,
 				2A49087A22A0D0A200AD2310 /* HomePagePresenter.swift in Sources */,
 				2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */,
 				2A10DACB22AE2A42005D7B81 /* CategoryPageCell.swift in Sources */,
 				2A6960BE229CBAF3000F4F5E /* RegisterView.swift in Sources */,
+				2A7134DF22AF738B0053F2B1 /* CategoryProductView.swift in Sources */,
 				2A0520C1229E37FC00C4ECE3 /* LoginPresenter.swift in Sources */,
 				2A62F76A22A503AC00D56CC0 /* HomePageCell.swift in Sources */,
 				2A10DABF22ADEEA2005D7B81 /* CategoryPageView.swift in Sources */,
@@ -639,20 +718,25 @@
 				2A35474322A4A50E00F9F32E /* ForgotPasswordEntity.swift in Sources */,
 				2A10DAC122ADEED7005D7B81 /* CategoryPageInteractor.swift in Sources */,
 				2A10DAC922ADF008005D7B81 /* CategoryPageProtocol.swift in Sources */,
+				2A7134EF22AF79FE0053F2B1 /* CategoryProduct.swift in Sources */,
 				2A35474722A4A53500F9F32E /* ForgotPasswordProtocols.swift in Sources */,
 				2A6960DA229CCA82000F4F5E /* RegisterInteractor.swift in Sources */,
 				2A4F7036229E60FB00CCF2AD /* Alert.swift in Sources */,
 				2A4F7033229E553A00CCF2AD /* Config.swift in Sources */,
 				2A49087822A0D09000AD2310 /* HomePageInteractor.swift in Sources */,
+				2A7134F322AF7A460053F2B1 /* CategoryProductProtocol.swift in Sources */,
 				2A10DAC722ADEF53005D7B81 /* CategoryPageWireFrame.swift in Sources */,
 				2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */,
+				2A7134EA22AF799F0053F2B1 /* CategoryProductInteractor.swift in Sources */,
 				2A35474522A4A52300F9F32E /* ForgotPasswordWireFrame.swift in Sources */,
 				2A35473D22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift in Sources */,
 				2A49087622A0D06C00AD2310 /* HomePageView.swift in Sources */,
 				2A30974F22A5FBB70061D4DF /* IntSeparatorExt.swift in Sources */,
 				2A62F76C22A50BEC00D56CC0 /* HomePage.swift in Sources */,
+				2A7134F122AF7A240053F2B1 /* CategoryProductWireFrame.swift in Sources */,
 				2A35473F22A4A4EE00F9F32E /* ForgotPasswordView.swift in Sources */,
 				2A6960D3229CC9DE000F4F5E /* RegisterWireframe.swift in Sources */,
+				2A7134E122AF73D80053F2B1 /* CategoryProductCell.swift in Sources */,
 				2A4F7030229E406300CCF2AD /* LoginInteractor.swift in Sources */,
 				2A49087E22A0D0D100AD2310 /* HomePageProtocols.swift in Sources */,
 				2A6960D8229CCA71000F4F5E /* RegisterPresenter.swift in Sources */,

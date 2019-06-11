@@ -21,6 +21,11 @@ enum Category {
         }
     }
     
+    struct NewData {
+        var id: Int
+        var name: String
+    }
+    
     struct CellData {
         var opened = Bool()
         var category: Data
