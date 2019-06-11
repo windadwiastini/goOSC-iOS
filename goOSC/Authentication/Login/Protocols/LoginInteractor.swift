@@ -28,6 +28,8 @@ class LoginInteractor: LoginInputInteractorProtocol {
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(Customer.Response.self, from: response.data!)
                 defaults.set(jsonDecode.data!.token, forKey: "token")
+                print(jsonDecode.data!.token)
+                print(jsonDecode)
                 defaults.set(jsonDecode.data!.user!.id, forKey: "userId")
                 defaults.set(jsonDecode.data!.user!.email, forKey: "email")
                 defaults.set(jsonDecode.data!.user!.firstname, forKey: "firstname")
@@ -36,7 +38,6 @@ class LoginInteractor: LoginInputInteractorProtocol {
                 defaults.set(jsonDecode.data!.user!.role_name, forKey: "roleName")
                 defaults.set(true, forKey: "loggedIn")
                 self.presenter?.response(jsonDecode)
-                break
             case .none:
                 let resp = Customer.Response(code: 401, message: "Email or password is not valid", data: nil)
                 self.presenter?.response(resp)

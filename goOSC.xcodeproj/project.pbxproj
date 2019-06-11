@@ -10,6 +10,13 @@
 		2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */; };
 		2A0520BF229E371900C4ECE3 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520BE229E371900C4ECE3 /* LoginWireframe.swift */; };
 		2A0520C1229E37FC00C4ECE3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0520C0229E37FC00C4ECE3 /* LoginPresenter.swift */; };
+		2A10DABF22ADEEA2005D7B81 /* CategoryPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DABE22ADEEA2005D7B81 /* CategoryPageView.swift */; };
+		2A10DAC122ADEED7005D7B81 /* CategoryPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC022ADEED7005D7B81 /* CategoryPageInteractor.swift */; };
+		2A10DAC322ADEF06005D7B81 /* CategoryPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC222ADEF06005D7B81 /* CategoryPagePresenter.swift */; };
+		2A10DAC522ADEF28005D7B81 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC422ADEF28005D7B81 /* Category.swift */; };
+		2A10DAC722ADEF53005D7B81 /* CategoryPageWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC622ADEF53005D7B81 /* CategoryPageWireFrame.swift */; };
+		2A10DAC922ADF008005D7B81 /* CategoryPageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC822ADF008005D7B81 /* CategoryPageProtocol.swift */; };
+		2A10DACB22AE2A42005D7B81 /* CategoryPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DACA22AE2A42005D7B81 /* CategoryPageCell.swift */; };
 		2A30974F22A5FBB70061D4DF /* IntSeparatorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A30974E22A5FBB70061D4DF /* IntSeparatorExt.swift */; };
 		2A35473D22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35473C22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift */; };
 		2A35473F22A4A4EE00F9F32E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35473E22A4A4EE00F9F32E /* ForgotPasswordView.swift */; };
@@ -52,6 +59,13 @@
 		2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		2A0520BE229E371900C4ECE3 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginWireframe.swift; path = goOSC/Authentication/Login/Protocols/LoginWireframe.swift; sourceTree = SOURCE_ROOT; };
 		2A0520C0229E37FC00C4ECE3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = goOSC/Authentication/Login/Protocols/LoginPresenter.swift; sourceTree = SOURCE_ROOT; };
+		2A10DABE22ADEEA2005D7B81 /* CategoryPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageView.swift; sourceTree = "<group>"; };
+		2A10DAC022ADEED7005D7B81 /* CategoryPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageInteractor.swift; sourceTree = "<group>"; };
+		2A10DAC222ADEF06005D7B81 /* CategoryPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPagePresenter.swift; sourceTree = "<group>"; };
+		2A10DAC422ADEF28005D7B81 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2A10DAC622ADEF53005D7B81 /* CategoryPageWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageWireFrame.swift; sourceTree = "<group>"; };
+		2A10DAC822ADF008005D7B81 /* CategoryPageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageProtocol.swift; sourceTree = "<group>"; };
+		2A10DACA22AE2A42005D7B81 /* CategoryPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageCell.swift; sourceTree = "<group>"; };
 		2A30974E22A5FBB70061D4DF /* IntSeparatorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntSeparatorExt.swift; sourceTree = "<group>"; };
 		2A35473C22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordInteractor.swift; sourceTree = "<group>"; };
 		2A35473E22A4A4EE00F9F32E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -110,6 +124,68 @@
 			isa = PBXGroup;
 			children = (
 				2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2A10DAB722ADED49005D7B81 /* Category Page */ = {
+			isa = PBXGroup;
+			children = (
+				2A10DAB822ADED5F005D7B81 /* View */,
+				2A10DAB922ADED64005D7B81 /* Interactor */,
+				2A10DABA22ADED79005D7B81 /* Presenter */,
+				2A10DABB22ADED85005D7B81 /* Entity */,
+				2A10DABC22ADED8A005D7B81 /* WireFrame */,
+				2A10DABD22ADED94005D7B81 /* Protocols */,
+			);
+			path = "Category Page";
+			sourceTree = "<group>";
+		};
+		2A10DAB822ADED5F005D7B81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A10DABE22ADEEA2005D7B81 /* CategoryPageView.swift */,
+				2A10DACA22AE2A42005D7B81 /* CategoryPageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A10DAB922ADED64005D7B81 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2A10DAC022ADEED7005D7B81 /* CategoryPageInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2A10DABA22ADED79005D7B81 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A10DAC222ADEF06005D7B81 /* CategoryPagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A10DABB22ADED85005D7B81 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2A10DAC422ADEF28005D7B81 /* Category.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2A10DABC22ADED8A005D7B81 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				2A10DAC622ADEF53005D7B81 /* CategoryPageWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		2A10DABD22ADED94005D7B81 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2A10DAC822ADF008005D7B81 /* CategoryPageProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -200,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				2A521D1222AE024C00514651 /* Detail Product */,
+				2A10DAB722ADED49005D7B81 /* Category Page */,
 				2A49086D22A0CF6E00AD2310 /* Home Page */,
 			);
 			path = "Guest View";
@@ -625,19 +702,25 @@
 				2A49087A22A0D0A200AD2310 /* HomePagePresenter.swift in Sources */,
 				2A521D2422AE044C00514651 /* DetailView.swift in Sources */,
 				2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */,
+				2A10DACB22AE2A42005D7B81 /* CategoryPageCell.swift in Sources */,
 				2A6960BE229CBAF3000F4F5E /* RegisterView.swift in Sources */,
 				2A0520C1229E37FC00C4ECE3 /* LoginPresenter.swift in Sources */,
 				2A62F76A22A503AC00D56CC0 /* HomePageCell.swift in Sources */,
+				2A10DABF22ADEEA2005D7B81 /* CategoryPageView.swift in Sources */,
 				2A6960D5229CCA11000F4F5E /* User.swift in Sources */,
+				2A10DAC322ADEF06005D7B81 /* CategoryPagePresenter.swift in Sources */,
 				2A35474122A4A4FD00F9F32E /* ForgotPasswordPresenter.swift in Sources */,
 				2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */,
 				2A35474322A4A50E00F9F32E /* ForgotPasswordEntity.swift in Sources */,
+				2A10DAC122ADEED7005D7B81 /* CategoryPageInteractor.swift in Sources */,
+				2A10DAC922ADF008005D7B81 /* CategoryPageProtocol.swift in Sources */,
 				2A35474722A4A53500F9F32E /* ForgotPasswordProtocols.swift in Sources */,
 				2A6960DA229CCA82000F4F5E /* RegisterInteractor.swift in Sources */,
 				2A521D2222AE041300514651 /* DetailInteractor.swift in Sources */,
 				2A4F7036229E60FB00CCF2AD /* Alert.swift in Sources */,
 				2A4F7033229E553A00CCF2AD /* Config.swift in Sources */,
 				2A49087822A0D09000AD2310 /* HomePageInteractor.swift in Sources */,
+				2A10DAC722ADEF53005D7B81 /* CategoryPageWireFrame.swift in Sources */,
 				2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */,
 				2A35474522A4A52300F9F32E /* ForgotPasswordWireFrame.swift in Sources */,
 				2A35473D22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift in Sources */,
@@ -655,6 +738,7 @@
 				2A521D1E22AE03B300514651 /* DetailEntity.swift in Sources */,
 				2A521D1A22AE038900514651 /* DetailProtocols.swift in Sources */,
 				2AF22333229CE3D00081AD1C /* Login.swift in Sources */,
+				2A10DAC522ADEF28005D7B81 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

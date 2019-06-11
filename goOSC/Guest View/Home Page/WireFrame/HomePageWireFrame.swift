@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 class HomePageWireFrame: HomePageWireFrameProtocol {
     func routeToSignIn(from view: UIViewController) {
         let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
