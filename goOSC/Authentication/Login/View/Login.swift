@@ -96,7 +96,7 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
                 print(jsonDecode?.data?.user?.firstname)
                 self.webView.removeFromSuperview()
                 if jsonDecode?.code == 200 {
-                    self.presenter?.wireFrame?.routeToRegister(from: self)
+                    self.presenter?.wireFrame?.routeToHomePage(from: self)
                 } else {
                     self.openAlert("Login", jsonDecode!.message)
                 }

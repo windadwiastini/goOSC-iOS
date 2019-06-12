@@ -13,7 +13,7 @@ class CategoryProductView: UIViewController, CategoryProductViewProtocol {
     var presenter: CategoryProductPresenterProtocol?
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var categoryNameLabel: UILabel!
-    var productList = CategoryProduct.Response(code: 0, message: "", data: [], length: 0)
+    var productList = HomePage.Response(code: 0, message: "", data: [], length: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class CategoryProductView: UIViewController, CategoryProductViewProtocol {
         presenter?.viewDidLoad()
     }
 
-    func updateData(response: CategoryProduct.Response, category: Category.NewData) {
+    func updateData(response: HomePage.Response, category: Category.NewData) {
         productList = response
         categoryNameLabel.text = category.name
         tableView.reloadData()
@@ -47,5 +47,9 @@ extension CategoryProductView: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.wireframe?.routeToDetail(from: self, with: productList.data[indexPath.row]!)
     }
 }

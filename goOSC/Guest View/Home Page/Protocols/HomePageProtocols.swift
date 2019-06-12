@@ -22,7 +22,7 @@ protocol HomePagePresenterProtocol {
 
 protocol HomePageWireFrameProtocol {
     func routeToSignIn(from view: UIViewController)
-    func routeToDetail(from view: UIViewController, with product: HomePage.ResponseData)
+    func routeToDetail(from view: UIViewController, with product: HomePage.Product)
 }
 
 protocol HomePageInputInteractorProtocol {

@@ -16,7 +16,7 @@ protocol DetailPresenterProtocol {
     var wireFrame : DetailWireFrameProtocol? {get set}
     var view: DetailViewProtocol? {get set}
     var interactor: DetailInputInteractorProtocol? {get set}
-    var product: HomePage.ResponseData? {get set}
+    var product: HomePage.Product? {get set}
     func viewDidLoad()
 }
 
@@ -27,7 +27,7 @@ protocol DetailWireFrameProtocol {
 protocol DetailInputInteractorProtocol {
     var presenter : DetailOutputInteractorProtocol? {get set}
     
-    func findDetail(_ data: HomePage.ResponseData)
+    func findDetail(_ data: HomePage.Product)
 }
 
 protocol DetailOutputInteractorProtocol {

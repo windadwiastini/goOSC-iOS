@@ -23,7 +23,7 @@ class CategoryProductPresenter: CategoryProductPresenterProtocol {
 }
 
 extension CategoryProductPresenter: CategoryProductOutputInteractorProtocol {
-    func response(_ response: CategoryProduct.Response, _ category: Category.NewData) {
+    func response(_ response: HomePage.Response, _ category: Category.NewData) {
         view?.updateData(response: response, category: category)
     }
     

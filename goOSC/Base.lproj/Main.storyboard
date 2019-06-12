@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -365,15 +366,6 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndp-uI-upj">
-                                                    <rect key="frame" x="315" y="74.5" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="Zrc-PB-Rgb"/>
-                                                        <constraint firstAttribute="width" constant="20" id="dEA-Of-5fm"/>
-                                                    </constraints>
-                                                    <state key="normal" image="icons8-search-30"/>
-                                                    <state key="selected" image="icons8-search-30"/>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcj-Nb-Caz">
                                                     <rect key="frame" x="345" y="74.5" width="20" height="20"/>
                                                     <constraints>
@@ -385,9 +377,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Tcj-Nb-Caz" secondAttribute="trailing" constant="10" id="5NU-qh-ZjL"/>
-                                                <constraint firstAttribute="bottom" secondItem="ndp-uI-upj" secondAttribute="bottom" constant="5" id="7NW-vN-uZd"/>
                                                 <constraint firstItem="Hy0-Io-N0o" firstAttribute="centerY" secondItem="pfp-p0-fZM" secondAttribute="centerY" id="cPK-O2-hYP"/>
-                                                <constraint firstItem="Tcj-Nb-Caz" firstAttribute="leading" secondItem="ndp-uI-upj" secondAttribute="trailing" constant="10" id="g5w-4f-pY5"/>
                                                 <constraint firstItem="Hy0-Io-N0o" firstAttribute="leading" secondItem="2Ys-pu-240" secondAttribute="trailing" constant="10" id="i8G-hA-QkJ"/>
                                                 <constraint firstAttribute="bottom" secondItem="Tcj-Nb-Caz" secondAttribute="bottom" constant="5" id="lRe-ag-Vjz"/>
                                                 <constraint firstItem="2Ys-pu-240" firstAttribute="leading" secondItem="pfp-p0-fZM" secondAttribute="leadingMargin" constant="10" id="vrw-zb-ks7"/>
@@ -743,7 +733,7 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQ1-Hk-l3d">
-                                        <rect key="frame" x="0.0" y="21" width="375" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="20" width="375" height="0.0"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="0.98800998259999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -804,15 +794,6 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrY-Vf-seZ">
-                                                    <rect key="frame" x="315" y="74.5" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="X8m-eM-rBa"/>
-                                                        <constraint firstAttribute="width" constant="20" id="f0q-tP-iDP"/>
-                                                    </constraints>
-                                                    <state key="normal" image="icons8-search-30"/>
-                                                    <state key="selected" image="icons8-search-30"/>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GG-uc-QwI">
                                                     <rect key="frame" x="345" y="74.5" width="20" height="20"/>
                                                     <constraints>
@@ -828,10 +809,8 @@
                                                 <constraint firstAttribute="bottom" secondItem="2GG-uc-QwI" secondAttribute="bottom" constant="5" id="cIX-gT-UV5"/>
                                                 <constraint firstItem="lfC-QO-Ea0" firstAttribute="centerY" secondItem="ofW-on-lWi" secondAttribute="centerY" id="fzo-1k-bcP"/>
                                                 <constraint firstAttribute="trailing" secondItem="2GG-uc-QwI" secondAttribute="trailing" constant="10" id="hn0-GF-bvv"/>
-                                                <constraint firstAttribute="bottom" secondItem="qrY-Vf-seZ" secondAttribute="bottom" constant="5" id="oQj-8D-r0O"/>
                                                 <constraint firstItem="lD0-KY-Gb8" firstAttribute="leading" secondItem="ofW-on-lWi" secondAttribute="leadingMargin" constant="10" id="oai-Xx-jrn"/>
                                                 <constraint firstItem="lD0-KY-Gb8" firstAttribute="centerY" secondItem="ofW-on-lWi" secondAttribute="centerY" id="q4F-1C-Km6"/>
-                                                <constraint firstItem="2GG-uc-QwI" firstAttribute="leading" secondItem="qrY-Vf-seZ" secondAttribute="trailing" constant="10" id="ypx-GL-oxi"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -1249,7 +1228,6 @@
         <image name="icons8-money-bag-50" width="50" height="50"/>
         <image name="icons8-picture-100" width="100" height="100"/>
         <image name="icons8-play-button-filled-480" width="480" height="480"/>
-        <image name="icons8-search-30" width="30" height="30"/>
         <image name="icons8-shopping-basket-star-24" width="24" height="24"/>
     </resources>
 </document>

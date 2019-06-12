@@ -8,7 +8,7 @@
 
 import UIKit
 class DetailPresenter: DetailPresenterProtocol {
-    var product: HomePage.ResponseData?
+    var product: HomePage.Product?
     
     var wireFrame: DetailWireFrameProtocol?
     var view: DetailViewProtocol?

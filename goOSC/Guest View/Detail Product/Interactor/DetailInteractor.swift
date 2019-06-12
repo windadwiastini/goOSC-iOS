@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 class DetailInteractor: DetailInputInteractorProtocol {
     var presenter: DetailOutputInteractorProtocol?
-    func findDetail(_ data: HomePage.ResponseData) {
+    func findDetail(_ data: HomePage.Product) {
         let url = "\(Config().url)/guest/product/detail?id=\(data.id)"
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             switch response.response?.statusCode {

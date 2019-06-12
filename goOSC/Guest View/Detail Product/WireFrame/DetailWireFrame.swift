@@ -14,7 +14,7 @@ class DetailWireFrame: DetailWireFrameProtocol {
         HomePageWireFrame.createHomePageModule(homePageController)
         view.present(tabController , animated: true, completion: nil)
     }
-    class func createDetailModule(_ detailRef: DetailView, _ product: HomePage.ResponseData?) {
+    class func createDetailModule(_ detailRef: DetailView, _ product: HomePage.Product?) {
         var presenter: DetailPresenterProtocol & DetailOutputInteractorProtocol = DetailPresenter()
         presenter.product = product
         detailRef.presenter = presenter

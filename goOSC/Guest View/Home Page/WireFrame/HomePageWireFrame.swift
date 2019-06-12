@@ -15,7 +15,7 @@ class HomePageWireFrame: HomePageWireFrameProtocol {
         view.present(signInPage, animated: true, completion: nil)
     }
     
-    func routeToDetail(from view: UIViewController, with product: HomePage.ResponseData) {
+    func routeToDetail(from view: UIViewController, with product: HomePage.Product) {
         let detailPage = view.storyboard?.instantiateViewController(withIdentifier: "productDetail") as! DetailView
         DetailWireFrame.createDetailModule(detailPage, product)
         view.present(detailPage, animated: true, completion: nil)
