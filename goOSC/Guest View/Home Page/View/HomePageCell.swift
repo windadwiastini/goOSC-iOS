@@ -15,6 +15,8 @@ class HomePageCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    @IBOutlet weak var viewButton: UIButton!
+    @IBOutlet weak var addToChart: UIButton!
     func configureCell(data: HomePage.ResponseData) {
         let url = Config().url + data.thumbnail
         Alamofire.request(url).responseData { (response) in

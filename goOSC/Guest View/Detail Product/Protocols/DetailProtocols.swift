@@ -28,6 +28,7 @@ protocol DetailInputInteractorProtocol {
     var presenter : DetailOutputInteractorProtocol? {get set}
     
     func findDetail(_ data: HomePage.ResponseData)
+    func insertCartToDB(_ data: Detail.ResponseData, _ userId: String)
 }
 
 protocol DetailOutputInteractorProtocol {

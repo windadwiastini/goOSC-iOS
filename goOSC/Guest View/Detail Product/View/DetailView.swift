@@ -20,6 +20,7 @@ class DetailView: UIViewController, DetailViewProtocol {
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var viewVount: UILabel!
     let playerViewController = AVPlayerViewController()
+    var prod:Detail.ResponseData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class DetailView: UIViewController, DetailViewProtocol {
     }
     
     func showItem(_ data: Detail.ResponseData) {
+        prod = data
         titleLabel.text = data.name
         let url = URL(string: "\(Config().url)\(data.thumbnail)")
         do {
@@ -58,6 +60,14 @@ class DetailView: UIViewController, DetailViewProtocol {
     @IBAction func showPreview(_ sender: Any) {
         self.present(playerViewController, animated: true) {
             self.playerViewController.player!.play()
+        }
+    }
+    
+    @IBAction func addToCart(_ sender: Any) {
+        if prod != nil {
+            print(prod)
+            print(UserDefaults.standard.string(forKey: "userId"))
+//            presenter?.interactor?.insertCartToDB(prod!, UserDefaults.standard.string(forKey: "userId")!)
         }
     }
     

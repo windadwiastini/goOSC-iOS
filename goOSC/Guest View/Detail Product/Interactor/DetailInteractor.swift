@@ -8,8 +8,10 @@
 
 import Foundation
 import Alamofire
+import CoreData
 class DetailInteractor: DetailInputInteractorProtocol {
     var presenter: DetailOutputInteractorProtocol?
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     func findDetail(_ data: HomePage.ResponseData) {
         let url = "\(Config().url)/guest/product/detail?id=\(data.id)"
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
@@ -30,5 +32,31 @@ class DetailInteractor: DetailInputInteractorProtocol {
                 self.presenter?.response(resp)
             }
         }
+    }
+    
+    func insertCartToDB(_ data: Detail.ResponseData, _ userId: String)  {
+        let context = appDelegate.persistentContainer.viewContext
+        guard let cart = NSEntityDescription.insertNewObject(forEntityName: "Cart", into: context) as? Cart else {
+            print("Error : failed to create a new object")
+            return
+        }
+        
+        do {
+            try cart.addProperty(data, userId)
+            print("Data successfully inserted")
+        } catch {
+            print("Error")
+            context.delete(cart)
+        }
+        
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                print("coudnt save the data")
+            }
+            context.reset()
+        }
+        
     }
 }

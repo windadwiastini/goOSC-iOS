@@ -63,16 +63,27 @@ extension CategoryPageView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            if cellDataList[indexPath.section].opened == true {
-                cellDataList[indexPath.section].opened = false
-                let sections = IndexSet.init(integer: indexPath.section)
-                tableView.reloadSections(sections, with: .none)
-            } else {
-                cellDataList[indexPath.section].opened = true
-                let sections = IndexSet.init(integer: indexPath.section)
-                tableView.reloadSections(sections, with: .none)
-            }
+            let category = cellDataList[indexPath.section].category
+            let data = Category.NewData(id: category.category_id, name: category.category_name)
+            presenter?.showCategoryProduct(with: data, from: self)
+        } else {
+            let category = cellDataList[indexPath.section].category.sub_category![indexPath.row-1]
+            let data = Category.NewData(id: category.subcategory_id, name: category.subcategory_name)
+            presenter?.showCategoryProduct(with: data, from: self)
         }
+        
+        
+//        if indexPath.row == 0 {
+//            if cellDataList[indexPath.section].opened == true {
+//                cellDataList[indexPath.section].opened = false
+//                let sections = IndexSet.init(integer: indexPath.section)
+//                tableView.reloadSections(sections, with: .none)
+//            } else {
+//                cellDataList[indexPath.section].opened = true
+//                let sections = IndexSet.init(integer: indexPath.section)
+//                tableView.reloadSections(sections, with: .none)
+//            }
+//        }
     }
     
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CategoryPagePresenter: CategoryPagePresenterProtocol {
     
@@ -18,6 +18,10 @@ class CategoryPagePresenter: CategoryPagePresenterProtocol {
         interactor?.sendCategoryPageRequest()
     }
     
+    func showCategoryProduct(with category: Category.NewData, from view: UIViewController) {
+        print("masuk show category: \(category.name)")
+        wireFrame?.pushToCategoryProductPage(with: category, from: view)
+    }
     
 }
 
