@@ -988,7 +988,7 @@
         <!--Search-->
         <scene sceneID="dWf-ER-a6l">
             <objects>
-                <viewController id="LYa-HQ-Gs1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchView" id="LYa-HQ-Gs1" customClass="SearchView" customModule="goOSC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mVZ-1t-sYa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1044,20 +1044,108 @@
                                     <constraint firstAttribute="bottom" secondItem="3KZ-5V-Sq8" secondAttribute="bottom" constant="15" id="rZV-Ho-qhw"/>
                                 </constraints>
                             </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xhy-Ai-OiT">
+                                <rect key="frame" x="0.0" y="70" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="idR-1F-NAZ">
+                                <rect key="frame" x="0.0" y="126" width="375" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchProductCell" rowHeight="100" id="q1E-Jo-8Fb" customClass="SearchProductCell" customModule="goOSC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q1E-Jo-8Fb" id="z7h-Ew-Sbk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-picture-100" translatesAutoresizingMaskIntoConstraints="NO" id="zM2-WZ-gRe">
+                                                    <rect key="frame" x="25" y="15" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="Rys-GH-MQo"/>
+                                                        <constraint firstAttribute="width" constant="70" id="nyi-KY-T9M"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iCK-G9-CmJ">
+                                                    <rect key="frame" x="105" y="22.5" width="245" height="55"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xRh-lp-6wC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="245" height="25"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVO-j1-0VM">
+                                                            <rect key="frame" x="0.0" y="25" width="245" height="30"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-money-bag-50" translatesAutoresizingMaskIntoConstraints="NO" id="sde-H3-WpV">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="mXu-uN-6rS"/>
+                                                                        <constraint firstAttribute="width" constant="30" id="xZX-Yf-KDK"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXG-Zk-Qlx">
+                                                                    <rect key="frame" x="30" y="0.0" width="215" height="30"/>
+                                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                                                                    <color key="textColor" red="1" green="0.59200847150000002" blue="0.061555899679999998" alpha="0.78876819350000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iCK-G9-CmJ" firstAttribute="centerY" secondItem="z7h-Ew-Sbk" secondAttribute="centerY" id="Hv1-wb-53P"/>
+                                                <constraint firstItem="iCK-G9-CmJ" firstAttribute="leading" secondItem="zM2-WZ-gRe" secondAttribute="trailing" constant="10" id="TCN-3c-eFd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="iCK-G9-CmJ" secondAttribute="trailing" constant="10" id="fA1-Hi-ajm"/>
+                                                <constraint firstItem="zM2-WZ-gRe" firstAttribute="centerY" secondItem="z7h-Ew-Sbk" secondAttribute="centerY" id="fXJ-78-v6l"/>
+                                                <constraint firstItem="zM2-WZ-gRe" firstAttribute="leading" secondItem="z7h-Ew-Sbk" secondAttribute="leadingMargin" constant="10" id="fY6-au-N6q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="xRh-lp-6wC" id="0Kp-43-ewZ"/>
+                                            <outlet property="posterImageView" destination="zM2-WZ-gRe" id="uW2-2V-g35"/>
+                                            <outlet property="priceLabel" destination="WXG-Zk-Qlx" id="KOW-Nv-oRG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1Jq-38-PrC" firstAttribute="trailing" secondItem="vx9-Du-EQn" secondAttribute="trailing" id="1i0-hu-CBl"/>
                             <constraint firstItem="1Jq-38-PrC" firstAttribute="leading" secondItem="vx9-Du-EQn" secondAttribute="leading" id="5Fg-jD-wwJ"/>
+                            <constraint firstItem="idR-1F-NAZ" firstAttribute="leading" secondItem="vx9-Du-EQn" secondAttribute="leading" id="5X0-8T-JaR"/>
+                            <constraint firstItem="idR-1F-NAZ" firstAttribute="bottom" secondItem="vx9-Du-EQn" secondAttribute="bottom" id="7HP-Bb-pOK"/>
+                            <constraint firstItem="xhy-Ai-OiT" firstAttribute="top" secondItem="1Jq-38-PrC" secondAttribute="bottom" id="8GT-BQ-eEJ"/>
+                            <constraint firstItem="idR-1F-NAZ" firstAttribute="trailing" secondItem="vx9-Du-EQn" secondAttribute="trailing" id="EXI-cO-hVB"/>
                             <constraint firstItem="1Jq-38-PrC" firstAttribute="top" secondItem="mVZ-1t-sYa" secondAttribute="top" id="Hb8-4R-ecx"/>
+                            <constraint firstItem="xhy-Ai-OiT" firstAttribute="leading" secondItem="vx9-Du-EQn" secondAttribute="leading" id="iaq-M9-Klk"/>
+                            <constraint firstItem="xhy-Ai-OiT" firstAttribute="trailing" secondItem="vx9-Du-EQn" secondAttribute="trailing" id="sGg-Cg-7lo"/>
+                            <constraint firstItem="idR-1F-NAZ" firstAttribute="top" secondItem="xhy-Ai-OiT" secondAttribute="bottom" id="sd8-R9-o8J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vx9-Du-EQn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="icons8-search-filled-24" selectedImage="icons8-search-filled-24" id="LXU-Lm-Kee"/>
+                    <connections>
+                        <outlet property="searchBar" destination="xhy-Ai-OiT" id="Rbz-an-DLo"/>
+                        <outlet property="searchDisplayController" destination="H3Z-fg-Qy4" id="EiF-Dl-KxR"/>
+                        <outlet property="tableView" destination="idR-1F-NAZ" id="OoK-q4-vtv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uba-08-cx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="H3Z-fg-Qy4">
+                    <connections>
+                        <outlet property="delegate" destination="LYa-HQ-Gs1" id="cBV-Bd-VBh"/>
+                        <outlet property="searchContentsController" destination="LYa-HQ-Gs1" id="2bY-wf-mcB"/>
+                        <outlet property="searchResultsDataSource" destination="LYa-HQ-Gs1" id="W0x-I2-eAY"/>
+                        <outlet property="searchResultsDelegate" destination="LYa-HQ-Gs1" id="YAk-k2-jcy"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1185" y="1768"/>
+            <point key="canvasLocation" x="1184.8" y="1767.1664167916044"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QyN-KI-Flj">
