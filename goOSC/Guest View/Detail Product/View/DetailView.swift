@@ -50,8 +50,9 @@ class DetailView: UIViewController, DetailViewProtocol {
         viewVount.text = String(data.view_count)
     }
     
-    @IBAction func goBackToHomePage(_ sender: Any) {
-        presenter?.wireFrame?.routeToHomePage(from: self)
+    
+    @IBAction func backBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     
