@@ -28,6 +28,7 @@ class DetailView: UIViewController, DetailViewProtocol {
     }
     
     func showItem(_ data: Detail.ResponseData) {
+        print("show")
         titleLabel.text = data.name
         let url = URL(string: "\(Config().url)\(data.thumbnail)")
         do {
@@ -50,11 +51,19 @@ class DetailView: UIViewController, DetailViewProtocol {
         viewVount.text = String(data.view_count)
     }
     
+    func updateLike(_ data: Detail.ResponseData) {
+        print("update like")
+        likeCount.text = String(data.like_count)
+    }
+    
     
     @IBAction func backBtnWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func likeBtnWasPressed(_ sender: Any) {
+        presenter?.interactor?.likeProduct((presenter?.product)!)
+    }
     
     @IBAction func showPreview(_ sender: Any) {
         self.present(playerViewController, animated: true) {

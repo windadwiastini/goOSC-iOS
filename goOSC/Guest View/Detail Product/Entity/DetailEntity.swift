@@ -36,4 +36,10 @@ enum Detail {
         var String: String
         var Valid: Bool
     }
+    
+    struct LikeResponse: Decodable {
+        var code: Int
+        var message: String
+        var data: String?
+    }
 }

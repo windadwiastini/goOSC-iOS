@@ -56,7 +56,6 @@ extension SearchView: UISearchBarDelegate {
         if searchBar.text != "" {
             presenter?.interactor?.sendGetProductRequest(with: searchBar.text!)
         } else {
-            print("kosong")
             productList = HomePage.Response(code: 0, message: "", data: [], length: 0)
             tableView.reloadData()
         }
