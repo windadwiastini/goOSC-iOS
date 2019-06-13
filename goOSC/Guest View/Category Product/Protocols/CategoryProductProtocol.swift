@@ -6,11 +6,11 @@
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol CategoryProductViewProtocol {
     var presenter: CategoryProductPresenterProtocol? { get set }
-    func updateData(response: CategoryProduct.Response, category: Category.NewData)
+    func updateData(response: HomePage.Response, category: Category.NewData)
 }
 
 protocol CategoryProductInputInteractorProtocol {
@@ -19,7 +19,7 @@ protocol CategoryProductInputInteractorProtocol {
 }
 
 protocol CategoryProductOutputInteractorProtocol {
-    func response(_ response: CategoryProduct.Response, _ category: Category.NewData)
+    func response(_ response: HomePage.Response, _ category: Category.NewData)
 }
 
 protocol CategoryProductPresenterProtocol {
@@ -31,5 +31,6 @@ protocol CategoryProductPresenterProtocol {
 
 protocol CategoryProductWireFrameProtocol {
     static func createCategoryProductModule(with categoryProductRef: CategoryProductView, and category: Category.NewData)
+    func routeToDetail(from view: UIViewController, with product: HomePage.Product)
 }
 

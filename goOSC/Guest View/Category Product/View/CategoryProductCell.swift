@@ -16,7 +16,7 @@ class CategoryProductCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     
     
-    func configureCell(product: CategoryProduct.Product ) {
+    func configureCell(product: HomePage.Product ) {
         let url = Config().url + product.thumbnail
         Alamofire.request(url).responseData { (response) in
             if response.error == nil {

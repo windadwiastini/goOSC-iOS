@@ -23,7 +23,7 @@ protocol LoginPresenterProtocol {
 }
 
 protocol LoginWireFrameProtocol {
-    func routeToRegister(from view: UIViewController )
+    func routeToHomePage(from view: UIViewController )
 }
 
 protocol LoginInputInteractorProtocol {

@@ -12,10 +12,10 @@ enum HomePage {
     struct Response: Decodable {
         var code: Int
         var message: String
-        var data: [ResponseData?]
+        var data: [Product?]
         var length: Int
         
-        init(code: Int, message: String, data: [ResponseData?], length: Int) {
+        init(code: Int, message: String, data: [Product?], length: Int) {
             self.code = code
             self.message = message
             self.data = data
@@ -23,7 +23,7 @@ enum HomePage {
         }
     }
     
-    struct ResponseData: Decodable {
+    struct Product: Decodable {
         var id: String
         var name: String
         var price: Int

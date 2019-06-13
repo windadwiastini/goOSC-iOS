@@ -9,13 +9,13 @@
 import Foundation
 import CoreData
 extension Cart {
-    func addProperty(_ property: Detail.ResponseData, _ userid: String) throws {
+    func addProperty(_ property: HomePage.Product, _ userid: Int) throws {
         if property.name.count > 0 {
             self.name = property.name
-            self.price = 0
+            self.price = Double(property.price)
             self.productId = property.id
             self.thumbnail = property.thumbnail
-            self.userId = userid
+            self.userId = Int16(userid)
         } else {
             throw NSError(domain: "", code: 100, userInfo: nil)
         }

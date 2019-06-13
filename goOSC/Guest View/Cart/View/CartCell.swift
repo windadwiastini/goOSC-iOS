@@ -1,34 +1,31 @@
 //
-//  HomePageCell.swift
+//  CartCell.swift
 //  goOSC
 //
-//  Created by Bootcamp on 6/3/19.
+//  Created by Bootcamp on 13/06/19.
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
 import UIKit
 import Alamofire
-
-class HomePageCell: UITableViewCell {
+class CartCell: UITableViewCell {
     
-    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var imageLabel: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-
-    @IBOutlet weak var viewButton: UIButton!
-    @IBOutlet weak var addToChart: UIButton!
-    func configureCell(data: HomePage.Product) {
+    @IBOutlet weak var priceLable: UILabel!
+    func configureCell(data: CartEntity.SingleCart) {
+        print("single")
         let url = Config().url + data.thumbnail
         Alamofire.request(url).responseData { (response) in
             if response.error == nil {
                 print(response.result)
                 if let data = response.data {
-                    self.posterImageView.image = UIImage(data: data)
+                    self.imageLabel.image = UIImage(data: data)
                 }
             }
         }
         nameLabel.text = data.name
-        priceLabel.text = "\((data.price).formattedWithSeparator)"
+        priceLable.text = "\(data.price)"
     }
     
 }

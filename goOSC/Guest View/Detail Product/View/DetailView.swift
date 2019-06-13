@@ -20,7 +20,6 @@ class DetailView: UIViewController, DetailViewProtocol {
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var viewVount: UILabel!
     let playerViewController = AVPlayerViewController()
-    var prod:Detail.ResponseData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +27,15 @@ class DetailView: UIViewController, DetailViewProtocol {
         presenter?.viewDidLoad()
     }
     
+    @IBAction func backBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func showItem(_ data: Detail.ResponseData) {
-        prod = data
         titleLabel.text = data.name
+        desc.text = data.description
+        likeCount.text = String(data.like_count)
+        viewVount.text = String(data.view_count)
         let url = URL(string: "\(Config().url)\(data.thumbnail)")
         do {
             let dataImage = try Data(contentsOf: url!)
@@ -39,23 +44,13 @@ class DetailView: UIViewController, DetailViewProtocol {
             print("error: \(error)")
         }
         
-        desc.text = data.description
         let urlAV = URL(string: "\(Config().url)\(data.preview.String)")
-        print("\(Config().url)\(data.preview.String)")
         let moviePlayer1 = AVPlayer(url: urlAV!)
         playerViewController.player = moviePlayer1
         self.present(playerViewController, animated: true) {
             self.playerViewController.player!.play()
         }
-        
-        likeCount.text = String(data.like_count)
-        viewVount.text = String(data.view_count)
     }
-    
-    @IBAction func goBackToHomePage(_ sender: Any) {
-        presenter?.wireFrame?.routeToHomePage(from: self)
-    }
-    
     
     @IBAction func showPreview(_ sender: Any) {
         self.present(playerViewController, animated: true) {
@@ -64,11 +59,9 @@ class DetailView: UIViewController, DetailViewProtocol {
     }
     
     @IBAction func addToCart(_ sender: Any) {
-        if prod != nil {
-            print(prod)
-            print(UserDefaults.standard.string(forKey: "userId"))
-//            presenter?.interactor?.insertCartToDB(prod!, UserDefaults.standard.string(forKey: "userId")!)
-        }
+        print(UserDefaults.standard.value(forKey: "userId"))
+        
+        presenter?.interactor?.insertCartToDB(presenter!.product!, UserDefaults.standard.integer(forKey: "userId"))
     }
     
 }

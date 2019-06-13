@@ -6,7 +6,7 @@
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CategoryProductWireFrame: CategoryProductWireFrameProtocol {
     static func createCategoryProductModule(with categoryProductRef: CategoryProductView, and category: Category.NewData) {
@@ -19,5 +19,10 @@ class CategoryProductWireFrame: CategoryProductWireFrameProtocol {
         categoryProductRef.presenter?.interactor?.presenter = presenter
     }
     
+    func routeToDetail(from view: UIViewController, with product: HomePage.Product) {
+        let detailPage = view.storyboard?.instantiateViewController(withIdentifier: "productDetail") as! DetailView
+        DetailWireFrame.createDetailModule(detailPage, product)
+        view.present(detailPage, animated: true, completion: nil)
+    }
     
 }

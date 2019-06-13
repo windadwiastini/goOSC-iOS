@@ -88,15 +88,14 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
         print("Page Did Finished")
         let urlString = webView.url?.absoluteString
         if (urlString?.contains("callback"))! {
-            print(urlString)
-            webView.evaluateJavaScript("document.getElementsByTagName('pre')[0].innerHTML.toString()", completionHandler: { result, error in
-                print(result!)
+        webView.evaluateJavaScript("document.getElementsByTagName('pre')[0].innerHTML.toString()", completionHandler: { result, error in
+                print(error)
+                print(result)
                 let jsonDecode = (result! as! String).parse(to: Customer.Response.self)
-//                let jsonDecode = try! JSONDecoder().decode(Customer.Response.self, from: result! as! Data)
                 print(jsonDecode?.data?.user?.firstname)
                 self.webView.removeFromSuperview()
                 if jsonDecode?.code == 200 {
-                    self.presenter?.wireFrame?.routeToRegister(from: self)
+                    self.presenter?.wireFrame?.routeToHomePage(from: self)
                 } else {
                     self.openAlert("Login", jsonDecode!.message)
                 }
