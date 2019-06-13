@@ -16,7 +16,7 @@ class DetailPresenter: DetailPresenterProtocol {
     
     func viewDidLoad() {
         if product != nil {
-            interactor?.findDetail(product!)
+            interactor?.findDetail(product!, false)
         }
     }
     
@@ -24,11 +24,14 @@ class DetailPresenter: DetailPresenterProtocol {
 }
 
 extension DetailPresenter: DetailOutputInteractorProtocol {
-    func response(_ data: Detail.Response) {
+    func response(_ data: Detail.Response,  _ updateLike: Bool) {
         switch data.code {
         case 200:
-            print(data.data!)
-            view?.showItem(data.data!)
+            if updateLike {
+                view?.updateLike(data.data!)
+            } else {
+                view?.showItem(data.data!)
+            }
         default:
             Alert().informationAlert(title: "Fetch Detail", message: data.message, ui: view as! UIViewController)
         }

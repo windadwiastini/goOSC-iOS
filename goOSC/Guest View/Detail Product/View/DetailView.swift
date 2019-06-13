@@ -27,11 +27,8 @@ class DetailView: UIViewController, DetailViewProtocol {
         presenter?.viewDidLoad()
     }
     
-    @IBAction func backBtnWasPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     func showItem(_ data: Detail.ResponseData) {
+        print("show")
         titleLabel.text = data.name
         desc.text = data.description
         likeCount.text = String(data.like_count)
@@ -47,9 +44,26 @@ class DetailView: UIViewController, DetailViewProtocol {
         let urlAV = URL(string: "\(Config().url)\(data.preview.String)")
         let moviePlayer1 = AVPlayer(url: urlAV!)
         playerViewController.player = moviePlayer1
-        self.present(playerViewController, animated: true) {
-            self.playerViewController.player!.play()
-        }
+//        self.present(playerViewController, animated: true) {
+//            self.playerViewController.player!.play()
+//        }
+        
+        likeCount.text = String(data.like_count)
+        viewVount.text = String(data.view_count)
+    }
+    
+    func updateLike(_ data: Detail.ResponseData) {
+        print("update like")
+        likeCount.text = String(data.like_count)
+    }
+    
+    
+    @IBAction func backBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func likeBtnWasPressed(_ sender: Any) {
+        presenter?.interactor?.likeProduct((presenter?.product)!)
     }
     
     @IBAction func showPreview(_ sender: Any) {

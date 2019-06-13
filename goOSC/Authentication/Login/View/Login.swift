@@ -89,12 +89,19 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
         let urlString = webView.url?.absoluteString
         if (urlString?.contains("callback"))! {
         webView.evaluateJavaScript("document.getElementsByTagName('pre')[0].innerHTML.toString()", completionHandler: { result, error in
-                print(error)
-                print(result)
+                let defaults = UserDefaults.standard
+                defaults.set(false, forKey: "loggedIn")
                 let jsonDecode = (result! as! String).parse(to: Customer.Response.self)
                 print(jsonDecode?.data?.user?.firstname)
                 self.webView.removeFromSuperview()
                 if jsonDecode?.code == 200 {
+                    defaults.set(jsonDecode?.data!.user!.id, forKey: "userId")
+                    defaults.set(jsonDecode?.data!.user!.email, forKey: "email")
+                    defaults.set(jsonDecode?.data!.user!.firstname, forKey: "firstname")
+                    defaults.set(jsonDecode?.data!.user!.lastname, forKey: "lastname")
+                    defaults.set(jsonDecode?.data!.user!.role_id, forKey: "roleId")
+                    defaults.set(jsonDecode?.data!.user!.role_name, forKey: "roleName")
+                    defaults.set(true, forKey: "loggedIn")
                     self.presenter?.wireFrame?.routeToHomePage(from: self)
                 } else {
                     self.openAlert("Login", jsonDecode!.message)

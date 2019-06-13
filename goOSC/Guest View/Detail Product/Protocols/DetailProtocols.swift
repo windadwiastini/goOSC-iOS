@@ -10,6 +10,7 @@ import UIKit
 
 protocol DetailViewProtocol {
     func showItem(_ data: Detail.ResponseData)
+    func updateLike(_ data: Detail.ResponseData)
 }
 
 protocol DetailPresenterProtocol {
@@ -26,10 +27,12 @@ protocol DetailWireFrameProtocol {
 
 protocol DetailInputInteractorProtocol {
     var presenter : DetailOutputInteractorProtocol? {get set}
+
     func insertCartToDB(_ data: HomePage.Product, _ userId: Int)
-    func findDetail(_ data: HomePage.Product)
+    func findDetail(_ data: HomePage.Product, _ updateLike: Bool)
+    func likeProduct(_ product: HomePage.Product)
 }
 
 protocol DetailOutputInteractorProtocol {
-    func response(_ data: Detail.Response)
+    func response(_ data: Detail.Response,  _ updateLike: Bool)
 }
