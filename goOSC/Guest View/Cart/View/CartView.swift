@@ -55,6 +55,20 @@ extension CartView: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(data: data)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: {(action, indexPath) in
+           var confirmtionalert = UIAlertController(title: "Delete", message: "Are you sure to remove this item from your basket?", preferredStyle: UIAlertControllerStyle.alert)
+            confirmtionalert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
+                self.presenter?.interactor?.deleteData(self.homePageData[indexPath.row])
+            }))
+            
+            confirmtionalert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+            self.present(confirmtionalert, animated: true, completion: nil)
+        })
+        deleteAction.backgroundColor = UIColor.red
+        return[deleteAction]
+    }
 
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        presenter?.wireFrame?.routeToDetail(from: self, with: homePageData.data[indexPath.row]!)

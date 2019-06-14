@@ -26,4 +26,10 @@ class CategoryPageWireFrame: CategoryPageWireFrameProtocol {
         view.present(categoryProductViewController, animated: true, completion: nil)
         
     }
+    
+    func routeToSignIn(from view: UIViewController) {
+        let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
+        LoginWireframe.createLoginModule(signInPage)
+        view.present(signInPage, animated: true, completion: nil)
+    }
 }

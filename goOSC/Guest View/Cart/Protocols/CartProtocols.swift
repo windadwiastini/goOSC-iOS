@@ -25,7 +25,8 @@ protocol CartWireFrameProtocol {
 
 protocol CartInputInteractorProtocol {
     var presenter : CartOutputInteractorProtocol? {get set}
-    func findAllData() 
+    func findAllData()
+    func deleteData(_ data: CartEntity.SingleCart) 
 }
 
 protocol CartOutputInteractorProtocol {

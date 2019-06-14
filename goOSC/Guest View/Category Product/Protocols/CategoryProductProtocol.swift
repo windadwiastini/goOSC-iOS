@@ -32,5 +32,6 @@ protocol CategoryProductPresenterProtocol {
 protocol CategoryProductWireFrameProtocol {
     static func createCategoryProductModule(with categoryProductRef: CategoryProductView, and category: Category.NewData)
     func routeToDetail(from view: UIViewController, with product: HomePage.Product)
+    func routeToSignIn(from view: UIViewController)
 }
 

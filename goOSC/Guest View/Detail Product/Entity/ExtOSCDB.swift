@@ -15,7 +15,7 @@ extension Cart {
             self.price = Double(property.price)
             self.productId = property.id
             self.thumbnail = property.thumbnail
-            self.userId = Int16(userid)
+            self.userId = Int32(userid)
         } else {
             throw NSError(domain: "", code: 100, userInfo: nil)
         }

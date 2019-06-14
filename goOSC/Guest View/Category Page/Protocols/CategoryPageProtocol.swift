@@ -24,6 +24,7 @@ protocol CategoryPagePresenterProtocol {
 protocol CategoryPageWireFrameProtocol {
     static func createCategoryPageModule(_ categoryPageRef: CategoryPageView)
     func pushToCategoryProductPage(with category: Category.NewData,from view: UIViewController)
+    func routeToSignIn(from view: UIViewController)
 }
 
 protocol CategoryPageInputInteractorProtocol {
