@@ -14,13 +14,20 @@ class CategoryProductInteractor: CategoryProductInputInteractorProtocol {
     var presenter: CategoryProductOutputInteractorProtocol?
     
     func sendGetProductRequest(with category: Category.NewData) {
-        let url = "\(Config().url)/guest/product/search?category=\(category.id)"
+        var url = "\(Config().url)/guest/product/search"
+        if category.type == "category" {
+            url = "\(url)?category=\(category.id)"
+        } else {
+            url = "\(url)?subcategory=\(category.id)"
+        }
+        print(url)
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             switch response.response?.statusCode {
             case 500?:
                 let resp = HomePage.Response(code: 500, message: "Internal server error", data: [], length: 0)
                 self.presenter?.response(resp, category)
             case 200?:
+//                print(response.data!)
                 let jsonDecode = try! JSONDecoder().decode(HomePage.Response.self, from: response.data!)
                 self.presenter?.response(jsonDecode, category)
                 print(jsonDecode)

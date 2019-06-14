@@ -33,6 +33,7 @@ protocol SearchPresenterProtocol {
 protocol SearchWireFrameProtocol {
     static func createSearchModule(with searchRef: SearchView)
     func routeToDetail(from view: UIViewController, with product: HomePage.Product)
+    func routeToSignIn(from view: UIViewController)
 }
 
 

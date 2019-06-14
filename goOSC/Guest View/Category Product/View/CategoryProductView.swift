@@ -32,6 +32,15 @@ class CategoryProductView: UIViewController, CategoryProductViewProtocol {
         dismiss(animated: true, completion: nil)
     }
     
+    
+    @IBAction func doSignOut(_ sender: Any) {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+        presenter?.wireframe?.routeToSignIn(from: self)
+    }
+    
+    
 }
 
 extension CategoryProductView: UITableViewDelegate, UITableViewDataSource {

@@ -27,6 +27,13 @@ class SearchView: UIViewController, SearchViewProtocol {
         productList = response
         tableView.reloadData()
     }
+    
+    @IBAction func doSignOut(_ sender: Any) {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+        presenter?.wireframe?.routeToSignIn(from: self)
+    }
 }
 
 extension SearchView: UITableViewDelegate, UITableViewDataSource {

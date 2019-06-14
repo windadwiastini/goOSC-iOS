@@ -31,6 +31,13 @@ class CategoryPageView: UIViewController, CategoryPageViewProtocol {
         }
         tableView.reloadData()
     }
+    
+    @IBAction func doSignOut(_ sender: Any) {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+        presenter?.wireFrame?.routeToSignIn(from: self)
+    }
 
 }
 
@@ -64,11 +71,11 @@ extension CategoryPageView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             let category = cellDataList[indexPath.section].category
-            let data = Category.NewData(id: category.category_id, name: category.category_name)
+            let data = Category.NewData(id: category.category_id, name: category.category_name, type: "category")
             presenter?.showCategoryProduct(with: data, from: self)
         } else {
             let category = cellDataList[indexPath.section].category.sub_category![indexPath.row-1]
-            let data = Category.NewData(id: category.subcategory_id, name: category.subcategory_name)
+            let data = Category.NewData(id: category.subcategory_id, name: category.subcategory_name, type: "subcategory")
             presenter?.showCategoryProduct(with: data, from: self)
         }
         

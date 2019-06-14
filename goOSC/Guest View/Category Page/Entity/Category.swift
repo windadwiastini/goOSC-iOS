@@ -24,6 +24,7 @@ enum Category {
     struct NewData {
         var id: Int
         var name: String
+        var type: String
     }
     
     struct CellData {
