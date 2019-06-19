@@ -8,19 +8,27 @@
 
 import Foundation
 struct CartEntity {
-    struct SingleCart {
-        var name: String
-        var productId: String
-        var userId: Int
+    struct SingleCart: Decodable {
+        var id: String
+        var product_name: String
+        var product_id: String
         var price: Double
         var thumbnail: String
+        var cprovider_email: String
         
-        init(name: String, productId: String, userId: Int, price: Double, thumbnail: String) {
-            self.name = name
-            self.productId = productId
-            self.userId = userId
+        init(product_name: String, product_id: String, price: Double, thumbnail: String, cprovider_email: String, id: String) {
+            self.product_name = product_name
+            self.product_id = product_id
             self.price = price
             self.thumbnail = thumbnail
+            self.id = id
+            self.cprovider_email = cprovider_email
         }
+    }
+    
+    struct Response: Decodable {
+        var code: Int
+        var message: String
+        var data: [SingleCart]
     }
 }

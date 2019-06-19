@@ -63,6 +63,36 @@ class DetailInteractor: DetailInputInteractorProtocol {
     }
     
     func insertCartToDB(_ data: HomePage.Product, _ userId: Int)  {
+        let url = "\(Config().url)/cart/\(data.id)"
+        let token = UserDefaults.standard.value(forKey: "token")!
+        let header: HTTPHeaders = [
+            "Authorization": "Bearer \(token)"
+        ]
+        print(url)
+        Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            print(response)
+            switch response.response?.statusCode {
+            case 500?:
+                print("error")
+            case 200?:
+                self.addToDB(data, userId)
+            case 201?:
+                self.addToDB(data, userId)
+            case .none:
+                //                let resp = Detail.Response(code: 401, message: "Not Found", data: nil)
+                //                self.presenter?.response(resp, updateLike)
+                print("error")
+            case .some(_):
+                //                let resp = Detail.Response(code: 401, message: "Some error occured", data: nil)
+                //                self.presenter?.response(resp, updateLike)
+                print("error")
+            }
+        }
+        
+    }
+    
+    
+    private func addToDB (_ data: HomePage.Product, _ userId: Int) {
         let context = appDelegate.persistentContainer.viewContext
         guard let cart = NSEntityDescription.insertNewObject(forEntityName: "Cart", into: context) as? Cart else {
             print("Error : failed to create a new object")

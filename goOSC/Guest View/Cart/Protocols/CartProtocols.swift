@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CartViewProtocol {
-    func updateData(response: [CartEntity.SingleCart])
+    func updateData(response: CartEntity.Response)
 }
 
 protocol CartPresenterProtocol {
@@ -30,5 +30,5 @@ protocol CartInputInteractorProtocol {
 }
 
 protocol CartOutputInteractorProtocol {
-    func response(_ resp : [CartEntity.SingleCart])
+    func response(_ resp : CartEntity.Response)
 }

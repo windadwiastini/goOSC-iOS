@@ -1,35 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Bold</string>
-            <string>AvenirNext-DemiBold</string>
-            <string>AvenirNext-Medium</string>
-            <string>AvenirNext-Regular</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Medium</string>
-        </array>
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Thin</string>
-        </array>
-        <array key="Menlo.ttc">
-            <string>Menlo-Bold</string>
-            <string>Menlo-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -307,7 +286,7 @@
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hsp-1n-Yua">
-                                        <rect key="frame" x="121" y="10" width="249" height="29"/>
+                                        <rect key="frame" x="121" y="10.5" width="249" height="29"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="D6F-TX-BoI">
                                                 <rect key="frame" x="0.0" y="0.0" width="164" height="29"/>
@@ -1041,18 +1020,19 @@
                                             <constraint firstAttribute="height" constant="30" id="sGf-5A-e6j"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUN-S9-Zou">
-                                        <rect key="frame" x="335" y="35" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUN-S9-Zou">
+                                        <rect key="frame" x="340" y="37" width="16" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="G4I-ec-uBd"/>
                                             <constraint firstAttribute="width" constant="20" id="RMJ-NY-b9T"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
                                         <color key="tintColor" red="1" green="0.59200847150000002" blue="0.061555899679999998" alpha="0.78876819350000005" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="icons8-exit-26">
-                                            <color key="titleColor" red="1" green="0.59080355610000002" blue="0.060093333050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="icons8-checkout-filled-96">
+                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="doSignOut:" destination="57G-WC-WXP" eventType="touchUpInside" id="5qY-MN-9cn"/>
+                                            <segue destination="Wcw-oI-Kpe" kind="presentation" id="A0k-N0-RaD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1156,7 +1136,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J04-zt-orB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="1013"/>
+            <point key="canvasLocation" x="2820" y="1012.4437781109445"/>
+        </scene>
+        <!--Check Out-->
+        <scene sceneID="t8z-Wh-PMt">
+            <objects>
+                <viewController id="iK2-bN-Bic" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tT8-Oo-F7X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pay With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLT-em-MK7">
+                                <rect key="frame" x="153" y="85" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGr-b0-ylT">
+                                <rect key="frame" x="0.0" y="126" width="375" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <state key="normal" title="Balance"/>
+                                <connections>
+                                    <segue destination="aT9-IK-Tfh" kind="showDetail" id="IsM-eD-MEw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vL3-7H-rFK">
+                                <rect key="frame" x="0.0" y="169" width="375" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="PayPal"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="gEe-hQ-L8d"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Check Out" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="3Ov-IL-2M9">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-back-26" id="yiI-De-pHi"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVW-CM-4oM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4749.6000000000004" y="1029.5352323838081"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HDt-DM-gEs">
+            <objects>
+                <viewController id="aT9-IK-Tfh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3w-De-SzL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="My0-cs-s4x"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQG-Td-ZFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5596" y="1030"/>
         </scene>
         <!--Search-->
         <scene sceneID="dWf-ER-a6l">
@@ -1618,10 +1655,29 @@
             </objects>
             <point key="canvasLocation" x="937" y="139"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="joG-P1-mtR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wcw-oI-Kpe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RvN-Le-BZ0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iK2-bN-Bic" kind="relationship" relationship="rootViewController" id="UfM-n5-Pd1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCc-W1-ezJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3936.8000000000002" y="1030.4347826086957"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icons8-back-26" width="26" height="26"/>
         <image name="icons8-category-24" width="24" height="24"/>
+        <image name="icons8-checkout-filled-96" width="96" height="96"/>
         <image name="icons8-collaboration-26" width="26" height="26"/>
         <image name="icons8-exit-26" width="26" height="26"/>
         <image name="icons8-eye-24" width="24" height="24"/>

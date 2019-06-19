@@ -22,8 +22,7 @@ class CartPresenter: CartPresenterProtocol {
 }
 
 extension CartPresenter: CartOutputInteractorProtocol {
-    func response(_ resp : [CartEntity.SingleCart]) {
-        print(resp)
+    func response(_ resp : CartEntity.Response) {
         view?.updateData(response: resp)
     }
 }

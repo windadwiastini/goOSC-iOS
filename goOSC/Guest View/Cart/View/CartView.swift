@@ -8,7 +8,6 @@
 
 import UIKit
 class CartView: UIViewController, CartViewProtocol {
-    
     var presenter: CartPresenterProtocol?
     var homePageData = [CartEntity.SingleCart]()
     
@@ -24,8 +23,8 @@ class CartView: UIViewController, CartViewProtocol {
     override func viewDidAppear(_ animated: Bool) {
         presenter?.interactor?.findAllData()
     }
-    func updateData(response: [CartEntity.SingleCart]) {
-        homePageData = response
+    func updateData(response: CartEntity.Response) {
+        homePageData = response.data
         print("updatedata")
         print(homePageData)
         tableView.reloadData()

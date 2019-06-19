@@ -8,46 +8,49 @@
 
 import UIKit
 import CoreData
+import Alamofire
 class CartInteractor: CartInputInteractorProtocol {
     var presenter: CartOutputInteractorProtocol?
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let token = UserDefaults.standard.value(forKey: "token")!
     func findAllData() {
-        let context = appDelegate.persistentContainer.viewContext
-        let fetchReq = NSFetchRequest<NSFetchRequestResult>(entityName: "Cart")
-        let id: Int32 = Int32(UserDefaults.standard.integer(forKey: "userId"))
-        fetchReq.predicate = NSPredicate(format: "userId == \(id)")
-        do {
-            let result = try context.fetch(fetchReq)
-            var kk = [CartEntity.SingleCart]()
-            for dt in result as! [Cart] {
-                let singleData = CartEntity.SingleCart(name: dt.name!, productId: dt.productId!, userId: Int(dt.userId), price: dt.price, thumbnail: dt.thumbnail!)
-                kk.append(singleData)
+        let url = "\(Config().url)/cart"
+        let header: HTTPHeaders = [
+            "Authorization": "Bearer \(token)"
+        ]
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            print(response)
+            switch response.response?.statusCode {
+            case 500?:
+                print("error")
+            case 200?:
+                let jsonDecode = try! JSONDecoder().decode(CartEntity.Response.self, from: response.data!)
+                self.presenter?.response(jsonDecode)
+            case .none:
+                print("error")
+            case .some(_):
+                print("error")
             }
-            presenter?.response(kk)
-        } catch {
-            print("failed")
         }
     }
     
     func deleteData(_ data: CartEntity.SingleCart) {
-        let context = appDelegate.persistentContainer.viewContext
-        let deleteRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Cart")
-        let userIdPredicate = NSPredicate(format: "userId == \(data.userId)")
-        let productIdPredicate = NSPredicate(format: "productId= %@", data.productId)
-        deleteRequest.predicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and , subpredicates: [userIdPredicate, productIdPredicate])
-        
-        do {
-            let result = try context.fetch(deleteRequest)
-            let objectToDelete = result[0] as! NSManagedObject
-            context.delete(objectToDelete)
-            do {
-                try context.save()
+        let url = "\(Config().url)/cart/\(data.id)"
+        let header: HTTPHeaders = [
+            "Authorization": "Bearer \(token)"
+        ]
+        Alamofire.request(url, method: .delete, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            print(response)
+            switch response.response?.statusCode {
+            case 500?:
+                print("error")
+            case 200?:
                 self.findAllData()
-            } catch {
-                print(error)
+            case .none:
+                print("error")
+            case .some(_):
+                print("error")
             }
-        } catch {
-            print(error)
         }
     }
 }
