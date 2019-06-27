@@ -17,7 +17,6 @@ class RegisterView: UIViewController, RegisterViewProtocol {
     @IBOutlet weak var lastNameTextField: UITextField!
     
     var presenter: RegisterPresenterProtocol?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         RegisterWireframe.createRegisterModule(registerViewRef: self)
@@ -45,4 +44,5 @@ class RegisterView: UIViewController, RegisterViewProtocol {
         presenter?.showLoginView(from: self)
     }
 }
+
 

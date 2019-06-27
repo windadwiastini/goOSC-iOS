@@ -15,11 +15,16 @@ class TopUpPresenter: TopUpPresenterProtocol {
     var interactor: TopUpInputInteractorProtocol?
     
     func viewDidLoad() {
+        interactor?.getUserDashboardData()
         interactor?.getTopUpAmount()
     }
 }
 
 extension TopUpPresenter: TopUpOutputInteractorProtocol {
+    func applyUserDashboardData(_ user: TopUp.User) {
+        view?.applyUserDashboardData(user)
+    }
+    
     func closeModal() {
         view?.closeModal()
     }

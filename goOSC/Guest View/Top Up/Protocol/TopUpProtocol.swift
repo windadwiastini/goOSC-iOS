@@ -14,6 +14,7 @@ protocol TopUpViewProtocol {
     func hideSpinner()
     func viewAlert(data data: TopUp.ResponseAmount)
     func closeModal()
+    func applyUserDashboardData(_ user: TopUp.User)
 }
 
 protocol TopUpPresenterProtocol {
@@ -29,6 +30,7 @@ protocol TopUpWireFrameProtocol {
 protocol TopUpInputInteractorProtocol {
     var presenter : TopUpOutputInteractorProtocol? {get set}
     func getTopUpAmount()
+    func getUserDashboardData()
     func submitTopup(ammount ammount: Double, file image: UIImage)
 }
 
@@ -38,5 +40,6 @@ protocol TopUpOutputInteractorProtocol {
     func showLoading()
     func hideLoading()
     func closeModal()
+    func applyUserDashboardData(_ user: TopUp.User)
 }
 

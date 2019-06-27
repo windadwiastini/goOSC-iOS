@@ -8,4 +8,5 @@ target 'goOSC' do
   # Pods for goOSC
 
   pod 'Alamofire'
+  pod 'IQKeyboardManagerSwift'
 end

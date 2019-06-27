@@ -14,6 +14,8 @@ class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDele
     var vSpinner:UIView?
     @IBOutlet weak var balanceLabel: UILabel!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var evidenceImage: UIImageView!
@@ -167,15 +169,19 @@ class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDele
     }
     
     func hideSpinner() {
-//        DispatchQueue.main.async {
+        DispatchQueue.main.async {
             self.vSpinner?.removeFromSuperview()
             self.vSpinner = nil
-//        }
+        }
     }
     func closeModal() {
         dismiss(animated: true, completion: nil)
     }
     
+    func applyUserDashboardData(_ user: TopUp.User) {
+        nameLabel.text = "\(user.first_name) \(user.last_name)"
+        balanceLabel.text = "\(user.user_balance)"
+    }
 }
 
 extension TopUpView: UICollectionViewDataSource {
@@ -189,6 +195,8 @@ extension TopUpView: UICollectionViewDataSource {
         if indexPath.row == 0 {
             cell.contentView.backgroundColor = UIColor(hue: 0.4944, saturation: 1, brightness: 0.88, alpha: 1.0)
             amountSelected = Double(dataSource[indexPath.row])
+//            cell.contentView.backgroundColor = UIColor.white
+            self.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition.centeredHorizontally)
         } else {
             cell.contentView.backgroundColor = UIColor.white
         }

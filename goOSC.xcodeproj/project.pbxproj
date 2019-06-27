@@ -341,6 +341,61 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		2A402E4622C4758800093449 /* Balance Histories */ = {
+			isa = PBXGroup;
+			children = (
+				2A402E4C22C4764D00093449 /* Wireframe */,
+				2A402E4B22C4764600093449 /* Entity */,
+				2A402E4A22C4764000093449 /* Presenter */,
+				2A402E4922C4763900093449 /* Inspector */,
+				2A402E4822C475AC00093449 /* View */,
+				2A402E4722C475A300093449 /* Protocol */,
+			);
+			path = "Balance Histories";
+			sourceTree = "<group>";
+		};
+		2A402E4722C475A300093449 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2A402E4822C475AC00093449 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A402E4922C4763900093449 /* Inspector */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Inspector;
+			sourceTree = "<group>";
+		};
+		2A402E4A22C4764000093449 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A402E4B22C4764600093449 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2A402E4C22C4764D00093449 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		2A49086D22A0CF6E00AD2310 /* Home Page */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +412,7 @@
 		2A49086E22A0CFB300AD2310 /* Guest View */ = {
 			isa = PBXGroup;
 			children = (
+				2A402E4622C4758800093449 /* Balance Histories */,
 				2A68FE4122C064F9000FC4DD /* Top Up */,
 				2AF49C2022BC5FB60058D794 /* Balance Payment */,
 				2AFB814322B350200065B277 /* Chat */,
@@ -1121,10 +1177,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-goOSC/Pods-goOSC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

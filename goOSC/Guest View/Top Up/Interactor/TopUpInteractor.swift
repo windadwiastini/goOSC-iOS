@@ -71,4 +71,25 @@ class TopUpInteractor: TopUpInputInteractorProtocol {
             }
         }
     }
+    
+    func getUserDashboardData() {
+        let url = "\(Config().url)/dashboard/user"
+        let header: HTTPHeaders = [
+            "Authorization": "Bearer \(token)"
+        ]
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            print(response)
+            switch response.response?.statusCode {
+            case 500?:
+                print("error")
+            case 200?:
+                let jsonDecode = try! JSONDecoder().decode(TopUp.UserDashboard.self, from: response.data!)
+                self.presenter?.applyUserDashboardData(jsonDecode.data[0])
+            case .none:
+                print("error")
+            case .some(_):
+                print("error")
+            }
+        }
+    }
 }

@@ -33,4 +33,18 @@ struct TopUp {
         static let cancelBtnTitle = "Cancel"
         
     }
+    
+    struct UserDashboard: Decodable {
+        var code: Int
+        var message: String
+        var data: [User]
+    }
+    
+    struct User: Decodable {
+        var user_id: Int
+        var user_email: String
+        var first_name: String
+        var last_name: String
+        var user_balance: Double
+    }
 }
