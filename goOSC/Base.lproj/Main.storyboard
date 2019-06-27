@@ -1835,6 +1835,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XzE-Ab-kLo"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="RYL-fw-580" id="8Cn-7K-lPJ"/>
+                        <outlet property="firstNameTextField" destination="L8m-5d-a6l" id="Xe9-Ac-axX"/>
+                        <outlet property="lastNameTextField" destination="SOB-aF-8Nj" id="wT2-kV-xYV"/>
+                        <outlet property="passwordTextField" destination="gPp-gx-vFk" id="Ryt-Uw-gai"/>
+                        <outlet property="repeatPasswordTextField" destination="w8l-UJ-btn" id="PSg-2z-FA3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8V-2w-dFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
