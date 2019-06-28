@@ -87,12 +87,14 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("Page Did Finished")
         let urlString = webView.url?.absoluteString
+        print(urlString)
         if (urlString?.contains("callback"))! {
         webView.evaluateJavaScript("document.getElementsByTagName('pre')[0].innerHTML.toString()", completionHandler: { result, error in
+            print(result)
+            if let element = result {
                 let defaults = UserDefaults.standard
                 defaults.set(false, forKey: "loggedIn")
                 let jsonDecode = (result! as! String).parse(to: Customer.Response.self)
-                print(jsonDecode?.data?.user?.firstname)
                 self.webView.removeFromSuperview()
                 if jsonDecode?.code == 200 {
                     defaults.set(jsonDecode?.data!.user!.id, forKey: "userId")
@@ -106,6 +108,7 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
                 } else {
                     self.openAlert("Login", jsonDecode!.message)
                 }
+            }
 
             })
         }

@@ -196,7 +196,7 @@ extension TopUpView: UICollectionViewDataSource {
             cell.contentView.backgroundColor = UIColor(hue: 0.4944, saturation: 1, brightness: 0.88, alpha: 1.0)
             amountSelected = Double(dataSource[indexPath.row])
 //            cell.contentView.backgroundColor = UIColor.white
-            self.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition.centeredHorizontally)
+            self.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionViewScrollPosition.centeredHorizontally)
         } else {
             cell.contentView.backgroundColor = UIColor.white
         }
