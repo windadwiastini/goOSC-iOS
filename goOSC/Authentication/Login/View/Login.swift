@@ -25,7 +25,7 @@ extension String {
     }
 }
 
-class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
+class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFieldDelegate {
     
     var webView: WKWebView!
     @IBOutlet weak var usernameField: UITextField!
@@ -37,6 +37,8 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
         webView = WKWebView()
         webView.navigationDelegate = self
         webView.customUserAgent = "Chrome/56.0.0.0 Mobile"
+        usernameField.delegate = self
+        passwordField.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,13 +61,17 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
         presenter?.loginWithSocialMedia(type: "facebook")
     }
     
-    
-    @IBAction func doLogin(_ sender: Any) {
+    func login(){
         let username = usernameField.text
         let pasword = passwordField.text
         let user = Customer.Request(name: "", email: username!, password: pasword!)
         print("login clicked")
         presenter?.interactor?.doLogin(user)
+    }
+    
+    
+    @IBAction func doLogin(_ sender: Any) {
+        login()
     }
     
     func openAlert(_ title: String, _ context: String) {
@@ -112,5 +118,16 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate {
 
             })
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let newTag = textField.tag + 1
+        
+        if let next = view.viewWithTag(newTag) {
+            next.becomeFirstResponder()
+        } else {
+            login()
+        }
+        return true
     }
 }

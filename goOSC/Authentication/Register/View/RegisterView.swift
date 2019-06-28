@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterView: UIViewController, RegisterViewProtocol {
+class RegisterView: UIViewController, RegisterViewProtocol, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -20,6 +20,11 @@ class RegisterView: UIViewController, RegisterViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         RegisterWireframe.createRegisterModule(registerViewRef: self)
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        repeatPasswordTextField.delegate = self
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
     }
 
     @IBAction func backBtnWasPressed(_ sender: Any) {
@@ -42,6 +47,17 @@ class RegisterView: UIViewController, RegisterViewProtocol {
     func showLoginView() {
         print("show login in view")
         presenter?.showLoginView(from: self)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let newTag = textField.tag + 1
+        
+        if let next = view.viewWithTag(newTag) {
+            next.becomeFirstResponder()
+        } else {
+            presenter?.verifyInput(email: emailTextField.text!, password: passwordTextField.text!, repeatPassword: repeatPasswordTextField.text!, firstName: firstNameTextField.text!, lastName: lastNameTextField.text!)
+        }
+        return true
     }
 }
 

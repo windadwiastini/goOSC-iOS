@@ -17,6 +17,11 @@
 		2A10DAC722ADEF53005D7B81 /* CategoryPageWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC622ADEF53005D7B81 /* CategoryPageWireFrame.swift */; };
 		2A10DAC922ADF008005D7B81 /* CategoryPageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC822ADF008005D7B81 /* CategoryPageProtocol.swift */; };
 		2A10DACB22AE2A42005D7B81 /* CategoryPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DACA22AE2A42005D7B81 /* CategoryPageCell.swift */; };
+		2A14420622C5B27400CBF132 /* BalanceHistoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420522C5B27300CBF132 /* BalanceHistoryProtocol.swift */; };
+		2A14420822C5B28900CBF132 /* BalanceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420722C5B28900CBF132 /* BalanceHistoryView.swift */; };
+		2A14420A22C5B29600CBF132 /* BalanceHistoryInspectore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420922C5B29600CBF132 /* BalanceHistoryInspectore.swift */; };
+		2A14420C22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420B22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift */; };
+		2A14420E22C5B2B900CBF132 /* BalanceHistoryWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420D22C5B2B900CBF132 /* BalanceHistoryWireFrame.swift */; };
 		2A1C589322C33FFC006F3A6B /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1C589222C33FFC006F3A6B /* OptionView.swift */; };
 		2A21897922B097230080BBEC /* oscDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A21897722B097230080BBEC /* oscDB.xcdatamodeld */; };
 		2A21897B22B0A4BB0080BBEC /* ExtOSCDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A21897A22B0A4BB0080BBEC /* ExtOSCDB.swift */; };
@@ -107,6 +112,11 @@
 		2A10DAC622ADEF53005D7B81 /* CategoryPageWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageWireFrame.swift; sourceTree = "<group>"; };
 		2A10DAC822ADF008005D7B81 /* CategoryPageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageProtocol.swift; sourceTree = "<group>"; };
 		2A10DACA22AE2A42005D7B81 /* CategoryPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageCell.swift; sourceTree = "<group>"; };
+		2A14420522C5B27300CBF132 /* BalanceHistoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryProtocol.swift; sourceTree = "<group>"; };
+		2A14420722C5B28900CBF132 /* BalanceHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryView.swift; sourceTree = "<group>"; };
+		2A14420922C5B29600CBF132 /* BalanceHistoryInspectore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryInspectore.swift; sourceTree = "<group>"; };
+		2A14420B22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryPresenter.swift; sourceTree = "<group>"; };
+		2A14420D22C5B2B900CBF132 /* BalanceHistoryWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryWireFrame.swift; sourceTree = "<group>"; };
 		2A1C589222C33FFC006F3A6B /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
 		2A21897822B097230080BBEC /* oscDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = oscDB.xcdatamodel; sourceTree = "<group>"; };
 		2A21897A22B0A4BB0080BBEC /* ExtOSCDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtOSCDB.swift; sourceTree = "<group>"; };
@@ -357,6 +367,7 @@
 		2A402E4722C475A300093449 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2A14420522C5B27300CBF132 /* BalanceHistoryProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -364,6 +375,7 @@
 		2A402E4822C475AC00093449 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A14420722C5B28900CBF132 /* BalanceHistoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -371,6 +383,7 @@
 		2A402E4922C4763900093449 /* Inspector */ = {
 			isa = PBXGroup;
 			children = (
+				2A14420922C5B29600CBF132 /* BalanceHistoryInspectore.swift */,
 			);
 			path = Inspector;
 			sourceTree = "<group>";
@@ -378,6 +391,7 @@
 		2A402E4A22C4764000093449 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				2A14420B22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -392,6 +406,7 @@
 		2A402E4C22C4764D00093449 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				2A14420D22C5B2B900CBF132 /* BalanceHistoryWireFrame.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -1217,6 +1232,7 @@
 				2A894CB922B0D0AD001110F5 /* SearchWireFrame.swift in Sources */,
 				2A7134EC22AF79D20053F2B1 /* CategoryProductPresenter.swift in Sources */,
 				2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */,
+				2A14420822C5B28900CBF132 /* BalanceHistoryView.swift in Sources */,
 				2A49087C22A0D0BF00AD2310 /* HomePageWireFrame.swift in Sources */,
 				2AF49C2A22BC61620058D794 /* BalancePaymentView.swift in Sources */,
 				2A49087A22A0D0A200AD2310 /* HomePagePresenter.swift in Sources */,
@@ -1239,6 +1255,7 @@
 				2AFB815122B352C40065B277 /* ChatPresenter.swift in Sources */,
 				2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */,
 				2A35474322A4A50E00F9F32E /* ForgotPasswordEntity.swift in Sources */,
+				2A14420622C5B27400CBF132 /* BalanceHistoryProtocol.swift in Sources */,
 				2A10DAC122ADEED7005D7B81 /* CategoryPageInteractor.swift in Sources */,
 				2A10DAC922ADF008005D7B81 /* CategoryPageProtocol.swift in Sources */,
 				2A35474722A4A53500F9F32E /* ForgotPasswordProtocols.swift in Sources */,
@@ -1246,6 +1263,7 @@
 				2A521D2222AE041300514651 /* DetailInteractor.swift in Sources */,
 				2A4F7036229E60FB00CCF2AD /* Alert.swift in Sources */,
 				2A4F7033229E553A00CCF2AD /* Config.swift in Sources */,
+				2A14420E22C5B2B900CBF132 /* BalanceHistoryWireFrame.swift in Sources */,
 				2A49087822A0D09000AD2310 /* HomePageInteractor.swift in Sources */,
 				2A7134F322AF7A460053F2B1 /* CategoryProductProtocol.swift in Sources */,
 				2A10DAC722ADEF53005D7B81 /* CategoryPageWireFrame.swift in Sources */,
@@ -1262,6 +1280,7 @@
 				2AF49C3022BC61980058D794 /* BalancePayment.swift in Sources */,
 				2A62F76C22A50BEC00D56CC0 /* HomePage.swift in Sources */,
 				2A894CB522B0D032001110F5 /* SearchInteractor.swift in Sources */,
+				2A14420C22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift in Sources */,
 				2A894CBD22B0D118001110F5 /* SearchProtocol.swift in Sources */,
 				2A7134F122AF7A240053F2B1 /* CategoryProductWireFrame.swift in Sources */,
 				2A35473F22A4A4EE00F9F32E /* ForgotPasswordView.swift in Sources */,
@@ -1285,6 +1304,7 @@
 				2A10DAC522ADEF28005D7B81 /* Category.swift in Sources */,
 				2AE2A3B222B2135800AECA8E /* CartCell.swift in Sources */,
 				2A68FE4922C06588000FC4DD /* TopUpProtocol.swift in Sources */,
+				2A14420A22C5B29600CBF132 /* BalanceHistoryInspectore.swift in Sources */,
 				2A21897B22B0A4BB0080BBEC /* ExtOSCDB.swift in Sources */,
 				2AE2A3A622B20DBD00AECA8E /* CartWireframe.swift in Sources */,
 				2AE2A3AC22B20DFF00AECA8E /* CartInteractor.swift in Sources */,
