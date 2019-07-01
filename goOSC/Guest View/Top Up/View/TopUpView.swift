@@ -182,6 +182,11 @@ class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDele
         nameLabel.text = "\(user.first_name) \(user.last_name)"
         balanceLabel.text = "\(user.user_balance)"
     }
+    
+    @IBAction func goBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension TopUpView: UICollectionViewDataSource {

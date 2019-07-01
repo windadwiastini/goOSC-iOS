@@ -9,7 +9,8 @@
 import UIKit
 
 protocol BalancePaymentViewProtocol {
-    func updateData(response: CartEntity.Response)
+    func updateData(response: BalancePayment.Response)
+    func showAlertAndDismis(title titleData: String, message messageData: String)
 }
 
 protocol BalancePaymentPresenterProtocol {
@@ -26,9 +27,11 @@ protocol BalancePaymentWireFrameProtocol {
 protocol BalancePaymentInputInteractorProtocol {
     var presenter : BalancePaymentOutputInteractorProtocol? {get set}
     func summary()
+    func doPaymentBalance()
 }
 
 protocol BalancePaymentOutputInteractorProtocol {
-    func response(_ resp : CartEntity.Response)
+    func response(_ resp : BalancePayment.Response)
     func errorAlert(_ resp: BalancePayment.FailedResponse)
+    func responseSuccessAlert(paymentResponse resp: BalancePayment.PaymentResponse)
 }

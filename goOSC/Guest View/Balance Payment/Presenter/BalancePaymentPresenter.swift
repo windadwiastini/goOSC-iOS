@@ -25,13 +25,14 @@ class BalancePaymentPresenter: BalancePaymentPresenterProtocol {
 
 extension BalancePaymentPresenter: BalancePaymentOutputInteractorProtocol {
     func errorAlert(_ resp: BalancePayment.FailedResponse) {
-        let vs: UIViewController = view as! UIViewController
-        let alert = UIAlertController(title: "Summary", message: resp.message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in
-            vs.dismiss(animated: true, completion: nil)
-        }))
-        vs.present(alert, animated: true)
+        view?.showAlertAndDismis(title: "Summary", message: resp.message)
     }
     
-    func response(_ resp: CartEntity.Response) {}
+    func response(_ resp: BalancePayment.Response) {
+        view?.updateData(response: resp)
+    }
+    
+    func responseSuccessAlert(paymentResponse resp: BalancePayment.PaymentResponse) {
+       view?.showAlertAndDismis(title: "Payment", message: resp.message)
+    }
 }

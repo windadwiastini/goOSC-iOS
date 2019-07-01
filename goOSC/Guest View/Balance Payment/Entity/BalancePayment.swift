@@ -38,4 +38,9 @@ struct BalancePayment {
         var code: Int
         var message: String
     }
+    
+    struct PaymentResponse: Decodable {
+        var message: String
+        var success: Bool
+    }
 }

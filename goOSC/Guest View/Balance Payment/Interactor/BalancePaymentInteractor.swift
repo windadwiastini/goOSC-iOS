@@ -13,26 +13,60 @@ class BalancePaymentInteractor: BalancePaymentInputInteractorProtocol {
     let token = UserDefaults.standard.value(forKey: "token")!
     
     func summary() {
-         print("summary state")
         let url = "\(Config().url)/cart/summary?payment=balance"
         let header: HTTPHeaders = [
             "Authorization": "Bearer \(token)",
             "Content-Type": "application/json"
         ]
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
-            print(response)
             switch response.response?.statusCode {
             case 500?:
                 let jsonDecode = try! JSONDecoder().decode(BalancePayment.FailedResponse.self, from: response.data!)
                 self.presenter?.errorAlert(jsonDecode)
             case 200?:
-//                let jsonDecode = try! JSONDecoder().decode(CartEntity.Response.self, from: response.data!)
-//                self.presenter?.response(jsonDecode)
-                print(response)
+                let jsonDecode = try! JSONDecoder().decode(BalancePayment.Response.self, from: response.data!)
+                self.presenter?.response(jsonDecode)
             case .none:
                 print("error")
             case .some(_):
                 print("error")
+            }
+        }
+    }
+    
+    func doPaymentBalance() {
+        let url = "\(Config().url)/cart/dopayment"
+        let header: HTTPHeaders = [
+            "Authorization": "Bearer \(token)"
+        ]
+        let parameters:[String: String] = [
+            "token" : token as! String,
+            "payment_type": "balance"
+        ]
+        Alamofire.upload(multipartFormData: {multipartFormData in
+            for (key, value) in parameters {
+                multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
+            }
+        }, to: url, headers: header) {result in
+            print(result)
+            switch result {
+            case .success (let upload, _, _):
+                upload.responseJSON {response in
+                    switch response.response?.statusCode {
+                    case 500?:
+                        let jsonDecode = try! JSONDecoder().decode(BalancePayment.FailedResponse.self, from: response.data!)
+                        self.presenter?.errorAlert(jsonDecode)
+                    case 200?:
+                        let jsonDecode = try! JSONDecoder().decode(BalancePayment.PaymentResponse.self, from: response.data!)
+                        self.presenter?.responseSuccessAlert(paymentResponse: jsonDecode)
+                    case .none:
+                        print("error")
+                    case .some(_):
+                        print("error")
+                    }
+                }
+            case .failure(let encodingError):
+                print(EncodingError.self)
             }
         }
     }
