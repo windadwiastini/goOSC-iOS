@@ -29,6 +29,8 @@ enum Detail {
         var thumbnail: String
         var preview_file_type: String
         var preview: Preview
+        var category: String
+        var price: Double
         
     }
     

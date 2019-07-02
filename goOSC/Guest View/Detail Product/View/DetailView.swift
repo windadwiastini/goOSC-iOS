@@ -19,6 +19,10 @@ class DetailView: UIViewController, DetailViewProtocol {
     
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var viewVount: UILabel!
+    
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    
     let playerViewController = AVPlayerViewController()
     
     override func viewDidLoad() {
@@ -28,11 +32,12 @@ class DetailView: UIViewController, DetailViewProtocol {
     }
     
     func showItem(_ data: Detail.ResponseData) {
-        print("show")
         titleLabel.text = data.name
         desc.text = data.description
         likeCount.text = String(data.like_count)
         viewVount.text = String(data.view_count)
+        categoryLabel.text = data.category
+        priceLabel.text = String(data.price)
         let url = URL(string: "\(Config().url)\(data.thumbnail)")
         do {
             let dataImage = try Data(contentsOf: url!)
@@ -44,12 +49,6 @@ class DetailView: UIViewController, DetailViewProtocol {
         let urlAV = URL(string: "\(Config().url)\(data.preview.String)")
         let moviePlayer1 = AVPlayer(url: urlAV!)
         playerViewController.player = moviePlayer1
-//        self.present(playerViewController, animated: true) {
-//            self.playerViewController.player!.play()
-//        }
-        
-        likeCount.text = String(data.like_count)
-        viewVount.text = String(data.view_count)
     }
     
     func updateLike(_ data: Detail.ResponseData) {

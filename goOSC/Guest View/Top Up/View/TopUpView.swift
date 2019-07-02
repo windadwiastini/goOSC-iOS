@@ -17,7 +17,6 @@ class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDele
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var evidenceImage: UIImageView!
     
     var dataSource: [Int] = []

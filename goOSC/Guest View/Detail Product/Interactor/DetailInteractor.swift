@@ -21,6 +21,7 @@ class DetailInteractor: DetailInputInteractorProtocol {
                 let resp = Detail.Response(code: 500, message: "Network Error", data: nil)
                 self.presenter?.response(resp, updateLike)
             case 200?:
+                print(response)
                 let jsonDecode = try! JSONDecoder().decode(Detail.Response.self, from: response.data!)
                 if updateLike {
                     self.presenter?.response(jsonDecode, updateLike)

@@ -507,9 +507,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="categoryLabel" destination="UNK-RG-THH" id="Xbq-bi-VgN"/>
                         <outlet property="desc" destination="g94-jp-ujy" id="GWi-k6-mS7"/>
                         <outlet property="imageDetail" destination="4fU-yo-ogv" id="Cm6-Fe-I9w"/>
                         <outlet property="likeCount" destination="u19-vg-eP5" id="ea8-7R-438"/>
+                        <outlet property="priceLabel" destination="xsE-om-sb7" id="0WN-oq-x8W"/>
                         <outlet property="titleLabel" destination="V98-Ay-j3q" id="2Cf-Yq-XDB"/>
                         <outlet property="viewVount" destination="xTL-dz-P23" id="zRf-RS-UOf"/>
                     </connections>
