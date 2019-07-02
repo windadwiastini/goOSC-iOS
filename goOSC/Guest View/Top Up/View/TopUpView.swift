@@ -117,11 +117,8 @@ class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDele
                         self.openCamera()
                     }
                 }
-                //denied - The user has previously denied access.
-            //restricted - The user can't grant access due to restrictions.
             case .denied, .restricted:
                 print(attachmentTypeEnum)
-//                self.addAlertForSettings(attachmentTypeEnum)
                 return
                 
             default:
@@ -200,7 +197,6 @@ extension TopUpView: UICollectionViewDataSource {
         if indexPath.row == 0 {
             cell.contentView.backgroundColor = UIColor(hue: 0.4944, saturation: 1, brightness: 0.88, alpha: 1.0)
             amountSelected = Double(dataSource[indexPath.row])
-//            cell.contentView.backgroundColor = UIColor.white
             self.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionViewScrollPosition.centeredHorizontally)
         } else {
             cell.contentView.backgroundColor = UIColor.white
