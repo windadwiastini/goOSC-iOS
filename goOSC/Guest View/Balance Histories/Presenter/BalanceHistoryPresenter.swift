@@ -15,11 +15,12 @@ class BalanceHistoryPresenter: BalanceHistoryPresenterProtocol {
     var interactor: BalanceHistoryInputInteractorProtocol?
     
     func viewDidLoad() {
+        interactor?.findAllBalance()
     }
-    
-    
 }
 
 extension BalanceHistoryPresenter: BalanceHistoryOutputInteractorProtocol {
-    
+    func response(response resp: BalancdHistory.Response) {
+        view?.updateView(response: resp)
+    }
 }
