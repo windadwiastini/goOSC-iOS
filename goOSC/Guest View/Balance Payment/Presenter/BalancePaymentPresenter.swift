@@ -35,4 +35,7 @@ extension BalancePaymentPresenter: BalancePaymentOutputInteractorProtocol {
     func responseSuccessAlert(paymentResponse resp: BalancePayment.PaymentResponse) {
        view?.showAlertAndDismis(title: "Payment", message: resp.message)
     }
+    func signout() {
+        SignOut().viewDidLoad(view: view as! UIViewController)
+    }
 }

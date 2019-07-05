@@ -6,7 +6,7 @@
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import Foundation
+import UIKit
 class CartPresenter: CartPresenterProtocol {
     var wireFrame: CartWireFrameProtocol?
     
@@ -24,5 +24,9 @@ class CartPresenter: CartPresenterProtocol {
 extension CartPresenter: CartOutputInteractorProtocol {
     func response(_ resp : CartEntity.Response) {
         view?.updateData(response: resp)
+    }
+    
+    func signout() {
+        SignOut().viewDidLoad(view: view as! UIViewController)
     }
 }

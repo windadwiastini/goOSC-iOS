@@ -27,10 +27,7 @@ class HomePageView: UIViewController, HomePageViewProtocol {
     }
     
     @IBAction func doSignOut(_ sender: Any) {
-        let domain = Bundle.main.bundleIdentifier!
-        UserDefaults.standard.removePersistentDomain(forName: domain)
-        UserDefaults.standard.synchronize()
-        presenter?.wireFrame?.routeToSignIn(from: self)
+        SignOut().viewDidLoad(view: self)
     }
     
 }

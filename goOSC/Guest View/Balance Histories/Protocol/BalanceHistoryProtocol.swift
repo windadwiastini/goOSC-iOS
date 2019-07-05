@@ -29,4 +29,5 @@ protocol BalanceHistoryInputInteractorProtocol {
 
 protocol BalanceHistoryOutputInteractorProtocol {
     func response(response resp: BalancdHistory.Response)
+    func signout()
 }

@@ -21,6 +21,8 @@ class TopUpInteractor: TopUpInputInteractorProtocol {
             switch response.response?.statusCode {
             case 500?:
                 print("error")
+            case 401?:
+                self.presenter?.signout()
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(TopUp.ResponseAmount.self, from: response.data!)
                 self.presenter?.responseAmount(jsonDecode)
@@ -57,6 +59,8 @@ class TopUpInteractor: TopUpInputInteractorProtocol {
                     switch response.response?.statusCode {
                     case 500?:
                         print("error")
+                    case 401?:
+                        self.presenter?.signout()
                     case 200?:
                         let jsonDecode = try! JSONDecoder().decode(TopUp.ResponseAmount.self, from: response.data!)
                         self.presenter?.showAlert(jsonDecode)
@@ -66,7 +70,7 @@ class TopUpInteractor: TopUpInputInteractorProtocol {
                         print("error")
                     }
                 }
-            case .failure(let encodingError):
+            case .failure(_):
                 print(EncodingError.self)
             }
         }
@@ -82,6 +86,8 @@ class TopUpInteractor: TopUpInputInteractorProtocol {
             switch response.response?.statusCode {
             case 500?:
                 print("error")
+            case 401?:
+                self.presenter?.signout()
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(TopUp.UserDashboard.self, from: response.data!)
                 self.presenter?.applyUserDashboardData(jsonDecode.data[0])

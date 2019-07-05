@@ -23,6 +23,8 @@ class BalancePaymentInteractor: BalancePaymentInputInteractorProtocol {
             case 500?:
                 let jsonDecode = try! JSONDecoder().decode(BalancePayment.FailedResponse.self, from: response.data!)
                 self.presenter?.errorAlert(jsonDecode)
+            case 401?:
+                self.presenter?.signout()
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(BalancePayment.Response.self, from: response.data!)
                 self.presenter?.response(jsonDecode)
@@ -56,6 +58,8 @@ class BalancePaymentInteractor: BalancePaymentInputInteractorProtocol {
                     case 500?:
                         let jsonDecode = try! JSONDecoder().decode(BalancePayment.FailedResponse.self, from: response.data!)
                         self.presenter?.errorAlert(jsonDecode)
+                    case 401?:
+                        self.presenter?.signout()
                     case 200?:
                         let jsonDecode = try! JSONDecoder().decode(BalancePayment.PaymentResponse.self, from: response.data!)
                         self.presenter?.responseSuccessAlert(paymentResponse: jsonDecode)

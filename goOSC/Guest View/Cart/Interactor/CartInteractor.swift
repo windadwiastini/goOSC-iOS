@@ -23,6 +23,8 @@ class CartInteractor: CartInputInteractorProtocol {
             switch response.response?.statusCode {
             case 500?:
                 print("error")
+            case 401?:
+                self.presenter?.signout()
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(CartEntity.Response.self, from: response.data!)
                 self.presenter?.response(jsonDecode)

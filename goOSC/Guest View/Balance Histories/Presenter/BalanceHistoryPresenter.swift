@@ -23,4 +23,8 @@ extension BalanceHistoryPresenter: BalanceHistoryOutputInteractorProtocol {
     func response(response resp: BalancdHistory.Response) {
         view?.updateView(response: resp)
     }
+    
+    func signout() {
+        SignOut().viewDidLoad(view: view as! UIViewController)
+    }
 }

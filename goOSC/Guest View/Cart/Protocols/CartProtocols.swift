@@ -31,4 +31,5 @@ protocol CartInputInteractorProtocol {
 
 protocol CartOutputInteractorProtocol {
     func response(_ resp : CartEntity.Response)
+    func signout()
 }

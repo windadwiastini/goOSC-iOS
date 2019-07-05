@@ -95,6 +95,7 @@
 		2AF49C2E22BC61860058D794 /* BalancePaymentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49C2D22BC61860058D794 /* BalancePaymentPresenter.swift */; };
 		2AF49C3022BC61980058D794 /* BalancePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49C2F22BC61980058D794 /* BalancePayment.swift */; };
 		2AF49C3222BC61A90058D794 /* BalancePaymentWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49C3122BC61A90058D794 /* BalancePaymentWireFrame.swift */; };
+		2AF53D1122CEE59A008AF82C /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF53D1022CEE59A008AF82C /* SignOut.swift */; };
 		2AFB814B22B350970065B277 /* ChatProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB814A22B350970065B277 /* ChatProtocol.swift */; };
 		2AFB814D22B351C20065B277 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB814C22B351C20065B277 /* ChatView.swift */; };
 		2AFB814F22B3528E0065B277 /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB814E22B3528E0065B277 /* ChatInteractor.swift */; };
@@ -195,6 +196,7 @@
 		2AF49C2D22BC61860058D794 /* BalancePaymentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancePaymentPresenter.swift; sourceTree = "<group>"; };
 		2AF49C2F22BC61980058D794 /* BalancePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancePayment.swift; sourceTree = "<group>"; };
 		2AF49C3122BC61A90058D794 /* BalancePaymentWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancePaymentWireFrame.swift; sourceTree = "<group>"; };
+		2AF53D1022CEE59A008AF82C /* SignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOut.swift; sourceTree = "<group>"; };
 		2AFB814A22B350970065B277 /* ChatProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatProtocol.swift; sourceTree = "<group>"; };
 		2AFB814C22B351C20065B277 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		2AFB814E22B3528E0065B277 /* ChatInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
@@ -660,6 +662,7 @@
 		2A6960BA229CBAF3000F4F5E /* goOSC */ = {
 			isa = PBXGroup;
 			children = (
+				2AF53D0F22CEE57A008AF82C /* Global */,
 				2A4F7034229E608800CCF2AD /* Alert */,
 				2A4F7031229E552800CCF2AD /* Configuration */,
 				2A30974D22A5FB7F0061D4DF /* Extension */,
@@ -1045,6 +1048,14 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
+		2AF53D0F22CEE57A008AF82C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				2AF53D1022CEE59A008AF82C /* SignOut.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		2AFB814322B350200065B277 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -1307,6 +1318,7 @@
 				2AFB815522B353010065B277 /* ChatWireFrame.swift in Sources */,
 				2A6960D8229CCA71000F4F5E /* RegisterPresenter.swift in Sources */,
 				2A0520BF229E371900C4ECE3 /* LoginWireframe.swift in Sources */,
+				2AF53D1122CEE59A008AF82C /* SignOut.swift in Sources */,
 				2A521D1E22AE03B300514651 /* DetailEntity.swift in Sources */,
 				2AFB815322B352E60065B277 /* Chat.swift in Sources */,
 				2AF49C2C22BC61760058D794 /* BalancePaymentInteractor.swift in Sources */,

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import Foundation
+import UIKit
 class TopUpPresenter: TopUpPresenterProtocol {
     var wireFrame: TopUpWireFrameProtocol?
     
@@ -44,5 +44,7 @@ extension TopUpPresenter: TopUpOutputInteractorProtocol {
     func responseAmount(_ resp: TopUp.ResponseAmount) {
         view?.updateDataAmount(resp)
     }
-    
+    func signout() {
+        SignOut().viewDidLoad(view: view as! UIViewController)
+    }
 }

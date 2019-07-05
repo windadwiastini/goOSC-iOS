@@ -20,6 +20,8 @@ class BalanceHistoryInspector: BalanceHistoryInputInteractorProtocol{
             switch response.response?.statusCode {
             case 500?:
                 print("error")
+            case 401?:
+                self.presenter?.signout()
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(BalancdHistory.Response.self, from: response.data!)
                 self.presenter?.response(response: jsonDecode)

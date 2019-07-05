@@ -34,4 +34,5 @@ protocol BalancePaymentOutputInteractorProtocol {
     func response(_ resp : BalancePayment.Response)
     func errorAlert(_ resp: BalancePayment.FailedResponse)
     func responseSuccessAlert(paymentResponse resp: BalancePayment.PaymentResponse)
+    func signout()
 }

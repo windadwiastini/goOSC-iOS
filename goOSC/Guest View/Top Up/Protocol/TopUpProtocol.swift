@@ -41,5 +41,6 @@ protocol TopUpOutputInteractorProtocol {
     func hideLoading()
     func closeModal()
     func applyUserDashboardData(_ user: TopUp.User)
+    func signout()
 }
 
