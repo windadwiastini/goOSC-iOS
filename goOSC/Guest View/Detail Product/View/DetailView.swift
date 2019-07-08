@@ -37,7 +37,8 @@ class DetailView: UIViewController, DetailViewProtocol {
         likeCount.text = String(data.like_count)
         viewVount.text = String(data.view_count)
         categoryLabel.text = data.category
-        priceLabel.text = String(data.price)
+        let priceInt = Int(data.price)
+        priceLabel.text = "\((priceInt).formattedWithSeparator)"
         let url = URL(string: "\(Config().url)\(data.thumbnail)")
         do {
             let dataImage = try Data(contentsOf: url!)
@@ -72,8 +73,6 @@ class DetailView: UIViewController, DetailViewProtocol {
     }
     
     @IBAction func addToCart(_ sender: Any) {
-        print(UserDefaults.standard.value(forKey: "userId"))
-        
         presenter?.interactor?.insertCartToDB(presenter!.product!, UserDefaults.standard.integer(forKey: "userId"))
     }
     
