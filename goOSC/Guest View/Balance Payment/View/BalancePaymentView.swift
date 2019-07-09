@@ -30,9 +30,9 @@ class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
     func updateData(response: BalancePayment.Response) {
         let data = response.data
         voucher.text = data?.voucher
-        finalPrice.text = String(data!.final_price)
+        finalPrice.text = String(data!.total)
         discount.text = String(data!.total_discount)
-        total.text = String(data!.total)
+        total.text = String(data!.final_price)
         dataSource = data!.product_list
         tableView.reloadData()
     }

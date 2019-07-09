@@ -62,7 +62,10 @@ class DetailView: UIViewController, DetailViewProtocol {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func likeBtnWasPressed(_ sender: Any) {
+    @IBAction func likeBtnWasPressed(_ sender: UIButton) {
+        
+        sender.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: CGFloat(0.20), initialSpringVelocity: CGFloat(0.40), options: UIViewAnimationOptions.allowUserInteraction, animations: {sender.transform = CGAffineTransform.identity}, completion: nil)
         presenter?.interactor?.likeProduct((presenter?.product)!)
     }
     
@@ -72,7 +75,9 @@ class DetailView: UIViewController, DetailViewProtocol {
         }
     }
     
-    @IBAction func addToCart(_ sender: Any) {
+    @IBAction func addToCart(_ sender: UIButton) {
+        sender.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: CGFloat(0.20), initialSpringVelocity: CGFloat(0.40), options: UIViewAnimationOptions.allowUserInteraction, animations: {sender.transform = CGAffineTransform.identity}, completion: nil)
         presenter?.interactor?.insertCartToDB(presenter!.product!, UserDefaults.standard.integer(forKey: "userId"))
     }
     

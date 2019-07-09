@@ -13,7 +13,10 @@ class BalancePaymentInteractor: BalancePaymentInputInteractorProtocol {
     let token = UserDefaults.standard.value(forKey: "token")!
     
     func summary() {
-        let url = "\(Config().url)/cart/summary?payment=balance"
+        
+        var vch = UserDefaults.standard.value(forKey: "vch") ?? ""
+        
+        let url = "\(Config().url)/cart/summary?payment=balance&voucher=\(vch)"
         let header: HTTPHeaders = [
             "Authorization": "Bearer \(token)",
             "Content-Type": "application/json"
@@ -37,13 +40,15 @@ class BalancePaymentInteractor: BalancePaymentInputInteractorProtocol {
     }
     
     func doPaymentBalance() {
+        var vch = UserDefaults.standard.value(forKey: "vch") ?? ""
         let url = "\(Config().url)/cart/dopayment"
         let header: HTTPHeaders = [
             "Authorization": "Bearer \(token)"
         ]
         let parameters:[String: String] = [
             "token" : token as! String,
-            "payment_type": "balance"
+            "payment_type": "balance",
+            "voucher": vch as! String
         ]
         Alamofire.upload(multipartFormData: {multipartFormData in
             for (key, value) in parameters {
@@ -61,6 +66,7 @@ class BalancePaymentInteractor: BalancePaymentInputInteractorProtocol {
                     case 401?:
                         self.presenter?.signout()
                     case 200?:
+                        UserDefaults.standard.removeObject(forKey: "vch")
                         let jsonDecode = try! JSONDecoder().decode(BalancePayment.PaymentResponse.self, from: response.data!)
                         self.presenter?.responseSuccessAlert(paymentResponse: jsonDecode)
                     case .none:

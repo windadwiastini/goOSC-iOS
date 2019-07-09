@@ -87,6 +87,13 @@
 		2AE2A3B022B20E2900AECA8E /* CartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3AF22B20E2900AECA8E /* CartProtocols.swift */; };
 		2AE2A3B222B2135800AECA8E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3B122B2135800AECA8E /* CartCell.swift */; };
 		2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB735229D1B460079C231 /* RegisterProtocols.swift */; };
+		2AF07CBF22D4219900535AEE /* UIDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CBE22D4219900535AEE /* UIDesignableView.swift */; };
+		2AF07CC122D4250F00535AEE /* Voucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CC022D4250F00535AEE /* Voucher.swift */; };
+		2AF07CC922D439D900535AEE /* VoucherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CC822D439D900535AEE /* VoucherProtocol.swift */; };
+		2AF07CCB22D439EB00535AEE /* VoucherInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CCA22D439EB00535AEE /* VoucherInspector.swift */; };
+		2AF07CCD22D439FA00535AEE /* VoucherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CCC22D439FA00535AEE /* VoucherEntity.swift */; };
+		2AF07CCF22D43A0D00535AEE /* VoucherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CCE22D43A0D00535AEE /* VoucherPresenter.swift */; };
+		2AF07CD222D43ADF00535AEE /* VoucherWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CD122D43ADF00535AEE /* VoucherWireFrame.swift */; };
 		2AF22331229CE2DA0081AD1C /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF22330229CE2DA0081AD1C /* Customer.swift */; };
 		2AF22333229CE3D00081AD1C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF22332229CE3D00081AD1C /* Login.swift */; };
 		2AF49C2822BC61450058D794 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF49C2722BC61450058D794 /* Protocols.swift */; };
@@ -188,6 +195,13 @@
 		2AE2A3AF22B20E2900AECA8E /* CartProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProtocols.swift; sourceTree = "<group>"; };
 		2AE2A3B122B2135800AECA8E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		2AEEB735229D1B460079C231 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		2AF07CBE22D4219900535AEE /* UIDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignableView.swift; sourceTree = "<group>"; };
+		2AF07CC022D4250F00535AEE /* Voucher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voucher.swift; sourceTree = "<group>"; };
+		2AF07CC822D439D900535AEE /* VoucherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherProtocol.swift; sourceTree = "<group>"; };
+		2AF07CCA22D439EB00535AEE /* VoucherInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherInspector.swift; sourceTree = "<group>"; };
+		2AF07CCC22D439FA00535AEE /* VoucherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherEntity.swift; sourceTree = "<group>"; };
+		2AF07CCE22D43A0D00535AEE /* VoucherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherPresenter.swift; sourceTree = "<group>"; };
+		2AF07CD122D43ADF00535AEE /* VoucherWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherWireFrame.swift; sourceTree = "<group>"; };
 		2AF22330229CE2DA0081AD1C /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		2AF22332229CE3D00081AD1C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		2AF49C2722BC61450058D794 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -437,6 +451,7 @@
 		2A49086E22A0CFB300AD2310 /* Guest View */ = {
 			isa = PBXGroup;
 			children = (
+				2AF07CC222D4391900535AEE /* Voucher */,
 				2A402E4622C4758800093449 /* Balance Histories */,
 				2A68FE4122C064F9000FC4DD /* Top Up */,
 				2AF49C2022BC5FB60058D794 /* Balance Payment */,
@@ -933,6 +948,67 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		2AF07CC222D4391900535AEE /* Voucher */ = {
+			isa = PBXGroup;
+			children = (
+				2AF07CD022D43AC900535AEE /* WireFrame */,
+				2AF07CC722D439B100535AEE /* Presenter */,
+				2AF07CC622D439A900535AEE /* Protocol */,
+				2AF07CC522D4394300535AEE /* Inspector */,
+				2AF07CC422D4393800535AEE /* Entity */,
+				2AF07CC322D4392300535AEE /* View */,
+			);
+			path = Voucher;
+			sourceTree = "<group>";
+		};
+		2AF07CC322D4392300535AEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AF07CC022D4250F00535AEE /* Voucher.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AF07CC422D4393800535AEE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2AF07CCC22D439FA00535AEE /* VoucherEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2AF07CC522D4394300535AEE /* Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				2AF07CCA22D439EB00535AEE /* VoucherInspector.swift */,
+			);
+			path = Inspector;
+			sourceTree = "<group>";
+		};
+		2AF07CC622D439A900535AEE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2AF07CC822D439D900535AEE /* VoucherProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2AF07CC722D439B100535AEE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2AF07CCE22D43A0D00535AEE /* VoucherPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2AF07CD022D43AC900535AEE /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				2AF07CD122D43ADF00535AEE /* VoucherWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
 		2AF22329229CE1030081AD1C /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -1052,6 +1128,7 @@
 			isa = PBXGroup;
 			children = (
 				2AF53D1022CEE59A008AF82C /* SignOut.swift */,
+				2AF07CBE22D4219900535AEE /* UIDesignableView.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -1253,6 +1330,7 @@
 				2A7134EC22AF79D20053F2B1 /* CategoryProductPresenter.swift in Sources */,
 				2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */,
 				2A14420822C5B28900CBF132 /* BalanceHistoryView.swift in Sources */,
+				2AF07CCB22D439EB00535AEE /* VoucherInspector.swift in Sources */,
 				2A49087C22A0D0BF00AD2310 /* HomePageWireFrame.swift in Sources */,
 				2AF49C2A22BC61620058D794 /* BalancePaymentView.swift in Sources */,
 				2A49087A22A0D0A200AD2310 /* HomePagePresenter.swift in Sources */,
@@ -1268,6 +1346,7 @@
 				2A10DABF22ADEEA2005D7B81 /* CategoryPageView.swift in Sources */,
 				2A894CBF22B0FBA9001110F5 /* SearchProductCell.swift in Sources */,
 				2A6960D5229CCA11000F4F5E /* User.swift in Sources */,
+				2AF07CCD22D439FA00535AEE /* VoucherEntity.swift in Sources */,
 				2A68FE5122C069BD000FC4DD /* TopUpEntity.swift in Sources */,
 				2A10DAC322ADEF06005D7B81 /* CategoryPagePresenter.swift in Sources */,
 				2A894CB722B0D053001110F5 /* SearchPresenter.swift in Sources */,
@@ -1289,10 +1368,12 @@
 				2AA579C522C9A35E008611FD /* PaymentCell.swift in Sources */,
 				2A10DAC722ADEF53005D7B81 /* CategoryPageWireFrame.swift in Sources */,
 				2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */,
+				2AF07CC922D439D900535AEE /* VoucherProtocol.swift in Sources */,
 				2A7134EA22AF799F0053F2B1 /* CategoryProductInteractor.swift in Sources */,
 				2AFB814D22B351C20065B277 /* ChatView.swift in Sources */,
 				2A68FE5522C07B29000FC4DD /* TopUpCell.swift in Sources */,
 				2A35474522A4A52300F9F32E /* ForgotPasswordWireFrame.swift in Sources */,
+				2AF07CBF22D4219900535AEE /* UIDesignableView.swift in Sources */,
 				2A93AD9822CD8FF7002E77EA /* Cell.swift in Sources */,
 				2A35473D22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift in Sources */,
 				2A49087622A0D06C00AD2310 /* HomePageView.swift in Sources */,
@@ -1306,6 +1387,7 @@
 				2A14420C22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift in Sources */,
 				2A894CBD22B0D118001110F5 /* SearchProtocol.swift in Sources */,
 				2A7134F122AF7A240053F2B1 /* CategoryProductWireFrame.swift in Sources */,
+				2AF07CC122D4250F00535AEE /* Voucher.swift in Sources */,
 				2A35473F22A4A4EE00F9F32E /* ForgotPasswordView.swift in Sources */,
 				2A6960D3229CC9DE000F4F5E /* RegisterWireframe.swift in Sources */,
 				2A7134E122AF73D80053F2B1 /* CategoryProductCell.swift in Sources */,
@@ -1331,9 +1413,11 @@
 				2A14420A22C5B29600CBF132 /* BalanceHistoryInspectore.swift in Sources */,
 				2A21897B22B0A4BB0080BBEC /* ExtOSCDB.swift in Sources */,
 				2AE2A3A622B20DBD00AECA8E /* CartWireframe.swift in Sources */,
+				2AF07CCF22D43A0D00535AEE /* VoucherPresenter.swift in Sources */,
 				2AE2A3AC22B20DFF00AECA8E /* CartInteractor.swift in Sources */,
 				2AE2A3A822B20DCE00AECA8E /* CartEntity.swift in Sources */,
 				2A21897922B097230080BBEC /* oscDB.xcdatamodeld in Sources */,
+				2AF07CD222D43ADF00535AEE /* VoucherWireFrame.swift in Sources */,
 				2A1C589322C33FFC006F3A6B /* OptionView.swift in Sources */,
 				2AF49C2822BC61450058D794 /* Protocols.swift in Sources */,
 				2AE2A3AA22B20DEE00AECA8E /* CartPresenter.swift in Sources */,
