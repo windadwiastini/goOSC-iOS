@@ -68,4 +68,8 @@ extension SearchView: UISearchBarDelegate {
         }
         
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.searchBar.endEditing(true)
+    }
 }

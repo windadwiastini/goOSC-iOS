@@ -1,32 +1,34 @@
 //
-//  VoucherInspector.swift
+//  ProfileInspector.swift
 //  goOSC
 //
-//  Created by Bootcamp on 09/07/19.
+//  Created by Bootcamp on 11/07/19.
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import Alamofire
-class VoucherInteractor: VoucherInputInteractorProtocol {
-    var presenter: VoucherOutputInteractorProtocol?
+class ProfileInteractor: ProfileInputInteractorProtocol {
+    var presenter: ProfileOutputInteractorProtocol?
     let token = UserDefaults.standard.value(forKey: "token")!
-    func validateVoucher(voucher data: String) {
-        let url = "\(Config().url)/cart/voucher?voucher=\(data)"
+    func getUserDetail() {
+        let url = "\(Config().url)/dashboard/user"
         let header: HTTPHeaders = [
             "Authorization": "Bearer \(token)"
         ]
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            
+            print(response)
+            
             switch response.response?.statusCode {
             case 500?:
-                let jsonDecode = try! JSONDecoder().decode(VoucherEntity.ResponseFailed.self, from: response.data!)
+                let jsonDecode = try! JSONDecoder().decode(Profile.ResponseFail.self, from: response.data!)
                 self.presenter?.responseFail(response: jsonDecode)
             case 401?:
                 print("error")
-//                self.presenter?.signout()
+            //                self.presenter?.signout()
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(VoucherEntity.ResponseSuccess.self, from: response.data!)
-                UserDefaults.standard.set(jsonDecode.data.voucher, forKey: "vch")
+                let jsonDecode = try! JSONDecoder().decode(Profile.Response.self, from: response.data!)
                 self.presenter?.responSuccess(response: jsonDecode)
             case .none:
                 print("error")
@@ -35,5 +37,4 @@ class VoucherInteractor: VoucherInputInteractorProtocol {
             }
         }
     }
-    
 }
