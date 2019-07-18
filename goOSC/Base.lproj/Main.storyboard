@@ -1039,7 +1039,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Wcw-oI-Kpe" kind="presentation" id="A0k-N0-RaD"/>
+                                            <segue destination="Wcw-oI-Kpe" kind="showDetail" id="tub-iX-nGq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1138,6 +1138,7 @@
                     <tabBarItem key="tabBarItem" title="Cart" image="icons8-shopping-basket-star-24" selectedImage="icons8-shopping-basket-star-24" id="GE8-A3-dWh"/>
                     <navigationItem key="navigationItem" id="etF-GA-Jx1"/>
                     <connections>
+                        <outlet property="cartButton" destination="jUN-S9-Zou" id="VIn-K9-sCd"/>
                         <outlet property="tableView" destination="tbV-UF-kDr" id="qVD-Bk-4QG"/>
                     </connections>
                 </viewController>
@@ -1190,6 +1191,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="PayPal"/>
+                                <connections>
+                                    <segue destination="2q7-f8-h0q" kind="showDetail" id="dLS-PN-Izf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -1565,7 +1569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQG-Td-ZFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8365.6000000000004" y="1363.2683658170915"/>
+            <point key="canvasLocation" x="9304.7999999999993" y="1363.2683658170915"/>
         </scene>
         <!--Voucher-->
         <scene sceneID="5dg-ak-I5p">
@@ -1651,7 +1655,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iam-YP-kEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9077.6000000000004" y="1361.4692653673164"/>
+            <point key="canvasLocation" x="10016.799999999999" y="1361.4692653673164"/>
         </scene>
         <!--Profile-->
         <scene sceneID="UkP-KI-9s8">
@@ -1915,7 +1919,29 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="4647.1999999999998" y="1780.6596701649178"/>
+            <point key="canvasLocation" x="4030" y="1782"/>
+        </scene>
+        <!--Order Summary-->
+        <scene sceneID="p9p-cB-z5W">
+            <objects>
+                <viewController id="Pdl-mG-GTK" customClass="PayPalView" customModule="goOSC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CzY-dv-Div">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="3Sq-Ps-jVO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Order Summary" id="slZ-8K-nSZ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-back-26" id="ev4-y2-LQf">
+                            <connections>
+                                <action selector="goBack:" destination="Pdl-mG-GTK" id="Ydw-QK-dcX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDh-mA-UEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6703.1999999999998" y="1801.3493253373315"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QyN-KI-Flj">
@@ -2283,7 +2309,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0od-rQ-WW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7426.3999999999996" y="1363.2683658170915"/>
+            <point key="canvasLocation" x="8365.6000000000004" y="1363.2683658170915"/>
         </scene>
         <!--Profile-->
         <scene sceneID="rYY-U8-HLs">
@@ -2324,6 +2350,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxz-BT-enj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2237.5999999999999" y="1766.2668665667168"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqm-A6-WZw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2q7-f8-h0q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MjR-Ky-v3j">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pdl-mG-GTK" kind="relationship" relationship="rootViewController" id="NpQ-2W-WYO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2k-be-2ZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5764" y="1800.4497751124438"/>
         </scene>
     </scenes>
     <resources>

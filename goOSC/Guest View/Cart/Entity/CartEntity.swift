@@ -8,7 +8,7 @@
 
 import Foundation
 struct CartEntity {
-    struct SingleCart: Decodable {
+    struct SingleCart: Codable {
         var id: String
         var product_name: String
         var product_id: String

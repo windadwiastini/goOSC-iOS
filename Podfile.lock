@@ -1,20 +1,36 @@
 PODS:
   - Alamofire (4.8.2)
+  - CardIO (5.4.1)
   - IQKeyboardManagerSwift (5.0.0)
+  - PayPal-iOS-SDK (2.18.1):
+    - PayPal-iOS-SDK/CardIO (= 2.18.1)
+    - PayPal-iOS-SDK/Core (= 2.18.1)
+  - PayPal-iOS-SDK/CardIO (2.18.1):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.18.1)
+  - Starscream (3.0.6)
 
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift (= 5.0.0)
+  - PayPal-iOS-SDK
+  - Starscream (~> 3.0.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CardIO
     - IQKeyboardManagerSwift
+    - PayPal-iOS-SDK
+    - Starscream
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  PayPal-iOS-SDK: 10654cd111e911a9807bddb96fae81aacb8e9915
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
 
-PODFILE CHECKSUM: 5c7cc7dca45552c7554f453f7eb9d25c1fcaedb8
+PODFILE CHECKSUM: 53d07e886ffe2123cb3c083bf2a35eb8efd3d665
 
 COCOAPODS: 1.6.1

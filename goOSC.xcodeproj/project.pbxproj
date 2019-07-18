@@ -17,6 +17,11 @@
 		2A10DAC722ADEF53005D7B81 /* CategoryPageWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC622ADEF53005D7B81 /* CategoryPageWireFrame.swift */; };
 		2A10DAC922ADF008005D7B81 /* CategoryPageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DAC822ADF008005D7B81 /* CategoryPageProtocol.swift */; };
 		2A10DACB22AE2A42005D7B81 /* CategoryPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10DACA22AE2A42005D7B81 /* CategoryPageCell.swift */; };
+		2A11EE6722DD5AD900D7C8E2 /* PaypalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11EE6622DD5AD900D7C8E2 /* PaypalProtocol.swift */; };
+		2A11EE6922DD5AE600D7C8E2 /* PaypalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11EE6822DD5AE600D7C8E2 /* PaypalInteractor.swift */; };
+		2A11EE6B22DD5AF500D7C8E2 /* PaypalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11EE6A22DD5AF500D7C8E2 /* PaypalEntity.swift */; };
+		2A11EE6D22DD5B0300D7C8E2 /* PaypalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11EE6C22DD5B0300D7C8E2 /* PaypalPresenter.swift */; };
+		2A11EE6F22DD5B1000D7C8E2 /* PaypalWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11EE6E22DD5B1000D7C8E2 /* PaypalWireframe.swift */; };
 		2A14420622C5B27400CBF132 /* BalanceHistoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420522C5B27300CBF132 /* BalanceHistoryProtocol.swift */; };
 		2A14420822C5B28900CBF132 /* BalanceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420722C5B28900CBF132 /* BalanceHistoryView.swift */; };
 		2A14420A22C5B29600CBF132 /* BalanceHistoryInspectore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420922C5B29600CBF132 /* BalanceHistoryInspectore.swift */; };
@@ -93,6 +98,7 @@
 		2AE2A3B022B20E2900AECA8E /* CartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3AF22B20E2900AECA8E /* CartProtocols.swift */; };
 		2AE2A3B222B2135800AECA8E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3B122B2135800AECA8E /* CartCell.swift */; };
 		2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB735229D1B460079C231 /* RegisterProtocols.swift */; };
+		2AEFFF6F22DC2B85004E359D /* PayPalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEFFF6E22DC2B85004E359D /* PayPalView.swift */; };
 		2AF07CBF22D4219900535AEE /* UIDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CBE22D4219900535AEE /* UIDesignableView.swift */; };
 		2AF07CC122D4250F00535AEE /* Voucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CC022D4250F00535AEE /* Voucher.swift */; };
 		2AF07CC922D439D900535AEE /* VoucherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CC822D439D900535AEE /* VoucherProtocol.swift */; };
@@ -129,6 +135,11 @@
 		2A10DAC622ADEF53005D7B81 /* CategoryPageWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageWireFrame.swift; sourceTree = "<group>"; };
 		2A10DAC822ADF008005D7B81 /* CategoryPageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageProtocol.swift; sourceTree = "<group>"; };
 		2A10DACA22AE2A42005D7B81 /* CategoryPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPageCell.swift; sourceTree = "<group>"; };
+		2A11EE6622DD5AD900D7C8E2 /* PaypalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypalProtocol.swift; sourceTree = "<group>"; };
+		2A11EE6822DD5AE600D7C8E2 /* PaypalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypalInteractor.swift; sourceTree = "<group>"; };
+		2A11EE6A22DD5AF500D7C8E2 /* PaypalEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypalEntity.swift; sourceTree = "<group>"; };
+		2A11EE6C22DD5B0300D7C8E2 /* PaypalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypalPresenter.swift; sourceTree = "<group>"; };
+		2A11EE6E22DD5B1000D7C8E2 /* PaypalWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypalWireframe.swift; sourceTree = "<group>"; };
 		2A14420522C5B27300CBF132 /* BalanceHistoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryProtocol.swift; sourceTree = "<group>"; };
 		2A14420722C5B28900CBF132 /* BalanceHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryView.swift; sourceTree = "<group>"; };
 		2A14420922C5B29600CBF132 /* BalanceHistoryInspectore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryInspectore.swift; sourceTree = "<group>"; };
@@ -207,6 +218,7 @@
 		2AE2A3AF22B20E2900AECA8E /* CartProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProtocols.swift; sourceTree = "<group>"; };
 		2AE2A3B122B2135800AECA8E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		2AEEB735229D1B460079C231 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		2AEFFF6E22DC2B85004E359D /* PayPalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalView.swift; sourceTree = "<group>"; };
 		2AF07CBE22D4219900535AEE /* UIDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignableView.swift; sourceTree = "<group>"; };
 		2AF07CC022D4250F00535AEE /* Voucher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voucher.swift; sourceTree = "<group>"; };
 		2AF07CC822D439D900535AEE /* VoucherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherProtocol.swift; sourceTree = "<group>"; };
@@ -314,6 +326,46 @@
 				2A10DAC822ADF008005D7B81 /* CategoryPageProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2A11EE6122DD5A1A00D7C8E2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2A11EE6622DD5AD900D7C8E2 /* PaypalProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2A11EE6222DD5A2D00D7C8E2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2A11EE6822DD5AE600D7C8E2 /* PaypalInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2A11EE6322DD5A3800D7C8E2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2A11EE6A22DD5AF500D7C8E2 /* PaypalEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2A11EE6422DD5A4200D7C8E2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A11EE6C22DD5B0300D7C8E2 /* PaypalPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A11EE6522DD5A4B00D7C8E2 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				2A11EE6E22DD5B1000D7C8E2 /* PaypalWireframe.swift */,
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		2A2C87E822D70EF100AC5D46 /* Profile */ = {
@@ -524,6 +576,7 @@
 		2A49086E22A0CFB300AD2310 /* Guest View */ = {
 			isa = PBXGroup;
 			children = (
+				2AEFFF6C22DC2B48004E359D /* PayPal */,
 				2A2C87E822D70EF100AC5D46 /* Profile */,
 				2AF07CC222D4391900535AEE /* Voucher */,
 				2A402E4622C4758800093449 /* Balance Histories */,
@@ -1022,6 +1075,27 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		2AEFFF6C22DC2B48004E359D /* PayPal */ = {
+			isa = PBXGroup;
+			children = (
+				2A11EE6522DD5A4B00D7C8E2 /* Wireframe */,
+				2A11EE6422DD5A4200D7C8E2 /* Presenter */,
+				2A11EE6322DD5A3800D7C8E2 /* Entity */,
+				2A11EE6222DD5A2D00D7C8E2 /* Interactor */,
+				2A11EE6122DD5A1A00D7C8E2 /* Protocol */,
+				2AEFFF6D22DC2B56004E359D /* View */,
+			);
+			path = PayPal;
+			sourceTree = "<group>";
+		};
+		2AEFFF6D22DC2B56004E359D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AEFFF6E22DC2B85004E359D /* PayPalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2AF07CC222D4391900535AEE /* Voucher */ = {
 			isa = PBXGroup;
 			children = (
@@ -1319,6 +1393,7 @@
 				TargetAttributes = {
 					2A6960B7229CBAF3000F4F5E = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1364,11 +1439,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-goOSC/Pods-goOSC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1429,6 +1506,7 @@
 				2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */,
 				2A35474322A4A50E00F9F32E /* ForgotPasswordEntity.swift in Sources */,
 				2A14420622C5B27400CBF132 /* BalanceHistoryProtocol.swift in Sources */,
+				2A11EE6F22DD5B1000D7C8E2 /* PaypalWireframe.swift in Sources */,
 				2A10DAC122ADEED7005D7B81 /* CategoryPageInteractor.swift in Sources */,
 				2A10DAC922ADF008005D7B81 /* CategoryPageProtocol.swift in Sources */,
 				2A35474722A4A53500F9F32E /* ForgotPasswordProtocols.swift in Sources */,
@@ -1440,8 +1518,10 @@
 				2A49087822A0D09000AD2310 /* HomePageInteractor.swift in Sources */,
 				2A7134F322AF7A460053F2B1 /* CategoryProductProtocol.swift in Sources */,
 				2AA579C522C9A35E008611FD /* PaymentCell.swift in Sources */,
+				2A11EE6722DD5AD900D7C8E2 /* PaypalProtocol.swift in Sources */,
 				2A10DAC722ADEF53005D7B81 /* CategoryPageWireFrame.swift in Sources */,
 				2A6960BC229CBAF3000F4F5E /* AppDelegate.swift in Sources */,
+				2A11EE6922DD5AE600D7C8E2 /* PaypalInteractor.swift in Sources */,
 				2AF07CC922D439D900535AEE /* VoucherProtocol.swift in Sources */,
 				2A2C87F622D70FD400AC5D46 /* ProfilePresenter.swift in Sources */,
 				2A7134EA22AF799F0053F2B1 /* CategoryProductInteractor.swift in Sources */,
@@ -1449,12 +1529,14 @@
 				2A2C87F422D70FC500AC5D46 /* ProfileInspector.swift in Sources */,
 				2A68FE5522C07B29000FC4DD /* TopUpCell.swift in Sources */,
 				2A35474522A4A52300F9F32E /* ForgotPasswordWireFrame.swift in Sources */,
+				2A11EE6D22DD5B0300D7C8E2 /* PaypalPresenter.swift in Sources */,
 				2AF07CBF22D4219900535AEE /* UIDesignableView.swift in Sources */,
 				2A93AD9822CD8FF7002E77EA /* Cell.swift in Sources */,
 				2A35473D22A4A4DD00F9F32E /* ForgotPasswordInteractor.swift in Sources */,
 				2A49087622A0D06C00AD2310 /* HomePageView.swift in Sources */,
 				2A30974F22A5FBB70061D4DF /* IntSeparatorExt.swift in Sources */,
 				2A93AD9622CD86BF002E77EA /* BalanceHistory.swift in Sources */,
+				2A11EE6B22DD5AF500D7C8E2 /* PaypalEntity.swift in Sources */,
 				2AF49C3222BC61A90058D794 /* BalancePaymentWireFrame.swift in Sources */,
 				2A68FE4D22C069A0000FC4DD /* TopUpInteractor.swift in Sources */,
 				2AF49C3022BC61980058D794 /* BalancePayment.swift in Sources */,
@@ -1463,6 +1545,7 @@
 				2A14420C22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift in Sources */,
 				2A894CBD22B0D118001110F5 /* SearchProtocol.swift in Sources */,
 				2A7134F122AF7A240053F2B1 /* CategoryProductWireFrame.swift in Sources */,
+				2AEFFF6F22DC2B85004E359D /* PayPalView.swift in Sources */,
 				2AF07CC122D4250F00535AEE /* Voucher.swift in Sources */,
 				2A2C87F222D70FB600AC5D46 /* ProfileView.swift in Sources */,
 				2A35473F22A4A4EE00F9F32E /* ForgotPasswordView.swift in Sources */,
@@ -1646,12 +1729,15 @@
 			baseConfigurationReference = D2AE22C07AECE8E8F92F8F1E /* Pods-goOSC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NK9B469R72;
 				INFOPLIST_FILE = goOSC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootcamp.goOSC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "goOSC/goOSC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1662,12 +1748,14 @@
 			baseConfigurationReference = 717CC5FF925DD19B3AAF0624 /* Pods-goOSC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NK9B469R72;
 				INFOPLIST_FILE = goOSC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootcamp.goOSC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "goOSC/goOSC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

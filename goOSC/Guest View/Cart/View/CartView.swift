@@ -11,6 +11,9 @@ class CartView: UIViewController, CartViewProtocol {
     var presenter: CartPresenterProtocol?
     var homePageData = [CartEntity.SingleCart]()
     
+    @IBOutlet weak var cartButton: UIButton!
+    
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,17 +22,19 @@ class CartView: UIViewController, CartViewProtocol {
         CartWireFrame.createCartModule(self)
         presenter?.viewDidLoad()
     }
-//
     override func viewDidAppear(_ animated: Bool) {
         presenter?.interactor?.findAllData()
+        cartButton.isEnabled = false
     }
     func updateData(response: CartEntity.Response) {
         homePageData = response.data
-        print("updatedata")
-        print(homePageData)
+        if homePageData.count > 0 {
+            cartButton.isEnabled = true
+        } else {
+            cartButton.isEnabled = false
+        }
         tableView.reloadData()
     }
-//
     @IBAction func doSignOut(_ sender: Any) {
         let domain = Bundle.main.bundleIdentifier!
         UserDefaults.standard.removePersistentDomain(forName: domain)
@@ -68,8 +73,7 @@ extension CartView: UITableViewDelegate, UITableViewDataSource {
         deleteAction.backgroundColor = UIColor.red
         return[deleteAction]
     }
-
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        presenter?.wireFrame?.routeToDetail(from: self, with: homePageData.data[indexPath.row]!)
-//    }
+    
+    
+    
 }
