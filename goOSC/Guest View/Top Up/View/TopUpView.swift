@@ -11,7 +11,7 @@ import AVKit
 import Photos
 class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var presenter: TopUpPresenterProtocol?
-    var vSpinner:UIView?
+    fileprivate var vSpinner:UIView?
     @IBOutlet weak var balanceLabel: UILabel!
     
     @IBOutlet weak var nameLabel: UILabel!

@@ -464,14 +464,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-om-sb7">
-                                <rect key="frame" x="99" y="247" width="75" height="21"/>
+                                <rect key="frame" x="123" y="247" width="76" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="priceValue"/>
                                 </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnR-am-2PD">
+                                <rect key="frame" x="99" y="250" width="20" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -568,8 +575,17 @@
                                                                         <constraint firstAttribute="height" constant="30" id="StK-mz-g6C"/>
                                                                     </constraints>
                                                                 </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOh-8p-Sg7">
+                                                                    <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="30" id="B5E-Y8-yp9"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                                                                    <color key="textColor" red="1" green="0.59080355610000002" blue="0.060093333050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg7-la-RzD">
-                                                                    <rect key="frame" x="30" y="0.0" width="215" height="30"/>
+                                                                    <rect key="frame" x="60" y="0.0" width="185" height="30"/>
                                                                     <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
                                                                     <color key="textColor" red="1" green="0.59200847150000002" blue="0.061555899679999998" alpha="0.78876819350000005" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -684,10 +700,36 @@
                     <view key="view" contentMode="scaleToFill" id="XY2-H2-AcP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-fd-O75">
+                                <rect key="frame" x="0.0" y="587" width="314" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEb-eR-Xu6">
+                                <rect key="frame" x="326" y="586" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="4d6-t0-uqw" eventType="touchUpInside" id="55S-yy-LRv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="aHT-MB-YSH"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Chat" largeTitleDisplayMode="always" id="rDk-JM-tuH"/>
+                    <navigationItem key="navigationItem" title="Chat" largeTitleDisplayMode="always" id="rDk-JM-tuH">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-back-26" id="SUQ-Wt-26T">
+                            <connections>
+                                <action selector="goToPreviousPage:" destination="4d6-t0-uqw" id="YvH-TX-xQF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="msgTextField" destination="mJI-fd-O75" id="D9V-3d-Eeg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ymy-2D-G2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -805,7 +847,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVJ-80-F4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="346.77661169415296"/>
+            <point key="canvasLocation" x="2658" y="415"/>
         </scene>
         <!--Category Product View-->
         <scene sceneID="azM-NN-jmE">
@@ -1690,27 +1732,19 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ptt-AR-djt">
-                                <rect key="frame" x="0.0" y="202" width="375" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhA-aD-Yiy">
+                                <rect key="frame" x="0.0" y="582" width="375" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puchashed Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5U-IO-iCa">
-                                        <rect key="frame" x="16" y="17" width="151" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vk5-YG-9ec">
-                                        <rect key="frame" x="328" y="17" width="27" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="icons8-trolley-50"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                                <color key="backgroundColor" red="1" green="0.3795436097939433" blue="0.32594242740052737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doSignout:" destination="gWE-HI-8hE" eventType="touchUpInside" id="Ogl-4z-J2m"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izg-h4-8yq">
-                                <rect key="frame" x="0.0" y="278" width="375" height="53"/>
+                                <rect key="frame" x="0.0" y="199" width="375" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnB-xf-x1Z">
@@ -1731,17 +1765,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhA-aD-Yiy">
-                                <rect key="frame" x="0.0" y="582" width="375" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.3795436097939433" blue="0.32594242740052737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="doSignout:" destination="gWE-HI-8hE" eventType="touchUpInside" id="Ogl-4z-J2m"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="QSd-Ey-MmX"/>
@@ -1754,7 +1777,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIh-fy-FMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="1766"/>
+            <point key="canvasLocation" x="1446" y="1765"/>
         </scene>
         <!--Search-->
         <scene sceneID="dWf-ER-a6l">
@@ -2328,7 +2351,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9a-cY-K0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="399.19999999999999" y="1767.1664167916044"/>
+            <point key="canvasLocation" x="666" y="1766"/>
         </scene>
         <!--Chat-->
         <scene sceneID="QdA-ny-cd3">
@@ -2388,7 +2411,6 @@
         <image name="icons8-search-filled-24" width="24" height="24"/>
         <image name="icons8-shopping-basket-star-24" width="24" height="24"/>
         <image name="icons8-subscription-24" width="24" height="24"/>
-        <image name="icons8-trolley-50" width="50" height="50"/>
         <image name="icons8-two-hearts-26" width="26" height="26"/>
     </resources>
 </document>

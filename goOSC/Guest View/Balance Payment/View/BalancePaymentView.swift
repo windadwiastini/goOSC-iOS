@@ -14,7 +14,7 @@ class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
     @IBOutlet weak var finalPrice: UILabel!
     @IBOutlet weak var discount: UILabel!
     @IBOutlet weak var total: UILabel!
-    var dataSource = [CartEntity.SingleCart]()
+    fileprivate var dataSource = [CartEntity.SingleCart]()
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

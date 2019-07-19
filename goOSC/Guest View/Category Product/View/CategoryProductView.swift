@@ -13,7 +13,7 @@ class CategoryProductView: UIViewController, CategoryProductViewProtocol {
     var presenter: CategoryProductPresenterProtocol?
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var categoryNameLabel: UILabel!
-    var productList = HomePage.Response(code: 0, message: "", data: [], length: 0)
+    fileprivate var productList = HomePage.Response(code: 0, message: "", data: [], length: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()

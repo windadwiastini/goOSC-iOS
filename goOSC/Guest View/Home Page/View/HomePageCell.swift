@@ -21,7 +21,6 @@ class HomePageCell: UITableViewCell {
         let url = Config().url + data.thumbnail
         Alamofire.request(url).responseData { (response) in
             if response.error == nil {
-                print(response.result)
                 if let data = response.data {
                     self.posterImageView.image = UIImage(data: data)
                 }

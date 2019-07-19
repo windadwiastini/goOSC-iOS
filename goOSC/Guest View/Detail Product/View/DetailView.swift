@@ -23,7 +23,7 @@ class DetailView: UIViewController, DetailViewProtocol {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     
-    let playerViewController = AVPlayerViewController()
+    fileprivate let playerViewController = AVPlayerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()

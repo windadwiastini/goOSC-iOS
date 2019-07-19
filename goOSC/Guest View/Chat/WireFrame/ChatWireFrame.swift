@@ -8,10 +8,4 @@
 
 import UIKit
 
-class ChatWireFrame: ChatWireFrameProtocol {
-    func routeToSignIn(from view: UIViewController) {
-        let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
-        LoginWireframe.createLoginModule(signInPage)
-        view.present(signInPage, animated: true, completion: nil)
-    }
-}
+class ChatWireFrame: ChatWireFrameProtocol {}

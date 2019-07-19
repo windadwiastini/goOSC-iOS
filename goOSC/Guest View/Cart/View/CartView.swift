@@ -9,7 +9,7 @@
 import UIKit
 class CartView: UIViewController, CartViewProtocol {
     var presenter: CartPresenterProtocol?
-    var homePageData = [CartEntity.SingleCart]()
+    fileprivate var homePageData = [CartEntity.SingleCart]()
     
     @IBOutlet weak var cartButton: UIButton!
     

@@ -28,6 +28,4 @@ protocol ChatPresenterProtocol {
 }
 
 protocol ChatWireFrameProtocol {
-    func routeToSignIn(from view: UIViewController)
-    
 }

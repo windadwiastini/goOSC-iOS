@@ -27,7 +27,7 @@ class HomePageView: UIViewController, HomePageViewProtocol {
     }
     
     @IBAction func doSignOut(_ sender: Any) {
-        SignOut().viewDidLoad(view: self)
+        SignOut().hitSignOutButton(view: self)
     }
     
 }

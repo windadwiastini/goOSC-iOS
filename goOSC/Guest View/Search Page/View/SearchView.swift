@@ -13,7 +13,7 @@ class SearchView: UIViewController, SearchViewProtocol {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    var productList = HomePage.Response(code: 0, message: "", data: [], length: 0)
+    fileprivate var productList = HomePage.Response(code: 0, message: "", data: [], length: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()

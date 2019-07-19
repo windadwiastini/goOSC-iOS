@@ -23,7 +23,6 @@ class HomePageInteractor: HomePageInputInteractorProtocol {
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(HomePage.Response.self, from: response.data!)
                 self.presenter?.response(jsonDecode)
-                print(jsonDecode)
             case .none:
                 let resp = HomePage.Response(code: 401, message: "Not Found", data: [], length: 0)
                 self.presenter?.response(resp)

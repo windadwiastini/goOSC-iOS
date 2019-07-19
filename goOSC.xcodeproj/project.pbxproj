@@ -87,6 +87,7 @@
 		2A894CB922B0D0AD001110F5 /* SearchWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A894CB822B0D0AD001110F5 /* SearchWireFrame.swift */; };
 		2A894CBD22B0D118001110F5 /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A894CBC22B0D118001110F5 /* SearchProtocol.swift */; };
 		2A894CBF22B0FBA9001110F5 /* SearchProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A894CBE22B0FBA8001110F5 /* SearchProductCell.swift */; };
+		2A8F478A22E192DE00280415 /* JsonManipulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F478922E192DE00280415 /* JsonManipulate.swift */; };
 		2A93AD9622CD86BF002E77EA /* BalanceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A93AD9522CD86BF002E77EA /* BalanceHistory.swift */; };
 		2A93AD9822CD8FF7002E77EA /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A93AD9722CD8FF7002E77EA /* Cell.swift */; };
 		2AA579C522C9A35E008611FD /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA579C422C9A35E008611FD /* PaymentCell.swift */; };
@@ -207,6 +208,7 @@
 		2A894CB822B0D0AD001110F5 /* SearchWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWireFrame.swift; sourceTree = "<group>"; };
 		2A894CBC22B0D118001110F5 /* SearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
 		2A894CBE22B0FBA8001110F5 /* SearchProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductCell.swift; sourceTree = "<group>"; };
+		2A8F478922E192DE00280415 /* JsonManipulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManipulate.swift; sourceTree = "<group>"; };
 		2A93AD9522CD86BF002E77EA /* BalanceHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistory.swift; sourceTree = "<group>"; };
 		2A93AD9722CD8FF7002E77EA /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		2AA579C422C9A35E008611FD /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
@@ -1277,6 +1279,7 @@
 			children = (
 				2AF53D1022CEE59A008AF82C /* SignOut.swift */,
 				2AF07CBE22D4219900535AEE /* UIDesignableView.swift */,
+				2A8F478922E192DE00280415 /* JsonManipulate.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -1582,6 +1585,7 @@
 				2AF07CD222D43ADF00535AEE /* VoucherWireFrame.swift in Sources */,
 				2A1C589322C33FFC006F3A6B /* OptionView.swift in Sources */,
 				2AF49C2822BC61450058D794 /* Protocols.swift in Sources */,
+				2A8F478A22E192DE00280415 /* JsonManipulate.swift in Sources */,
 				2AE2A3AA22B20DEE00AECA8E /* CartPresenter.swift in Sources */,
 				2AE2A3AE22B20E0B00AECA8E /* CartView.swift in Sources */,
 				2AE2A3B022B20E2900AECA8E /* CartProtocols.swift in Sources */,
