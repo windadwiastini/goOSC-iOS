@@ -2,6 +2,9 @@ PODS:
   - Alamofire (4.8.2)
   - CardIO (5.4.1)
   - IQKeyboardManagerSwift (5.0.0)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - PayPal-iOS-SDK (2.18.1):
     - PayPal-iOS-SDK/CardIO (= 2.18.1)
     - PayPal-iOS-SDK/Core (= 2.18.1)
@@ -13,6 +16,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift (= 5.0.0)
+  - JSQMessagesViewController
   - PayPal-iOS-SDK
   - Starscream (~> 3.0.2)
 
@@ -21,6 +25,8 @@ SPEC REPOS:
     - Alamofire
     - CardIO
     - IQKeyboardManagerSwift
+    - JSQMessagesViewController
+    - JSQSystemSoundPlayer
     - PayPal-iOS-SDK
     - Starscream
 
@@ -28,9 +34,11 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   PayPal-iOS-SDK: 10654cd111e911a9807bddb96fae81aacb8e9915
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
 
-PODFILE CHECKSUM: 53d07e886ffe2123cb3c083bf2a35eb8efd3d665
+PODFILE CHECKSUM: 3d85086bbb941ea0e795144cdbc6f79232047fc0
 
 COCOAPODS: 1.6.1

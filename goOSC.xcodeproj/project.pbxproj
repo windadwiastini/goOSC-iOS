@@ -91,6 +91,7 @@
 		2A93AD9622CD86BF002E77EA /* BalanceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A93AD9522CD86BF002E77EA /* BalanceHistory.swift */; };
 		2A93AD9822CD8FF7002E77EA /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A93AD9722CD8FF7002E77EA /* Cell.swift */; };
 		2AA579C522C9A35E008611FD /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA579C422C9A35E008611FD /* PaymentCell.swift */; };
+		2ACE7F6922E93626001B9A5D /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE7F6822E93626001B9A5D /* Auth.swift */; };
 		2AE2A3A622B20DBD00AECA8E /* CartWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3A522B20DBD00AECA8E /* CartWireframe.swift */; };
 		2AE2A3A822B20DCE00AECA8E /* CartEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3A722B20DCE00AECA8E /* CartEntity.swift */; };
 		2AE2A3AA22B20DEE00AECA8E /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3A922B20DEE00AECA8E /* CartPresenter.swift */; };
@@ -98,6 +99,7 @@
 		2AE2A3AE22B20E0B00AECA8E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3AD22B20E0B00AECA8E /* CartView.swift */; };
 		2AE2A3B022B20E2900AECA8E /* CartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3AF22B20E2900AECA8E /* CartProtocols.swift */; };
 		2AE2A3B222B2135800AECA8E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3B122B2135800AECA8E /* CartCell.swift */; };
+		2AE8058422E5B27900B24DA5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE8058322E5B27900B24DA5 /* Message.swift */; };
 		2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB735229D1B460079C231 /* RegisterProtocols.swift */; };
 		2AEFFF6F22DC2B85004E359D /* PayPalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEFFF6E22DC2B85004E359D /* PayPalView.swift */; };
 		2AF07CBF22D4219900535AEE /* UIDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CBE22D4219900535AEE /* UIDesignableView.swift */; };
@@ -212,6 +214,7 @@
 		2A93AD9522CD86BF002E77EA /* BalanceHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistory.swift; sourceTree = "<group>"; };
 		2A93AD9722CD8FF7002E77EA /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		2AA579C422C9A35E008611FD /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		2ACE7F6822E93626001B9A5D /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		2AE2A3A522B20DBD00AECA8E /* CartWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartWireframe.swift; sourceTree = "<group>"; };
 		2AE2A3A722B20DCE00AECA8E /* CartEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartEntity.swift; sourceTree = "<group>"; };
 		2AE2A3A922B20DEE00AECA8E /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 		2AE2A3AD22B20E0B00AECA8E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		2AE2A3AF22B20E2900AECA8E /* CartProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProtocols.swift; sourceTree = "<group>"; };
 		2AE2A3B122B2135800AECA8E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		2AE8058222E563D500B24DA5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		2AE8058322E5B27900B24DA5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2AEEB735229D1B460079C231 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
 		2AEFFF6E22DC2B85004E359D /* PayPalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalView.swift; sourceTree = "<group>"; };
 		2AF07CBE22D4219900535AEE /* UIDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignableView.swift; sourceTree = "<group>"; };
@@ -818,6 +823,7 @@
 				2A6960C4229CBAF3000F4F5E /* LaunchScreen.storyboard */,
 				2A6960C7229CBAF3000F4F5E /* Info.plist */,
 				2A21897722B097230080BBEC /* oscDB.xcdatamodeld */,
+				2AE8058222E563D500B24DA5 /* Bridging-Header.h */,
 			);
 			path = goOSC;
 			sourceTree = "<group>";
@@ -1280,6 +1286,7 @@
 				2AF53D1022CEE59A008AF82C /* SignOut.swift */,
 				2AF07CBE22D4219900535AEE /* UIDesignableView.swift */,
 				2A8F478922E192DE00280415 /* JsonManipulate.swift */,
+				2ACE7F6822E93626001B9A5D /* Auth.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -1309,6 +1316,7 @@
 			isa = PBXGroup;
 			children = (
 				2AFB814C22B351C20065B277 /* ChatView.swift */,
+				2AE8058322E5B27900B24DA5 /* Message.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1442,12 +1450,16 @@
 				"${PODS_ROOT}/Target Support Files/Pods-goOSC/Pods-goOSC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1482,8 +1494,10 @@
 			files = (
 				2A894CB922B0D0AD001110F5 /* SearchWireFrame.swift in Sources */,
 				2A7134EC22AF79D20053F2B1 /* CategoryProductPresenter.swift in Sources */,
+				2AE8058422E5B27900B24DA5 /* Message.swift in Sources */,
 				2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */,
 				2A14420822C5B28900CBF132 /* BalanceHistoryView.swift in Sources */,
+				2ACE7F6922E93626001B9A5D /* Auth.swift in Sources */,
 				2AF07CCB22D439EB00535AEE /* VoucherInspector.swift in Sources */,
 				2A49087C22A0D0BF00AD2310 /* HomePageWireFrame.swift in Sources */,
 				2AF49C2A22BC61620058D794 /* BalancePaymentView.swift in Sources */,
@@ -1672,6 +1686,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1723,6 +1738,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};

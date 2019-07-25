@@ -8,4 +8,13 @@
 
 import UIKit
 
-class ChatWireFrame: ChatWireFrameProtocol {}
+class ChatWireFrame: ChatWireFrameProtocol {
+    class func createChatModule(_ ref: ChatView) {
+        let presenter: ChatPresenterProtocol & ChatOutputInteractorProtocol = ChatPresenter()
+        ref.presenter = presenter
+        ref.presenter?.wireFrame = ChatWireFrame()
+        ref.presenter?.view = ref
+        ref.presenter?.interactor = ChatInteractor()
+        ref.presenter?.interactor?.presenter = presenter
+    }
+}

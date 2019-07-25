@@ -9,15 +9,16 @@
 import UIKit
 
 protocol ChatViewProtocol {
-    
+    func updateMessage(response resp: Chat.ResponseDetail)
 }
 
 protocol ChatInputInteractorProtocol {
     var presenter: ChatOutputInteractorProtocol? { get set }
+    func detailChat(from userEmail: String, to destinationEmail: String)
 }
 
 protocol ChatOutputInteractorProtocol {
-    
+    func responseDetailChat(response resp: Chat.ResponseDetail)
 }
 
 protocol ChatPresenterProtocol {

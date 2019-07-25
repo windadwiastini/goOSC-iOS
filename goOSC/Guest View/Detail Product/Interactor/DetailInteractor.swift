@@ -69,7 +69,6 @@ class DetailInteractor: DetailInputInteractorProtocol {
         let header: HTTPHeaders = [
             "Authorization": "Bearer \(token)"
         ]
-        print(url)
         Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
             print(response)
             switch response.response?.statusCode {

@@ -16,12 +16,12 @@ class ChatPresenter: ChatPresenterProtocol {
     var interactor: ChatInputInteractorProtocol?
     
     func viewDidLoad() {
-        
+        interactor?.detailChat(from: Auth().email, to: "admin@goosc.com")
     }
-    
-    
 }
 
 extension ChatPresenter: ChatOutputInteractorProtocol {
-    
+    func responseDetailChat(response resp: Chat.ResponseDetail) {
+        view?.updateMessage(response: resp)
+    }
 }
