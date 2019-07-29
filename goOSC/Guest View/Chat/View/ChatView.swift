@@ -8,13 +8,19 @@
 
 import UIKit
 import Starscream
+import IQKeyboardManagerSwift
+import MessengerKit
 
-class ChatView: UIViewController, ChatViewProtocol {
+struct Sender: MSGUser {
+    var displayName: String
+    var avatar: UIImage?
+    var isSender: Bool
+}
+
+class ChatView: MSGMessengerViewController, ChatViewProtocol {
     var presenter: ChatPresenterProtocol?
     
-    var dataSource = [Chat.Detail]()
-    
-    @IBOutlet weak var collectionV: UICollectionView!
+    var messages  = [Chat.Detail]()
     
     @IBOutlet weak var msgTextField: UITextField!
 
@@ -24,10 +30,10 @@ class ChatView: UIViewController, ChatViewProtocol {
         ChatWireFrame.createChatModule(self)
         socket.delegate = self
         socket.connect()
-        collectionV.dataSource = self
-        collectionV.delegate = self
-        collectionV.register(Message.self, forCellWithReuseIdentifier: "chatCell")
         presenter?.viewDidLoad()
+        IQKeyboardManager.sharedManager().enable = false
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
+        dataSource = self
     }
 
     deinit {
@@ -38,70 +44,24 @@ class ChatView: UIViewController, ChatViewProtocol {
     @IBAction func goToPreviousPage(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-
-    fileprivate func sendMessage() {
-        let pesan = msgTextField.text!
-        let jsonObject: [String: String] = ["Message": pesan]
-        let stringify = JsonManipulate().JSONStringify(value: jsonObject)
-        let newMsg = Chat.Detail(chat_id: "", useremail: Auth().email, username: "", destination_email: "", destination_name: "", message: pesan, read: false, type_chat: "", chat_date: "")
-        socket.write(string: stringify)
-        msgTextField.text = ""
-        dataSource.append(newMsg)
-        collectionV.reloadData()
-    }
     
     func updateMessage(response resp: Chat.ResponseDetail) {
-        print(resp)
-        dataSource = resp.data
-        collectionV.reloadData()
-    }
-
-    @IBAction func sendButtonTapped(_ sender: Any) {
-        sendMessage()
+        messages = []
+        messages = resp.data
+        collectionView.reloadData()
+        collectionView.scrollToBottom(animated: true)
     }
     
+    override func inputViewPrimaryActionTriggered(inputView: MSGInputView) {
+        let newMsg = Chat.Detail(chat_id: "", useremail: Auth().email, username: Auth().firstName, destination_email: "", destination_name: "", message: inputView.message, read: false, type_chat: "chat", chat_date: "")
+        messages.append(newMsg)
+        collectionView.reloadData()
+        let jsonObject: [String: String] = ["Message": inputView.message]
+        let stringify = JsonManipulate().JSONStringify(value: jsonObject)
+        socket.write(string: stringify)
+    }
     
 }
-
-extension ChatView: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "chatCell", for: indexPath) as! Message
-        cell.message = dataSource[indexPath.row]
-        print("widthnyaaa: \(collectionV.frame.width)")
-        return cell
-    }
-}
-extension ChatView: UICollectionViewDelegate {
-}
-
-extension ChatView: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let option = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
-        let estimatedFrame = NSString(string: dataSource[indexPath.row].message).boundingRect(with: CGSize(width: collectionV.frame.width, height: 1000), options: option, attributes:[NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18)], context: nil)
-        return CGSize(width: collectionV.frame.width, height: estimatedFrame.height + 10)
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 1.0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout
-        collectionViewLayout: UICollectionViewLayout,
-                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 1.0
-    }
-}
-
 
 extension ChatView:WebSocketDelegate {
     func websocketDidConnect(socket: WebSocketClient) {
@@ -115,10 +75,7 @@ extension ChatView:WebSocketDelegate {
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
         let jsonDecode = try! JSONDecoder().decode(Chat.MessageDetail.self, from: text.data(using: .utf8)!)
         let newMsg = Chat.Detail(chat_id: "", useremail: "admin@goosc.com", username: jsonDecode.From, destination_email: "", destination_name: "", message: jsonDecode.Message, read: false, type_chat: jsonDecode.Type, chat_date: "")
-        
-        dataSource.append(newMsg)
-        collectionV.reloadData()
-        print("got some text: \(jsonDecode.Type)")
+        messages.append(newMsg)
     }
 
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
@@ -126,3 +83,37 @@ extension ChatView:WebSocketDelegate {
     }
 }
 
+extension ChatView: MSGDataSource {
+    func message(for indexPath: IndexPath) -> MSGMessage {
+        let messageData = messages[indexPath.item]
+        var isSender = true
+        if Auth().email == messageData.useremail {
+            isSender = false
+        }
+        
+        let sender = Sender(displayName: messageData.username, avatar: nil, isSender: isSender)
+        let msg = MSGMessage(id: 0, body: MSGMessageBody.text(messageData.message), user: sender, sentAt: Date())
+        return msg
+    }
+    
+    func numberOfSections() -> Int {
+        var number = 0
+        if messages.count > 0 {
+            number = 1
+        }
+        return number
+    }
+    
+    func numberOfMessages(in section: Int) -> Int {
+        print(messages.count)
+        return messages.count
+    }
+    
+    func footerTitle(for section: Int) -> String? {
+        return "Just now"
+    }
+    
+    func headerTitle(for section: Int) -> String? {
+        return messages[section].username
+    }
+}

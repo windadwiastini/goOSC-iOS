@@ -6,9 +6,9 @@ target 'goOSC' do
   use_frameworks!
 
   # Pods for goOSC
-
   pod 'Alamofire'
   pod 'IQKeyboardManagerSwift', '5.0.0'
   pod 'PayPal-iOS-SDK'
-  pod 'Starscream', '~> 3.0.2'
+  pod 'Starscream', '<= 3.0.5'
+  pod 'MessengerKit', :git => 'https://github.com/steve228uk/MessengerKit.git'
 end
