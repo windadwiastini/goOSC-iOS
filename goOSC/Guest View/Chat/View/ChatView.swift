@@ -8,7 +8,6 @@
 
 import UIKit
 import Starscream
-import IQKeyboardManagerSwift
 import MessengerKit
 
 struct Sender: MSGUser {
@@ -31,8 +30,6 @@ class ChatView: MSGMessengerViewController, ChatViewProtocol {
         socket.delegate = self
         socket.connect()
         presenter?.viewDidLoad()
-        IQKeyboardManager.sharedManager().enable = false
-        IQKeyboardManager.sharedManager().enableAutoToolbar = false
         dataSource = self
     }
 
@@ -46,10 +43,15 @@ class ChatView: MSGMessengerViewController, ChatViewProtocol {
     }
     
     func updateMessage(response resp: Chat.ResponseDetail) {
-        messages = []
-        messages = resp.data
-        collectionView.reloadData()
-        collectionView.scrollToBottom(animated: true)
+//        messages = []
+//        messages = resp.data
+//        collectionView.reloadData()
+        
+        for item in resp.data {
+            messages.append(item)
+        }
+        
+        collectionView.scrollToBottom(animated: false)
     }
     
     override func inputViewPrimaryActionTriggered(inputView: MSGInputView) {
@@ -59,6 +61,7 @@ class ChatView: MSGMessengerViewController, ChatViewProtocol {
         let jsonObject: [String: String] = ["Message": inputView.message]
         let stringify = JsonManipulate().JSONStringify(value: jsonObject)
         socket.write(string: stringify)
+        collectionView.scrollToBottom(animated: false)
     }
     
 }
@@ -76,6 +79,8 @@ extension ChatView:WebSocketDelegate {
         let jsonDecode = try! JSONDecoder().decode(Chat.MessageDetail.self, from: text.data(using: .utf8)!)
         let newMsg = Chat.Detail(chat_id: "", useremail: "admin@goosc.com", username: jsonDecode.From, destination_email: "", destination_name: "", message: jsonDecode.Message, read: false, type_chat: jsonDecode.Type, chat_date: "")
         messages.append(newMsg)
+        collectionView.reloadData()
+        collectionView.scrollToBottom(animated: true)
     }
 
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {

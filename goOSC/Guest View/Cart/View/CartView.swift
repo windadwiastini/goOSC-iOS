@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Bond
 class CartView: UIViewController, CartViewProtocol {
     var presenter: CartPresenterProtocol?
-    fileprivate var homePageData = [CartEntity.SingleCart]()
+    fileprivate var homePageData = MutableObservableArray([CartEntity.SingleCart]())
     
     @IBOutlet weak var cartButton: UIButton!
     
@@ -18,22 +19,20 @@ class CartView: UIViewController, CartViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        tableView.dataSource = self
         CartWireFrame.createCartModule(self)
         presenter?.viewDidLoad()
+        prepareObservable()
     }
     override func viewDidAppear(_ animated: Bool) {
         presenter?.interactor?.findAllData()
         cartButton.isEnabled = false
     }
     func updateData(response: CartEntity.Response) {
-        homePageData = response.data
-        if homePageData.count > 0 {
-            cartButton.isEnabled = true
-        } else {
-            cartButton.isEnabled = false
+        homePageData.removeAll()
+        for item in response.data {
+            print(item.product_name)
+            homePageData.append(item)
         }
-        tableView.reloadData()
     }
     @IBAction func doSignOut(_ sender: Any) {
         let domain = Bundle.main.bundleIdentifier!
@@ -42,9 +41,25 @@ class CartView: UIViewController, CartViewProtocol {
         presenter?.wireFrame?.routeToSignIn(from: self)
     }
     
+    fileprivate func prepareObservable() {
+        homePageData.observeNext { value in
+            if value.collection.count > 0 {
+              self.cartButton.isEnabled = true
+            } else {
+                self.cartButton.isEnabled = false
+            }
+        }
+        
+        homePageData.bind(to: tableView, animated: true) {dataSource, indexPath, tableView in
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell") as? CartCell else { return UITableViewCell() }
+            let data = self.homePageData[indexPath.row]
+            cell.configureCell(data: data)
+            return cell
+        }
+    }
 }
 
-extension CartView: UITableViewDelegate, UITableViewDataSource {
+extension CartView: UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -53,27 +68,17 @@ extension CartView: UITableViewDelegate, UITableViewDataSource {
         return homePageData.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell") as? CartCell else { return UITableViewCell() }
-        let data = homePageData[indexPath.row]
-        cell.configureCell(data: data)
-        return cell
-    }
-    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: {(action, indexPath) in
            var confirmtionalert = UIAlertController(title: "Delete", message: "Are you sure to remove this item from your basket?", preferredStyle: UIAlertControllerStyle.alert)
             confirmtionalert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
                 self.presenter?.interactor?.deleteData(self.homePageData[indexPath.row])
             }))
-            
+
             confirmtionalert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
             self.present(confirmtionalert, animated: true, completion: nil)
         })
         deleteAction.backgroundColor = UIColor.red
         return[deleteAction]
     }
-    
-    
-    
 }

@@ -1,0 +1,244 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ChatInteractor"
+provides-nominal:
+- "5goOSC14ChatInteractorC"
+provides-member:
+- ["5goOSC14ChatInteractorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Alamofire"
+- !private "Auth"
+- !private "Chat"
+- "ChatInputInteractorProtocol"
+- "ChatInteractor"
+- "ChatOutputInteractorProtocol"
+- !private "Config"
+- !private "HTTPHeaders"
+- !private "JSONDecoder"
+- !private "JSONEncoding"
+- "String"
+- !private "print"
+- !private "~="
+depends-member:
+- !private ["5goOSC4AuthC", "init"]
+- !private ["5goOSC4AuthC", "token"]
+- !private ["s7CVarArgP", "statusCode"]
+- !private ["5goOSC4ChatO", "ResponseDetail"]
+- !private ["5goOSC27ChatInputInteractorProtocolP", "Alamofire"]
+- !private ["5goOSC27ChatInputInteractorProtocolP", "Auth"]
+- !private ["5goOSC27ChatInputInteractorProtocolP", "Chat"]
+- !private ["5goOSC27ChatInputInteractorProtocolP", "Config"]
+- !private ["5goOSC27ChatInputInteractorProtocolP", "JSONDecoder"]
+- !private ["5goOSC27ChatInputInteractorProtocolP", "JSONEncoding"]
+- ["5goOSC27ChatInputInteractorProtocolP", ""]
+- ["5goOSC27ChatInputInteractorProtocolP", "detailChat"]
+- ["5goOSC27ChatInputInteractorProtocolP", "presenter"]
+- !private ["5goOSC27ChatInputInteractorProtocolP", "print"]
+- !private ["5goOSC14ChatInteractorC", "Alamofire"]
+- !private ["5goOSC14ChatInteractorC", "Auth"]
+- !private ["5goOSC14ChatInteractorC", "Chat"]
+- ["5goOSC14ChatInteractorC", "ChatOutputInteractorProtocol"]
+- !private ["5goOSC14ChatInteractorC", "Config"]
+- !private ["5goOSC14ChatInteractorC", "HTTPHeaders"]
+- !private ["5goOSC14ChatInteractorC", "JSONDecoder"]
+- !private ["5goOSC14ChatInteractorC", "JSONEncoding"]
+- ["5goOSC14ChatInteractorC", "String"]
+- ["5goOSC14ChatInteractorC", "deinit"]
+- ["5goOSC14ChatInteractorC", "detailChat"]
+- ["5goOSC14ChatInteractorC", "init"]
+- ["5goOSC14ChatInteractorC", "presenter"]
+- !private ["5goOSC14ChatInteractorC", "print"]
+- !private ["5goOSC28ChatOutputInteractorProtocolP", "responseDetailChat"]
+- !private ["5goOSC6ConfigC", "init"]
+- !private ["5goOSC6ConfigC", "url"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "response"]
+- !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
+- !private ["s28CustomDebugStringConvertibleP", "some"]
+- !private ["s28CustomDebugStringConvertibleP", "statusCode"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "some"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "response"]
+- !private ["s23CustomStringConvertibleP", "responseJSON"]
+- !private ["s23CustomStringConvertibleP", "statusCode"]
+- !private ["9Alamofire11DataRequestC", "responseJSON"]
+- !private ["9Alamofire12DataResponseV", "data"]
+- !private ["9Alamofire12DataResponseV", "response"]
+- !private ["11ReactiveKit13DeallocatableP", "statusCode"]
+- !private ["Se", "none"]
+- !private ["Se", "some"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "statusCode"]
+- !private ["SE", "none"]
+- !private ["SE", "some"]
+- !private ["SQ", "none"]
+- !private ["SQ", "post"]
+- !private ["SQ", "some"]
+- !private ["SQ", "statusCode"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["s23ExpressibleByNilLiteralP", "some"]
+- !private ["9Alamofire10HTTPMethodO", "post"]
+- !private ["So17NSHTTPURLResponseC", "statusCode"]
+- !private ["SH", "none"]
+- !private ["SH", "post"]
+- !private ["SH", "some"]
+- !private ["SH", "statusCode"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["9Alamofire12JSONEncodingV", "default"]
+- !private ["So8NSCodingP", "statusCode"]
+- !private ["So9NSCopyingP", "statusCode"]
+- !private ["So8NSObjectC", "statusCode"]
+- !private ["So8NSObjectP", "statusCode"]
+- !private ["So14NSSecureCodingP", "statusCode"]
+- !private ["Sq", "none"]
+- !private ["Sq", "some"]
+- !private ["11ReactiveKit16OptionalProtocolP", "none"]
+- !private ["11ReactiveKit16OptionalProtocolP", "some"]
+- !private ["9Alamofire17ParameterEncodingP", "default"]
+- !private ["SY", "post"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "statusCode"]
+- !private ["9Alamofire7RequestC", "responseJSON"]
+- !private ["9Alamofire8ResponseP", "data"]
+- !private ["9Alamofire8ResponseP", "response"]
+- !private ["5goOSC4ChatO14ResponseDetailV", "deinit"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So13NSURLResponseC", "statusCode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "some"]
+depends-nominal:
+- !private "5goOSC4AuthC"
+- !private "s7CVarArgP"
+- !private "5goOSC4ChatO"
+- "5goOSC27ChatInputInteractorProtocolP"
+- "5goOSC14ChatInteractorC"
+- !private "5goOSC28ChatOutputInteractorProtocolP"
+- !private "5goOSC6ConfigC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "9Alamofire11DataRequestC"
+- !private "9Alamofire12DataResponseV"
+- !private "11ReactiveKit13DeallocatableP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "11ReactiveKit18DisposeBagProviderP"
+- !private "SE"
+- !private "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "9Alamofire10HTTPMethodO"
+- !private "So17NSHTTPURLResponseC"
+- !private "SH"
+- !private "10Foundation11JSONDecoderC"
+- !private "9Alamofire12JSONEncodingV"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "11ReactiveKit16OptionalProtocolP"
+- !private "9Alamofire17ParameterEncodingP"
+- !private "SY"
+- !private "11ReactiveKit0A18ExtensionsProviderP"
+- !private "9Alamofire7RequestC"
+- !private "9Alamofire8ResponseP"
+- !private "5goOSC4ChatO14ResponseDetailV"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So13NSURLResponseC"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules/Bond.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Modules/MessengerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Headers/MessengerKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalMobile.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalConfiguration.h"
+- "/Users/bootcamp/Documents/collab2/goOSC/goOSC-Bridging-Header.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalProfileSharingViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalFuturePaymentViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalPaymentViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalOAuthScopes.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Headers/MessengerKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalPayment.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Starscream/zlib/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SafariServices.framework/Headers/SafariServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "5f02426a3a3dec27de1e37cc10d13f9e"

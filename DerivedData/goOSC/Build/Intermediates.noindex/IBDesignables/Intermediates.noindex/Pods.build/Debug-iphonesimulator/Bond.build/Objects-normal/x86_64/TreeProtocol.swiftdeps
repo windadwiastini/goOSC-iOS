@@ -1,0 +1,373 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TreeProtocol"
+- "MutableTreeProtocol"
+- "RangeReplaceableTreeProtocol"
+provides-nominal:
+- "4Bond12TreeProtocolP"
+- "4Bond19MutableTreeProtocolP"
+- "4Bond28RangeReplaceableTreeProtocolP"
+provides-member:
+- ["4Bond12TreeProtocolP", ""]
+- ["4Bond19MutableTreeProtocolP", ""]
+- ["4Bond28RangeReplaceableTreeProtocolP", ""]
+- ["4Bond12TreeProtocolP", "subscript"]
+- ["4Bond19MutableTreeProtocolP", "subscript"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "replaceSubrange"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "append"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "insert"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "insert"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "update"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "remove"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "remove"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "removeAll"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "move"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "move"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "+="
+- !private "-"
+- !private "..<"
+- !private "=="
+- "AssignmentPrecedence"
+- "Collection"
+- "IndexPath"
+- "Int"
+- "MutableCollection"
+- "MutableTreeProtocol"
+- "Range"
+- "RangeReplaceableCollection"
+- "RangeReplaceableTreeProtocol"
+- "TreeProtocol"
+- !private "fatalError"
+depends-member:
+- !private ["Sa", "map"]
+- !private ["Sa", "reversed"]
+- !private ["Sa", "sorted"]
+- !private ["SK", "count"]
+- !private ["SK", "dropFirst"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "lowerBound"]
+- !private ["SK", "map"]
+- !private ["SK", "reversed"]
+- !private ["SK", "sorted"]
+- !private ["SK", "subscript"]
+- !private ["SK", "upperBound"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "reversed"]
+- !private ["s7CVarArgP", "sorted"]
+- !private ["Sl", "count"]
+- !private ["Sl", "dropFirst"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "lowerBound"]
+- !private ["Sl", "map"]
+- !private ["Sl", "replaceSubrange"]
+- !private ["Sl", "reversed"]
+- !private ["Sl", "sorted"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "upperBound"]
+- !private ["SL", "count"]
+- !private ["SL", "dropFirst"]
+- !private ["SL", "isEmpty"]
+- !private ["SL", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["10Foundation15ContiguousBytesP", "reversed"]
+- !private ["10Foundation15ContiguousBytesP", "sorted"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "dropFirst"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "lowerBound"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "reversed"]
+- !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "upperBound"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "dropFirst"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "lowerBound"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "reversed"]
+- !private ["s17CustomReflectableP", "sorted"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "upperBound"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "dropFirst"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "lowerBound"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "reversed"]
+- !private ["s23CustomStringConvertibleP", "sorted"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "upperBound"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["10Foundation12DataProtocolP", "reversed"]
+- !private ["10Foundation12DataProtocolP", "sorted"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "count"]
+- !private ["Se", "dropFirst"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "lowerBound"]
+- !private ["Se", "map"]
+- !private ["Se", "reversed"]
+- !private ["Se", "sorted"]
+- !private ["Se", "subscript"]
+- !private ["Se", "upperBound"]
+- !private ["SE", "count"]
+- !private ["SE", "dropFirst"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "lowerBound"]
+- !private ["SE", "map"]
+- !private ["SE", "reversed"]
+- !private ["SE", "sorted"]
+- !private ["SE", "subscript"]
+- !private ["SE", "upperBound"]
+- !private ["SQ", "count"]
+- !private ["SQ", "dropFirst"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "lowerBound"]
+- !private ["SQ", "map"]
+- !private ["SQ", "reversed"]
+- !private ["SQ", "sorted"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "upperBound"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "dropFirst"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "reversed"]
+- !private ["s25ExpressibleByArrayLiteralP", "sorted"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "map"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "reversed"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "sorted"]
+- !private ["4Bond22FlatDataSourceProtocolP", "map"]
+- !private ["4Bond22FlatDataSourceProtocolP", "reversed"]
+- !private ["4Bond22FlatDataSourceProtocolP", "sorted"]
+- !private ["SH", "count"]
+- !private ["SH", "dropFirst"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "lowerBound"]
+- !private ["SH", "map"]
+- !private ["SH", "reversed"]
+- !private ["SH", "sorted"]
+- !private ["SH", "subscript"]
+- !private ["SH", "upperBound"]
+- !private ["10Foundation9IndexPathV", "count"]
+- !private ["10Foundation9IndexPathV", "dropFirst"]
+- !private ["10Foundation9IndexPathV", "isEmpty"]
+- !private ["10Foundation9IndexPathV", "subscript"]
+- !private ["s20LazySequenceProtocolP", "map"]
+- !private ["s20LazySequenceProtocolP", "subscript"]
+- !private ["SM", "count"]
+- !private ["SM", "dropFirst"]
+- !private ["SM", "isEmpty"]
+- !private ["SM", "map"]
+- !private ["SM", "replaceSubrange"]
+- !private ["SM", "reversed"]
+- !private ["SM", "sorted"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "reversed"]
+- !private ["10Foundation19MutableDataProtocolP", "sorted"]
+- ["4Bond19MutableTreeProtocolP", "Children"]
+- ["4Bond19MutableTreeProtocolP", "Collection"]
+- ["4Bond19MutableTreeProtocolP", "IndexPath"]
+- ["4Bond19MutableTreeProtocolP", "MutableCollection"]
+- ["4Bond19MutableTreeProtocolP", "MutableTreeProtocol"]
+- ["4Bond19MutableTreeProtocolP", "Range"]
+- ["4Bond19MutableTreeProtocolP", "RangeReplaceableCollection"]
+- ["4Bond19MutableTreeProtocolP", "RangeReplaceableTreeProtocol"]
+- ["4Bond19MutableTreeProtocolP", ""]
+- ["4Bond19MutableTreeProtocolP", "children"]
+- !private ["4Bond19MutableTreeProtocolP", "fatalError"]
+- !private ["4Bond19MutableTreeProtocolP", "insert"]
+- !private ["4Bond19MutableTreeProtocolP", "remove"]
+- ["4Bond19MutableTreeProtocolP", "replaceSubrange"]
+- ["4Bond19MutableTreeProtocolP", "subscript"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "map"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "reversed"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "sorted"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "map"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "reversed"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "sorted"]
+- !private ["Sk", "count"]
+- !private ["Sk", "dropFirst"]
+- !private ["Sk", "isEmpty"]
+- !private ["Sk", "lowerBound"]
+- !private ["Sk", "map"]
+- !private ["Sk", "reversed"]
+- !private ["Sk", "sorted"]
+- !private ["Sk", "subscript"]
+- !private ["Sk", "upperBound"]
+- !private ["Sn", "lowerBound"]
+- !private ["Sn", "upperBound"]
+- !private ["SX", "lowerBound"]
+- !private ["SX", "upperBound"]
+- !private ["Sm", "map"]
+- !private ["Sm", "replaceSubrange"]
+- !private ["Sm", "reversed"]
+- !private ["Sm", "sorted"]
+- !private ["Sm", "subscript"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "Children"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "Collection"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "IndexPath"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "Range"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "RangeReplaceableCollection"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "RangeReplaceableTreeProtocol"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "append"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "children"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "fatalError"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "insert"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "move"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "remove"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "removeAll"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "replaceSubrange"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "subscript"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "update"]
+- !private ["10Foundation20ReferenceConvertibleP", "count"]
+- !private ["10Foundation20ReferenceConvertibleP", "dropFirst"]
+- !private ["10Foundation20ReferenceConvertibleP", "isEmpty"]
+- !private ["10Foundation20ReferenceConvertibleP", "subscript"]
+- !private ["s18ReversedCollectionV", "map"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "count"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "dropFirst"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "isEmpty"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "subscript"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "map"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "reversed"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "sorted"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "map"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "reversed"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "sorted"]
+- !private ["ST", "count"]
+- !private ["ST", "dropFirst"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "lowerBound"]
+- !private ["ST", "map"]
+- !private ["ST", "replaceSubrange"]
+- !private ["ST", "reversed"]
+- !private ["ST", "sorted"]
+- !private ["ST", "subscript"]
+- !private ["ST", "upperBound"]
+- !private ["s5SliceV", "subscript"]
+- ["4Bond12TreeProtocolP", "Children"]
+- ["4Bond12TreeProtocolP", "Collection"]
+- ["4Bond12TreeProtocolP", "IndexPath"]
+- ["4Bond12TreeProtocolP", "Int"]
+- ["4Bond12TreeProtocolP", "MutableCollection"]
+- ["4Bond12TreeProtocolP", "MutableTreeProtocol"]
+- ["4Bond12TreeProtocolP", "Range"]
+- ["4Bond12TreeProtocolP", "RangeReplaceableCollection"]
+- ["4Bond12TreeProtocolP", "RangeReplaceableTreeProtocol"]
+- ["4Bond12TreeProtocolP", "TreeProtocol"]
+- ["4Bond12TreeProtocolP", ""]
+- ["4Bond12TreeProtocolP", "children"]
+- !private ["4Bond12TreeProtocolP", "fatalError"]
+- !private ["4Bond12TreeProtocolP", "insert"]
+- !private ["4Bond12TreeProtocolP", "remove"]
+- ["4Bond12TreeProtocolP", "replaceSubrange"]
+- ["4Bond12TreeProtocolP", "subscript"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "reversed"]
+- !private ["s14_ArrayProtocolP", "sorted"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "reversed"]
+- !private ["s24_DestructorSafeContainerP", "sorted"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s19_HasContiguousBytesP", "reversed"]
+- !private ["s19_HasContiguousBytesP", "sorted"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reversed"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sorted"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "dropFirst"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "reversed"]
+- !private ["s21_ObjectiveCBridgeableP", "sorted"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "4Bond34FlatDataSourceChangesetConvertibleP"
+- !private "4Bond22FlatDataSourceProtocolP"
+- !private "SH"
+- !private "10Foundation9IndexPathV"
+- !private "s20LazySequenceProtocolP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "4Bond19MutableTreeProtocolP"
+- !private "4Bond31QueryableFlatDataSourceProtocolP"
+- !private "4Bond36QueryableSectionedDataSourceProtocolP"
+- !private "Sk"
+- !private "Sn"
+- !private "SX"
+- !private "Sm"
+- "4Bond28RangeReplaceableTreeProtocolP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s18ReversedCollectionV"
+- !private "4Bond33SectionedDataIndexPathConvertableP"
+- !private "4Bond39SectionedDataSourceChangesetConvertibleP"
+- !private "4Bond27SectionedDataSourceProtocolP"
+- !private "ST"
+- !private "s5SliceV"
+- "4Bond12TreeProtocolP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "78e9dfdf240635d73ee005238f50ed37"

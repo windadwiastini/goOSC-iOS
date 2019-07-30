@@ -1,0 +1,510 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "12MessengerKit26MSGMessengerViewControllerC"
+provides-member:
+- ["12MessengerKit26MSGMessengerViewControllerC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "MSGMessage"
+- "MSGMessageCellDelegate"
+- "MSGMessengerViewController"
+- "MSGUser"
+- !private "SFSafariViewController"
+- !private "UIApplication"
+- "URL"
+depends-member:
+- !private ["SK", "starts"]
+- !private ["s7CVarArgP", "SFSafariViewController"]
+- !private ["s7CVarArgP", "UIApplication"]
+- ["s7CVarArgP", "cellAvatarTapped"]
+- ["s7CVarArgP", "cellLinkTapped"]
+- ["s7CVarArgP", "cellLongPressReceived"]
+- ["s7CVarArgP", "cellTapReceived"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "open"]
+- !private ["s7CVarArgP", "preferredControlTintColor"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "starts"]
+- !private ["s7CVarArgP", "tintColor"]
+- !private ["Sl", "starts"]
+- !private ["SL", "starts"]
+- !private ["s28CustomDebugStringConvertibleP", "SFSafariViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
+- ["s28CustomDebugStringConvertibleP", "cellAvatarTapped"]
+- ["s28CustomDebugStringConvertibleP", "cellLinkTapped"]
+- ["s28CustomDebugStringConvertibleP", "cellLongPressReceived"]
+- ["s28CustomDebugStringConvertibleP", "cellTapReceived"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "open"]
+- !private ["s28CustomDebugStringConvertibleP", "preferredControlTintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "scheme"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "starts"]
+- !private ["s28CustomDebugStringConvertibleP", "tintColor"]
+- !private ["s17CustomReflectableP", "starts"]
+- !private ["s23CustomStringConvertibleP", "SFSafariViewController"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
+- ["s23CustomStringConvertibleP", "cellAvatarTapped"]
+- ["s23CustomStringConvertibleP", "cellLinkTapped"]
+- ["s23CustomStringConvertibleP", "cellLongPressReceived"]
+- ["s23CustomStringConvertibleP", "cellTapReceived"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "open"]
+- !private ["s23CustomStringConvertibleP", "preferredControlTintColor"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "scheme"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "starts"]
+- !private ["s23CustomStringConvertibleP", "tintColor"]
+- !private ["Se", "scheme"]
+- !private ["Se", "starts"]
+- !private ["SE", "scheme"]
+- !private ["SE", "starts"]
+- !private ["SQ", "SFSafariViewController"]
+- !private ["SQ", "UIApplication"]
+- ["SQ", "cellAvatarTapped"]
+- ["SQ", "cellLinkTapped"]
+- ["SQ", "cellLongPressReceived"]
+- ["SQ", "cellTapReceived"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "init"]
+- !private ["SQ", "open"]
+- !private ["SQ", "preferredControlTintColor"]
+- !private ["SQ", "present"]
+- !private ["SQ", "scheme"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "starts"]
+- !private ["SQ", "tintColor"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "starts"]
+- !private ["s32ExpressibleByStringInterpolationP", "starts"]
+- !private ["s26ExpressibleByStringLiteralP", "starts"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "starts"]
+- !private ["SH", "SFSafariViewController"]
+- !private ["SH", "UIApplication"]
+- ["SH", "cellAvatarTapped"]
+- ["SH", "cellLinkTapped"]
+- ["SH", "cellLongPressReceived"]
+- ["SH", "cellTapReceived"]
+- !private ["SH", "delegate"]
+- !private ["SH", "init"]
+- !private ["SH", "open"]
+- !private ["SH", "preferredControlTintColor"]
+- !private ["SH", "present"]
+- !private ["SH", "scheme"]
+- !private ["SH", "shared"]
+- !private ["SH", "starts"]
+- !private ["SH", "tintColor"]
+- !private ["s25LosslessStringConvertibleP", "starts"]
+- !private ["12MessengerKit11MSGDelegateP", "avatarTapped"]
+- !private ["12MessengerKit11MSGDelegateP", "linkTapped"]
+- !private ["12MessengerKit11MSGDelegateP", "longPressReceieved"]
+- !private ["12MessengerKit11MSGDelegateP", "shouldDisplaySafari"]
+- !private ["12MessengerKit11MSGDelegateP", "shouldOpen"]
+- !private ["12MessengerKit11MSGDelegateP", "tapReceived"]
+- !private ["12MessengerKit22MSGMessageCellDelegateP", "SFSafariViewController"]
+- !private ["12MessengerKit22MSGMessageCellDelegateP", "UIApplication"]
+- ["12MessengerKit22MSGMessageCellDelegateP", ""]
+- ["12MessengerKit22MSGMessageCellDelegateP", "cellAvatarTapped"]
+- ["12MessengerKit22MSGMessageCellDelegateP", "cellLinkTapped"]
+- ["12MessengerKit22MSGMessageCellDelegateP", "cellLongPressReceived"]
+- ["12MessengerKit22MSGMessageCellDelegateP", "cellTapReceived"]
+- !private ["12MessengerKit22MSGMessageCellDelegateP", "delegate"]
+- !private ["12MessengerKit22MSGMessageCellDelegateP", "present"]
+- !private ["12MessengerKit22MSGMessageCellDelegateP", "tintColor"]
+- ["12MessengerKit26MSGMessengerViewControllerC", "MSGMessage"]
+- ["12MessengerKit26MSGMessengerViewControllerC", "MSGUser"]
+- !private ["12MessengerKit26MSGMessengerViewControllerC", "SFSafariViewController"]
+- !private ["12MessengerKit26MSGMessengerViewControllerC", "UIApplication"]
+- ["12MessengerKit26MSGMessengerViewControllerC", "URL"]
+- ["12MessengerKit26MSGMessengerViewControllerC", "cellAvatarTapped"]
+- ["12MessengerKit26MSGMessengerViewControllerC", "cellLinkTapped"]
+- ["12MessengerKit26MSGMessengerViewControllerC", "cellLongPressReceived"]
+- ["12MessengerKit26MSGMessengerViewControllerC", "cellTapReceived"]
+- ["12MessengerKit26MSGMessengerViewControllerC", "deinit"]
+- !private ["12MessengerKit26MSGMessengerViewControllerC", "delegate"]
+- !private ["12MessengerKit26MSGMessengerViewControllerC", "present"]
+- !private ["12MessengerKit26MSGMessengerViewControllerC", "tintColor"]
+- !private ["12MessengerKit30MSGSectionReusableViewDelegateP", "SFSafariViewController"]
+- !private ["12MessengerKit30MSGSectionReusableViewDelegateP", "UIApplication"]
+- ["12MessengerKit30MSGSectionReusableViewDelegateP", "cellAvatarTapped"]
+- ["12MessengerKit30MSGSectionReusableViewDelegateP", "cellLinkTapped"]
+- ["12MessengerKit30MSGSectionReusableViewDelegateP", "cellLongPressReceived"]
+- ["12MessengerKit30MSGSectionReusableViewDelegateP", "cellTapReceived"]
+- !private ["12MessengerKit30MSGSectionReusableViewDelegateP", "delegate"]
+- !private ["12MessengerKit30MSGSectionReusableViewDelegateP", "present"]
+- !private ["12MessengerKit30MSGSectionReusableViewDelegateP", "tintColor"]
+- !private ["s10MirrorPathP", "starts"]
+- !private ["So8NSCodingP", "SFSafariViewController"]
+- !private ["So8NSCodingP", "UIApplication"]
+- ["So8NSCodingP", "cellAvatarTapped"]
+- ["So8NSCodingP", "cellLinkTapped"]
+- ["So8NSCodingP", "cellLongPressReceived"]
+- ["So8NSCodingP", "cellTapReceived"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "preferredControlTintColor"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "starts"]
+- !private ["So8NSCodingP", "tintColor"]
+- !private ["So9NSCopyingP", "starts"]
+- !private ["So26NSExtensionRequestHandlingP", "SFSafariViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
+- ["So26NSExtensionRequestHandlingP", "cellAvatarTapped"]
+- ["So26NSExtensionRequestHandlingP", "cellLinkTapped"]
+- ["So26NSExtensionRequestHandlingP", "cellLongPressReceived"]
+- ["So26NSExtensionRequestHandlingP", "cellTapReceived"]
+- !private ["So26NSExtensionRequestHandlingP", "delegate"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "preferredControlTintColor"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "tintColor"]
+- !private ["So21NSItemProviderReadingP", "starts"]
+- !private ["So21NSItemProviderWritingP", "starts"]
+- !private ["So16NSMutableCopyingP", "starts"]
+- ["So8NSObjectC", "MSGMessage"]
+- ["So8NSObjectC", "MSGUser"]
+- !private ["So8NSObjectC", "SFSafariViewController"]
+- !private ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "cellAvatarTapped"]
+- ["So8NSObjectC", "cellLinkTapped"]
+- ["So8NSObjectC", "cellLongPressReceived"]
+- ["So8NSObjectC", "cellTapReceived"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "open"]
+- !private ["So8NSObjectC", "preferredControlTintColor"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "starts"]
+- !private ["So8NSObjectC", "tintColor"]
+- !private ["So8NSObjectP", "SFSafariViewController"]
+- !private ["So8NSObjectP", "UIApplication"]
+- !private ["So8NSObjectP", "avatarTapped"]
+- ["So8NSObjectP", "cellAvatarTapped"]
+- ["So8NSObjectP", "cellLinkTapped"]
+- ["So8NSObjectP", "cellLongPressReceived"]
+- ["So8NSObjectP", "cellTapReceived"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "linkTapped"]
+- !private ["So8NSObjectP", "longPressReceieved"]
+- !private ["So8NSObjectP", "open"]
+- !private ["So8NSObjectP", "preferredControlTintColor"]
+- !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "shouldDisplaySafari"]
+- !private ["So8NSObjectP", "shouldOpen"]
+- !private ["So8NSObjectP", "starts"]
+- !private ["So8NSObjectP", "tapReceived"]
+- !private ["So8NSObjectP", "tintColor"]
+- !private ["So14NSSecureCodingP", "starts"]
+- !private ["So8NSStringC", "starts"]
+- !private ["Sm", "starts"]
+- !private ["10Foundation20ReferenceConvertibleP", "scheme"]
+- !private ["So22SFSafariViewControllerC", "init"]
+- !private ["So22SFSafariViewControllerC", "preferredControlTintColor"]
+- !private ["ST", "starts"]
+- !private ["SS", "starts"]
+- !private ["Sy", "starts"]
+- !private ["s16TextOutputStreamP", "starts"]
+- !private ["s20TextOutputStreamableP", "starts"]
+- !private ["So21UIAppearanceContainerP", "SFSafariViewController"]
+- !private ["So21UIAppearanceContainerP", "UIApplication"]
+- ["So21UIAppearanceContainerP", "cellAvatarTapped"]
+- ["So21UIAppearanceContainerP", "cellLinkTapped"]
+- ["So21UIAppearanceContainerP", "cellLongPressReceived"]
+- ["So21UIAppearanceContainerP", "cellTapReceived"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "preferredControlTintColor"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "tintColor"]
+- !private ["So13UIApplicationC", "open"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So26UICollectionViewDataSourceP", "SFSafariViewController"]
+- !private ["So26UICollectionViewDataSourceP", "UIApplication"]
+- ["So26UICollectionViewDataSourceP", "cellAvatarTapped"]
+- ["So26UICollectionViewDataSourceP", "cellLinkTapped"]
+- ["So26UICollectionViewDataSourceP", "cellLongPressReceived"]
+- ["So26UICollectionViewDataSourceP", "cellTapReceived"]
+- !private ["So26UICollectionViewDataSourceP", "delegate"]
+- !private ["So26UICollectionViewDataSourceP", "present"]
+- !private ["So26UICollectionViewDataSourceP", "tintColor"]
+- !private ["So37UICollectionViewDataSourcePrefetchingP", "SFSafariViewController"]
+- !private ["So37UICollectionViewDataSourcePrefetchingP", "UIApplication"]
+- ["So37UICollectionViewDataSourcePrefetchingP", "cellAvatarTapped"]
+- ["So37UICollectionViewDataSourcePrefetchingP", "cellLinkTapped"]
+- ["So37UICollectionViewDataSourcePrefetchingP", "cellLongPressReceived"]
+- ["So37UICollectionViewDataSourcePrefetchingP", "cellTapReceived"]
+- !private ["So37UICollectionViewDataSourcePrefetchingP", "delegate"]
+- !private ["So37UICollectionViewDataSourcePrefetchingP", "present"]
+- !private ["So37UICollectionViewDataSourcePrefetchingP", "tintColor"]
+- !private ["So24UICollectionViewDelegateP", "SFSafariViewController"]
+- !private ["So24UICollectionViewDelegateP", "UIApplication"]
+- ["So24UICollectionViewDelegateP", "cellAvatarTapped"]
+- ["So24UICollectionViewDelegateP", "cellLinkTapped"]
+- ["So24UICollectionViewDelegateP", "cellLongPressReceived"]
+- ["So24UICollectionViewDelegateP", "cellTapReceived"]
+- !private ["So24UICollectionViewDelegateP", "delegate"]
+- !private ["So24UICollectionViewDelegateP", "present"]
+- !private ["So24UICollectionViewDelegateP", "tintColor"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "SFSafariViewController"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIApplication"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "cellAvatarTapped"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "cellLinkTapped"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "cellLongPressReceived"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "cellTapReceived"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "delegate"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "present"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "tintColor"]
+- !private ["So18UIContentContainerP", "SFSafariViewController"]
+- !private ["So18UIContentContainerP", "UIApplication"]
+- ["So18UIContentContainerP", "cellAvatarTapped"]
+- ["So18UIContentContainerP", "cellLinkTapped"]
+- ["So18UIContentContainerP", "cellLongPressReceived"]
+- ["So18UIContentContainerP", "cellTapReceived"]
+- !private ["So18UIContentContainerP", "delegate"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "preferredControlTintColor"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "tintColor"]
+- !private ["So18UIFocusEnvironmentP", "SFSafariViewController"]
+- !private ["So18UIFocusEnvironmentP", "UIApplication"]
+- ["So18UIFocusEnvironmentP", "cellAvatarTapped"]
+- ["So18UIFocusEnvironmentP", "cellLinkTapped"]
+- ["So18UIFocusEnvironmentP", "cellLongPressReceived"]
+- ["So18UIFocusEnvironmentP", "cellTapReceived"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "preferredControlTintColor"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "tintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "SFSafariViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
+- ["So30UIPasteConfigurationSupportingP", "cellAvatarTapped"]
+- ["So30UIPasteConfigurationSupportingP", "cellLinkTapped"]
+- ["So30UIPasteConfigurationSupportingP", "cellLongPressReceived"]
+- ["So30UIPasteConfigurationSupportingP", "cellTapReceived"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "open"]
+- !private ["So30UIPasteConfigurationSupportingP", "preferredControlTintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
+- ["So11UIResponderC", "MSGMessage"]
+- ["So11UIResponderC", "MSGUser"]
+- !private ["So11UIResponderC", "SFSafariViewController"]
+- !private ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", "cellAvatarTapped"]
+- ["So11UIResponderC", "cellLinkTapped"]
+- ["So11UIResponderC", "cellLongPressReceived"]
+- ["So11UIResponderC", "cellTapReceived"]
+- !private ["So11UIResponderC", "delegate"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "open"]
+- !private ["So11UIResponderC", "preferredControlTintColor"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So11UIResponderC", "tintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "SFSafariViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
+- ["So30UIResponderStandardEditActionsP", "cellAvatarTapped"]
+- ["So30UIResponderStandardEditActionsP", "cellLinkTapped"]
+- ["So30UIResponderStandardEditActionsP", "cellLongPressReceived"]
+- ["So30UIResponderStandardEditActionsP", "cellTapReceived"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "open"]
+- !private ["So30UIResponderStandardEditActionsP", "preferredControlTintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "tintColor"]
+- !private ["So20UIScrollViewDelegateP", "SFSafariViewController"]
+- !private ["So20UIScrollViewDelegateP", "UIApplication"]
+- ["So20UIScrollViewDelegateP", "cellAvatarTapped"]
+- ["So20UIScrollViewDelegateP", "cellLinkTapped"]
+- ["So20UIScrollViewDelegateP", "cellLongPressReceived"]
+- ["So20UIScrollViewDelegateP", "cellTapReceived"]
+- !private ["So20UIScrollViewDelegateP", "delegate"]
+- !private ["So20UIScrollViewDelegateP", "present"]
+- !private ["So20UIScrollViewDelegateP", "tintColor"]
+- !private ["So16UIStateRestoringP", "SFSafariViewController"]
+- !private ["So16UIStateRestoringP", "UIApplication"]
+- ["So16UIStateRestoringP", "cellAvatarTapped"]
+- ["So16UIStateRestoringP", "cellLinkTapped"]
+- ["So16UIStateRestoringP", "cellLongPressReceived"]
+- ["So16UIStateRestoringP", "cellTapReceived"]
+- !private ["So16UIStateRestoringP", "delegate"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "preferredControlTintColor"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "tintColor"]
+- !private ["So18UITraitEnvironmentP", "SFSafariViewController"]
+- !private ["So18UITraitEnvironmentP", "UIApplication"]
+- ["So18UITraitEnvironmentP", "cellAvatarTapped"]
+- ["So18UITraitEnvironmentP", "cellLinkTapped"]
+- ["So18UITraitEnvironmentP", "cellLongPressReceived"]
+- ["So18UITraitEnvironmentP", "cellTapReceived"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "preferredControlTintColor"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "tintColor"]
+- !private ["So23UIUserActivityRestoringP", "SFSafariViewController"]
+- !private ["So23UIUserActivityRestoringP", "UIApplication"]
+- ["So23UIUserActivityRestoringP", "cellAvatarTapped"]
+- ["So23UIUserActivityRestoringP", "cellLinkTapped"]
+- ["So23UIUserActivityRestoringP", "cellLongPressReceived"]
+- ["So23UIUserActivityRestoringP", "cellTapReceived"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "open"]
+- !private ["So23UIUserActivityRestoringP", "preferredControlTintColor"]
+- !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "tintColor"]
+- ["So16UIViewControllerC", "MSGMessage"]
+- ["So16UIViewControllerC", "MSGUser"]
+- !private ["So16UIViewControllerC", "SFSafariViewController"]
+- !private ["So16UIViewControllerC", "UIApplication"]
+- ["So16UIViewControllerC", "URL"]
+- ["So16UIViewControllerC", "cellAvatarTapped"]
+- ["So16UIViewControllerC", "cellLinkTapped"]
+- ["So16UIViewControllerC", "cellLongPressReceived"]
+- ["So16UIViewControllerC", "cellTapReceived"]
+- !private ["So16UIViewControllerC", "delegate"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "preferredControlTintColor"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "tintColor"]
+- !private ["10Foundation3URLV", "scheme"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "scheme"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "starts"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "starts"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "starts"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "starts"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "scheme"]
+- !private ["s19_HasContiguousBytesP", "starts"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "starts"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SFSafariViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "cellAvatarTapped"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "cellLinkTapped"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "cellLongPressReceived"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "cellTapReceived"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "open"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "preferredControlTintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "starts"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
+- !private ["s21_ObjectiveCBridgeableP", "scheme"]
+- !private ["s21_ObjectiveCBridgeableP", "starts"]
+depends-nominal:
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "12MessengerKit11MSGDelegateP"
+- "12MessengerKit22MSGMessageCellDelegateP"
+- "12MessengerKit26MSGMessengerViewControllerC"
+- "12MessengerKit30MSGSectionReusableViewDelegateP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So22SFSafariViewControllerC"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
+- "So26UICollectionViewDataSourceP"
+- "So37UICollectionViewDataSourcePrefetchingP"
+- "So24UICollectionViewDelegateP"
+- "So34UICollectionViewDelegateFlowLayoutP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So20UIScrollViewDelegateP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- !private "10Foundation3URLV"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/MessengerKit/MessengerKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/MessengerKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SafariServices.framework/Headers/SafariServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f395b57a2738c3659aa7e83824f5f838"

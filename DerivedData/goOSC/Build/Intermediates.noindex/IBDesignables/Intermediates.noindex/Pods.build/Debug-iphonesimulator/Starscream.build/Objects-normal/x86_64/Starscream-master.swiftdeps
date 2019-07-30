@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "a781a865c9830cf3c0a7667e559beaad"
+build_time: [1564447068, 956037000]
+inputs:
+  "/Users/bootcamp/Documents/collab2/Pods/Starscream/Sources/Compression.swift": [1564110397, 645191369]
+  "/Users/bootcamp/Documents/collab2/Pods/Starscream/Sources/SSLSecurity.swift": [1564110397, 645595396]
+  "/Users/bootcamp/Documents/collab2/Pods/Starscream/Sources/WebSocket.swift": [1564110397, 646512125]

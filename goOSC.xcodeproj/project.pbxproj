@@ -99,7 +99,6 @@
 		2AE2A3AE22B20E0B00AECA8E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3AD22B20E0B00AECA8E /* CartView.swift */; };
 		2AE2A3B022B20E2900AECA8E /* CartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3AF22B20E2900AECA8E /* CartProtocols.swift */; };
 		2AE2A3B222B2135800AECA8E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2A3B122B2135800AECA8E /* CartCell.swift */; };
-		2AE8058422E5B27900B24DA5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE8058322E5B27900B24DA5 /* Message.swift */; };
 		2AEEB736229D1B460079C231 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB735229D1B460079C231 /* RegisterProtocols.swift */; };
 		2AEFFF6F22DC2B85004E359D /* PayPalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEFFF6E22DC2B85004E359D /* PayPalView.swift */; };
 		2AF07CBF22D4219900535AEE /* UIDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF07CBE22D4219900535AEE /* UIDesignableView.swift */; };
@@ -223,7 +222,6 @@
 		2AE2A3AF22B20E2900AECA8E /* CartProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProtocols.swift; sourceTree = "<group>"; };
 		2AE2A3B122B2135800AECA8E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		2AE8058222E563D500B24DA5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		2AE8058322E5B27900B24DA5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2AEEB735229D1B460079C231 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
 		2AEFFF6E22DC2B85004E359D /* PayPalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalView.swift; sourceTree = "<group>"; };
 		2AF07CBE22D4219900535AEE /* UIDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignableView.swift; sourceTree = "<group>"; };
@@ -1316,7 +1314,6 @@
 			isa = PBXGroup;
 			children = (
 				2AFB814C22B351C20065B277 /* ChatView.swift */,
-				2AE8058322E5B27900B24DA5 /* Message.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1449,15 +1446,21 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-goOSC/Pods-goOSC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bond/Bond.framework",
+				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MessengerKit/MessengerKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessengerKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1492,7 +1495,6 @@
 			files = (
 				2A894CB922B0D0AD001110F5 /* SearchWireFrame.swift in Sources */,
 				2A7134EC22AF79D20053F2B1 /* CategoryProductPresenter.swift in Sources */,
-				2AE8058422E5B27900B24DA5 /* Message.swift in Sources */,
 				2A0520BD229E308F00C4ECE3 /* LoginProtocols.swift in Sources */,
 				2A14420822C5B28900CBF132 /* BalanceHistoryView.swift in Sources */,
 				2ACE7F6922E93626001B9A5D /* Auth.swift in Sources */,

@@ -1,0 +1,711 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "5goOSC11AppDelegateC"
+provides-member:
+- ["5goOSC11AppDelegateC", ""]
+provides-dynamic-lookup:
+- "application"
+- "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "window"
+depends-top-level:
+- "AppDelegate"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- !private "Config"
+- !private "IQKeyboardManager"
+- !private "NSError"
+- "NSPersistentContainer"
+- !private "PayPalEnvironmentSandbox"
+- !private "PayPalMobile"
+- "UIApplication"
+- "UIApplicationDelegate"
+- "UIApplicationLaunchOptionsKey"
+- "UIResponder"
+- "UIWindow"
+- !private "fatalError"
+depends-member:
+- ["5goOSC11AppDelegateC", "Bool"]
+- !private ["5goOSC11AppDelegateC", "Config"]
+- !private ["5goOSC11AppDelegateC", "IQKeyboardManager"]
+- !private ["5goOSC11AppDelegateC", "NSError"]
+- ["5goOSC11AppDelegateC", "NSPersistentContainer"]
+- !private ["5goOSC11AppDelegateC", "PayPalEnvironmentSandbox"]
+- !private ["5goOSC11AppDelegateC", "PayPalMobile"]
+- ["5goOSC11AppDelegateC", "UIApplication"]
+- ["5goOSC11AppDelegateC", "UIApplicationLaunchOptionsKey"]
+- ["5goOSC11AppDelegateC", "UIWindow"]
+- ["5goOSC11AppDelegateC", "application"]
+- ["5goOSC11AppDelegateC", "applicationDidBecomeActive"]
+- ["5goOSC11AppDelegateC", "applicationDidEnterBackground"]
+- ["5goOSC11AppDelegateC", "applicationDidFinishLaunching"]
+- ["5goOSC11AppDelegateC", "applicationDidReceiveMemoryWarning"]
+- ["5goOSC11AppDelegateC", "applicationProtectedDataDidBecomeAvailable"]
+- ["5goOSC11AppDelegateC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["5goOSC11AppDelegateC", "applicationShouldRequestHealthAuthorization"]
+- ["5goOSC11AppDelegateC", "applicationSignificantTimeChange"]
+- ["5goOSC11AppDelegateC", "applicationWillEnterForeground"]
+- ["5goOSC11AppDelegateC", "applicationWillResignActive"]
+- ["5goOSC11AppDelegateC", "applicationWillTerminate"]
+- ["5goOSC11AppDelegateC", "deinit"]
+- !private ["5goOSC11AppDelegateC", "fatalError"]
+- ["5goOSC11AppDelegateC", "init"]
+- ["5goOSC11AppDelegateC", "persistentContainer"]
+- !private ["5goOSC11AppDelegateC", "persistentContainer.storage"]
+- ["5goOSC11AppDelegateC", "saveContext"]
+- ["5goOSC11AppDelegateC", "window"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "Config"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "IQKeyboardManager"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "NSPersistentContainer"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "PayPalEnvironmentSandbox"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "PayPalMobile"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", ""]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "application"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationDidBecomeActive"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationDidEnterBackground"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationDidFinishLaunching"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationDidReceiveMemoryWarning"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationProtectedDataDidBecomeAvailable"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationShouldRequestHealthAuthorization"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationSignificantTimeChange"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationWillEnterForeground"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationWillResignActive"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "applicationWillTerminate"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "fatalError"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "init"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "init"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "persistentContainer"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "window"]
+- !private ["s7CVarArgP", "Config"]
+- !private ["s7CVarArgP", "IQKeyboardManager"]
+- !private ["s7CVarArgP", "NSPersistentContainer"]
+- !private ["s7CVarArgP", "PayPalEnvironmentSandbox"]
+- !private ["s7CVarArgP", "PayPalMobile"]
+- ["s7CVarArgP", ""]
+- ["s7CVarArgP", "application"]
+- ["s7CVarArgP", "applicationDidBecomeActive"]
+- ["s7CVarArgP", "applicationDidEnterBackground"]
+- ["s7CVarArgP", "applicationDidFinishLaunching"]
+- ["s7CVarArgP", "applicationDidReceiveMemoryWarning"]
+- ["s7CVarArgP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s7CVarArgP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s7CVarArgP", "applicationShouldRequestHealthAuthorization"]
+- ["s7CVarArgP", "applicationSignificantTimeChange"]
+- ["s7CVarArgP", "applicationWillEnterForeground"]
+- ["s7CVarArgP", "applicationWillResignActive"]
+- ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "enable"]
+- !private ["s7CVarArgP", "enableAutoToolbar"]
+- !private ["s7CVarArgP", "fatalError"]
+- !private ["s7CVarArgP", "hasChanges"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "initializeWithClientIds"]
+- !private ["s7CVarArgP", "loadPersistentStores"]
+- !private ["s7CVarArgP", "persistentContainer"]
+- !private ["s7CVarArgP", "save"]
+- !private ["s7CVarArgP", "sharedManager"]
+- !private ["s7CVarArgP", "userInfo"]
+- !private ["s7CVarArgP", "viewContext"]
+- ["s7CVarArgP", "window"]
+- !private ["5goOSC6ConfigC", "init"]
+- !private ["5goOSC6ConfigC", "pPClientId"]
+- !private ["s28CustomDebugStringConvertibleP", "Config"]
+- !private ["s28CustomDebugStringConvertibleP", "IQKeyboardManager"]
+- !private ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "PayPalEnvironmentSandbox"]
+- !private ["s28CustomDebugStringConvertibleP", "PayPalMobile"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "application"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s28CustomDebugStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "enable"]
+- !private ["s28CustomDebugStringConvertibleP", "enableAutoToolbar"]
+- !private ["s28CustomDebugStringConvertibleP", "fatalError"]
+- !private ["s28CustomDebugStringConvertibleP", "hasChanges"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initializeWithClientIds"]
+- !private ["s28CustomDebugStringConvertibleP", "loadPersistentStores"]
+- !private ["s28CustomDebugStringConvertibleP", "persistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "save"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedManager"]
+- !private ["s28CustomDebugStringConvertibleP", "userInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "viewContext"]
+- ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s23CustomStringConvertibleP", "Config"]
+- !private ["s23CustomStringConvertibleP", "IQKeyboardManager"]
+- !private ["s23CustomStringConvertibleP", "NSPersistentContainer"]
+- !private ["s23CustomStringConvertibleP", "PayPalEnvironmentSandbox"]
+- !private ["s23CustomStringConvertibleP", "PayPalMobile"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "application"]
+- ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
+- ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
+- ["s23CustomStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s23CustomStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s23CustomStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s23CustomStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
+- ["s23CustomStringConvertibleP", "applicationWillResignActive"]
+- ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "enable"]
+- !private ["s23CustomStringConvertibleP", "enableAutoToolbar"]
+- !private ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "hasChanges"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "initializeWithClientIds"]
+- !private ["s23CustomStringConvertibleP", "loadPersistentStores"]
+- !private ["s23CustomStringConvertibleP", "persistentContainer"]
+- !private ["s23CustomStringConvertibleP", "save"]
+- !private ["s23CustomStringConvertibleP", "sharedManager"]
+- !private ["s23CustomStringConvertibleP", "userInfo"]
+- !private ["s23CustomStringConvertibleP", "viewContext"]
+- ["s23CustomStringConvertibleP", "window"]
+- !private ["11ReactiveKit13DeallocatableP", "Config"]
+- !private ["11ReactiveKit13DeallocatableP", "IQKeyboardManager"]
+- !private ["11ReactiveKit13DeallocatableP", "NSPersistentContainer"]
+- !private ["11ReactiveKit13DeallocatableP", "PayPalEnvironmentSandbox"]
+- !private ["11ReactiveKit13DeallocatableP", "PayPalMobile"]
+- ["11ReactiveKit13DeallocatableP", ""]
+- ["11ReactiveKit13DeallocatableP", "application"]
+- ["11ReactiveKit13DeallocatableP", "applicationDidBecomeActive"]
+- ["11ReactiveKit13DeallocatableP", "applicationDidEnterBackground"]
+- ["11ReactiveKit13DeallocatableP", "applicationDidFinishLaunching"]
+- ["11ReactiveKit13DeallocatableP", "applicationDidReceiveMemoryWarning"]
+- ["11ReactiveKit13DeallocatableP", "applicationProtectedDataDidBecomeAvailable"]
+- ["11ReactiveKit13DeallocatableP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["11ReactiveKit13DeallocatableP", "applicationShouldRequestHealthAuthorization"]
+- ["11ReactiveKit13DeallocatableP", "applicationSignificantTimeChange"]
+- ["11ReactiveKit13DeallocatableP", "applicationWillEnterForeground"]
+- ["11ReactiveKit13DeallocatableP", "applicationWillResignActive"]
+- ["11ReactiveKit13DeallocatableP", "applicationWillTerminate"]
+- !private ["11ReactiveKit13DeallocatableP", "enable"]
+- !private ["11ReactiveKit13DeallocatableP", "enableAutoToolbar"]
+- !private ["11ReactiveKit13DeallocatableP", "fatalError"]
+- !private ["11ReactiveKit13DeallocatableP", "hasChanges"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "initializeWithClientIds"]
+- !private ["11ReactiveKit13DeallocatableP", "loadPersistentStores"]
+- !private ["11ReactiveKit13DeallocatableP", "persistentContainer"]
+- !private ["11ReactiveKit13DeallocatableP", "save"]
+- !private ["11ReactiveKit13DeallocatableP", "sharedManager"]
+- !private ["11ReactiveKit13DeallocatableP", "userInfo"]
+- !private ["11ReactiveKit13DeallocatableP", "viewContext"]
+- ["11ReactiveKit13DeallocatableP", "window"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "Config"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "IQKeyboardManager"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "NSPersistentContainer"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "PayPalEnvironmentSandbox"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "PayPalMobile"]
+- ["11ReactiveKit18DisposeBagProviderP", ""]
+- ["11ReactiveKit18DisposeBagProviderP", "application"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationDidBecomeActive"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationDidEnterBackground"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationDidFinishLaunching"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationDidReceiveMemoryWarning"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationProtectedDataDidBecomeAvailable"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationShouldRequestHealthAuthorization"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationSignificantTimeChange"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationWillEnterForeground"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationWillResignActive"]
+- ["11ReactiveKit18DisposeBagProviderP", "applicationWillTerminate"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "enable"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "enableAutoToolbar"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "fatalError"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "hasChanges"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "initializeWithClientIds"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "loadPersistentStores"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "persistentContainer"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "save"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "sharedManager"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "userInfo"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "viewContext"]
+- ["11ReactiveKit18DisposeBagProviderP", "window"]
+- !private ["SQ", "Config"]
+- !private ["SQ", "IQKeyboardManager"]
+- !private ["SQ", "NSPersistentContainer"]
+- !private ["SQ", "PayPalEnvironmentSandbox"]
+- !private ["SQ", "PayPalMobile"]
+- ["SQ", ""]
+- ["SQ", "application"]
+- ["SQ", "applicationDidBecomeActive"]
+- ["SQ", "applicationDidEnterBackground"]
+- ["SQ", "applicationDidFinishLaunching"]
+- ["SQ", "applicationDidReceiveMemoryWarning"]
+- ["SQ", "applicationProtectedDataDidBecomeAvailable"]
+- ["SQ", "applicationProtectedDataWillBecomeUnavailable"]
+- ["SQ", "applicationShouldRequestHealthAuthorization"]
+- ["SQ", "applicationSignificantTimeChange"]
+- ["SQ", "applicationWillEnterForeground"]
+- ["SQ", "applicationWillResignActive"]
+- ["SQ", "applicationWillTerminate"]
+- !private ["SQ", "enable"]
+- !private ["SQ", "enableAutoToolbar"]
+- !private ["SQ", "fatalError"]
+- !private ["SQ", "hasChanges"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "initializeWithClientIds"]
+- !private ["SQ", "loadPersistentStores"]
+- !private ["SQ", "persistentContainer"]
+- !private ["SQ", "save"]
+- !private ["SQ", "sharedManager"]
+- !private ["SQ", "userInfo"]
+- !private ["SQ", "viewContext"]
+- ["SQ", "window"]
+- !private ["s5ErrorP", "userInfo"]
+- !private ["SH", "Config"]
+- !private ["SH", "IQKeyboardManager"]
+- !private ["SH", "NSPersistentContainer"]
+- !private ["SH", "PayPalEnvironmentSandbox"]
+- !private ["SH", "PayPalMobile"]
+- ["SH", ""]
+- ["SH", "application"]
+- ["SH", "applicationDidBecomeActive"]
+- ["SH", "applicationDidEnterBackground"]
+- ["SH", "applicationDidFinishLaunching"]
+- ["SH", "applicationDidReceiveMemoryWarning"]
+- ["SH", "applicationProtectedDataDidBecomeAvailable"]
+- ["SH", "applicationProtectedDataWillBecomeUnavailable"]
+- ["SH", "applicationShouldRequestHealthAuthorization"]
+- ["SH", "applicationSignificantTimeChange"]
+- ["SH", "applicationWillEnterForeground"]
+- ["SH", "applicationWillResignActive"]
+- ["SH", "applicationWillTerminate"]
+- !private ["SH", "enable"]
+- !private ["SH", "enableAutoToolbar"]
+- !private ["SH", "fatalError"]
+- !private ["SH", "hasChanges"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "initializeWithClientIds"]
+- !private ["SH", "loadPersistentStores"]
+- !private ["SH", "persistentContainer"]
+- !private ["SH", "save"]
+- !private ["SH", "sharedManager"]
+- !private ["SH", "userInfo"]
+- !private ["SH", "viewContext"]
+- ["SH", "window"]
+- !private ["22IQKeyboardManagerSwift0aB0C", "enable"]
+- !private ["22IQKeyboardManagerSwift0aB0C", "enableAutoToolbar"]
+- !private ["22IQKeyboardManagerSwift0aB0C", "sharedManager"]
+- !private ["So8NSCodingP", "hasChanges"]
+- !private ["So8NSCodingP", "save"]
+- !private ["So8NSCodingP", "userInfo"]
+- !private ["So9NSCopyingP", "userInfo"]
+- !private ["So7NSErrorC", "userInfo"]
+- !private ["So9NSLockingP", "hasChanges"]
+- !private ["So9NSLockingP", "save"]
+- !private ["So22NSManagedObjectContextC", "hasChanges"]
+- !private ["So22NSManagedObjectContextC", "save"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Config"]
+- !private ["So8NSObjectC", "IQKeyboardManager"]
+- !private ["So8NSObjectC", "NSError"]
+- ["So8NSObjectC", "NSPersistentContainer"]
+- !private ["So8NSObjectC", "PayPalEnvironmentSandbox"]
+- !private ["So8NSObjectC", "PayPalMobile"]
+- ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
+- ["So8NSObjectC", "UIWindow"]
+- ["So8NSObjectC", "application"]
+- ["So8NSObjectC", "applicationDidBecomeActive"]
+- ["So8NSObjectC", "applicationDidEnterBackground"]
+- ["So8NSObjectC", "applicationDidFinishLaunching"]
+- ["So8NSObjectC", "applicationDidReceiveMemoryWarning"]
+- ["So8NSObjectC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So8NSObjectC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So8NSObjectC", "applicationShouldRequestHealthAuthorization"]
+- ["So8NSObjectC", "applicationSignificantTimeChange"]
+- ["So8NSObjectC", "applicationWillEnterForeground"]
+- ["So8NSObjectC", "applicationWillResignActive"]
+- ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "enable"]
+- !private ["So8NSObjectC", "enableAutoToolbar"]
+- !private ["So8NSObjectC", "fatalError"]
+- !private ["So8NSObjectC", "hasChanges"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "initializeWithClientIds"]
+- !private ["So8NSObjectC", "loadPersistentStores"]
+- ["So8NSObjectC", "persistentContainer"]
+- ["So8NSObjectC", "persistentContainer.storage"]
+- !private ["So8NSObjectC", "save"]
+- ["So8NSObjectC", "saveContext"]
+- !private ["So8NSObjectC", "sharedManager"]
+- !private ["So8NSObjectC", "userInfo"]
+- !private ["So8NSObjectC", "viewContext"]
+- ["So8NSObjectC", "window"]
+- !private ["So8NSObjectP", "Config"]
+- !private ["So8NSObjectP", "IQKeyboardManager"]
+- !private ["So8NSObjectP", "NSPersistentContainer"]
+- !private ["So8NSObjectP", "PayPalEnvironmentSandbox"]
+- !private ["So8NSObjectP", "PayPalMobile"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "application"]
+- ["So8NSObjectP", "applicationDidBecomeActive"]
+- ["So8NSObjectP", "applicationDidEnterBackground"]
+- ["So8NSObjectP", "applicationDidFinishLaunching"]
+- ["So8NSObjectP", "applicationDidReceiveMemoryWarning"]
+- ["So8NSObjectP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So8NSObjectP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So8NSObjectP", "applicationShouldRequestHealthAuthorization"]
+- ["So8NSObjectP", "applicationSignificantTimeChange"]
+- ["So8NSObjectP", "applicationWillEnterForeground"]
+- ["So8NSObjectP", "applicationWillResignActive"]
+- ["So8NSObjectP", "applicationWillTerminate"]
+- !private ["So8NSObjectP", "enable"]
+- !private ["So8NSObjectP", "enableAutoToolbar"]
+- !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "hasChanges"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "initializeWithClientIds"]
+- !private ["So8NSObjectP", "loadPersistentStores"]
+- !private ["So8NSObjectP", "persistentContainer"]
+- !private ["So8NSObjectP", "save"]
+- !private ["So8NSObjectP", "sharedManager"]
+- !private ["So8NSObjectP", "userInfo"]
+- !private ["So8NSObjectP", "viewContext"]
+- ["So8NSObjectP", "window"]
+- !private ["So21NSPersistentContainerC", "init"]
+- !private ["So21NSPersistentContainerC", "loadPersistentStores"]
+- !private ["So21NSPersistentContainerC", "viewContext"]
+- !private ["So14NSSecureCodingP", "userInfo"]
+- !private ["So12PayPalMobileC", "initializeWithClientIds"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "Config"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "IQKeyboardManager"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "NSPersistentContainer"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "PayPalEnvironmentSandbox"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "PayPalMobile"]
+- ["11ReactiveKit0A18ExtensionsProviderP", ""]
+- ["11ReactiveKit0A18ExtensionsProviderP", "application"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationDidBecomeActive"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationDidEnterBackground"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationDidFinishLaunching"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationDidReceiveMemoryWarning"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationProtectedDataDidBecomeAvailable"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationShouldRequestHealthAuthorization"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationSignificantTimeChange"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationWillEnterForeground"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationWillResignActive"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "applicationWillTerminate"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "enable"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "enableAutoToolbar"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "fatalError"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "hasChanges"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "initializeWithClientIds"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "loadPersistentStores"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "persistentContainer"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "save"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "sharedManager"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "userInfo"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "viewContext"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "window"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So21UIApplicationDelegateP", "Config"]
+- !private ["So21UIApplicationDelegateP", "IQKeyboardManager"]
+- !private ["So21UIApplicationDelegateP", "NSPersistentContainer"]
+- !private ["So21UIApplicationDelegateP", "PayPalEnvironmentSandbox"]
+- !private ["So21UIApplicationDelegateP", "PayPalMobile"]
+- ["So21UIApplicationDelegateP", ""]
+- ["So21UIApplicationDelegateP", "application"]
+- ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
+- ["So21UIApplicationDelegateP", "applicationDidEnterBackground"]
+- ["So21UIApplicationDelegateP", "applicationDidFinishLaunching"]
+- ["So21UIApplicationDelegateP", "applicationDidReceiveMemoryWarning"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So21UIApplicationDelegateP", "applicationShouldRequestHealthAuthorization"]
+- ["So21UIApplicationDelegateP", "applicationSignificantTimeChange"]
+- ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
+- ["So21UIApplicationDelegateP", "applicationWillResignActive"]
+- ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- !private ["So21UIApplicationDelegateP", "fatalError"]
+- !private ["So21UIApplicationDelegateP", "persistentContainer"]
+- ["So21UIApplicationDelegateP", "window"]
+- !private ["So27UIGestureRecognizerDelegateP", "enable"]
+- !private ["So27UIGestureRecognizerDelegateP", "enableAutoToolbar"]
+- !private ["So27UIGestureRecognizerDelegateP", "sharedManager"]
+- !private ["So30UIPasteConfigurationSupportingP", "Config"]
+- !private ["So30UIPasteConfigurationSupportingP", "IQKeyboardManager"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "PayPalEnvironmentSandbox"]
+- !private ["So30UIPasteConfigurationSupportingP", "PayPalMobile"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So30UIPasteConfigurationSupportingP", "application"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidEnterBackground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidFinishLaunching"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIPasteConfigurationSupportingP", "applicationSignificantTimeChange"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillEnterForeground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
+- !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "persistentContainer"]
+- ["So30UIPasteConfigurationSupportingP", "window"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "Config"]
+- !private ["So11UIResponderC", "IQKeyboardManager"]
+- !private ["So11UIResponderC", "NSError"]
+- ["So11UIResponderC", "NSPersistentContainer"]
+- !private ["So11UIResponderC", "PayPalEnvironmentSandbox"]
+- !private ["So11UIResponderC", "PayPalMobile"]
+- ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
+- ["So11UIResponderC", "UIWindow"]
+- ["So11UIResponderC", ""]
+- ["So11UIResponderC", "application"]
+- ["So11UIResponderC", "applicationDidBecomeActive"]
+- ["So11UIResponderC", "applicationDidEnterBackground"]
+- ["So11UIResponderC", "applicationDidFinishLaunching"]
+- ["So11UIResponderC", "applicationDidReceiveMemoryWarning"]
+- ["So11UIResponderC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So11UIResponderC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So11UIResponderC", "applicationShouldRequestHealthAuthorization"]
+- ["So11UIResponderC", "applicationSignificantTimeChange"]
+- ["So11UIResponderC", "applicationWillEnterForeground"]
+- ["So11UIResponderC", "applicationWillResignActive"]
+- ["So11UIResponderC", "applicationWillTerminate"]
+- !private ["So11UIResponderC", "fatalError"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "persistentContainer"]
+- ["So11UIResponderC", "persistentContainer.storage"]
+- ["So11UIResponderC", "saveContext"]
+- ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "Config"]
+- !private ["So30UIResponderStandardEditActionsP", "IQKeyboardManager"]
+- !private ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
+- !private ["So30UIResponderStandardEditActionsP", "PayPalEnvironmentSandbox"]
+- !private ["So30UIResponderStandardEditActionsP", "PayPalMobile"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So30UIResponderStandardEditActionsP", "application"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidEnterBackground"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidFinishLaunching"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIResponderStandardEditActionsP", "applicationSignificantTimeChange"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillEnterForeground"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
+- !private ["So30UIResponderStandardEditActionsP", "fatalError"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "persistentContainer"]
+- ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["So23UIUserActivityRestoringP", "Config"]
+- !private ["So23UIUserActivityRestoringP", "IQKeyboardManager"]
+- !private ["So23UIUserActivityRestoringP", "NSPersistentContainer"]
+- !private ["So23UIUserActivityRestoringP", "PayPalEnvironmentSandbox"]
+- !private ["So23UIUserActivityRestoringP", "PayPalMobile"]
+- ["So23UIUserActivityRestoringP", ""]
+- ["So23UIUserActivityRestoringP", "application"]
+- ["So23UIUserActivityRestoringP", "applicationDidBecomeActive"]
+- ["So23UIUserActivityRestoringP", "applicationDidEnterBackground"]
+- ["So23UIUserActivityRestoringP", "applicationDidFinishLaunching"]
+- ["So23UIUserActivityRestoringP", "applicationDidReceiveMemoryWarning"]
+- ["So23UIUserActivityRestoringP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So23UIUserActivityRestoringP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So23UIUserActivityRestoringP", "applicationShouldRequestHealthAuthorization"]
+- ["So23UIUserActivityRestoringP", "applicationSignificantTimeChange"]
+- ["So23UIUserActivityRestoringP", "applicationWillEnterForeground"]
+- ["So23UIUserActivityRestoringP", "applicationWillResignActive"]
+- ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
+- !private ["So23UIUserActivityRestoringP", "fatalError"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "persistentContainer"]
+- ["So23UIUserActivityRestoringP", "window"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Config"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IQKeyboardManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PayPalEnvironmentSandbox"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PayPalMobile"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "application"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidFinishLaunching"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidReceiveMemoryWarning"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationShouldRequestHealthAuthorization"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationSignificantTimeChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "enable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "enableAutoToolbar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hasChanges"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "initializeWithClientIds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadPersistentStores"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "persistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+depends-nominal:
+- "5goOSC11AppDelegateC"
+- "11ReactiveKit31BindingExecutionContextProviderP"
+- "s7CVarArgP"
+- !private "5goOSC6ConfigC"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- !private "s26DefaultStringInterpolationV"
+- "11ReactiveKit18DisposeBagProviderP"
+- "SQ"
+- !private "s5ErrorP"
+- "SH"
+- !private "22IQKeyboardManagerSwift0aB0C"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So7NSErrorC"
+- !private "So9NSLockingP"
+- !private "So22NSManagedObjectContextC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So21NSPersistentContainerC"
+- !private "So14NSSecureCodingP"
+- !private "So12PayPalMobileC"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- "So21UIApplicationDelegateP"
+- !private "So27UIGestureRecognizerDelegateP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So23UIUserActivityRestoringP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules/Bond.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Modules/MessengerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Headers/MessengerKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalMobile.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalConfiguration.h"
+- "/Users/bootcamp/Documents/collab2/goOSC/goOSC-Bridging-Header.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalProfileSharingViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalFuturePaymentViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalPaymentViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalOAuthScopes.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Headers/MessengerKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalPayment.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Starscream/zlib/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SafariServices.framework/Headers/SafariServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f1d8bc927334c0f648436332e91d89d8"

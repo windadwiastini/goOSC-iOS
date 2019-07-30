@@ -1,0 +1,18 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "9604029b10884b73fbe75ad829cd460d"
+build_time: [1564378086, 685070000]
+inputs:
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/BatchUpdate.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/Diff+UIKit.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/Diff.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/ExtendedDiff.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/ExtendedPatch+Apply.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/ExtendedPatch.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/GenericPatch.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/LinkedList.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/NestedBatchUpdate.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/NestedDiff.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/NestedExtendedDiff.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/Patch+Apply.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/Patch+Sort.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/Patch.swift": [9223372036, 854775807]

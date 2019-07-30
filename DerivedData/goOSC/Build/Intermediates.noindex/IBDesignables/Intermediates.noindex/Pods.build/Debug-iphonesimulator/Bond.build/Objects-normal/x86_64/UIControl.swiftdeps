@@ -1,0 +1,356 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["11ReactiveKit0A10ExtensionsP", ""]
+- ["11ReactiveKit0A10ExtensionsP", "controlEvents"]
+- ["11ReactiveKit0A10ExtensionsP", "isEnabled"]
+provides-dynamic-lookup:
+- "actionHandler"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BNDControlTarget"
+- !private "BlockDisposable"
+- "Bond"
+- "Bool"
+- "NSObject"
+- !private "NonDisposable"
+- "ReactiveExtensions"
+- "SafeSignal"
+- !private "Signal"
+- "UIControl"
+- "Void"
+depends-member:
+- !private ["11ReactiveKit14AtomicObserverC", "receive"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "Event"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "addTarget"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "deallocated"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "isEnabled"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "removeTarget"]
+- !private ["11ReactiveKit15BlockDisposableC", "init"]
+- ["So15CALayerDelegateP", "Event"]
+- !private ["So15CALayerDelegateP", "addTarget"]
+- !private ["So15CALayerDelegateP", "deallocated"]
+- !private ["So15CALayerDelegateP", "isEnabled"]
+- !private ["So15CALayerDelegateP", "removeTarget"]
+- ["s7CVarArgP", "Event"]
+- !private ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "actionHandler"]
+- !private ["s7CVarArgP", "addTarget"]
+- !private ["s7CVarArgP", "control"]
+- !private ["s7CVarArgP", "deallocated"]
+- !private ["s7CVarArgP", "events"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEnabled"]
+- !private ["s7CVarArgP", "observer"]
+- !private ["s7CVarArgP", "removeTarget"]
+- !private ["s7CVarArgP", "unregister"]
+- !private ["11ReactiveKit11SubscribersO10CompletionO", "finished"]
+- ["s28CustomDebugStringConvertibleP", "Event"]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "actionHandler"]
+- !private ["s28CustomDebugStringConvertibleP", "addTarget"]
+- !private ["s28CustomDebugStringConvertibleP", "control"]
+- !private ["s28CustomDebugStringConvertibleP", "deallocated"]
+- !private ["s28CustomDebugStringConvertibleP", "events"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "observer"]
+- !private ["s28CustomDebugStringConvertibleP", "removeTarget"]
+- !private ["s28CustomDebugStringConvertibleP", "unregister"]
+- ["s23CustomStringConvertibleP", "Event"]
+- !private ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "actionHandler"]
+- !private ["s23CustomStringConvertibleP", "addTarget"]
+- !private ["s23CustomStringConvertibleP", "control"]
+- !private ["s23CustomStringConvertibleP", "deallocated"]
+- !private ["s23CustomStringConvertibleP", "events"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEnabled"]
+- !private ["s23CustomStringConvertibleP", "observer"]
+- !private ["s23CustomStringConvertibleP", "removeTarget"]
+- !private ["s23CustomStringConvertibleP", "unregister"]
+- ["11ReactiveKit13DeallocatableP", "Event"]
+- !private ["11ReactiveKit13DeallocatableP", ""]
+- !private ["11ReactiveKit13DeallocatableP", "actionHandler"]
+- !private ["11ReactiveKit13DeallocatableP", "addTarget"]
+- !private ["11ReactiveKit13DeallocatableP", "control"]
+- !private ["11ReactiveKit13DeallocatableP", "deallocated"]
+- !private ["11ReactiveKit13DeallocatableP", "events"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "isEnabled"]
+- !private ["11ReactiveKit13DeallocatableP", "observer"]
+- !private ["11ReactiveKit13DeallocatableP", "removeTarget"]
+- !private ["11ReactiveKit13DeallocatableP", "unregister"]
+- !private ["11ReactiveKit10DisposableP", "init"]
+- !private ["11ReactiveKit10DisposableP", "instance"]
+- ["11ReactiveKit18DisposeBagProviderP", "Event"]
+- !private ["11ReactiveKit18DisposeBagProviderP", ""]
+- !private ["11ReactiveKit18DisposeBagProviderP", "actionHandler"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "addTarget"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "control"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "deallocated"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "events"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "isEnabled"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "observer"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "removeTarget"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "unregister"]
+- ["SQ", "Event"]
+- !private ["SQ", ""]
+- !private ["SQ", "actionHandler"]
+- !private ["SQ", "addTarget"]
+- !private ["SQ", "control"]
+- !private ["SQ", "deallocated"]
+- !private ["SQ", "events"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isEnabled"]
+- !private ["SQ", "observer"]
+- !private ["SQ", "removeTarget"]
+- !private ["SQ", "unregister"]
+- ["SH", "Event"]
+- !private ["SH", ""]
+- !private ["SH", "actionHandler"]
+- !private ["SH", "addTarget"]
+- !private ["SH", "control"]
+- !private ["SH", "deallocated"]
+- !private ["SH", "events"]
+- !private ["SH", "init"]
+- !private ["SH", "isEnabled"]
+- !private ["SH", "observer"]
+- !private ["SH", "removeTarget"]
+- !private ["SH", "unregister"]
+- ["So8NSCodingP", "Event"]
+- !private ["So8NSCodingP", "addTarget"]
+- !private ["So8NSCodingP", "deallocated"]
+- !private ["So8NSCodingP", "isEnabled"]
+- !private ["So8NSCodingP", "removeTarget"]
+- ["So8NSObjectC", "Event"]
+- ["So8NSObjectC", "UIControl"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", ""]
+- ["So8NSObjectC", "actionHandler"]
+- !private ["So8NSObjectC", "addTarget"]
+- ["So8NSObjectC", "control"]
+- !private ["So8NSObjectC", "deallocated"]
+- ["So8NSObjectC", "events"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEnabled"]
+- ["So8NSObjectC", "observer"]
+- !private ["So8NSObjectC", "removeTarget"]
+- ["So8NSObjectC", "unregister"]
+- ["So8NSObjectP", "Event"]
+- !private ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "actionHandler"]
+- !private ["So8NSObjectP", "addTarget"]
+- !private ["So8NSObjectP", "control"]
+- !private ["So8NSObjectP", "deallocated"]
+- !private ["So8NSObjectP", "events"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEnabled"]
+- !private ["So8NSObjectP", "observer"]
+- !private ["So8NSObjectP", "removeTarget"]
+- !private ["So8NSObjectP", "unregister"]
+- !private ["11ReactiveKit13NonDisposableV", "instance"]
+- !private ["11ReactiveKit16ObserverProtocolP", "receive"]
+- !private ["11ReactiveKit0A10ExtensionsP", "BNDControlTarget"]
+- ["11ReactiveKit0A10ExtensionsP", "Base"]
+- !private ["11ReactiveKit0A10ExtensionsP", "BlockDisposable"]
+- ["11ReactiveKit0A10ExtensionsP", "Bond"]
+- ["11ReactiveKit0A10ExtensionsP", "Bool"]
+- !private ["11ReactiveKit0A10ExtensionsP", "NonDisposable"]
+- ["11ReactiveKit0A10ExtensionsP", "SafeSignal"]
+- !private ["11ReactiveKit0A10ExtensionsP", "Signal"]
+- ["11ReactiveKit0A10ExtensionsP", "UIControl"]
+- ["11ReactiveKit0A10ExtensionsP", "Void"]
+- !private ["11ReactiveKit0A10ExtensionsP", "base"]
+- !private ["11ReactiveKit0A10ExtensionsP", "bond"]
+- ["11ReactiveKit0A10ExtensionsP", "controlEvents"]
+- ["11ReactiveKit0A10ExtensionsP", "isEnabled"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "Event"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", ""]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "actionHandler"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "addTarget"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "control"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "deallocated"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "events"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "isEnabled"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "observer"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "removeTarget"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "unregister"]
+- !private ["11ReactiveKit6SignalV", "init"]
+- !private ["11ReactiveKit6SignalV", "take"]
+- !private ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "take"]
+- ["So29UIAccessibilityIdentificationP", "Event"]
+- !private ["So29UIAccessibilityIdentificationP", "addTarget"]
+- !private ["So29UIAccessibilityIdentificationP", "deallocated"]
+- !private ["So29UIAccessibilityIdentificationP", "isEnabled"]
+- !private ["So29UIAccessibilityIdentificationP", "removeTarget"]
+- ["So12UIAppearanceP", "Event"]
+- !private ["So12UIAppearanceP", "addTarget"]
+- !private ["So12UIAppearanceP", "deallocated"]
+- !private ["So12UIAppearanceP", "isEnabled"]
+- !private ["So12UIAppearanceP", "removeTarget"]
+- ["So21UIAppearanceContainerP", "Event"]
+- !private ["So21UIAppearanceContainerP", "addTarget"]
+- !private ["So21UIAppearanceContainerP", "deallocated"]
+- !private ["So21UIAppearanceContainerP", "isEnabled"]
+- !private ["So21UIAppearanceContainerP", "removeTarget"]
+- ["So9UIControlC", "Event"]
+- !private ["So9UIControlC", "addTarget"]
+- !private ["So9UIControlC", "deallocated"]
+- !private ["So9UIControlC", "isEnabled"]
+- !private ["So9UIControlC", "removeTarget"]
+- ["So17UICoordinateSpaceP", "Event"]
+- !private ["So17UICoordinateSpaceP", "addTarget"]
+- !private ["So17UICoordinateSpaceP", "deallocated"]
+- !private ["So17UICoordinateSpaceP", "isEnabled"]
+- !private ["So17UICoordinateSpaceP", "removeTarget"]
+- ["So13UIDynamicItemP", "Event"]
+- !private ["So13UIDynamicItemP", "addTarget"]
+- !private ["So13UIDynamicItemP", "deallocated"]
+- !private ["So13UIDynamicItemP", "isEnabled"]
+- !private ["So13UIDynamicItemP", "removeTarget"]
+- ["So18UIFocusEnvironmentP", "Event"]
+- !private ["So18UIFocusEnvironmentP", "addTarget"]
+- !private ["So18UIFocusEnvironmentP", "deallocated"]
+- !private ["So18UIFocusEnvironmentP", "isEnabled"]
+- !private ["So18UIFocusEnvironmentP", "removeTarget"]
+- ["So11UIFocusItemP", "Event"]
+- !private ["So11UIFocusItemP", "addTarget"]
+- !private ["So11UIFocusItemP", "deallocated"]
+- !private ["So11UIFocusItemP", "isEnabled"]
+- !private ["So11UIFocusItemP", "removeTarget"]
+- ["So20UIFocusItemContainerP", "Event"]
+- !private ["So20UIFocusItemContainerP", "addTarget"]
+- !private ["So20UIFocusItemContainerP", "deallocated"]
+- !private ["So20UIFocusItemContainerP", "isEnabled"]
+- !private ["So20UIFocusItemContainerP", "removeTarget"]
+- ["So30UIPasteConfigurationSupportingP", "Event"]
+- !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
+- !private ["So30UIPasteConfigurationSupportingP", "deallocated"]
+- !private ["So30UIPasteConfigurationSupportingP", "isEnabled"]
+- !private ["So30UIPasteConfigurationSupportingP", "removeTarget"]
+- ["So11UIResponderC", "Event"]
+- !private ["So11UIResponderC", "addTarget"]
+- !private ["So11UIResponderC", "deallocated"]
+- !private ["So11UIResponderC", "isEnabled"]
+- !private ["So11UIResponderC", "removeTarget"]
+- ["So30UIResponderStandardEditActionsP", "Event"]
+- !private ["So30UIResponderStandardEditActionsP", "addTarget"]
+- !private ["So30UIResponderStandardEditActionsP", "deallocated"]
+- !private ["So30UIResponderStandardEditActionsP", "isEnabled"]
+- !private ["So30UIResponderStandardEditActionsP", "removeTarget"]
+- ["So18UITraitEnvironmentP", "Event"]
+- !private ["So18UITraitEnvironmentP", "addTarget"]
+- !private ["So18UITraitEnvironmentP", "deallocated"]
+- !private ["So18UITraitEnvironmentP", "isEnabled"]
+- !private ["So18UITraitEnvironmentP", "removeTarget"]
+- ["So23UIUserActivityRestoringP", "Event"]
+- !private ["So23UIUserActivityRestoringP", "addTarget"]
+- !private ["So23UIUserActivityRestoringP", "deallocated"]
+- !private ["So23UIUserActivityRestoringP", "isEnabled"]
+- !private ["So23UIUserActivityRestoringP", "removeTarget"]
+- ["So6UIViewC", "Event"]
+- !private ["So6UIViewC", "addTarget"]
+- !private ["So6UIViewC", "deallocated"]
+- !private ["So6UIViewC", "isEnabled"]
+- !private ["So6UIViewC", "removeTarget"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Event"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "actionHandler"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "control"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deallocated"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "events"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeTarget"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unregister"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "Event"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addTarget"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "deallocated"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "isEnabled"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "removeTarget"]
+depends-nominal:
+- !private "11ReactiveKit14AtomicObserverC"
+- "11ReactiveKit31BindingExecutionContextProviderP"
+- !private "11ReactiveKit15BlockDisposableC"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "11ReactiveKit11SubscribersO10CompletionO"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- !private "11ReactiveKit10DisposableP"
+- "11ReactiveKit18DisposeBagProviderP"
+- "SQ"
+- "SH"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "11ReactiveKit13NonDisposableV"
+- !private "11ReactiveKit16ObserverProtocolP"
+- "11ReactiveKit0A10ExtensionsP"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- !private "11ReactiveKit6SignalV"
+- !private "11ReactiveKit14SignalProtocolP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So9UIControlC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "71cdbaae9d82e6daba2c904b6dc12358"

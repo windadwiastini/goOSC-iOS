@@ -49,9 +49,6 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="loginButton"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="doLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Chk-1e-2Ih"/>
-                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JI5-Qh-vTC">
                                         <rect key="frame" x="0.0" y="43" width="295" height="33"/>
@@ -170,6 +167,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnLogin" destination="MHP-ql-zsD" id="kYw-IC-LFd"/>
                         <outlet property="passwordField" destination="Zzc-VU-qcg" id="xj5-JK-aTr"/>
                         <outlet property="usernameField" destination="KLX-ha-lDZ" id="dd4-4k-Hyv"/>
                     </connections>
@@ -1166,7 +1164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J04-zt-orB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="1012.4437781109445"/>
+            <point key="canvasLocation" x="2721" y="1064"/>
         </scene>
         <!--Check Out-->
         <scene sceneID="t8z-Wh-PMt">
@@ -1719,9 +1717,6 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="doSignout:" destination="gWE-HI-8hE" eventType="touchUpInside" id="Ogl-4z-J2m"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izg-h4-8yq">
                                 <rect key="frame" x="0.0" y="199" width="375" height="53"/>
@@ -1751,6 +1746,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" largeTitleDisplayMode="always" id="hBk-WK-FNr"/>
                     <connections>
+                        <outlet property="btnLogout" destination="YhA-aD-Yiy" id="Hon-e3-oVt"/>
                         <outlet property="emailLabel" destination="pDp-QA-Fh4" id="Isz-0W-lck"/>
                         <outlet property="nameLabel" destination="IgL-O9-H6B" id="skS-x2-ehZ"/>
                     </connections>
@@ -2209,9 +2205,6 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="registerButton"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="registerBtnWasPressed:" destination="ncd-FH-ccw" eventType="touchUpInside" id="S9R-kF-UsJ"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -2231,6 +2224,7 @@
                         <viewLayoutGuide key="safeArea" id="XzE-Ab-kLo"/>
                     </view>
                     <connections>
+                        <outlet property="btnRegister" destination="Wfx-P8-Y8k" id="DIi-9s-WXN"/>
                         <outlet property="emailTextField" destination="RYL-fw-580" id="8Cn-7K-lPJ"/>
                         <outlet property="firstNameTextField" destination="L8m-5d-a6l" id="Xe9-Ac-axX"/>
                         <outlet property="lastNameTextField" destination="SOB-aF-8Nj" id="wT2-kV-xYV"/>

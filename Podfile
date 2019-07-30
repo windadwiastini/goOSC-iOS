@@ -11,4 +11,5 @@ target 'goOSC' do
   pod 'PayPal-iOS-SDK'
   pod 'Starscream', '<= 3.0.5'
   pod 'MessengerKit', :git => 'https://github.com/steve228uk/MessengerKit.git'
+  pod 'Bond'
 end

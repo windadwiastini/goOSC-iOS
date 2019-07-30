@@ -1,0 +1,505 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PaypalInteractor"
+provides-nominal:
+- "5goOSC16PaypalInteractorC"
+provides-member:
+- ["5goOSC16PaypalInteractorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Alamofire"
+- "CastingPrecedence"
+- !private "Config"
+- !private "EncodingError"
+- !private "HTTPHeaders"
+- !private "JSONDecoder"
+- !private "JSONEncoding"
+- "PaypalEntity"
+- "PaypalInputInteractorProtocol"
+- "PaypalInteractor"
+- "PaypalOutputInteractorProtocol"
+- !private "String"
+- "UserDefaults"
+- !private "print"
+- !private "~="
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["SK", "Encoding"]
+- !private ["SK", "append"]
+- !private ["SK", "data"]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "Encoding"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "statusCode"]
+- ["s7CVarArgP", "value"]
+- !private ["Sl", "Encoding"]
+- !private ["Sl", "append"]
+- !private ["Sl", "data"]
+- !private ["Sl", "init"]
+- !private ["SL", "Encoding"]
+- !private ["SL", "data"]
+- !private ["5goOSC6ConfigC", "init"]
+- !private ["5goOSC6ConfigC", "url"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Encoding"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "response"]
+- !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
+- !private ["s28CustomDebugStringConvertibleP", "some"]
+- ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "statusCode"]
+- ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s17CustomReflectableP", "Encoding"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "data"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "some"]
+- !private ["s23CustomStringConvertibleP", "Encoding"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "response"]
+- !private ["s23CustomStringConvertibleP", "responseJSON"]
+- ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "statusCode"]
+- !private ["s23CustomStringConvertibleP", "utf8"]
+- ["s23CustomStringConvertibleP", "value"]
+- !private ["5goOSC12PaypalEntityV4DataV", "currency"]
+- !private ["5goOSC12PaypalEntityV4DataV", "final_price"]
+- !private ["5goOSC12PaypalEntityV4DataV", "product_list"]
+- !private ["5goOSC12PaypalEntityV4DataV", "total"]
+- !private ["5goOSC12PaypalEntityV4DataV", "total_discount"]
+- !private ["5goOSC12PaypalEntityV4DataV", "voucher"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["9Alamofire11DataRequestC", "responseJSON"]
+- !private ["9Alamofire12DataResponseV", "data"]
+- !private ["9Alamofire12DataResponseV", "response"]
+- !private ["9Alamofire12DataResponseV", "value"]
+- !private ["11ReactiveKit13DeallocatableP", "data"]
+- ["11ReactiveKit13DeallocatableP", "standard"]
+- !private ["11ReactiveKit13DeallocatableP", "statusCode"]
+- ["11ReactiveKit13DeallocatableP", "value"]
+- !private ["Se", "Data"]
+- !private ["Se", "Encoding"]
+- !private ["Se", "append"]
+- !private ["Se", "cprovider_email"]
+- !private ["Se", "currency"]
+- !private ["Se", "data"]
+- !private ["Se", "final_price"]
+- !private ["Se", "id"]
+- !private ["Se", "init"]
+- !private ["Se", "none"]
+- !private ["Se", "payment_data"]
+- !private ["Se", "price"]
+- !private ["Se", "product_id"]
+- !private ["Se", "product_list"]
+- !private ["Se", "product_name"]
+- !private ["Se", "some"]
+- !private ["Se", "thumbnail"]
+- !private ["Se", "total"]
+- !private ["Se", "total_discount"]
+- !private ["Se", "voucher"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "data"]
+- ["11ReactiveKit18DisposeBagProviderP", "standard"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "statusCode"]
+- ["11ReactiveKit18DisposeBagProviderP", "value"]
+- !private ["SE", "Encoding"]
+- !private ["SE", "append"]
+- !private ["SE", "cprovider_email"]
+- !private ["SE", "data"]
+- !private ["SE", "id"]
+- !private ["SE", "init"]
+- !private ["SE", "none"]
+- !private ["SE", "price"]
+- !private ["SE", "product_id"]
+- !private ["SE", "product_name"]
+- !private ["SE", "some"]
+- !private ["SE", "thumbnail"]
+- !private ["SS10FoundationE8EncodingV", "utf8"]
+- !private ["SQ", "Encoding"]
+- !private ["SQ", "append"]
+- !private ["SQ", "data"]
+- !private ["SQ", "init"]
+- !private ["SQ", "none"]
+- !private ["SQ", "post"]
+- !private ["SQ", "some"]
+- ["SQ", "standard"]
+- !private ["SQ", "statusCode"]
+- !private ["SQ", "utf8"]
+- ["SQ", "value"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Encoding"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["s23ExpressibleByNilLiteralP", "some"]
+- !private ["s32ExpressibleByStringInterpolationP", "Encoding"]
+- !private ["s32ExpressibleByStringInterpolationP", "data"]
+- !private ["s26ExpressibleByStringLiteralP", "Encoding"]
+- !private ["s26ExpressibleByStringLiteralP", "data"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Encoding"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "append"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "init"]
+- !private ["4Bond22FlatDataSourceProtocolP", "append"]
+- !private ["4Bond22FlatDataSourceProtocolP", "init"]
+- !private ["9Alamofire10HTTPMethodO", "post"]
+- !private ["So17NSHTTPURLResponseC", "statusCode"]
+- !private ["SH", "Encoding"]
+- !private ["SH", "append"]
+- !private ["SH", "data"]
+- !private ["SH", "init"]
+- !private ["SH", "none"]
+- !private ["SH", "post"]
+- !private ["SH", "some"]
+- ["SH", "standard"]
+- !private ["SH", "statusCode"]
+- !private ["SH", "utf8"]
+- ["SH", "value"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["9Alamofire12JSONEncodingV", "default"]
+- !private ["s25LosslessStringConvertibleP", "Encoding"]
+- !private ["s25LosslessStringConvertibleP", "data"]
+- !private ["s10MirrorPathP", "Encoding"]
+- !private ["s10MirrorPathP", "data"]
+- !private ["9Alamofire17MultipartFormDataC", "append"]
+- !private ["9Alamofire14SessionManagerC31MultipartFormDataEncodingResultO", "failure"]
+- !private ["9Alamofire14SessionManagerC31MultipartFormDataEncodingResultO", "success"]
+- !private ["SM", "append"]
+- !private ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["So8NSCodingP", "data"]
+- !private ["So8NSCodingP", "statusCode"]
+- !private ["So9NSCopyingP", "data"]
+- !private ["So9NSCopyingP", "statusCode"]
+- !private ["So21NSItemProviderReadingP", "data"]
+- !private ["So21NSItemProviderWritingP", "data"]
+- !private ["So16NSMutableCopyingP", "data"]
+- !private ["So8NSObjectC", "data"]
+- ["So8NSObjectC", "standard"]
+- !private ["So8NSObjectC", "statusCode"]
+- ["So8NSObjectC", "value"]
+- !private ["So8NSObjectP", "data"]
+- ["So8NSObjectP", "standard"]
+- !private ["So8NSObjectP", "statusCode"]
+- ["So8NSObjectP", "value"]
+- !private ["So14NSSecureCodingP", "data"]
+- !private ["So14NSSecureCodingP", "statusCode"]
+- !private ["So8NSStringC", "data"]
+- !private ["Sq", "none"]
+- !private ["Sq", "some"]
+- !private ["11ReactiveKit16OptionalProtocolP", "none"]
+- !private ["11ReactiveKit16OptionalProtocolP", "some"]
+- !private ["9Alamofire17ParameterEncodingP", "default"]
+- ["5goOSC12PaypalEntityV", "Response"]
+- !private ["5goOSC12PaypalEntityV", "ResponseDoPayment"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "Alamofire"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "Config"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "EncodingError"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "JSONDecoder"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "JSONEncoding"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "PaypalEntity"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "String"]
+- ["5goOSC29PaypalInputInteractorProtocolP", "UserDefaults"]
+- ["5goOSC29PaypalInputInteractorProtocolP", ""]
+- ["5goOSC29PaypalInputInteractorProtocolP", "doPaymentPaypal"]
+- ["5goOSC29PaypalInputInteractorProtocolP", "doPaymentWithPayPal"]
+- ["5goOSC29PaypalInputInteractorProtocolP", "presenter"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "print"]
+- !private ["5goOSC29PaypalInputInteractorProtocolP", "token"]
+- !private ["5goOSC16PaypalInteractorC", "Alamofire"]
+- !private ["5goOSC16PaypalInteractorC", "Config"]
+- !private ["5goOSC16PaypalInteractorC", "EncodingError"]
+- !private ["5goOSC16PaypalInteractorC", "HTTPHeaders"]
+- !private ["5goOSC16PaypalInteractorC", "JSONDecoder"]
+- !private ["5goOSC16PaypalInteractorC", "JSONEncoding"]
+- ["5goOSC16PaypalInteractorC", "PaypalEntity"]
+- ["5goOSC16PaypalInteractorC", "PaypalOutputInteractorProtocol"]
+- !private ["5goOSC16PaypalInteractorC", "String"]
+- ["5goOSC16PaypalInteractorC", "UserDefaults"]
+- ["5goOSC16PaypalInteractorC", "deinit"]
+- ["5goOSC16PaypalInteractorC", "doPaymentPaypal"]
+- ["5goOSC16PaypalInteractorC", "doPaymentWithPayPal"]
+- ["5goOSC16PaypalInteractorC", "init"]
+- ["5goOSC16PaypalInteractorC", "presenter"]
+- !private ["5goOSC16PaypalInteractorC", "print"]
+- ["5goOSC16PaypalInteractorC", "token"]
+- !private ["5goOSC30PaypalOutputInteractorProtocolP", "responseDoPaymentPaypal"]
+- !private ["5goOSC30PaypalOutputInteractorProtocolP", "responsePaymentWithPayPal"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "append"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "init"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "append"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "init"]
+- !private ["Sm", "Encoding"]
+- !private ["Sm", "append"]
+- !private ["Sm", "data"]
+- !private ["Sm", "init"]
+- !private ["SY", "post"]
+- !private ["SY", "utf8"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "data"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "standard"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "statusCode"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "value"]
+- !private ["9Alamofire7RequestC", "responseJSON"]
+- !private ["5goOSC12PaypalEntityV8ResponseV", "Data"]
+- !private ["9Alamofire8ResponseP", "data"]
+- !private ["5goOSC12PaypalEntityV8ResponseV", "deinit"]
+- !private ["9Alamofire8ResponseP", "response"]
+- !private ["9Alamofire8ResponseP", "value"]
+- !private ["5goOSC12PaypalEntityV17ResponseDoPaymentV", "deinit"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "append"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "init"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "append"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "init"]
+- !private ["ST", "Encoding"]
+- !private ["ST", "append"]
+- !private ["ST", "data"]
+- !private ["ST", "init"]
+- !private ["5goOSC10CartEntityV06SingleC0V", "cprovider_email"]
+- !private ["5goOSC10CartEntityV06SingleC0V", "id"]
+- !private ["5goOSC10CartEntityV06SingleC0V", "price"]
+- !private ["5goOSC10CartEntityV06SingleC0V", "product_id"]
+- !private ["5goOSC10CartEntityV06SingleC0V", "product_name"]
+- !private ["5goOSC10CartEntityV06SingleC0V", "thumbnail"]
+- !private ["5goOSC12PaypalEntityV010SingleDataC0V", "payment_data"]
+- !private ["SS", "Encoding"]
+- !private ["SS", "data"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "Encoding"]
+- !private ["Sy", "data"]
+- !private ["s16TextOutputStreamP", "Encoding"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "data"]
+- !private ["s20TextOutputStreamableP", "Encoding"]
+- !private ["s20TextOutputStreamableP", "data"]
+- !private ["9Alamofire14URLConvertibleP", "Encoding"]
+- !private ["9Alamofire14URLConvertibleP", "data"]
+- !private ["So13NSURLResponseC", "statusCode"]
+- !private ["9Alamofire13UploadRequestC", "responseJSON"]
+- ["So14NSUserDefaultsC", "standard"]
+- ["So14NSUserDefaultsC", "value"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "Encoding"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "data"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "Encoding"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "Encoding"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "data"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "Encoding"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "data"]
+- !private ["s19_HasContiguousBytesP", "Encoding"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "data"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "data"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["s21_ObjectiveCBridgeableP", "Encoding"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "data"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "some"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "5goOSC6ConfigC"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "5goOSC12PaypalEntityV4DataV"
+- !private "10Foundation12DataProtocolP"
+- !private "9Alamofire11DataRequestC"
+- !private "9Alamofire12DataResponseV"
+- "11ReactiveKit13DeallocatableP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- "11ReactiveKit18DisposeBagProviderP"
+- !private "SE"
+- !private "SS10FoundationE8EncodingV"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "4Bond34FlatDataSourceChangesetConvertibleP"
+- !private "4Bond22FlatDataSourceProtocolP"
+- !private "9Alamofire10HTTPMethodO"
+- !private "So17NSHTTPURLResponseC"
+- "SH"
+- !private "10Foundation11JSONDecoderC"
+- !private "9Alamofire12JSONEncodingV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "9Alamofire17MultipartFormDataC"
+- !private "9Alamofire14SessionManagerC31MultipartFormDataEncodingResultO"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sq"
+- !private "11ReactiveKit16OptionalProtocolP"
+- !private "9Alamofire17ParameterEncodingP"
+- "5goOSC12PaypalEntityV"
+- "5goOSC29PaypalInputInteractorProtocolP"
+- "5goOSC16PaypalInteractorC"
+- !private "5goOSC30PaypalOutputInteractorProtocolP"
+- !private "4Bond31QueryableFlatDataSourceProtocolP"
+- !private "4Bond36QueryableSectionedDataSourceProtocolP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- !private "9Alamofire7RequestC"
+- !private "5goOSC12PaypalEntityV8ResponseV"
+- !private "9Alamofire8ResponseP"
+- !private "5goOSC12PaypalEntityV8ResponseV"
+- !private "9Alamofire8ResponseP"
+- !private "5goOSC12PaypalEntityV17ResponseDoPaymentV"
+- !private "4Bond39SectionedDataSourceChangesetConvertibleP"
+- !private "4Bond27SectionedDataSourceProtocolP"
+- !private "ST"
+- !private "5goOSC10CartEntityV06SingleC0V"
+- !private "5goOSC12PaypalEntityV010SingleDataC0V"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
+- !private "So13NSURLResponseC"
+- !private "9Alamofire13UploadRequestC"
+- "So14NSUserDefaultsC"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules/Bond.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Modules/MessengerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Headers/MessengerKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalMobile.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalConfiguration.h"
+- "/Users/bootcamp/Documents/collab2/goOSC/goOSC-Bridging-Header.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalProfileSharingViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalFuturePaymentViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalPaymentViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalOAuthScopes.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Headers/MessengerKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalPayment.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Starscream/zlib/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SafariServices.framework/Headers/SafariServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "7a66924f3214dbe1667d605785d7061f"

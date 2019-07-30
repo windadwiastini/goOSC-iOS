@@ -1,0 +1,210 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit14SignalProtocolP", "buffer"]
+- ["11ReactiveKit14SignalProtocolP", "collect"]
+- ["11ReactiveKit14SignalProtocolP", "defaultIfEmpty"]
+- ["11ReactiveKit14SignalProtocolP", "eraseType"]
+- ["11ReactiveKit14SignalProtocolP", "pairwise"]
+- ["11ReactiveKit14SignalProtocolP", "replaceElements"]
+- ["11ReactiveKit14SignalProtocolP", "reduce"]
+- ["11ReactiveKit14SignalProtocolP", "scan"]
+- ["11ReactiveKit14SignalProtocolP", "start"]
+- ["11ReactiveKit14SignalProtocolP", "window"]
+- ["11ReactiveKit14SignalProtocolP", "zipPrevious"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "+"
+- !private "=="
+- !private "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "Int"
+- "Signal"
+- "SignalProtocol"
+- "Void"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "removeAll"]
+- !private ["11ReactiveKit14AtomicObserverC", "deinit"]
+- !private ["11ReactiveKit14AtomicObserverC", "receive"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "removeAll"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "removeAll"]
+- !private ["11ReactiveKit11SubscribersO10CompletionO", "failure"]
+- !private ["11ReactiveKit11SubscribersO10CompletionO", "finished"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "flatMap"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "flatMap"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "removeAll"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "flatMap"]
+- !private ["Se", "removeAll"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "flatMap"]
+- !private ["SE", "removeAll"]
+- !private ["SQ", "append"]
+- !private ["SQ", "count"]
+- !private ["SQ", "flatMap"]
+- !private ["SQ", "removeAll"]
+- !private ["11ReactiveKit5EventO", "completed"]
+- !private ["11ReactiveKit5EventO", "failed"]
+- !private ["11ReactiveKit5EventO", "next"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- !private ["s23ExpressibleByNilLiteralP", "flatMap"]
+- !private ["SH", "append"]
+- !private ["SH", "count"]
+- !private ["SH", "flatMap"]
+- !private ["SH", "removeAll"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "removeAll"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "removeAll"]
+- !private ["11ReactiveKit16ObserverProtocolP", "receive"]
+- !private ["Sq", "deinit"]
+- !private ["Sq", "flatMap"]
+- !private ["11ReactiveKit16OptionalProtocolP", "flatMap"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "removeAll"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "removeAll"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "removeAll"]
+- !private ["11ReactiveKit6SignalV", "compactMap"]
+- !private ["11ReactiveKit6SignalV", "deinit"]
+- !private ["11ReactiveKit6SignalV", "ignoreNils"]
+- !private ["11ReactiveKit6SignalV", "init"]
+- !private ["11ReactiveKit6SignalV", "last"]
+- !private ["11ReactiveKit6SignalV", "map"]
+- ["11ReactiveKit14SignalProtocolP", "Element"]
+- ["11ReactiveKit14SignalProtocolP", "Error"]
+- ["11ReactiveKit14SignalProtocolP", "Int"]
+- ["11ReactiveKit14SignalProtocolP", "Signal"]
+- ["11ReactiveKit14SignalProtocolP", "Void"]
+- ["11ReactiveKit14SignalProtocolP", "buffer"]
+- ["11ReactiveKit14SignalProtocolP", "collect"]
+- !private ["11ReactiveKit14SignalProtocolP", "compactMap"]
+- ["11ReactiveKit14SignalProtocolP", "defaultIfEmpty"]
+- ["11ReactiveKit14SignalProtocolP", "eraseType"]
+- !private ["11ReactiveKit14SignalProtocolP", "ignoreNils"]
+- !private ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "last"]
+- !private ["11ReactiveKit14SignalProtocolP", "map"]
+- !private ["11ReactiveKit14SignalProtocolP", "observe"]
+- ["11ReactiveKit14SignalProtocolP", "pairwise"]
+- ["11ReactiveKit14SignalProtocolP", "reduce"]
+- ["11ReactiveKit14SignalProtocolP", "replaceElements"]
+- ["11ReactiveKit14SignalProtocolP", "scan"]
+- ["11ReactiveKit14SignalProtocolP", "start"]
+- ["11ReactiveKit14SignalProtocolP", "window"]
+- ["11ReactiveKit14SignalProtocolP", "zipPrevious"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "removeAll"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeAll"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "flatMap"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+depends-nominal:
+- !private "Sa"
+- !private "11ReactiveKit14AtomicObserverC"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "11ReactiveKit11SubscribersO10CompletionO"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "11ReactiveKit5EventO"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "11ReactiveKit16ObserverProtocolP"
+- !private "Sq"
+- !private "11ReactiveKit16OptionalProtocolP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "11ReactiveKit6SignalV"
+- "11ReactiveKit14SignalProtocolP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f059037ba1890a66e7fcb38dcfa7469d"

@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-
+import ReactiveKit
 import WebKit
 
 extension String {
@@ -27,6 +27,7 @@ extension String {
 
 class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFieldDelegate {
     
+    @IBOutlet weak var btnLogin: UIButton!
     var webView: WKWebView!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -39,6 +40,18 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
         webView.customUserAgent = "Chrome/56.0.0.0 Mobile"
         usernameField.delegate = self
         passwordField.delegate = self
+        configureAction()
+        
+    }
+    
+    fileprivate func configureAction() {
+        btnLogin.isEnabled = false
+        combineLatest(usernameField.reactive.text, passwordField.reactive.text) {email, password in
+            return email!.count > 0 && password!.count > 0
+            }.bind(to: btnLogin.reactive.isEnabled)
+        btnLogin.reactive.controlEvents(.touchUpInside).observeNext { e in
+            self.login()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,13 +78,7 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
         let username = usernameField.text
         let pasword = passwordField.text
         let user = Customer.Request(name: "", email: username!, password: pasword!)
-        print("login clicked")
         presenter?.interactor?.doLogin(user)
-    }
-    
-    
-    @IBAction func doLogin(_ sender: Any) {
-        login()
     }
     
     func openAlert(_ title: String, _ context: String) {
@@ -81,7 +88,6 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
     }
     
     func loadWeb(_ url: URL) {
-        print("sampai view load")
         let frame = view.frame
         webView.frame = CGRect(x: 0, y: 0, width: frame.maxX, height: frame.maxY)
         webView.sizeToFit()

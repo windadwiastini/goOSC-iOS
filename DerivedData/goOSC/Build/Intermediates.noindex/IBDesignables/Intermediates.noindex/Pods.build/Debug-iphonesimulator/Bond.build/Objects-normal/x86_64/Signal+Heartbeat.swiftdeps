@@ -1,0 +1,177 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit14SignalProtocolP", "heartbeat"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "..."
+- "Double"
+- !private "Int"
+- "Never"
+- !private "NotificationCenter"
+- !private "SafeSignal"
+- "Signal"
+- "SignalProtocol"
+- !private "UIApplication"
+- "Void"
+depends-member:
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "didEnterBackgroundNotification"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "willEnterForegroundNotification"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "didEnterBackgroundNotification"]
+- !private ["s7CVarArgP", "global"]
+- !private ["s7CVarArgP", "reactive"]
+- !private ["s7CVarArgP", "willEnterForegroundNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "didEnterBackgroundNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
+- !private ["s28CustomDebugStringConvertibleP", "reactive"]
+- !private ["s28CustomDebugStringConvertibleP", "willEnterForegroundNotification"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "didEnterBackgroundNotification"]
+- !private ["s23CustomStringConvertibleP", "global"]
+- !private ["s23CustomStringConvertibleP", "reactive"]
+- !private ["s23CustomStringConvertibleP", "willEnterForegroundNotification"]
+- !private ["11ReactiveKit13DeallocatableP", "default"]
+- !private ["11ReactiveKit13DeallocatableP", "didEnterBackgroundNotification"]
+- !private ["11ReactiveKit13DeallocatableP", "global"]
+- !private ["11ReactiveKit13DeallocatableP", "reactive"]
+- !private ["11ReactiveKit13DeallocatableP", "willEnterForegroundNotification"]
+- !private ["So18OS_dispatch_objectC", "global"]
+- !private ["So17OS_dispatch_queueC", "global"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "default"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "didEnterBackgroundNotification"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "global"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "reactive"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "willEnterForegroundNotification"]
+- !private ["SQ", "default"]
+- !private ["SQ", "didEnterBackgroundNotification"]
+- !private ["SQ", "global"]
+- !private ["SQ", "reactive"]
+- !private ["SQ", "willEnterForegroundNotification"]
+- !private ["SH", "default"]
+- !private ["SH", "didEnterBackgroundNotification"]
+- !private ["SH", "global"]
+- !private ["SH", "reactive"]
+- !private ["SH", "willEnterForegroundNotification"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "didEnterBackgroundNotification"]
+- !private ["So8NSObjectC", "global"]
+- !private ["So8NSObjectC", "reactive"]
+- !private ["So8NSObjectC", "willEnterForegroundNotification"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "didEnterBackgroundNotification"]
+- !private ["So8NSObjectP", "global"]
+- !private ["So8NSObjectP", "reactive"]
+- !private ["So8NSObjectP", "willEnterForegroundNotification"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "reactive"]
+- !private ["So9OS_objectC", "global"]
+- !private ["11ReactiveKit0A0V", "notification"]
+- !private ["11ReactiveKit0A10ExtensionsP", "notification"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "default"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "didEnterBackgroundNotification"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "global"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "reactive"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "willEnterForegroundNotification"]
+- !private ["11ReactiveKit6SignalV", "flatMapLatest"]
+- !private ["11ReactiveKit6SignalV", "init"]
+- !private ["11ReactiveKit6SignalV", "replaceElements"]
+- !private ["11ReactiveKit6SignalV", "start"]
+- !private ["11ReactiveKit6SignalV", "take"]
+- ["11ReactiveKit14SignalProtocolP", "Double"]
+- !private ["11ReactiveKit14SignalProtocolP", "Int"]
+- ["11ReactiveKit14SignalProtocolP", "Never"]
+- !private ["11ReactiveKit14SignalProtocolP", "NotificationCenter"]
+- !private ["11ReactiveKit14SignalProtocolP", "SafeSignal"]
+- ["11ReactiveKit14SignalProtocolP", "Signal"]
+- !private ["11ReactiveKit14SignalProtocolP", "UIApplication"]
+- ["11ReactiveKit14SignalProtocolP", "Void"]
+- !private ["11ReactiveKit14SignalProtocolP", "flatMapLatest"]
+- ["11ReactiveKit14SignalProtocolP", "heartbeat"]
+- !private ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "replaceElements"]
+- !private ["11ReactiveKit14SignalProtocolP", "start"]
+- !private ["11ReactiveKit14SignalProtocolP", "take"]
+- !private ["So13UIApplicationC", "didEnterBackgroundNotification"]
+- !private ["So13UIApplicationC", "willEnterForegroundNotification"]
+- !private ["So30UIPasteConfigurationSupportingP", "didEnterBackgroundNotification"]
+- !private ["So30UIPasteConfigurationSupportingP", "willEnterForegroundNotification"]
+- !private ["So11UIResponderC", "didEnterBackgroundNotification"]
+- !private ["So11UIResponderC", "willEnterForegroundNotification"]
+- !private ["So30UIResponderStandardEditActionsP", "didEnterBackgroundNotification"]
+- !private ["So30UIResponderStandardEditActionsP", "willEnterForegroundNotification"]
+- !private ["So23UIUserActivityRestoringP", "didEnterBackgroundNotification"]
+- !private ["So23UIUserActivityRestoringP", "willEnterForegroundNotification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didEnterBackgroundNotification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reactive"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "willEnterForegroundNotification"]
+depends-nominal:
+- !private "11ReactiveKit31BindingExecutionContextProviderP"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "11ReactiveKit13DeallocatableP"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- !private "11ReactiveKit18DisposeBagProviderP"
+- !private "SQ"
+- !private "SH"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So20NSNotificationCenterC"
+- !private "So9OS_objectC"
+- !private "11ReactiveKit0A0V"
+- !private "11ReactiveKit0A10ExtensionsP"
+- !private "11ReactiveKit0A18ExtensionsProviderP"
+- !private "11ReactiveKit6SignalV"
+- "11ReactiveKit14SignalProtocolP"
+- !private "So13UIApplicationC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ee59fc9fe7eead26a6c36718987ecab0"

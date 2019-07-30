@@ -1,0 +1,142 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OutlineChangesetConvertible"
+provides-nominal:
+- "4Bond27OutlineChangesetConvertibleP"
+- "4Bond13TreeChangesetC"
+- "4Bond9TreeArrayV"
+- "4Bond15ObjectTreeArrayC"
+provides-member:
+- ["4Bond27OutlineChangesetConvertibleP", ""]
+- ["4Bond13TreeChangesetC", ""]
+- ["4Bond9TreeArrayV", ""]
+- ["4Bond15ObjectTreeArrayC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "ObjectTreeArray"
+- "OutlineChangesetConvertible"
+- "TreeArray"
+- "TreeChangeset"
+- "TreeChangesetProtocol"
+depends-member:
+- ["4Bond9ChangesetC", "Changeset"]
+- ["4Bond9ChangesetC", "TreeChangeset"]
+- ["4Bond9ChangesetC", "asTreeArrayChangeset"]
+- !private ["4Bond9ChangesetC", "init"]
+- ["4Bond17ChangesetProtocolP", "Changeset"]
+- ["4Bond17ChangesetProtocolP", "asTreeArrayChangeset"]
+- !private ["4Bond17ChangesetProtocolP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Changeset"]
+- !private ["s28CustomDebugStringConvertibleP", "TreeChangeset"]
+- ["s28CustomDebugStringConvertibleP", "_Default_Changeset"]
+- ["s28CustomDebugStringConvertibleP", "asTreeArrayChangeset"]
+- ["4Bond14InstantiatableP", "Changeset"]
+- !private ["4Bond14InstantiatableP", "TreeChangeset"]
+- ["4Bond14InstantiatableP", "_Default_Changeset"]
+- ["4Bond14InstantiatableP", "asTreeArrayChangeset"]
+- ["4Bond19MutableTreeProtocolP", "Changeset"]
+- !private ["4Bond19MutableTreeProtocolP", "TreeChangeset"]
+- ["4Bond19MutableTreeProtocolP", "_Default_Changeset"]
+- ["4Bond19MutableTreeProtocolP", "asTreeArrayChangeset"]
+- ["4Bond15ObjectTreeArrayC", "Changeset"]
+- ["4Bond15ObjectTreeArrayC", "ObjectTreeArray"]
+- ["4Bond15ObjectTreeArrayC", "TreeChangeset"]
+- ["4Bond15ObjectTreeArrayC", "_Default_Changeset"]
+- ["4Bond15ObjectTreeArrayC", "asTreeArrayChangeset"]
+- ["4Bond15ObjectTreeArrayC", "deinit"]
+- ["4Bond27OutlineChangesetConvertibleP", "Changeset"]
+- !private ["4Bond27OutlineChangesetConvertibleP", "TreeChangeset"]
+- ["4Bond27OutlineChangesetConvertibleP", "TreeChangesetProtocol"]
+- ["4Bond27OutlineChangesetConvertibleP", ""]
+- ["4Bond27OutlineChangesetConvertibleP", "_Default_Changeset"]
+- ["4Bond27OutlineChangesetConvertibleP", "asTreeArrayChangeset"]
+- !private ["4Bond27OutlineChangesetConvertibleP", "init"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "Changeset"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "TreeChangeset"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "_Default_Changeset"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "asTreeArrayChangeset"]
+- ["4Bond28SectionedDataSourceChangesetP", "Changeset"]
+- ["4Bond28SectionedDataSourceChangesetP", "asTreeArrayChangeset"]
+- !private ["4Bond28SectionedDataSourceChangesetP", "init"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "Changeset"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "TreeChangeset"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "_Default_Changeset"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "asTreeArrayChangeset"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "init"]
+- ["4Bond27SectionedDataSourceProtocolP", "Changeset"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "TreeChangeset"]
+- ["4Bond27SectionedDataSourceProtocolP", "_Default_Changeset"]
+- ["4Bond27SectionedDataSourceProtocolP", "asTreeArrayChangeset"]
+- ["4Bond9TreeArrayV", "Changeset"]
+- ["4Bond9TreeArrayV", "TreeArray"]
+- ["4Bond9TreeArrayV", "TreeChangeset"]
+- ["4Bond9TreeArrayV", "_Default_Changeset"]
+- ["4Bond9TreeArrayV", "asTreeArrayChangeset"]
+- ["4Bond9TreeArrayV", "deinit"]
+- ["4Bond13TreeChangesetC", "Changeset"]
+- ["4Bond13TreeChangesetC", "TreeChangeset"]
+- ["4Bond13TreeChangesetC", "asTreeArrayChangeset"]
+- ["4Bond13TreeChangesetC", "deinit"]
+- !private ["4Bond13TreeChangesetC", "init"]
+- ["4Bond21TreeChangesetProtocolP", "Changeset"]
+- ["4Bond21TreeChangesetProtocolP", "asTreeArrayChangeset"]
+- !private ["4Bond21TreeChangesetProtocolP", "init"]
+- ["4Bond12TreeProtocolP", "Changeset"]
+- !private ["4Bond12TreeProtocolP", "TreeChangeset"]
+- ["4Bond12TreeProtocolP", "_Default_Changeset"]
+- ["4Bond12TreeProtocolP", "asTreeArrayChangeset"]
+depends-nominal:
+- "4Bond9ChangesetC"
+- "4Bond17ChangesetProtocolP"
+- "s28CustomDebugStringConvertibleP"
+- "4Bond14InstantiatableP"
+- "4Bond19MutableTreeProtocolP"
+- "4Bond15ObjectTreeArrayC"
+- "4Bond27OutlineChangesetConvertibleP"
+- "4Bond28RangeReplaceableTreeProtocolP"
+- "4Bond28SectionedDataSourceChangesetP"
+- "4Bond39SectionedDataSourceChangesetConvertibleP"
+- "4Bond27SectionedDataSourceProtocolP"
+- "4Bond9TreeArrayV"
+- "4Bond13TreeChangesetC"
+- "4Bond21TreeChangesetProtocolP"
+- "4Bond12TreeProtocolP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "cc231e27c2b04f12ad1e90a92cc35a0c"

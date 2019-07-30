@@ -1,6 +1,10 @@
 PODS:
   - Alamofire (4.8.2)
+  - Bond (7.6.0):
+    - Differ (~> 1.3)
+    - ReactiveKit (~> 3.10)
   - CardIO (5.4.1)
+  - Differ (1.4.3)
   - IQKeyboardManagerSwift (5.0.0)
   - MessengerKit (1.0.4)
   - PayPal-iOS-SDK (2.18.1):
@@ -9,10 +13,12 @@ PODS:
   - PayPal-iOS-SDK/CardIO (2.18.1):
     - CardIO (~> 5.4.1)
   - PayPal-iOS-SDK/Core (2.18.1)
+  - ReactiveKit (3.13.0)
   - Starscream (3.0.5)
 
 DEPENDENCIES:
   - Alamofire
+  - Bond
   - IQKeyboardManagerSwift (= 5.0.0)
   - MessengerKit (from `https://github.com/steve228uk/MessengerKit.git`)
   - PayPal-iOS-SDK
@@ -21,9 +27,12 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Bond
     - CardIO
+    - Differ
     - IQKeyboardManagerSwift
     - PayPal-iOS-SDK
+    - ReactiveKit
     - Starscream
 
 EXTERNAL SOURCES:
@@ -37,12 +46,15 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Bond: 5d626bfbbfc60b213ec35badb8f4fd81beff6a5f
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  Differ: 6c7477d6187e8c36d02ec342a3c321061b85a0ea
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
   MessengerKit: f010a86c1c2f9db3be53b4077a65fcf02944bab1
   PayPal-iOS-SDK: 10654cd111e911a9807bddb96fae81aacb8e9915
+  ReactiveKit: 4a938b0671b0b068232926a443da19d535a03023
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
 
-PODFILE CHECKSUM: 3270e82e3eb5777329b6c531c0774480e92128a2
+PODFILE CHECKSUM: 02d7c8727994b951918ee3e698dcd237ec9e2f98
 
 COCOAPODS: 1.6.1

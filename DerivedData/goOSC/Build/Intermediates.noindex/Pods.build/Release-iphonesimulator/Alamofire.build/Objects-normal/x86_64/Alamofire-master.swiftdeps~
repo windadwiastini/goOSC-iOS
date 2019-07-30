@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "96f4c74ad0f591d793afbed04fd48c7a"
+build_time: [1564378077, 768057000]
+inputs:
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/AFError.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/Alamofire.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/MultipartFormData.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/Notifications.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/ParameterEncoding.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/Request.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/Response.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/ResponseSerialization.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/Result.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/ServerTrustPolicy.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/SessionDelegate.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/SessionManager.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/TaskDelegate.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/Timeline.swift": [9223372036, 854775807]
+  "/Users/bootcamp/Documents/collab2/Pods/Alamofire/Source/Validation.swift": [9223372036, 854775807]

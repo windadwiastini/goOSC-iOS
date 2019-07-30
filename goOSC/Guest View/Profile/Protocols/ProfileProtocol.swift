@@ -10,7 +10,6 @@ import UIKit
 
 protocol ProfileViewProtocol {
     func updateView(response resp: Profile.Response)
-    func signOut()
 }
 
 protocol ProfilePresenterProtocol {

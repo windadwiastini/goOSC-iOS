@@ -10,7 +10,6 @@ import UIKit
 class HomePageView: UIViewController, HomePageViewProtocol {
     var presenter: HomePagePresenterProtocol?
     var homePageData = HomePage.Response(code: 0, message: "", data: [], length: 0)
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

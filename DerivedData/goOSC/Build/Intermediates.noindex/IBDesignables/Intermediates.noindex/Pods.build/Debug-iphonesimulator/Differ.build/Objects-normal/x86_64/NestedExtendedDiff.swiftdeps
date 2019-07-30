@@ -1,0 +1,451 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NestedExtendedDiff"
+- "NestedElementEqualityChecker"
+provides-nominal:
+- "6Differ18NestedExtendedDiffV"
+- "6Differ18NestedExtendedDiffV7ElementO"
+provides-member:
+- ["6Differ18NestedExtendedDiffV", ""]
+- ["6Differ18NestedExtendedDiffV7ElementO", ""]
+- ["Sl", ""]
+- ["Sl", "nestedExtendedDiff"]
+- ["Sl", "nestedExtendedDiff"]
+- ["Sl", "nestedExtendedDiff"]
+- ["Sl", "nestedExtendedDiff"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "Collection"
+- "CustomDebugStringConvertible"
+- !private "Diff"
+- "DiffProtocol"
+- "EqualityChecker"
+- "Equatable"
+- "ExpressibleByArrayLiteral"
+- "Int"
+- "NestedElementEqualityChecker"
+- "NestedExtendedDiff"
+- "String"
+- !private "Trace"
+- !private "zip"
+depends-member:
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "flatMap"]
+- !private ["Sa", "map"]
+- !private ["SK", "compactMap"]
+- !private ["SK", "filter"]
+- !private ["SK", "flatMap"]
+- !private ["SK", "map"]
+- !private ["s7CVarArgP", "compactMap"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "flatMap"]
+- !private ["s7CVarArgP", "map"]
+- ["Sl", "ArrayLiteralElement"]
+- !private ["Sl", "Bool"]
+- ["Sl", "Collection"]
+- !private ["Sl", "Diff"]
+- ["Sl", "DiffElementType"]
+- ["Sl", "Element"]
+- ["Sl", "EqualityChecker"]
+- ["Sl", "Equatable"]
+- ["Sl", "Index"]
+- ["Sl", "Indices"]
+- !private ["Sl", "Int"]
+- ["Sl", "Iterator"]
+- ["Sl", "NestedElementEqualityChecker"]
+- ["Sl", "NestedExtendedDiff"]
+- ["Sl", "SubSequence"]
+- !private ["Sl", "Trace"]
+- ["Sl", ""]
+- ["Sl", "_Default_ArrayLiteralElement"]
+- ["Sl", "_Default_DiffElementType"]
+- ["Sl", "_Default_Indices"]
+- ["Sl", "_Default_Iterator"]
+- ["Sl", "_Default_SubSequence"]
+- ["Sl", "_copyContents"]
+- ["Sl", "_copyToContiguousArray"]
+- ["Sl", "_customContainsEquatableElement"]
+- ["Sl", "_customIndexOfEquatableElement"]
+- ["Sl", "_customLastIndexOfEquatableElement"]
+- ["Sl", "_failEarlyRangeCheck"]
+- !private ["Sl", "compactMap"]
+- ["Sl", "count"]
+- ["Sl", "distance"]
+- ["Sl", "elements"]
+- ["Sl", "endIndex"]
+- !private ["Sl", "extendedDiff"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "flatMap"]
+- ["Sl", "formIndex"]
+- ["Sl", "index"]
+- ["Sl", "indices"]
+- ["Sl", "init"]
+- ["Sl", "isEmpty"]
+- !private ["Sl", "itemOnStartIndex"]
+- ["Sl", "makeIterator"]
+- !private ["Sl", "map"]
+- ["Sl", "nestedExtendedDiff"]
+- !private ["Sl", "outputDiffPathTraces"]
+- ["Sl", "startIndex"]
+- ["Sl", "subscript"]
+- ["Sl", "underestimatedCount"]
+- ["Sl", "withContiguousStorageIfAvailable"]
+- !private ["Sl", "zip"]
+- !private ["10Foundation15ContiguousBytesP", "compactMap"]
+- !private ["10Foundation15ContiguousBytesP", "filter"]
+- !private ["10Foundation15ContiguousBytesP", "flatMap"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- !private ["s28CustomDebugStringConvertibleP", "delete"]
+- ["s28CustomDebugStringConvertibleP", "deleteElement"]
+- ["s28CustomDebugStringConvertibleP", "deleteSection"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "flatMap"]
+- !private ["s28CustomDebugStringConvertibleP", "insert"]
+- ["s28CustomDebugStringConvertibleP", "insertElement"]
+- ["s28CustomDebugStringConvertibleP", "insertSection"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "move"]
+- ["s28CustomDebugStringConvertibleP", "moveElement"]
+- ["s28CustomDebugStringConvertibleP", "moveSection"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "flatMap"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "flatMap"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["10Foundation12DataProtocolP", "compactMap"]
+- !private ["10Foundation12DataProtocolP", "filter"]
+- !private ["10Foundation12DataProtocolP", "flatMap"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "filter"]
+- !private ["Se", "flatMap"]
+- !private ["Se", "map"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["6Differ4DiffV", "deinit"]
+- !private ["6Differ4DiffV", "init"]
+- ["6Differ12DiffProtocolP", "ArrayLiteralElement"]
+- ["6Differ12DiffProtocolP", "DiffElementType"]
+- ["6Differ12DiffProtocolP", "Element"]
+- ["6Differ12DiffProtocolP", "Index"]
+- ["6Differ12DiffProtocolP", "Indices"]
+- ["6Differ12DiffProtocolP", "Iterator"]
+- ["6Differ12DiffProtocolP", "SubSequence"]
+- ["6Differ12DiffProtocolP", ""]
+- ["6Differ12DiffProtocolP", "_Default_ArrayLiteralElement"]
+- ["6Differ12DiffProtocolP", "_Default_DiffElementType"]
+- ["6Differ12DiffProtocolP", "_Default_Indices"]
+- ["6Differ12DiffProtocolP", "_Default_Iterator"]
+- ["6Differ12DiffProtocolP", "_Default_SubSequence"]
+- ["6Differ12DiffProtocolP", "_copyContents"]
+- ["6Differ12DiffProtocolP", "_copyToContiguousArray"]
+- ["6Differ12DiffProtocolP", "_customContainsEquatableElement"]
+- ["6Differ12DiffProtocolP", "_customIndexOfEquatableElement"]
+- ["6Differ12DiffProtocolP", "_customLastIndexOfEquatableElement"]
+- ["6Differ12DiffProtocolP", "_failEarlyRangeCheck"]
+- ["6Differ12DiffProtocolP", "count"]
+- ["6Differ12DiffProtocolP", "distance"]
+- ["6Differ12DiffProtocolP", "elements"]
+- ["6Differ12DiffProtocolP", "endIndex"]
+- ["6Differ12DiffProtocolP", "formIndex"]
+- ["6Differ12DiffProtocolP", "index"]
+- ["6Differ12DiffProtocolP", "indices"]
+- ["6Differ12DiffProtocolP", "init"]
+- ["6Differ12DiffProtocolP", "isEmpty"]
+- ["6Differ12DiffProtocolP", "makeIterator"]
+- !private ["6Differ12DiffProtocolP", "map"]
+- ["6Differ12DiffProtocolP", "startIndex"]
+- ["6Differ12DiffProtocolP", "subscript"]
+- ["6Differ12DiffProtocolP", "underestimatedCount"]
+- ["6Differ12DiffProtocolP", "withContiguousStorageIfAvailable"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "Int"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "String"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "debugDescription"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "deinit"]
+- !private ["6Differ12ExtendedDiffV7ElementO", "delete"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "deleteElement"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "deleteSection"]
+- !private ["6Differ12ExtendedDiffV7ElementO", "insert"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "insertElement"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "insertSection"]
+- !private ["6Differ12ExtendedDiffV7ElementO", "move"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "moveElement"]
+- ["6Differ18NestedExtendedDiffV7ElementO", "moveSection"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "filter"]
+- !private ["SE", "flatMap"]
+- !private ["SE", "map"]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "flatMap"]
+- !private ["SQ", "from"]
+- !private ["SQ", "map"]
+- !private ["SQ", "matchPoint"]
+- !private ["SQ", "type"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- ["s25ExpressibleByArrayLiteralP", "ArrayLiteralElement"]
+- ["s25ExpressibleByArrayLiteralP", "DiffElementType"]
+- ["s25ExpressibleByArrayLiteralP", "Element"]
+- ["s25ExpressibleByArrayLiteralP", "Index"]
+- ["s25ExpressibleByArrayLiteralP", "Indices"]
+- ["s25ExpressibleByArrayLiteralP", "Iterator"]
+- ["s25ExpressibleByArrayLiteralP", "SubSequence"]
+- ["s25ExpressibleByArrayLiteralP", ""]
+- ["s25ExpressibleByArrayLiteralP", "_Default_ArrayLiteralElement"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_DiffElementType"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_Indices"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_Iterator"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_SubSequence"]
+- ["s25ExpressibleByArrayLiteralP", "_copyContents"]
+- ["s25ExpressibleByArrayLiteralP", "_copyToContiguousArray"]
+- ["s25ExpressibleByArrayLiteralP", "_customContainsEquatableElement"]
+- ["s25ExpressibleByArrayLiteralP", "_customIndexOfEquatableElement"]
+- ["s25ExpressibleByArrayLiteralP", "_customLastIndexOfEquatableElement"]
+- ["s25ExpressibleByArrayLiteralP", "_failEarlyRangeCheck"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "distance"]
+- ["s25ExpressibleByArrayLiteralP", "elements"]
+- ["s25ExpressibleByArrayLiteralP", "endIndex"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "flatMap"]
+- ["s25ExpressibleByArrayLiteralP", "formIndex"]
+- ["s25ExpressibleByArrayLiteralP", "index"]
+- ["s25ExpressibleByArrayLiteralP", "indices"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- ["s25ExpressibleByArrayLiteralP", "makeIterator"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- ["s25ExpressibleByArrayLiteralP", "startIndex"]
+- ["s25ExpressibleByArrayLiteralP", "subscript"]
+- ["s25ExpressibleByArrayLiteralP", "underestimatedCount"]
+- ["s25ExpressibleByArrayLiteralP", "withContiguousStorageIfAvailable"]
+- !private ["6Differ12ExtendedDiffV", "deinit"]
+- !private ["6Differ12ExtendedDiffV", "map"]
+- !private ["SH", "compactMap"]
+- !private ["SH", "filter"]
+- !private ["SH", "flatMap"]
+- !private ["SH", "from"]
+- !private ["SH", "map"]
+- !private ["SH", "matchPoint"]
+- !private ["SH", "type"]
+- !private ["SH", "x"]
+- !private ["SH", "y"]
+- !private ["SM", "compactMap"]
+- !private ["SM", "filter"]
+- !private ["SM", "flatMap"]
+- !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "compactMap"]
+- !private ["10Foundation19MutableDataProtocolP", "filter"]
+- !private ["10Foundation19MutableDataProtocolP", "flatMap"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- ["6Differ18NestedExtendedDiffV", "ArrayLiteralElement"]
+- ["6Differ18NestedExtendedDiffV", "DiffElementType"]
+- ["6Differ18NestedExtendedDiffV", "Element"]
+- ["6Differ18NestedExtendedDiffV", "Index"]
+- ["6Differ18NestedExtendedDiffV", "Indices"]
+- ["6Differ18NestedExtendedDiffV", "Int"]
+- ["6Differ18NestedExtendedDiffV", "Iterator"]
+- ["6Differ18NestedExtendedDiffV", "NestedExtendedDiff"]
+- ["6Differ18NestedExtendedDiffV", "SubSequence"]
+- ["6Differ18NestedExtendedDiffV", "_Default_ArrayLiteralElement"]
+- ["6Differ18NestedExtendedDiffV", "_Default_DiffElementType"]
+- ["6Differ18NestedExtendedDiffV", "_Default_Indices"]
+- ["6Differ18NestedExtendedDiffV", "_Default_Iterator"]
+- ["6Differ18NestedExtendedDiffV", "_Default_SubSequence"]
+- ["6Differ18NestedExtendedDiffV", "_copyContents"]
+- ["6Differ18NestedExtendedDiffV", "_copyToContiguousArray"]
+- ["6Differ18NestedExtendedDiffV", "_customContainsEquatableElement"]
+- ["6Differ18NestedExtendedDiffV", "_customIndexOfEquatableElement"]
+- ["6Differ18NestedExtendedDiffV", "_customLastIndexOfEquatableElement"]
+- ["6Differ18NestedExtendedDiffV", "_failEarlyRangeCheck"]
+- ["6Differ18NestedExtendedDiffV", "count"]
+- ["6Differ18NestedExtendedDiffV", "deinit"]
+- ["6Differ18NestedExtendedDiffV", "distance"]
+- ["6Differ18NestedExtendedDiffV", "elements"]
+- ["6Differ18NestedExtendedDiffV", "endIndex"]
+- ["6Differ18NestedExtendedDiffV", "formIndex"]
+- ["6Differ18NestedExtendedDiffV", "index"]
+- ["6Differ18NestedExtendedDiffV", "indices"]
+- ["6Differ18NestedExtendedDiffV", "init"]
+- ["6Differ18NestedExtendedDiffV", "isEmpty"]
+- ["6Differ18NestedExtendedDiffV", "makeIterator"]
+- ["6Differ18NestedExtendedDiffV", "startIndex"]
+- ["6Differ18NestedExtendedDiffV", "subscript"]
+- ["6Differ18NestedExtendedDiffV", "underestimatedCount"]
+- ["6Differ18NestedExtendedDiffV", "withContiguousStorageIfAvailable"]
+- !private ["6Differ5PointV", "x"]
+- !private ["6Differ5PointV", "y"]
+- !private ["Sk", "compactMap"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "flatMap"]
+- !private ["Sk", "map"]
+- !private ["Sm", "compactMap"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "flatMap"]
+- !private ["Sm", "map"]
+- ["ST", "ArrayLiteralElement"]
+- !private ["ST", "Bool"]
+- ["ST", "Collection"]
+- !private ["ST", "Diff"]
+- ["ST", "DiffElementType"]
+- ["ST", "Element"]
+- ["ST", "EqualityChecker"]
+- ["ST", "Equatable"]
+- ["ST", "Index"]
+- ["ST", "Indices"]
+- !private ["ST", "Int"]
+- ["ST", "Iterator"]
+- ["ST", "NestedElementEqualityChecker"]
+- ["ST", "NestedExtendedDiff"]
+- ["ST", "SubSequence"]
+- !private ["ST", "Trace"]
+- ["ST", ""]
+- ["ST", "_Default_ArrayLiteralElement"]
+- ["ST", "_Default_DiffElementType"]
+- ["ST", "_Default_Indices"]
+- ["ST", "_Default_Iterator"]
+- ["ST", "_Default_SubSequence"]
+- ["ST", "_copyContents"]
+- ["ST", "_copyToContiguousArray"]
+- ["ST", "_customContainsEquatableElement"]
+- ["ST", "_customIndexOfEquatableElement"]
+- ["ST", "_customLastIndexOfEquatableElement"]
+- ["ST", "_failEarlyRangeCheck"]
+- !private ["ST", "compactMap"]
+- ["ST", "count"]
+- ["ST", "distance"]
+- ["ST", "elements"]
+- ["ST", "endIndex"]
+- !private ["ST", "extendedDiff"]
+- !private ["ST", "filter"]
+- !private ["ST", "flatMap"]
+- ["ST", "formIndex"]
+- ["ST", "index"]
+- ["ST", "indices"]
+- ["ST", "init"]
+- ["ST", "isEmpty"]
+- !private ["ST", "itemOnStartIndex"]
+- ["ST", "makeIterator"]
+- !private ["ST", "map"]
+- !private ["ST", "nestedExtendedDiff"]
+- !private ["ST", "outputDiffPathTraces"]
+- ["ST", "startIndex"]
+- ["ST", "subscript"]
+- ["ST", "underestimatedCount"]
+- ["ST", "withContiguousStorageIfAvailable"]
+- !private ["ST", "zip"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["6Differ5TraceV", "from"]
+- !private ["6Differ5TraceV", "type"]
+- !private ["6Differ9TraceTypeO", "matchPoint"]
+- !private ["s12Zip2SequenceV", "flatMap"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "flatMap"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "flatMap"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s19_HasContiguousBytesP", "compactMap"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- !private ["s19_HasContiguousBytesP", "flatMap"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "flatMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "compactMap"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "flatMap"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "6Differ4DiffV"
+- "6Differ12DiffProtocolP"
+- "6Differ18NestedExtendedDiffV7ElementO"
+- !private "6Differ12ExtendedDiffV7ElementO"
+- "6Differ18NestedExtendedDiffV7ElementO"
+- !private "6Differ12ExtendedDiffV7ElementO"
+- "6Differ18NestedExtendedDiffV7ElementO"
+- !private "6Differ12ExtendedDiffV7ElementO"
+- "6Differ18NestedExtendedDiffV7ElementO"
+- !private "SE"
+- !private "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "6Differ12ExtendedDiffV"
+- !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "6Differ18NestedExtendedDiffV"
+- !private "6Differ5PointV"
+- !private "Sk"
+- !private "Sm"
+- "ST"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "6Differ5TraceV"
+- !private "6Differ9TraceTypeO"
+- !private "s12Zip2SequenceV"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1034ce1ad462d212c67d00db835e7b48"

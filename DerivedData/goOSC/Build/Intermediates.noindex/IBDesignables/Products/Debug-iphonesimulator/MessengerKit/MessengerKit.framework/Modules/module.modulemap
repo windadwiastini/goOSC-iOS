@@ -1,0 +1,11 @@
+framework module MessengerKit {
+  umbrella header "MessengerKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module MessengerKit.Swift {
+    header "MessengerKit-Swift.h"
+    requires objc
+}

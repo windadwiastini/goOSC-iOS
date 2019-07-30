@@ -1,0 +1,623 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ProfileView"
+provides-nominal:
+- "5goOSC11ProfileViewC"
+provides-member:
+- ["5goOSC11ProfileViewC", ""]
+provides-dynamic-lookup:
+- "btnLogout"
+- "emailLabel"
+- "nameLabel"
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Profile"
+- "ProfilePresenterProtocol"
+- "ProfileView"
+- "ProfileViewProtocol"
+- !private "ProfileWireframe"
+- !private "SignOut"
+- "UIButton"
+- "UILabel"
+- "UIViewController"
+depends-member:
+- !private ["Sa", "subscript"]
+- !private ["SK", "subscript"]
+- !private ["11ReactiveKit16BindableProtocolP", "text"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "ProfileWireframe"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "SignOut"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", ""]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "btnLogout"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "emailLabel"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "init"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "init"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "nameLabel"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "presenter"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "reactive"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "text"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "updateView"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "viewDidLoad"]
+- !private ["So15CALayerDelegateP", "reactive"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "ProfileWireframe"]
+- !private ["s7CVarArgP", "SignOut"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "btnLogout"]
+- !private ["s7CVarArgP", "emailLabel"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "nameLabel"]
+- !private ["s7CVarArgP", "presenter"]
+- !private ["s7CVarArgP", "reactive"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "text"]
+- ["s7CVarArgP", "updateView"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "ProfileWireframe"]
+- !private ["s28CustomDebugStringConvertibleP", "SignOut"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "btnLogout"]
+- !private ["s28CustomDebugStringConvertibleP", "emailLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "nameLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "presenter"]
+- !private ["s28CustomDebugStringConvertibleP", "reactive"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- ["s28CustomDebugStringConvertibleP", "updateView"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "reactive"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "ProfileWireframe"]
+- !private ["s23CustomStringConvertibleP", "SignOut"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "btnLogout"]
+- !private ["s23CustomStringConvertibleP", "emailLabel"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "nameLabel"]
+- !private ["s23CustomStringConvertibleP", "presenter"]
+- !private ["s23CustomStringConvertibleP", "reactive"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", "updateView"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["5goOSC7ProfileV4DataV", "first_name"]
+- !private ["5goOSC7ProfileV4DataV", "last_name"]
+- !private ["5goOSC7ProfileV4DataV", "user_email"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["11ReactiveKit13DeallocatableP", "ProfileWireframe"]
+- !private ["11ReactiveKit13DeallocatableP", "SignOut"]
+- ["11ReactiveKit13DeallocatableP", ""]
+- !private ["11ReactiveKit13DeallocatableP", "btnLogout"]
+- !private ["11ReactiveKit13DeallocatableP", "emailLabel"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "nameLabel"]
+- !private ["11ReactiveKit13DeallocatableP", "presenter"]
+- !private ["11ReactiveKit13DeallocatableP", "reactive"]
+- !private ["11ReactiveKit13DeallocatableP", "text"]
+- ["11ReactiveKit13DeallocatableP", "updateView"]
+- !private ["11ReactiveKit13DeallocatableP", "viewDidLoad"]
+- !private ["Se", "data"]
+- !private ["Se", "first_name"]
+- !private ["Se", "last_name"]
+- !private ["Se", "reactive"]
+- !private ["Se", "subscript"]
+- !private ["Se", "text"]
+- !private ["Se", "user_email"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "ProfileWireframe"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "SignOut"]
+- ["11ReactiveKit18DisposeBagProviderP", ""]
+- !private ["11ReactiveKit18DisposeBagProviderP", "btnLogout"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "emailLabel"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "nameLabel"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "presenter"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "reactive"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "text"]
+- ["11ReactiveKit18DisposeBagProviderP", "updateView"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "viewDidLoad"]
+- !private ["SE", "reactive"]
+- !private ["SE", "subscript"]
+- !private ["SE", "text"]
+- !private ["SQ", "ProfileWireframe"]
+- !private ["SQ", "SignOut"]
+- ["SQ", ""]
+- !private ["SQ", "btnLogout"]
+- !private ["SQ", "emailLabel"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "nameLabel"]
+- !private ["SQ", "presenter"]
+- !private ["SQ", "reactive"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "text"]
+- ["SQ", "updateView"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "reactive"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "subscript"]
+- !private ["4Bond22FlatDataSourceProtocolP", "subscript"]
+- !private ["SH", "ProfileWireframe"]
+- !private ["SH", "SignOut"]
+- ["SH", ""]
+- !private ["SH", "btnLogout"]
+- !private ["SH", "emailLabel"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "nameLabel"]
+- !private ["SH", "presenter"]
+- !private ["SH", "reactive"]
+- !private ["SH", "subscript"]
+- !private ["SH", "text"]
+- ["SH", "updateView"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "ProfileWireframe"]
+- !private ["So8NSCodingP", "SignOut"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "btnLogout"]
+- !private ["So8NSCodingP", "emailLabel"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "nameLabel"]
+- !private ["So8NSCodingP", "presenter"]
+- !private ["So8NSCodingP", "reactive"]
+- !private ["So8NSCodingP", "text"]
+- ["So8NSCodingP", "updateView"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "ProfileWireframe"]
+- !private ["So26NSExtensionRequestHandlingP", "SignOut"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "btnLogout"]
+- !private ["So26NSExtensionRequestHandlingP", "emailLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "nameLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "presenter"]
+- ["So26NSExtensionRequestHandlingP", "updateView"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "Profile"]
+- ["So8NSObjectC", "ProfilePresenterProtocol"]
+- !private ["So8NSObjectC", "ProfileWireframe"]
+- !private ["So8NSObjectC", "SignOut"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "btnLogout"]
+- ["So8NSObjectC", "emailLabel"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "nameLabel"]
+- ["So8NSObjectC", "presenter"]
+- !private ["So8NSObjectC", "reactive"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "updateView"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "ProfileWireframe"]
+- !private ["So8NSObjectP", "SignOut"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "btnLogout"]
+- !private ["So8NSObjectP", "emailLabel"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "nameLabel"]
+- !private ["So8NSObjectP", "presenter"]
+- !private ["So8NSObjectP", "reactive"]
+- !private ["So8NSObjectP", "text"]
+- ["So8NSObjectP", "updateView"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sq", "reactive"]
+- !private ["Sq", "text"]
+- !private ["11ReactiveKit16OptionalProtocolP", "reactive"]
+- !private ["11ReactiveKit16OptionalProtocolP", "text"]
+- ["5goOSC7ProfileV", "Response"]
+- !private ["5goOSC24ProfilePresenterProtocolP", "viewDidLoad"]
+- ["5goOSC11ProfileViewC", "Profile"]
+- ["5goOSC11ProfileViewC", "ProfilePresenterProtocol"]
+- !private ["5goOSC11ProfileViewC", "ProfileWireframe"]
+- !private ["5goOSC11ProfileViewC", "SignOut"]
+- ["5goOSC11ProfileViewC", "UIButton"]
+- ["5goOSC11ProfileViewC", "UILabel"]
+- ["5goOSC11ProfileViewC", "btnLogout"]
+- ["5goOSC11ProfileViewC", "deinit"]
+- ["5goOSC11ProfileViewC", "emailLabel"]
+- ["5goOSC11ProfileViewC", "init"]
+- ["5goOSC11ProfileViewC", "nameLabel"]
+- ["5goOSC11ProfileViewC", "presenter"]
+- ["5goOSC11ProfileViewC", "updateView"]
+- ["5goOSC11ProfileViewC", "viewDidLoad"]
+- !private ["5goOSC19ProfileViewProtocolP", "ProfileWireframe"]
+- !private ["5goOSC19ProfileViewProtocolP", "SignOut"]
+- ["5goOSC19ProfileViewProtocolP", ""]
+- !private ["5goOSC19ProfileViewProtocolP", "btnLogout"]
+- !private ["5goOSC19ProfileViewProtocolP", "emailLabel"]
+- !private ["5goOSC19ProfileViewProtocolP", "nameLabel"]
+- !private ["5goOSC19ProfileViewProtocolP", "presenter"]
+- ["5goOSC19ProfileViewProtocolP", "updateView"]
+- !private ["5goOSC24ProfileWireFrameProtocolP", "createProfileModule"]
+- !private ["5goOSC16ProfileWireframeC", "createProfileModule"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "subscript"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "subscript"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "subscript"]
+- !private ["11ReactiveKit0A0V", "tap"]
+- !private ["11ReactiveKit0A10ExtensionsP", "tap"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "ProfileWireframe"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "SignOut"]
+- ["11ReactiveKit0A18ExtensionsProviderP", ""]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "btnLogout"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "emailLabel"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "nameLabel"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "presenter"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "reactive"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "text"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "updateView"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "viewDidLoad"]
+- !private ["5goOSC7ProfileV8ResponseV", "data"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "subscript"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "subscript"]
+- !private ["ST", "subscript"]
+- !private ["5goOSC7SignOutC", "hitSignOutButton"]
+- !private ["5goOSC7SignOutC", "init"]
+- !private ["11ReactiveKit6SignalV", "observeNext"]
+- !private ["11ReactiveKit14SignalProtocolP", "observeNext"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "reactive"]
+- !private ["So29UIAccessibilityIdentificationP", "reactive"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "reactive"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "ProfileWireframe"]
+- !private ["So21UIAppearanceContainerP", "SignOut"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "btnLogout"]
+- !private ["So21UIAppearanceContainerP", "emailLabel"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "nameLabel"]
+- !private ["So21UIAppearanceContainerP", "presenter"]
+- !private ["So21UIAppearanceContainerP", "reactive"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- ["So21UIAppearanceContainerP", "updateView"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So8UIButtonC", "reactive"]
+- !private ["So18UIContentContainerP", "ProfileWireframe"]
+- !private ["So18UIContentContainerP", "SignOut"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "btnLogout"]
+- !private ["So18UIContentContainerP", "emailLabel"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "nameLabel"]
+- !private ["So18UIContentContainerP", "presenter"]
+- ["So18UIContentContainerP", "updateView"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "reactive"]
+- !private ["So17UICoordinateSpaceP", "reactive"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "reactive"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "ProfileWireframe"]
+- !private ["So18UIFocusEnvironmentP", "SignOut"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "btnLogout"]
+- !private ["So18UIFocusEnvironmentP", "emailLabel"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "nameLabel"]
+- !private ["So18UIFocusEnvironmentP", "presenter"]
+- !private ["So18UIFocusEnvironmentP", "reactive"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- ["So18UIFocusEnvironmentP", "updateView"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "reactive"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "reactive"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "ProfileWireframe"]
+- !private ["So30UIPasteConfigurationSupportingP", "SignOut"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "btnLogout"]
+- !private ["So30UIPasteConfigurationSupportingP", "emailLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "nameLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "presenter"]
+- !private ["So30UIPasteConfigurationSupportingP", "reactive"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So30UIPasteConfigurationSupportingP", "updateView"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "Profile"]
+- ["So11UIResponderC", "ProfilePresenterProtocol"]
+- !private ["So11UIResponderC", "ProfileWireframe"]
+- !private ["So11UIResponderC", "SignOut"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "btnLogout"]
+- ["So11UIResponderC", "emailLabel"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "nameLabel"]
+- ["So11UIResponderC", "presenter"]
+- !private ["So11UIResponderC", "reactive"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "updateView"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "ProfileWireframe"]
+- !private ["So30UIResponderStandardEditActionsP", "SignOut"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "btnLogout"]
+- !private ["So30UIResponderStandardEditActionsP", "emailLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "nameLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "presenter"]
+- !private ["So30UIResponderStandardEditActionsP", "reactive"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So30UIResponderStandardEditActionsP", "updateView"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "reactive"]
+- !private ["So16UIStateRestoringP", "ProfileWireframe"]
+- !private ["So16UIStateRestoringP", "SignOut"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "btnLogout"]
+- !private ["So16UIStateRestoringP", "emailLabel"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "nameLabel"]
+- !private ["So16UIStateRestoringP", "presenter"]
+- ["So16UIStateRestoringP", "updateView"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "ProfileWireframe"]
+- !private ["So18UITraitEnvironmentP", "SignOut"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "btnLogout"]
+- !private ["So18UITraitEnvironmentP", "emailLabel"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "nameLabel"]
+- !private ["So18UITraitEnvironmentP", "presenter"]
+- !private ["So18UITraitEnvironmentP", "reactive"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- ["So18UITraitEnvironmentP", "updateView"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "ProfileWireframe"]
+- !private ["So23UIUserActivityRestoringP", "SignOut"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "btnLogout"]
+- !private ["So23UIUserActivityRestoringP", "emailLabel"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "nameLabel"]
+- !private ["So23UIUserActivityRestoringP", "presenter"]
+- !private ["So23UIUserActivityRestoringP", "reactive"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- ["So23UIUserActivityRestoringP", "updateView"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "reactive"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Profile"]
+- ["So16UIViewControllerC", "ProfilePresenterProtocol"]
+- !private ["So16UIViewControllerC", "ProfileWireframe"]
+- !private ["So16UIViewControllerC", "SignOut"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "btnLogout"]
+- ["So16UIViewControllerC", "emailLabel"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "nameLabel"]
+- ["So16UIViewControllerC", "presenter"]
+- ["So16UIViewControllerC", "updateView"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ProfileWireframe"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SignOut"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "btnLogout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "emailLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "nameLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "presenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reactive"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "updateView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "reactive"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reactive"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "11ReactiveKit16BindableProtocolP"
+- "11ReactiveKit31BindingExecutionContextProviderP"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "5goOSC7ProfileV4DataV"
+- !private "10Foundation12DataProtocolP"
+- "11ReactiveKit13DeallocatableP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- "11ReactiveKit18DisposeBagProviderP"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "4Bond34FlatDataSourceChangesetConvertibleP"
+- !private "4Bond22FlatDataSourceProtocolP"
+- "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "11ReactiveKit16OptionalProtocolP"
+- "5goOSC7ProfileV"
+- !private "5goOSC24ProfilePresenterProtocolP"
+- "5goOSC11ProfileViewC"
+- "5goOSC19ProfileViewProtocolP"
+- !private "5goOSC24ProfileWireFrameProtocolP"
+- !private "5goOSC16ProfileWireframeC"
+- !private "4Bond31QueryableFlatDataSourceProtocolP"
+- !private "4Bond36QueryableSectionedDataSourceProtocolP"
+- !private "Sk"
+- !private "Sm"
+- !private "11ReactiveKit0A0V"
+- !private "11ReactiveKit0A10ExtensionsP"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- !private "5goOSC7ProfileV8ResponseV"
+- !private "4Bond39SectionedDataSourceChangesetConvertibleP"
+- !private "4Bond27SectionedDataSourceProtocolP"
+- !private "ST"
+- !private "5goOSC7SignOutC"
+- !private "11ReactiveKit6SignalV"
+- !private "11ReactiveKit14SignalProtocolP"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules/Bond.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Modules/MessengerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Headers/MessengerKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalMobile.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalConfiguration.h"
+- "/Users/bootcamp/Documents/collab2/goOSC/goOSC-Bridging-Header.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalProfileSharingViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalFuturePaymentViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalPaymentViewController.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalOAuthScopes.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Headers/MessengerKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Headers/Public/PayPal-iOS-SDK/PayPalPayment.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Starscream/zlib/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MessengerKit/MessengerKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SafariServices.framework/Headers/SafariServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "25897f37ac7ed3c0d848a65a7da656b9"
