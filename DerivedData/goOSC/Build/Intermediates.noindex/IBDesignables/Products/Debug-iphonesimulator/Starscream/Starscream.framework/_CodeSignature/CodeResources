@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tldQf6OcWOLXt8CIUGtUWSO6xAI=
+		bu1UPlObbzRWGnSbMuQaLZE3rCQ=
 		</data>
 		<key>Modules/Starscream.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/Starscream.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		5itWyLikQAJqaO+3wZhr5KNjdtY=
+		4eAz12RobdyZamDgYZN2rU7caS8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5itWyLikQAJqaO+3wZhr5KNjdtY=
+			4eAz12RobdyZamDgYZN2rU7caS8=
 			</data>
 			<key>hash2</key>
 			<data>
-			QGcmLSydRXBSb8clNehIYpPTlhm3LAN2Y99L+fOz5o0=
+			49dr+yXooxhjjiYfV1hAAiffQ4ylpFZqZG4KbsyImB4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

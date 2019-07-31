@@ -8,7 +8,6 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "HomePageView"
 - !private "HomePageWireFrame"
@@ -19,7 +18,6 @@ depends-top-level:
 - !private "LoginPresenterProtocol"
 - "LoginWireFrameProtocol"
 - "LoginWireframe"
-- !private "StringLiteralType"
 - "UIViewController"
 depends-member:
 - !private ["11ReactiveKit31BindingExecutionContextProviderP", "present"]

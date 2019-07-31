@@ -1,0 +1,437 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "IndexPathTreeIterator"
+- "TreeView"
+- "DFSTreeIterator"
+- "BFSTreeIterator"
+provides-nominal:
+- "4Bond21IndexPathTreeIteratorP"
+- "4Bond8TreeViewC"
+- "4Bond15DFSTreeIteratorV"
+- "4Bond15BFSTreeIteratorV"
+provides-member:
+- ["4Bond12TreeProtocolP", ""]
+- ["4Bond21IndexPathTreeIteratorP", ""]
+- ["4Bond8TreeViewC", ""]
+- ["4Bond15DFSTreeIteratorV", ""]
+- ["4Bond15BFSTreeIteratorV", ""]
+- ["4Bond12TreeProtocolP", "depthFirst"]
+- ["4Bond12TreeProtocolP", "breadthFirst"]
+- ["4Bond12TreeProtocolP", "depthFirst"]
+- ["4Bond12TreeProtocolP", "breadthFirst"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "+"
+- !private "=="
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- "BFSTreeIterator"
+- "Collection"
+- "DFSTreeIterator"
+- "IndexPath"
+- "IndexPathTreeIterator"
+- "IteratorProtocol"
+- "TreeProtocol"
+- "TreeView"
+depends-member:
+- !private ["Sa", "dropFirst"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "first"]
+- !private ["Sa", "init"]
+- ["4Bond15BFSTreeIteratorV", "Element"]
+- ["4Bond15BFSTreeIteratorV", "IndexPath"]
+- ["4Bond15BFSTreeIteratorV", "Item"]
+- ["4Bond15BFSTreeIteratorV", "Tree"]
+- ["4Bond15BFSTreeIteratorV", "_Default_Element"]
+- ["4Bond15BFSTreeIteratorV", "_Default_Tree"]
+- ["4Bond15BFSTreeIteratorV", "deinit"]
+- ["4Bond15BFSTreeIteratorV", "indexPathTransformer"]
+- ["4Bond15BFSTreeIteratorV", "init"]
+- ["4Bond15BFSTreeIteratorV", "next"]
+- ["4Bond15BFSTreeIteratorV", "parentIndexPath"]
+- ["4Bond15BFSTreeIteratorV", "remainingItems"]
+- !private ["SK", "appending"]
+- !private ["SK", "dropFirst"]
+- !private ["SK", "enumerated"]
+- !private ["SK", "first"]
+- ["SK", "init"]
+- !private ["s7CVarArgP", "dropFirst"]
+- !private ["s7CVarArgP", "enumerated"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "subscript"]
+- ["Sl", "Element"]
+- ["Sl", "Index"]
+- ["Sl", "Indices"]
+- ["Sl", "Iterator"]
+- ["Sl", "SubSequence"]
+- ["Sl", ""]
+- ["Sl", "_Default_Element"]
+- ["Sl", "_Default_Index"]
+- ["Sl", "_Default_Indices"]
+- ["Sl", "_Default_Iterator"]
+- ["Sl", "_Default_SubSequence"]
+- ["Sl", "_copyContents"]
+- ["Sl", "_copyToContiguousArray"]
+- ["Sl", "_customContainsEquatableElement"]
+- ["Sl", "_customIndexOfEquatableElement"]
+- ["Sl", "_customLastIndexOfEquatableElement"]
+- ["Sl", "_failEarlyRangeCheck"]
+- !private ["Sl", "appending"]
+- ["Sl", "count"]
+- ["Sl", "distance"]
+- !private ["Sl", "dropFirst"]
+- ["Sl", "endIndex"]
+- !private ["Sl", "enumerated"]
+- !private ["Sl", "first"]
+- ["Sl", "formIndex"]
+- ["Sl", "index"]
+- ["Sl", "indices"]
+- ["Sl", "init"]
+- ["Sl", "isEmpty"]
+- !private ["Sl", "loadNextNode"]
+- !private ["Sl", "lookupTreeMap"]
+- ["Sl", "makeIterator"]
+- ["Sl", "startIndex"]
+- ["Sl", "subscript"]
+- !private ["Sl", "tree"]
+- ["Sl", "underestimatedCount"]
+- ["Sl", "withContiguousStorageIfAvailable"]
+- !private ["SL", "appending"]
+- !private ["SL", "dropFirst"]
+- ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "dropFirst"]
+- !private ["10Foundation15ContiguousBytesP", "enumerated"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "appending"]
+- !private ["s28CustomDebugStringConvertibleP", "dropFirst"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "appending"]
+- !private ["s17CustomReflectableP", "dropFirst"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "first"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "appending"]
+- !private ["s23CustomStringConvertibleP", "dropFirst"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["4Bond15DFSTreeIteratorV", "Element"]
+- ["4Bond15DFSTreeIteratorV", "IndexPath"]
+- ["4Bond15DFSTreeIteratorV", "Item"]
+- ["4Bond15DFSTreeIteratorV", "Tree"]
+- ["4Bond15DFSTreeIteratorV", "_Default_Element"]
+- ["4Bond15DFSTreeIteratorV", "_Default_Tree"]
+- ["4Bond15DFSTreeIteratorV", "deinit"]
+- ["4Bond15DFSTreeIteratorV", "indexPathTransformer"]
+- ["4Bond15DFSTreeIteratorV", "init"]
+- ["4Bond15DFSTreeIteratorV", "next"]
+- ["4Bond15DFSTreeIteratorV", "parentIndexPath"]
+- ["4Bond15DFSTreeIteratorV", "remainingItems"]
+- !private ["10Foundation12DataProtocolP", "dropFirst"]
+- !private ["10Foundation12DataProtocolP", "enumerated"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["Se", "appending"]
+- !private ["Se", "dropFirst"]
+- !private ["Se", "enumerated"]
+- !private ["Se", "first"]
+- ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "appending"]
+- !private ["SE", "dropFirst"]
+- !private ["SE", "enumerated"]
+- !private ["SE", "first"]
+- ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["s18EnumeratedSequenceV", "map"]
+- !private ["SQ", "appending"]
+- !private ["SQ", "dropFirst"]
+- !private ["SQ", "enumerated"]
+- !private ["SQ", "first"]
+- ["SQ", "init"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "appending"]
+- !private ["s25ExpressibleByArrayLiteralP", "dropFirst"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "dropFirst"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "enumerated"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "first"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "init"]
+- !private ["4Bond22FlatDataSourceProtocolP", "dropFirst"]
+- !private ["4Bond22FlatDataSourceProtocolP", "enumerated"]
+- !private ["4Bond22FlatDataSourceProtocolP", "first"]
+- !private ["4Bond22FlatDataSourceProtocolP", "init"]
+- !private ["SH", "appending"]
+- !private ["SH", "dropFirst"]
+- !private ["SH", "enumerated"]
+- !private ["SH", "first"]
+- ["SH", "init"]
+- !private ["SH", "subscript"]
+- !private ["10Foundation9IndexPathV", "appending"]
+- !private ["10Foundation9IndexPathV", "dropFirst"]
+- ["10Foundation9IndexPathV", "init"]
+- ["4Bond21IndexPathTreeIteratorP", "Element"]
+- ["4Bond21IndexPathTreeIteratorP", "IndexPath"]
+- ["4Bond21IndexPathTreeIteratorP", "Tree"]
+- ["4Bond21IndexPathTreeIteratorP", "TreeProtocol"]
+- ["4Bond21IndexPathTreeIteratorP", ""]
+- ["4Bond21IndexPathTreeIteratorP", "_Default_Element"]
+- ["4Bond21IndexPathTreeIteratorP", "_Default_Tree"]
+- !private ["4Bond21IndexPathTreeIteratorP", "indexPathTransformer"]
+- !private ["4Bond21IndexPathTreeIteratorP", "init"]
+- ["4Bond21IndexPathTreeIteratorP", "next"]
+- !private ["4Bond21IndexPathTreeIteratorP", "remainingItems"]
+- ["St", "Element"]
+- ["St", "IndexPath"]
+- ["St", "Tree"]
+- ["St", "TreeProtocol"]
+- ["St", ""]
+- ["St", "_Default_Element"]
+- ["St", "_Default_Tree"]
+- !private ["St", "indexPathTransformer"]
+- !private ["St", "init"]
+- ["St", "next"]
+- !private ["St", "remainingItems"]
+- !private ["SM", "appending"]
+- !private ["SM", "dropFirst"]
+- !private ["SM", "enumerated"]
+- !private ["SM", "first"]
+- ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "dropFirst"]
+- !private ["10Foundation19MutableDataProtocolP", "enumerated"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "dropFirst"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "enumerated"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "first"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "init"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "dropFirst"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "enumerated"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "first"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "init"]
+- !private ["Sk", "appending"]
+- !private ["Sk", "dropFirst"]
+- !private ["Sk", "enumerated"]
+- !private ["Sk", "first"]
+- ["Sk", "init"]
+- !private ["Sm", "dropFirst"]
+- !private ["Sm", "enumerated"]
+- !private ["Sm", "first"]
+- !private ["Sm", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "appending"]
+- !private ["10Foundation20ReferenceConvertibleP", "dropFirst"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "appending"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "dropFirst"]
+- ["4Bond33SectionedDataIndexPathConvertableP", "init"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "dropFirst"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "enumerated"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "first"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "init"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "dropFirst"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "enumerated"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "first"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "init"]
+- ["ST", "Element"]
+- ["ST", "Index"]
+- ["ST", "Indices"]
+- ["ST", "Iterator"]
+- ["ST", "SubSequence"]
+- ["ST", ""]
+- ["ST", "_Default_Element"]
+- ["ST", "_Default_Index"]
+- ["ST", "_Default_Indices"]
+- ["ST", "_Default_Iterator"]
+- ["ST", "_Default_SubSequence"]
+- ["ST", "_copyContents"]
+- ["ST", "_copyToContiguousArray"]
+- ["ST", "_customContainsEquatableElement"]
+- ["ST", "_customIndexOfEquatableElement"]
+- ["ST", "_customLastIndexOfEquatableElement"]
+- ["ST", "_failEarlyRangeCheck"]
+- !private ["ST", "appending"]
+- ["ST", "count"]
+- ["ST", "distance"]
+- !private ["ST", "dropFirst"]
+- ["ST", "endIndex"]
+- !private ["ST", "enumerated"]
+- !private ["ST", "first"]
+- ["ST", "formIndex"]
+- ["ST", "index"]
+- ["ST", "indices"]
+- ["ST", "init"]
+- ["ST", "isEmpty"]
+- !private ["ST", "loadNextNode"]
+- !private ["ST", "lookupTreeMap"]
+- ["ST", "makeIterator"]
+- !private ["ST", "map"]
+- ["ST", "startIndex"]
+- ["ST", "subscript"]
+- !private ["ST", "tree"]
+- ["ST", "underestimatedCount"]
+- ["ST", "withContiguousStorageIfAvailable"]
+- !private ["4Bond12TreeProtocolP", "Array"]
+- !private ["4Bond12TreeProtocolP", "BFSTreeIterator"]
+- ["4Bond12TreeProtocolP", "Children"]
+- !private ["4Bond12TreeProtocolP", "DFSTreeIterator"]
+- ["4Bond12TreeProtocolP", "TreeView"]
+- ["4Bond12TreeProtocolP", "breadthFirst"]
+- !private ["4Bond12TreeProtocolP", "children"]
+- ["4Bond12TreeProtocolP", "depthFirst"]
+- ["4Bond8TreeViewC", "Element"]
+- ["4Bond8TreeViewC", "Index"]
+- ["4Bond8TreeViewC", "IndexPath"]
+- ["4Bond8TreeViewC", "IndexPathTreeIterator"]
+- ["4Bond8TreeViewC", "Indices"]
+- ["4Bond8TreeViewC", "Iterator"]
+- ["4Bond8TreeViewC", "SubSequence"]
+- ["4Bond8TreeViewC", "TreeMapElement"]
+- ["4Bond8TreeViewC", "_Default_Element"]
+- ["4Bond8TreeViewC", "_Default_Index"]
+- ["4Bond8TreeViewC", "_Default_Indices"]
+- ["4Bond8TreeViewC", "_Default_Iterator"]
+- ["4Bond8TreeViewC", "_Default_SubSequence"]
+- ["4Bond8TreeViewC", "_copyContents"]
+- ["4Bond8TreeViewC", "_copyToContiguousArray"]
+- ["4Bond8TreeViewC", "_customContainsEquatableElement"]
+- ["4Bond8TreeViewC", "_customIndexOfEquatableElement"]
+- ["4Bond8TreeViewC", "_customLastIndexOfEquatableElement"]
+- ["4Bond8TreeViewC", "_failEarlyRangeCheck"]
+- ["4Bond8TreeViewC", "count"]
+- ["4Bond8TreeViewC", "deinit"]
+- ["4Bond8TreeViewC", "distance"]
+- ["4Bond8TreeViewC", "endIndex"]
+- ["4Bond8TreeViewC", "formIndex"]
+- ["4Bond8TreeViewC", "index"]
+- ["4Bond8TreeViewC", "indices"]
+- ["4Bond8TreeViewC", "init"]
+- ["4Bond8TreeViewC", "isEmpty"]
+- !private ["4Bond8TreeViewC", "loadNextNode"]
+- !private ["4Bond8TreeViewC", "lookupTreeMap"]
+- ["4Bond8TreeViewC", "makeIterator"]
+- ["4Bond8TreeViewC", "startIndex"]
+- ["4Bond8TreeViewC", "subscript"]
+- !private ["4Bond8TreeViewC", "tree"]
+- ["4Bond8TreeViewC", "underestimatedCount"]
+- ["4Bond8TreeViewC", "withContiguousStorageIfAvailable"]
+- !private ["s14_ArrayProtocolP", "dropFirst"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s24_DestructorSafeContainerP", "dropFirst"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["4Bond19_DictionaryProtocolP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "dropFirst"]
+- !private ["s19_HasContiguousBytesP", "enumerated"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "dropFirst"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "enumerated"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "appending"]
+- !private ["s21_ObjectiveCBridgeableP", "dropFirst"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "Sa"
+- "4Bond15BFSTreeIteratorV"
+- "SK"
+- !private "s7CVarArgP"
+- "Sl"
+- "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "4Bond15DFSTreeIteratorV"
+- !private "10Foundation12DataProtocolP"
+- "Se"
+- !private "SD"
+- "SE"
+- !private "s18EnumeratedSequenceV"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "4Bond34FlatDataSourceChangesetConvertibleP"
+- !private "4Bond22FlatDataSourceProtocolP"
+- "SH"
+- "10Foundation9IndexPathV"
+- "4Bond21IndexPathTreeIteratorP"
+- "St"
+- "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "4Bond31QueryableFlatDataSourceProtocolP"
+- !private "4Bond36QueryableSectionedDataSourceProtocolP"
+- "Sk"
+- !private "Sm"
+- "10Foundation20ReferenceConvertibleP"
+- "4Bond33SectionedDataIndexPathConvertableP"
+- !private "4Bond39SectionedDataSourceChangesetConvertibleP"
+- !private "4Bond27SectionedDataSourceProtocolP"
+- "ST"
+- "4Bond12TreeProtocolP"
+- "4Bond8TreeViewC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "4Bond19_DictionaryProtocolP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "34a34b12c3bc4abd6ff72187fb474b73"

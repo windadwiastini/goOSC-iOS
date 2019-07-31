@@ -4,8 +4,8 @@
 <array>
 	<string>ReactiveKit</string>
 	<string>CoreData</string>
-	<string>AppKit</string>
 	<string>Foundation</string>
+	<string>AppKit</string>
 	<string>Dispatch</string>
 	<string>CoreGraphics</string>
 	<string>AVFoundation</string>
@@ -25,6 +25,7 @@
 	<string>ObjectiveC</string>
 	<string>Photos</string>
 	<string>SystemConfiguration</string>
+	<string>XCTest</string>
 	<string>SSCZLib</string>
 	<string>IQKeyboardManagerSwift</string>
 	<string>MobileCoreServices</string>

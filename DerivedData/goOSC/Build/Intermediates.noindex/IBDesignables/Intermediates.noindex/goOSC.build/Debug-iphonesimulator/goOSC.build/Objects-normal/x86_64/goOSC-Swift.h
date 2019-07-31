@@ -518,7 +518,6 @@ SWIFT_CLASS("_TtC5goOSC12RegisterView")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnRegister;
 - (void)viewDidLoad;
 - (IBAction)backBtnWasPressed:(id _Nonnull)sender;
-- (IBAction)registerBtnWasPressed:(id _Nonnull)sender;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

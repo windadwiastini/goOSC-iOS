@@ -1,0 +1,147 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DynamicSubject2"
+- "DataSourceProtocol"
+- "DataSourceEventProtocol"
+- "DataSourceEvent"
+- "DataSourceEventKind"
+- "RangeReplaceableTreeNode"
+- "TreeNodeProtocol"
+- "TreeArrayProtocol"
+provides-nominal:
+- "4Bond15DataSourceEventO"
+- "4Bond19DataSourceEventKindO"
+provides-member:
+- ["4Bond15DataSourceEventO", ""]
+- ["4Bond19DataSourceEventKindO", ""]
+- ["4Bond28SectionedDataSourceChangesetP", ""]
+- ["4Bond9TreeArrayV", ""]
+- ["4Bond26ChangesetContainerProtocolP", ""]
+- ["4Bond12TreeProtocolP", ""]
+- ["4Bond28RangeReplaceableTreeProtocolP", ""]
+- ["4Bond28SectionedDataSourceChangesetP", "DataSource"]
+- ["4Bond28SectionedDataSourceChangesetP", "dataSource"]
+- ["4Bond9TreeArrayV", "ChildValue"]
+- ["4Bond26ChangesetContainerProtocolP", "isEmpty"]
+- ["4Bond26ChangesetContainerProtocolP", "count"]
+- ["4Bond12TreeProtocolP", "ChildNode"]
+- ["4Bond12TreeProtocolP", "firstIndex"]
+- ["4Bond12TreeProtocolP", "first"]
+- ["4Bond12TreeProtocolP", "index"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "subscript"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- "ChangesetContainerProtocol"
+- "DataSourceEvent"
+- "DataSourceEventKind"
+- "DataSourceEventProtocol"
+- "DataSourceProtocol"
+- "DynamicSubject2"
+- "Equatable"
+- "FailableDynamicSubject"
+- "IndexPath"
+- "Int"
+- "RangeReplaceableTreeNode"
+- "RangeReplaceableTreeProtocol"
+- "SectionedDataSourceChangeset"
+- "SectionedDataSourceProtocol"
+- "Swift"
+- "TreeArray"
+- "TreeArrayProtocol"
+- "TreeNodeProtocol"
+- "TreeProtocol"
+depends-member:
+- ["4Bond26ChangesetContainerProtocolP", "Bool"]
+- ["4Bond26ChangesetContainerProtocolP", "Changeset"]
+- ["4Bond26ChangesetContainerProtocolP", "Int"]
+- ["4Bond26ChangesetContainerProtocolP", "TreeProtocol"]
+- ["4Bond26ChangesetContainerProtocolP", "count"]
+- ["4Bond26ChangesetContainerProtocolP", "isEmpty"]
+- !private ["4Bond26ChangesetContainerProtocolP", "tree"]
+- ["4Bond17ChangesetProtocolP", "Collection"]
+- !private ["4Bond17ChangesetProtocolP", "collection"]
+- !private ["Sl", "count"]
+- !private ["Sl", "first"]
+- !private ["Sl", "firstIndex"]
+- !private ["Sl", "isEmpty"]
+- ["4Bond19MutableTreeProtocolP", "Children"]
+- ["4Bond19MutableTreeProtocolP", "IndexPath"]
+- !private ["4Bond19MutableTreeProtocolP", "subscript"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "Children"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "IndexPath"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "subscript"]
+- ["4Bond28SectionedDataSourceChangesetP", "Collection"]
+- ["4Bond28SectionedDataSourceChangesetP", "DataSource"]
+- !private ["4Bond28SectionedDataSourceChangesetP", "collection"]
+- ["4Bond28SectionedDataSourceChangesetP", "dataSource"]
+- !private ["ST", "count"]
+- !private ["ST", "first"]
+- !private ["ST", "firstIndex"]
+- !private ["ST", "isEmpty"]
+- ["4Bond9TreeArrayV", "ChildValue"]
+- ["4Bond12TreeProtocolP", "Bool"]
+- ["4Bond12TreeProtocolP", "ChildNode"]
+- ["4Bond12TreeProtocolP", "Children"]
+- ["4Bond12TreeProtocolP", "Equatable"]
+- ["4Bond12TreeProtocolP", "IndexPath"]
+- !private ["4Bond12TreeProtocolP", "children"]
+- !private ["4Bond12TreeProtocolP", "depthFirst"]
+- ["4Bond12TreeProtocolP", "first"]
+- ["4Bond12TreeProtocolP", "firstIndex"]
+- ["4Bond12TreeProtocolP", "index"]
+- !private ["4Bond12TreeProtocolP", "subscript"]
+- !private ["4Bond8TreeViewC", "deinit"]
+- !private ["4Bond8TreeViewC", "first"]
+- !private ["4Bond8TreeViewC", "firstIndex"]
+depends-nominal:
+- "4Bond26ChangesetContainerProtocolP"
+- "4Bond17ChangesetProtocolP"
+- !private "Sl"
+- "4Bond19MutableTreeProtocolP"
+- "4Bond28RangeReplaceableTreeProtocolP"
+- "4Bond28SectionedDataSourceChangesetP"
+- !private "ST"
+- "4Bond9TreeArrayV"
+- "4Bond12TreeProtocolP"
+- !private "4Bond8TreeViewC"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "903be4f06ce10dc56dede9df97de60b8"

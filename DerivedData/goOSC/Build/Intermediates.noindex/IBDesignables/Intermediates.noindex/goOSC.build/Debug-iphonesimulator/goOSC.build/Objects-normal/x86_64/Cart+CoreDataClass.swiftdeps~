@@ -13,7 +13,6 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
-- ["5goOSC4CartC", "deinit"]
 - ["5goOSC4CartC", "init"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "init"]

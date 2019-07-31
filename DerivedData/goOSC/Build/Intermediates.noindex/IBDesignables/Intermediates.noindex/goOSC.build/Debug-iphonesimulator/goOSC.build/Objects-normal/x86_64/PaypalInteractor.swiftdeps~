@@ -19,7 +19,6 @@ depends-top-level:
 - "PaypalInteractor"
 - "PaypalOutputInteractorProtocol"
 - !private "String"
-- "StringLiteralType"
 - "UserDefaults"
 - !private "print"
 - !private "~="

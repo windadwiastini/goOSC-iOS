@@ -1,0 +1,493 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "So10UITextViewC"
+provides-member:
+- ["11ReactiveKit0A10ExtensionsP", ""]
+- ["So10UITextViewC", ""]
+- ["11ReactiveKit0A10ExtensionsP", "text"]
+- ["11ReactiveKit0A10ExtensionsP", "attributedText"]
+- ["11ReactiveKit0A10ExtensionsP", "textColor"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "AssignmentPrecedence"
+- "BindableProtocol"
+- "Bond"
+- "Disposable"
+- "DynamicSubject"
+- "NSAttributedString"
+- "Never"
+- !private "NotificationCenter"
+- "ReactiveExtensions"
+- "Signal"
+- "String"
+- "UIColor"
+- "UITextView"
+depends-member:
+- ["11ReactiveKit16BindableProtocolP", "Element"]
+- ["11ReactiveKit16BindableProtocolP", ""]
+- ["11ReactiveKit16BindableProtocolP", "_Default_Element"]
+- !private ["11ReactiveKit16BindableProtocolP", "attributedText"]
+- ["11ReactiveKit16BindableProtocolP", "bind"]
+- !private ["11ReactiveKit16BindableProtocolP", "reactive"]
+- !private ["11ReactiveKit16BindableProtocolP", "text"]
+- !private ["11ReactiveKit16BindableProtocolP", "textColor"]
+- !private ["11ReactiveKit16BindableProtocolP", "textDidChangeNotification"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "Element"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "_Default_Element"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "attributedText"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "bind"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "reactive"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "text"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "textColor"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "textDidChangeNotification"]
+- ["So15CALayerDelegateP", "Element"]
+- ["So15CALayerDelegateP", "_Default_Element"]
+- !private ["So15CALayerDelegateP", "attributedText"]
+- ["So15CALayerDelegateP", "bind"]
+- !private ["So15CALayerDelegateP", "reactive"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "textColor"]
+- !private ["So15CALayerDelegateP", "textDidChangeNotification"]
+- ["s7CVarArgP", "Element"]
+- ["s7CVarArgP", "_Default_Element"]
+- !private ["s7CVarArgP", "attributedText"]
+- ["s7CVarArgP", "bind"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "reactive"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "textColor"]
+- !private ["s7CVarArgP", "textDidChangeNotification"]
+- ["s28CustomDebugStringConvertibleP", "Element"]
+- ["s28CustomDebugStringConvertibleP", "_Default_Element"]
+- !private ["s28CustomDebugStringConvertibleP", "attributedText"]
+- ["s28CustomDebugStringConvertibleP", "bind"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "reactive"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "textColor"]
+- !private ["s28CustomDebugStringConvertibleP", "textDidChangeNotification"]
+- ["s23CustomStringConvertibleP", "Element"]
+- ["s23CustomStringConvertibleP", "_Default_Element"]
+- !private ["s23CustomStringConvertibleP", "attributedText"]
+- ["s23CustomStringConvertibleP", "bind"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "reactive"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "textColor"]
+- !private ["s23CustomStringConvertibleP", "textDidChangeNotification"]
+- ["11ReactiveKit13DeallocatableP", "Element"]
+- ["11ReactiveKit13DeallocatableP", "_Default_Element"]
+- !private ["11ReactiveKit13DeallocatableP", "attributedText"]
+- ["11ReactiveKit13DeallocatableP", "bind"]
+- !private ["11ReactiveKit13DeallocatableP", "default"]
+- !private ["11ReactiveKit13DeallocatableP", "reactive"]
+- !private ["11ReactiveKit13DeallocatableP", "text"]
+- !private ["11ReactiveKit13DeallocatableP", "textColor"]
+- !private ["11ReactiveKit13DeallocatableP", "textDidChangeNotification"]
+- ["11ReactiveKit18DisposeBagProviderP", "Element"]
+- ["11ReactiveKit18DisposeBagProviderP", "_Default_Element"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "attributedText"]
+- ["11ReactiveKit18DisposeBagProviderP", "bind"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "default"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "reactive"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "text"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "textColor"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "textDidChangeNotification"]
+- ["SQ", "Element"]
+- ["SQ", "_Default_Element"]
+- !private ["SQ", "attributedText"]
+- ["SQ", "bind"]
+- !private ["SQ", "default"]
+- !private ["SQ", "reactive"]
+- !private ["SQ", "text"]
+- !private ["SQ", "textColor"]
+- !private ["SQ", "textDidChangeNotification"]
+- !private ["4Bond22FailableDynamicSubjectV", "bind"]
+- !private ["4Bond22FailableDynamicSubjectV", "deinit"]
+- ["SH", "Element"]
+- ["SH", "_Default_Element"]
+- !private ["SH", "attributedText"]
+- ["SH", "bind"]
+- !private ["SH", "default"]
+- !private ["SH", "reactive"]
+- !private ["SH", "text"]
+- !private ["SH", "textColor"]
+- !private ["SH", "textDidChangeNotification"]
+- ["So8NSCodingP", "Element"]
+- ["So8NSCodingP", "_Default_Element"]
+- !private ["So8NSCodingP", "attributedText"]
+- ["So8NSCodingP", "bind"]
+- !private ["So8NSCodingP", "reactive"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "textColor"]
+- !private ["So8NSCodingP", "textDidChangeNotification"]
+- ["So8NSObjectC", "Disposable"]
+- ["So8NSObjectC", "Element"]
+- ["So8NSObjectC", "Never"]
+- ["So8NSObjectC", "Signal"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "_Default_Element"]
+- !private ["So8NSObjectC", "attributedText"]
+- ["So8NSObjectC", "bind"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "reactive"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "textColor"]
+- !private ["So8NSObjectC", "textDidChangeNotification"]
+- ["So8NSObjectP", "Element"]
+- ["So8NSObjectP", "_Default_Element"]
+- !private ["So8NSObjectP", "attributedText"]
+- ["So8NSObjectP", "bind"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "reactive"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "textColor"]
+- !private ["So8NSObjectP", "textDidChangeNotification"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "reactive"]
+- !private ["11ReactiveKit16ObserverProtocolP", "bind"]
+- !private ["11ReactiveKit0A0V", "notification"]
+- !private ["11ReactiveKit0A0V", "text"]
+- ["11ReactiveKit0A10ExtensionsP", "Base"]
+- ["11ReactiveKit0A10ExtensionsP", "Bond"]
+- ["11ReactiveKit0A10ExtensionsP", "DynamicSubject"]
+- ["11ReactiveKit0A10ExtensionsP", "NSAttributedString"]
+- !private ["11ReactiveKit0A10ExtensionsP", "NotificationCenter"]
+- ["11ReactiveKit0A10ExtensionsP", "String"]
+- ["11ReactiveKit0A10ExtensionsP", "UIColor"]
+- ["11ReactiveKit0A10ExtensionsP", "UITextView"]
+- ["11ReactiveKit0A10ExtensionsP", "attributedText"]
+- !private ["11ReactiveKit0A10ExtensionsP", "base"]
+- !private ["11ReactiveKit0A10ExtensionsP", "bond"]
+- !private ["11ReactiveKit0A10ExtensionsP", "dynamicSubject"]
+- !private ["11ReactiveKit0A10ExtensionsP", "notification"]
+- ["11ReactiveKit0A10ExtensionsP", "text"]
+- ["11ReactiveKit0A10ExtensionsP", "textColor"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "Element"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "_Default_Element"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "attributedText"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "bind"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "default"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "reactive"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "text"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "textColor"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "textDidChangeNotification"]
+- !private ["11ReactiveKit6SignalV", "eraseType"]
+- !private ["11ReactiveKit14SignalProtocolP", "bind"]
+- !private ["11ReactiveKit14SignalProtocolP", "eraseType"]
+- !private ["11ReactiveKit15SubjectProtocolP", "bind"]
+- ["So29UIAccessibilityIdentificationP", "Element"]
+- ["So29UIAccessibilityIdentificationP", "_Default_Element"]
+- !private ["So29UIAccessibilityIdentificationP", "attributedText"]
+- ["So29UIAccessibilityIdentificationP", "bind"]
+- !private ["So29UIAccessibilityIdentificationP", "reactive"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "textColor"]
+- !private ["So29UIAccessibilityIdentificationP", "textDidChangeNotification"]
+- ["So12UIAppearanceP", "Element"]
+- ["So12UIAppearanceP", "_Default_Element"]
+- !private ["So12UIAppearanceP", "attributedText"]
+- ["So12UIAppearanceP", "bind"]
+- !private ["So12UIAppearanceP", "reactive"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "textColor"]
+- !private ["So12UIAppearanceP", "textDidChangeNotification"]
+- ["So21UIAppearanceContainerP", "Element"]
+- ["So21UIAppearanceContainerP", "_Default_Element"]
+- !private ["So21UIAppearanceContainerP", "attributedText"]
+- ["So21UIAppearanceContainerP", "bind"]
+- !private ["So21UIAppearanceContainerP", "reactive"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "textColor"]
+- !private ["So21UIAppearanceContainerP", "textDidChangeNotification"]
+- ["So30UIContentSizeCategoryAdjustingP", "Element"]
+- ["So30UIContentSizeCategoryAdjustingP", "_Default_Element"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "attributedText"]
+- ["So30UIContentSizeCategoryAdjustingP", "bind"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "reactive"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textDidChangeNotification"]
+- ["So17UICoordinateSpaceP", "Element"]
+- ["So17UICoordinateSpaceP", "_Default_Element"]
+- !private ["So17UICoordinateSpaceP", "attributedText"]
+- ["So17UICoordinateSpaceP", "bind"]
+- !private ["So17UICoordinateSpaceP", "reactive"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "textColor"]
+- !private ["So17UICoordinateSpaceP", "textDidChangeNotification"]
+- ["So13UIDynamicItemP", "Element"]
+- ["So13UIDynamicItemP", "_Default_Element"]
+- !private ["So13UIDynamicItemP", "attributedText"]
+- ["So13UIDynamicItemP", "bind"]
+- !private ["So13UIDynamicItemP", "reactive"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "textColor"]
+- !private ["So13UIDynamicItemP", "textDidChangeNotification"]
+- ["So18UIFocusEnvironmentP", "Element"]
+- ["So18UIFocusEnvironmentP", "_Default_Element"]
+- !private ["So18UIFocusEnvironmentP", "attributedText"]
+- ["So18UIFocusEnvironmentP", "bind"]
+- !private ["So18UIFocusEnvironmentP", "reactive"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "textColor"]
+- !private ["So18UIFocusEnvironmentP", "textDidChangeNotification"]
+- ["So11UIFocusItemP", "Element"]
+- ["So11UIFocusItemP", "_Default_Element"]
+- !private ["So11UIFocusItemP", "attributedText"]
+- ["So11UIFocusItemP", "bind"]
+- !private ["So11UIFocusItemP", "reactive"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "textColor"]
+- !private ["So11UIFocusItemP", "textDidChangeNotification"]
+- ["So20UIFocusItemContainerP", "Element"]
+- ["So20UIFocusItemContainerP", "_Default_Element"]
+- !private ["So20UIFocusItemContainerP", "attributedText"]
+- ["So20UIFocusItemContainerP", "bind"]
+- !private ["So20UIFocusItemContainerP", "reactive"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "textColor"]
+- !private ["So20UIFocusItemContainerP", "textDidChangeNotification"]
+- ["So30UIFocusItemScrollableContainerP", "Element"]
+- ["So30UIFocusItemScrollableContainerP", "_Default_Element"]
+- !private ["So30UIFocusItemScrollableContainerP", "attributedText"]
+- ["So30UIFocusItemScrollableContainerP", "bind"]
+- !private ["So30UIFocusItemScrollableContainerP", "reactive"]
+- !private ["So30UIFocusItemScrollableContainerP", "text"]
+- !private ["So30UIFocusItemScrollableContainerP", "textColor"]
+- !private ["So30UIFocusItemScrollableContainerP", "textDidChangeNotification"]
+- ["So10UIKeyInputP", "Element"]
+- ["So10UIKeyInputP", "_Default_Element"]
+- !private ["So10UIKeyInputP", "attributedText"]
+- ["So10UIKeyInputP", "bind"]
+- !private ["So10UIKeyInputP", "reactive"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So10UIKeyInputP", "textColor"]
+- !private ["So10UIKeyInputP", "textDidChangeNotification"]
+- ["So30UIPasteConfigurationSupportingP", "Element"]
+- ["So30UIPasteConfigurationSupportingP", "_Default_Element"]
+- !private ["So30UIPasteConfigurationSupportingP", "attributedText"]
+- ["So30UIPasteConfigurationSupportingP", "bind"]
+- !private ["So30UIPasteConfigurationSupportingP", "reactive"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "textColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "textDidChangeNotification"]
+- ["So11UIResponderC", "Disposable"]
+- ["So11UIResponderC", "Element"]
+- ["So11UIResponderC", "Never"]
+- ["So11UIResponderC", "Signal"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "_Default_Element"]
+- !private ["So11UIResponderC", "attributedText"]
+- ["So11UIResponderC", "bind"]
+- !private ["So11UIResponderC", "reactive"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So11UIResponderC", "textColor"]
+- !private ["So11UIResponderC", "textDidChangeNotification"]
+- ["So30UIResponderStandardEditActionsP", "Element"]
+- ["So30UIResponderStandardEditActionsP", "_Default_Element"]
+- !private ["So30UIResponderStandardEditActionsP", "attributedText"]
+- ["So30UIResponderStandardEditActionsP", "bind"]
+- !private ["So30UIResponderStandardEditActionsP", "reactive"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "textColor"]
+- !private ["So30UIResponderStandardEditActionsP", "textDidChangeNotification"]
+- ["So12UIScrollViewC", "Disposable"]
+- ["So12UIScrollViewC", "Element"]
+- ["So12UIScrollViewC", "Never"]
+- ["So12UIScrollViewC", "Signal"]
+- ["So12UIScrollViewC", "String"]
+- ["So12UIScrollViewC", "_Default_Element"]
+- !private ["So12UIScrollViewC", "attributedText"]
+- ["So12UIScrollViewC", "bind"]
+- !private ["So12UIScrollViewC", "reactive"]
+- !private ["So12UIScrollViewC", "text"]
+- !private ["So12UIScrollViewC", "textColor"]
+- !private ["So12UIScrollViewC", "textDidChangeNotification"]
+- ["So15UITextDraggableP", "Element"]
+- ["So15UITextDraggableP", "_Default_Element"]
+- !private ["So15UITextDraggableP", "attributedText"]
+- ["So15UITextDraggableP", "bind"]
+- !private ["So15UITextDraggableP", "reactive"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDraggableP", "textColor"]
+- !private ["So15UITextDraggableP", "textDidChangeNotification"]
+- ["So15UITextDroppableP", "Element"]
+- ["So15UITextDroppableP", "_Default_Element"]
+- !private ["So15UITextDroppableP", "attributedText"]
+- ["So15UITextDroppableP", "bind"]
+- !private ["So15UITextDroppableP", "reactive"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So15UITextDroppableP", "textColor"]
+- !private ["So15UITextDroppableP", "textDidChangeNotification"]
+- ["So11UITextInputP", "Element"]
+- ["So11UITextInputP", "_Default_Element"]
+- !private ["So11UITextInputP", "attributedText"]
+- ["So11UITextInputP", "bind"]
+- !private ["So11UITextInputP", "reactive"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So11UITextInputP", "textColor"]
+- !private ["So11UITextInputP", "textDidChangeNotification"]
+- ["So17UITextInputTraitsP", "Element"]
+- ["So17UITextInputTraitsP", "_Default_Element"]
+- !private ["So17UITextInputTraitsP", "attributedText"]
+- ["So17UITextInputTraitsP", "bind"]
+- !private ["So17UITextInputTraitsP", "reactive"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So17UITextInputTraitsP", "textColor"]
+- !private ["So17UITextInputTraitsP", "textDidChangeNotification"]
+- ["So34UITextPasteConfigurationSupportingP", "Element"]
+- ["So34UITextPasteConfigurationSupportingP", "_Default_Element"]
+- !private ["So34UITextPasteConfigurationSupportingP", "attributedText"]
+- ["So34UITextPasteConfigurationSupportingP", "bind"]
+- !private ["So34UITextPasteConfigurationSupportingP", "reactive"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "textColor"]
+- !private ["So34UITextPasteConfigurationSupportingP", "textDidChangeNotification"]
+- ["So10UITextViewC", "Disposable"]
+- ["So10UITextViewC", "Element"]
+- ["So10UITextViewC", "Never"]
+- ["So10UITextViewC", "Signal"]
+- ["So10UITextViewC", "String"]
+- ["So10UITextViewC", "_Default_Element"]
+- !private ["So10UITextViewC", "attributedText"]
+- ["So10UITextViewC", "bind"]
+- ["So10UITextViewC", "deinit"]
+- !private ["So10UITextViewC", "reactive"]
+- !private ["So10UITextViewC", "text"]
+- !private ["So10UITextViewC", "textColor"]
+- !private ["So10UITextViewC", "textDidChangeNotification"]
+- ["So18UITraitEnvironmentP", "Element"]
+- ["So18UITraitEnvironmentP", "_Default_Element"]
+- !private ["So18UITraitEnvironmentP", "attributedText"]
+- ["So18UITraitEnvironmentP", "bind"]
+- !private ["So18UITraitEnvironmentP", "reactive"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "textColor"]
+- !private ["So18UITraitEnvironmentP", "textDidChangeNotification"]
+- ["So23UIUserActivityRestoringP", "Element"]
+- ["So23UIUserActivityRestoringP", "_Default_Element"]
+- !private ["So23UIUserActivityRestoringP", "attributedText"]
+- ["So23UIUserActivityRestoringP", "bind"]
+- !private ["So23UIUserActivityRestoringP", "reactive"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "textColor"]
+- !private ["So23UIUserActivityRestoringP", "textDidChangeNotification"]
+- ["So6UIViewC", "Disposable"]
+- ["So6UIViewC", "Element"]
+- ["So6UIViewC", "Never"]
+- ["So6UIViewC", "Signal"]
+- ["So6UIViewC", "String"]
+- ["So6UIViewC", "_Default_Element"]
+- !private ["So6UIViewC", "attributedText"]
+- ["So6UIViewC", "bind"]
+- !private ["So6UIViewC", "reactive"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "textColor"]
+- !private ["So6UIViewC", "textDidChangeNotification"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Element"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "_Default_Element"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "attributedText"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "bind"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reactive"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textDidChangeNotification"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "Element"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "_Default_Element"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "attributedText"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "bind"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reactive"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "textColor"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "textDidChangeNotification"]
+depends-nominal:
+- "11ReactiveKit16BindableProtocolP"
+- "11ReactiveKit31BindingExecutionContextProviderP"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- "11ReactiveKit18DisposeBagProviderP"
+- "SQ"
+- !private "4Bond22FailableDynamicSubjectV"
+- "SH"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So20NSNotificationCenterC"
+- !private "11ReactiveKit16ObserverProtocolP"
+- !private "11ReactiveKit0A0V"
+- "11ReactiveKit0A10ExtensionsP"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- !private "11ReactiveKit6SignalV"
+- !private "11ReactiveKit14SignalProtocolP"
+- !private "11ReactiveKit15SubjectProtocolP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIFocusItemScrollableContainerP"
+- "So10UIKeyInputP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So12UIScrollViewC"
+- "So15UITextDraggableP"
+- "So15UITextDroppableP"
+- "So11UITextInputP"
+- "So17UITextInputTraitsP"
+- "So34UITextPasteConfigurationSupportingP"
+- "So10UITextViewC"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ffa4c141a195c8653a046721fff5e0f1"

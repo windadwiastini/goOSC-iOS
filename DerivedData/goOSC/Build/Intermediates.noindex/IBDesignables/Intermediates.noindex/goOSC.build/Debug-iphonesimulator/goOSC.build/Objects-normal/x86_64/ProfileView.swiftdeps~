@@ -12,19 +12,15 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
 - "Profile"
 - "ProfilePresenterProtocol"
 - "ProfileView"
 - "ProfileViewProtocol"
 - !private "ProfileWireframe"
 - !private "SignOut"
-- !private "StringLiteralType"
 - "UIButton"
 - "UILabel"
 - "UIViewController"
-- !private "UnicodeScalarType"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]

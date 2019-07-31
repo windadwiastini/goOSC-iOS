@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "0090551263405d0e9b787ef892727881"
-build_time: [1564450116, 639545000]
+options: "9dd2a9638db671082efeb87053098480"
+build_time: [1564537141, 826961000]
 inputs:
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Search Page/WireFrame/SearchWireFrame.swift": [1560906035, 180778267]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Category Product/Presenter/CategoryProductPresenter.swift": [1560906035, 133402570]
@@ -16,7 +16,7 @@ inputs:
   "/Users/bootcamp/Documents/collab2/goOSC/Authentication/Login/Entity/Customer.swift": [1560906035, 125724265]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Category Page/View/CategoryPageCell.swift": [1560906035, 132536861]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Top Up/View/TopUpView.swift": [1563502476, 669829135]
-  "/Users/bootcamp/Documents/collab2/goOSC/Authentication/Register/View/RegisterView.swift": !dirty [1564450114, 460014272]
+  "/Users/bootcamp/Documents/collab2/goOSC/Authentication/Register/View/RegisterView.swift": [1564451230, 352560394]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Category Product/View/CategoryProductView.swift": [1563502476, 527474484]
   "/Users/bootcamp/Documents/collab2/goOSC/Authentication/Login/Protocols/LoginPresenter.swift": [1560906035, 126077248]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Home Page/View/HomePageCell.swift": [1563500912, 289470514]
@@ -29,7 +29,7 @@ inputs:
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Search Page/Presenter/SearchPresenter.swift": [1560906035, 180027410]
   "/Users/bootcamp/Documents/collab2/goOSC/Authentication/Forgot Password/Presenter/ForgotPasswordPresenter.swift": [1560906035, 124724324]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Chat/Presenter/ChatPresenter.swift": [1564017525, 239580894]
-  "/Users/bootcamp/Documents/collab2/goOSC/Authentication/Register/Protocols/RegisterProtocols.swift": !dirty [1560906035, 127628611]
+  "/Users/bootcamp/Documents/collab2/goOSC/Authentication/Register/Protocols/RegisterProtocols.swift": [1560906035, 127628611]
   "/Users/bootcamp/Documents/collab2/goOSC/Authentication/Forgot Password/Entity/ForgotPasswordEntity.swift": [1560906035, 124294702]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Balance Histories/Protocol/BalanceHistoryProtocol.swift": [1562297971, 986853023]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/PayPal/Wireframe/PaypalWireframe.swift": [1563242967, 443752848]
@@ -114,6 +114,6 @@ inputs:
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Chat/Protocols/ChatProtocol.swift": [1564016977, 758343258]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Balance Payment/Presenter/BalancePaymentPresenter.swift": [1562298061, 896131059]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Profile/Protocols/ProfileProtocol.swift": [1564447308, 994308995]
-  "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/goOSC.build/Debug-iphonesimulator/goOSC.build/DerivedSources/CoreDataGenerated/oscDB/Cart+CoreDataClass.swift": [1564447075, 891187631]
-  "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/goOSC.build/Debug-iphonesimulator/goOSC.build/DerivedSources/CoreDataGenerated/oscDB/Cart+CoreDataProperties.swift": [1564447075, 904027514]
-  "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/goOSC.build/Debug-iphonesimulator/goOSC.build/DerivedSources/CoreDataGenerated/oscDB/oscDB+CoreDataModel.swift": [1564447075, 838040792]
+  "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/goOSC.build/Debug-iphonesimulator/goOSC.build/DerivedSources/CoreDataGenerated/oscDB/Cart+CoreDataClass.swift": [1564537141, 786175588]
+  "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/goOSC.build/Debug-iphonesimulator/goOSC.build/DerivedSources/CoreDataGenerated/oscDB/Cart+CoreDataProperties.swift": [1564537141, 815930438]
+  "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/goOSC.build/Debug-iphonesimulator/goOSC.build/DerivedSources/CoreDataGenerated/oscDB/oscDB+CoreDataModel.swift": [1564537141, 783376075]

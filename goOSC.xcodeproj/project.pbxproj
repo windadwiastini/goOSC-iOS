@@ -28,6 +28,7 @@
 		2A14420C22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420B22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift */; };
 		2A14420E22C5B2B900CBF132 /* BalanceHistoryWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14420D22C5B2B900CBF132 /* BalanceHistoryWireFrame.swift */; };
 		2A1C589322C33FFC006F3A6B /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1C589222C33FFC006F3A6B /* OptionView.swift */; };
+		2A20A6BA22EFF496002D6015 /* goOSCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A20A6B922EFF496002D6015 /* goOSCTests.swift */; };
 		2A21897922B097230080BBEC /* oscDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A21897722B097230080BBEC /* oscDB.xcdatamodeld */; };
 		2A21897B22B0A4BB0080BBEC /* ExtOSCDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A21897A22B0A4BB0080BBEC /* ExtOSCDB.swift */; };
 		2A2C87F022D70FA100AC5D46 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2C87EF22D70FA100AC5D46 /* ProfileProtocol.swift */; };
@@ -126,6 +127,16 @@
 		CF64581DBD214554826F4E18 /* Pods_goOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0AAA52CD26F0ECC10A5A07 /* Pods_goOSC.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2A20A6BC22EFF496002D6015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6960B0229CBAF3000F4F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A6960B7229CBAF3000F4F5E;
+			remoteInfo = goOSC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2A0520BC229E308F00C4ECE3 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		2A0520BE229E371900C4ECE3 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginWireframe.swift; path = goOSC/Authentication/Login/Protocols/LoginWireframe.swift; sourceTree = SOURCE_ROOT; };
@@ -148,6 +159,9 @@
 		2A14420B22C5B2AB00CBF132 /* BalanceHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryPresenter.swift; sourceTree = "<group>"; };
 		2A14420D22C5B2B900CBF132 /* BalanceHistoryWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceHistoryWireFrame.swift; sourceTree = "<group>"; };
 		2A1C589222C33FFC006F3A6B /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		2A20A6B722EFF496002D6015 /* goOSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goOSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A20A6B922EFF496002D6015 /* goOSCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goOSCTests.swift; sourceTree = "<group>"; };
+		2A20A6BB22EFF496002D6015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A21897822B097230080BBEC /* oscDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = oscDB.xcdatamodel; sourceTree = "<group>"; };
 		2A21897A22B0A4BB0080BBEC /* ExtOSCDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtOSCDB.swift; sourceTree = "<group>"; };
 		2A2C87EF22D70FA100AC5D46 /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
@@ -252,6 +266,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2A20A6B422EFF496002D6015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A6960B5229CBAF3000F4F5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +392,15 @@
 				2A11EE6E22DD5B1000D7C8E2 /* PaypalWireframe.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		2A20A6B822EFF496002D6015 /* goOSCTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A20A6B922EFF496002D6015 /* goOSCTests.swift */,
+				2A20A6BB22EFF496002D6015 /* Info.plist */,
+			);
+			path = goOSCTests;
 			sourceTree = "<group>";
 		};
 		2A2C87E822D70EF100AC5D46 /* Profile */ = {
@@ -792,6 +822,7 @@
 			isa = PBXGroup;
 			children = (
 				2A6960BA229CBAF3000F4F5E /* goOSC */,
+				2A20A6B822EFF496002D6015 /* goOSCTests */,
 				2A6960B9229CBAF3000F4F5E /* Products */,
 				A06632B09394851A06FF0FD7 /* Pods */,
 				34EC282FEBE26600A6E12F85 /* Frameworks */,
@@ -802,6 +833,7 @@
 			isa = PBXGroup;
 			children = (
 				2A6960B8229CBAF3000F4F5E /* goOSC.app */,
+				2A20A6B722EFF496002D6015 /* goOSCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1370,6 +1402,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2A20A6B622EFF496002D6015 /* goOSCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A20A6BE22EFF496002D6015 /* Build configuration list for PBXNativeTarget "goOSCTests" */;
+			buildPhases = (
+				2A20A6B322EFF496002D6015 /* Sources */,
+				2A20A6B422EFF496002D6015 /* Frameworks */,
+				2A20A6B522EFF496002D6015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A20A6BD22EFF496002D6015 /* PBXTargetDependency */,
+			);
+			name = goOSCTests;
+			productName = goOSCTests;
+			productReference = 2A20A6B722EFF496002D6015 /* goOSCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2A6960B7229CBAF3000F4F5E /* goOSC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A6960CA229CBAF3000F4F5E /* Build configuration list for PBXNativeTarget "goOSC" */;
@@ -1395,10 +1445,15 @@
 		2A6960B0229CBAF3000F4F5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Swift Bootcamp";
 				TargetAttributes = {
+					2A20A6B622EFF496002D6015 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A6960B7229CBAF3000F4F5E;
+					};
 					2A6960B7229CBAF3000F4F5E = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1020;
@@ -1420,11 +1475,19 @@
 			projectRoot = "";
 			targets = (
 				2A6960B7229CBAF3000F4F5E /* goOSC */,
+				2A20A6B622EFF496002D6015 /* goOSCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2A20A6B522EFF496002D6015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A6960B6229CBAF3000F4F5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1489,6 +1552,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2A20A6B322EFF496002D6015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A20A6BA22EFF496002D6015 /* goOSCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A6960B4229CBAF3000F4F5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1611,6 +1682,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2A20A6BD22EFF496002D6015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A6960B7229CBAF3000F4F5E /* goOSC */;
+			targetProxy = 2A20A6BC22EFF496002D6015 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		2A6960BF229CBAF3000F4F5E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -1631,6 +1710,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2A20A6BF22EFF496002D6015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK9B469R72;
+				INFOPLIST_FILE = goOSCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrais.goOSCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goOSC.app/goOSC";
+			};
+			name = Debug;
+		};
+		2A20A6C022EFF496002D6015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK9B469R72;
+				INFOPLIST_FILE = goOSCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrais.goOSCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goOSC.app/goOSC";
+			};
+			name = Release;
+		};
 		2A6960C8229CBAF3000F4F5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1786,6 +1902,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2A20A6BE22EFF496002D6015 /* Build configuration list for PBXNativeTarget "goOSCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A20A6BF22EFF496002D6015 /* Debug */,
+				2A20A6C022EFF496002D6015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2A6960B3229CBAF3000F4F5E /* Build configuration list for PBXProject "goOSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

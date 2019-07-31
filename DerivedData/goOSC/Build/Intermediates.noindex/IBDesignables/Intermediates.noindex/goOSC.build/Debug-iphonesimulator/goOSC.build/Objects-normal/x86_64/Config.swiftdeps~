@@ -12,7 +12,6 @@ depends-top-level:
 depends-member:
 - ["5goOSC6ConfigC", "PPSecretId"]
 - ["5goOSC6ConfigC", "String"]
-- ["5goOSC6ConfigC", "deinit"]
 - ["5goOSC6ConfigC", "init"]
 - ["5goOSC6ConfigC", "pPClientId"]
 - ["5goOSC6ConfigC", "url"]

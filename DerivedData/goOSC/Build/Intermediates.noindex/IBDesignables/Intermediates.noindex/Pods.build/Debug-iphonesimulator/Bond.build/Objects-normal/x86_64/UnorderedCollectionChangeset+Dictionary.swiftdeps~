@@ -1,0 +1,292 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "_DictionaryProtocol"
+provides-nominal:
+- "4Bond19_DictionaryProtocolP"
+- "SD"
+provides-member:
+- ["4Bond19_DictionaryProtocolP", ""]
+- ["SD", ""]
+- ["4Bond33MutableChangesetContainerProtocolP", ""]
+- ["4Bond33MutableChangesetContainerProtocolP", "subscript"]
+- ["4Bond33MutableChangesetContainerProtocolP", "updateValue"]
+- ["4Bond33MutableChangesetContainerProtocolP", "removeValue"]
+- ["4Bond33MutableChangesetContainerProtocolP", "removeAll"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Dictionary"
+- "Hashable"
+- "MutableChangesetContainerProtocol"
+- "UnorderedCollectionChangesetProtocol"
+- "UnorderedCollectionOperation"
+- "_DictionaryProtocol"
+depends-member:
+- !private ["SK", "map"]
+- ["s7CVarArgP", "Element"]
+- ["s7CVarArgP", "Index"]
+- ["s7CVarArgP", "Key"]
+- ["s7CVarArgP", "Value"]
+- ["s7CVarArgP", "_asDictionary"]
+- !private ["s7CVarArgP", "index"]
+- !private ["s7CVarArgP", "indices"]
+- !private ["s7CVarArgP", "remove"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "updateValue"]
+- ["4Bond26ChangesetContainerProtocolP", "Changeset"]
+- ["4Bond26ChangesetContainerProtocolP", "Dictionary"]
+- !private ["4Bond26ChangesetContainerProtocolP", "Operation"]
+- ["4Bond26ChangesetContainerProtocolP", "UnorderedCollectionChangesetProtocol"]
+- ["4Bond26ChangesetContainerProtocolP", "UnorderedCollectionOperation"]
+- ["4Bond26ChangesetContainerProtocolP", "_DictionaryProtocol"]
+- !private ["4Bond26ChangesetContainerProtocolP", "collection"]
+- !private ["4Bond26ChangesetContainerProtocolP", "descriptiveUpdate"]
+- !private ["4Bond26ChangesetContainerProtocolP", "removeValue"]
+- !private ["4Bond26ChangesetContainerProtocolP", "updateValue"]
+- !private ["4Bond17ChangesetProtocolP", "Collection"]
+- ["Sl", "Element"]
+- ["Sl", "Index"]
+- ["Sl", "Key"]
+- ["Sl", "Value"]
+- ["Sl", "_asDictionary"]
+- !private ["Sl", "index"]
+- !private ["Sl", "indices"]
+- !private ["Sl", "map"]
+- !private ["Sl", "remove"]
+- !private ["Sl", "removeAll"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "updateValue"]
+- ["s28CustomDebugStringConvertibleP", "Element"]
+- ["s28CustomDebugStringConvertibleP", "Index"]
+- ["s28CustomDebugStringConvertibleP", "Key"]
+- ["s28CustomDebugStringConvertibleP", "Value"]
+- ["s28CustomDebugStringConvertibleP", "_asDictionary"]
+- !private ["s28CustomDebugStringConvertibleP", "delete"]
+- !private ["s28CustomDebugStringConvertibleP", "index"]
+- !private ["s28CustomDebugStringConvertibleP", "indices"]
+- !private ["s28CustomDebugStringConvertibleP", "insert"]
+- !private ["s28CustomDebugStringConvertibleP", "remove"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "update"]
+- !private ["s28CustomDebugStringConvertibleP", "updateValue"]
+- ["s17CustomReflectableP", "Element"]
+- ["s17CustomReflectableP", "Index"]
+- ["s17CustomReflectableP", "Key"]
+- ["s17CustomReflectableP", "Value"]
+- ["s17CustomReflectableP", "_asDictionary"]
+- !private ["s17CustomReflectableP", "index"]
+- !private ["s17CustomReflectableP", "indices"]
+- !private ["s17CustomReflectableP", "remove"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "updateValue"]
+- ["s23CustomStringConvertibleP", "Element"]
+- ["s23CustomStringConvertibleP", "Index"]
+- ["s23CustomStringConvertibleP", "Key"]
+- ["s23CustomStringConvertibleP", "Value"]
+- ["s23CustomStringConvertibleP", "_asDictionary"]
+- !private ["s23CustomStringConvertibleP", "index"]
+- !private ["s23CustomStringConvertibleP", "indices"]
+- !private ["s23CustomStringConvertibleP", "remove"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "updateValue"]
+- ["Se", "Element"]
+- ["Se", "Index"]
+- ["Se", "Key"]
+- ["Se", "Value"]
+- ["Se", "_asDictionary"]
+- !private ["Se", "index"]
+- !private ["Se", "indices"]
+- !private ["Se", "remove"]
+- !private ["Se", "removeAll"]
+- !private ["Se", "subscript"]
+- !private ["Se", "updateValue"]
+- !private ["SI", "map"]
+- ["SD", "Dictionary"]
+- ["SD", "Element"]
+- ["SD", "Index"]
+- ["SD", "Key"]
+- ["SD", "Value"]
+- ["SD", "_asDictionary"]
+- ["SD", "deinit"]
+- !private ["SD", "index"]
+- !private ["SD", "indices"]
+- !private ["SD", "remove"]
+- !private ["SD", "removeAll"]
+- !private ["SD", "subscript"]
+- !private ["SD", "updateValue"]
+- ["SE", "Element"]
+- ["SE", "Index"]
+- ["SE", "Key"]
+- ["SE", "Value"]
+- ["SE", "_asDictionary"]
+- !private ["SE", "index"]
+- !private ["SE", "indices"]
+- !private ["SE", "remove"]
+- !private ["SE", "removeAll"]
+- !private ["SE", "subscript"]
+- !private ["SE", "updateValue"]
+- ["SQ", "Element"]
+- ["SQ", "Index"]
+- ["SQ", "Key"]
+- ["SQ", "Value"]
+- ["SQ", "_asDictionary"]
+- !private ["SQ", "index"]
+- !private ["SQ", "indices"]
+- !private ["SQ", "remove"]
+- !private ["SQ", "removeAll"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "updateValue"]
+- ["s30ExpressibleByDictionaryLiteralP", "Element"]
+- ["s30ExpressibleByDictionaryLiteralP", "Index"]
+- ["s30ExpressibleByDictionaryLiteralP", "Key"]
+- ["s30ExpressibleByDictionaryLiteralP", "Value"]
+- ["s30ExpressibleByDictionaryLiteralP", "_asDictionary"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "index"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "indices"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "remove"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "removeAll"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "updateValue"]
+- ["SH", "Element"]
+- ["SH", "Index"]
+- ["SH", "Key"]
+- ["SH", "Value"]
+- ["SH", "_asDictionary"]
+- !private ["SH", "index"]
+- !private ["SH", "indices"]
+- !private ["SH", "remove"]
+- !private ["SH", "removeAll"]
+- !private ["SH", "subscript"]
+- !private ["SH", "updateValue"]
+- ["4Bond33MutableChangesetContainerProtocolP", "Changeset"]
+- ["4Bond33MutableChangesetContainerProtocolP", "Dictionary"]
+- !private ["4Bond33MutableChangesetContainerProtocolP", "Operation"]
+- ["4Bond33MutableChangesetContainerProtocolP", "UnorderedCollectionChangesetProtocol"]
+- ["4Bond33MutableChangesetContainerProtocolP", "UnorderedCollectionOperation"]
+- ["4Bond33MutableChangesetContainerProtocolP", "_DictionaryProtocol"]
+- !private ["4Bond33MutableChangesetContainerProtocolP", "collection"]
+- !private ["4Bond33MutableChangesetContainerProtocolP", "descriptiveUpdate"]
+- ["4Bond33MutableChangesetContainerProtocolP", "removeAll"]
+- ["4Bond33MutableChangesetContainerProtocolP", "removeValue"]
+- ["4Bond33MutableChangesetContainerProtocolP", "subscript"]
+- ["4Bond33MutableChangesetContainerProtocolP", "updateValue"]
+- !private ["Sk", "map"]
+- ["ST", "Element"]
+- ["ST", "Index"]
+- ["ST", "Key"]
+- ["ST", "Value"]
+- ["ST", "_asDictionary"]
+- !private ["ST", "index"]
+- !private ["ST", "indices"]
+- !private ["ST", "map"]
+- !private ["ST", "remove"]
+- !private ["ST", "removeAll"]
+- !private ["ST", "subscript"]
+- !private ["ST", "updateValue"]
+- !private ["4Bond36UnorderedCollectionChangesetProtocolP", "Collection"]
+- !private ["4Bond28UnorderedCollectionOperationO", "delete"]
+- !private ["4Bond28UnorderedCollectionOperationO", "insert"]
+- !private ["4Bond28UnorderedCollectionOperationO", "update"]
+- ["4Bond19_DictionaryProtocolP", "Dictionary"]
+- ["4Bond19_DictionaryProtocolP", "Element"]
+- ["4Bond19_DictionaryProtocolP", "Hashable"]
+- ["4Bond19_DictionaryProtocolP", "Index"]
+- ["4Bond19_DictionaryProtocolP", "Key"]
+- ["4Bond19_DictionaryProtocolP", "Value"]
+- ["4Bond19_DictionaryProtocolP", ""]
+- ["4Bond19_DictionaryProtocolP", "_asDictionary"]
+- !private ["4Bond19_DictionaryProtocolP", "index"]
+- !private ["4Bond19_DictionaryProtocolP", "indices"]
+- !private ["4Bond19_DictionaryProtocolP", "remove"]
+- !private ["4Bond19_DictionaryProtocolP", "removeAll"]
+- !private ["4Bond19_DictionaryProtocolP", "subscript"]
+- !private ["4Bond19_DictionaryProtocolP", "updateValue"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Element"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Index"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Key"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Value"]
+- ["s35_HasCustomAnyHashableRepresentationP", "_asDictionary"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "index"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "indices"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "remove"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeAll"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "updateValue"]
+- ["s21_ObjectiveCBridgeableP", "Element"]
+- ["s21_ObjectiveCBridgeableP", "Index"]
+- ["s21_ObjectiveCBridgeableP", "Key"]
+- ["s21_ObjectiveCBridgeableP", "Value"]
+- ["s21_ObjectiveCBridgeableP", "_asDictionary"]
+- !private ["s21_ObjectiveCBridgeableP", "index"]
+- !private ["s21_ObjectiveCBridgeableP", "indices"]
+- !private ["s21_ObjectiveCBridgeableP", "remove"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "updateValue"]
+depends-nominal:
+- !private "SK"
+- "s7CVarArgP"
+- "4Bond26ChangesetContainerProtocolP"
+- !private "4Bond17ChangesetProtocolP"
+- "Sl"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "SI"
+- "SD"
+- "SE"
+- "SQ"
+- "s30ExpressibleByDictionaryLiteralP"
+- "SH"
+- "4Bond33MutableChangesetContainerProtocolP"
+- !private "Sk"
+- "ST"
+- !private "4Bond36UnorderedCollectionChangesetProtocolP"
+- !private "4Bond28UnorderedCollectionOperationO"
+- "4Bond19_DictionaryProtocolP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c23243dc8780db27ab94fd876aa50f64"

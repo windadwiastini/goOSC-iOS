@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		F8D1G7O/f1ivY0rN4shJeQB2ATY=
+		CfPjALLjXctt4FYFXJKTMhser/A=
 		</data>
 		<key>Headers/MessengerKit-Swift.h</key>
 		<data>
@@ -18,103 +18,103 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I7o5fkI4Se0xubFaagB8AP9V2S4=
+		v1ShZDcr8PyqV/lbaGCvD+WpY64=
 		</data>
 		<key>MSGImessageIncomingFooterView.nib/objects-11.0+.nib</key>
 		<data>
-		e4vFSR6t4gCGE/4X3yZZ/oP731U=
+		hvW6E1SnW/S8cgAq6rQrRi1eedg=
 		</data>
 		<key>MSGImessageIncomingFooterView.nib/runtime.nib</key>
 		<data>
-		NQBGOcSHAUku3puQeH97ygWvACU=
+		4JFdkD6/Jbdi8UwcYS347FA736Y=
 		</data>
 		<key>MSGImessageIncomingHeaderView.nib/objects-11.0+.nib</key>
 		<data>
-		xPwT/qaB5Zf3ZMMAUE61SumkloE=
+		8EhXoIidsYMo4Rm54We1jc+ceWQ=
 		</data>
 		<key>MSGImessageIncomingHeaderView.nib/runtime.nib</key>
 		<data>
-		V8+GCxqroqzl/b+XRtooGYm2oHk=
+		PWFto9+00jSZKg4X3Qbl4zosWec=
 		</data>
 		<key>MSGImessageInputView.nib/objects-11.0+.nib</key>
 		<data>
-		iTBOg5+zdz6mw4n12gxel5HRXxg=
+		XU+jOO9njjNHQnLnrv8jKbI4ICQ=
 		</data>
 		<key>MSGImessageInputView.nib/runtime.nib</key>
 		<data>
-		PPfyuyJy5xrWVSciRsHJMQgPcj8=
+		QEXd+ngCu8vqm4SKCy4WcUqSPUo=
 		</data>
 		<key>MSGImessageOutgoingFooterView.nib/objects-11.0+.nib</key>
 		<data>
-		Gs0WO2JXbv8WmLZt89JgPv6JarE=
+		EtdLL24CNVmIMORMLKBWweEyi2Y=
 		</data>
 		<key>MSGImessageOutgoingFooterView.nib/runtime.nib</key>
 		<data>
-		aDvZcRTQxWtVlRWm0c+vn3NnBDk=
+		KbNEh6R924On4nH57KOFYgd3yy0=
 		</data>
 		<key>MSGImessageOutgoingHeaderView.nib/objects-11.0+.nib</key>
 		<data>
-		XLkrXNCpv1iT/Tq46XFFNg5LlK8=
+		OkTP+IbqZNfh0eQd9byhHKiEUu4=
 		</data>
 		<key>MSGImessageOutgoingHeaderView.nib/runtime.nib</key>
 		<data>
-		EmkjRWc1lTM4SqDYbNdC9sj7Rw4=
+		jbMaggjgW+6W7f4zK2GlIrypkWU=
 		</data>
 		<key>MSGIncomingEmojiCollectionViewCell.nib</key>
 		<data>
-		eFvI9wBwBdZNJi7YYndVXI5ozs0=
+		u09lWoXt8sHPHpbCYYyBAlk6wOU=
 		</data>
 		<key>MSGIncomingImageCollectionViewCell.nib</key>
 		<data>
-		IOII8d8JFQG9yneGZTDF3ja7V58=
+		OMVqbHw6CABg7CLuDtaSTdZTw+I=
 		</data>
 		<key>MSGIncomingTailCollectionViewCell.nib</key>
 		<data>
-		rg41HMFfpty1Gpf1BpDmERay3Gc=
+		sxcqUzbW0DHF53c/YR0S6iRFKX4=
 		</data>
 		<key>MSGIncomingTravCollectionViewCell.nib</key>
 		<data>
-		F6LTyP6rzpd8WJFXbrKcw0h2Tm4=
+		6K20k19wcIkoZAQqaJMEWnWUmjE=
 		</data>
 		<key>MSGMessengerView.nib/objects-11.0+.nib</key>
 		<data>
-		whr9r5XY0MOBUI949K2iDplZdUg=
+		UF4JDBM1tNTG+2YaEGK9yw1HkdI=
 		</data>
 		<key>MSGMessengerView.nib/runtime.nib</key>
 		<data>
-		C5wTysN/QxlXhhUpp/lmm0ZKoEE=
+		4RW1OBgg3+xoIvRMzROXZuEP+XA=
 		</data>
 		<key>MSGOutgoingEmojiCollectionViewCell.nib</key>
 		<data>
-		+lx0jr0FBh4e8U2k8WnFc0xE1Xg=
+		+MFxysugTI4SO8+JWtUFSEmfA0E=
 		</data>
 		<key>MSGOutgoingImageCollectionViewCell.nib</key>
 		<data>
-		GurzbMPlHgtOOeC94GpR9MxDEdA=
+		KrlqtrnEnAlH5svduxP6JDgOmcU=
 		</data>
 		<key>MSGOutgoingTailCollectionViewCell.nib</key>
 		<data>
-		QkrmkNE0i/QVbLzkMoTiyOjHkoE=
+		XxuzXyJ8e6Rrz53UM58BB1KWoEc=
 		</data>
 		<key>MSGOutgoingTravCollectionViewCell.nib</key>
 		<data>
-		uM/Q/13+C5hS+lNI5UNdmlElSFQ=
+		/mfDmBm6eBVVrHnoNuWdIymL4Qc=
 		</data>
 		<key>MSGTravIncomingCollectionViewSectionFooter.nib</key>
 		<data>
-		K38BNXW3h/4WAEiH6q5tEyMwyCo=
+		UnsmU1obBh2HJtZE+Bgvaionzs0=
 		</data>
 		<key>MSGTravIncomingCollectionViewSectionHeader.nib</key>
 		<data>
-		E5jsnyeZpWwY8OM1cLw/wJXILMI=
+		HJAp0uKyIZh0WNemtUI/o0sC7zM=
 		</data>
 		<key>MSGTravOutgoingCollectionViewSectionFooter.nib</key>
 		<data>
-		///77h0BHHWVwKQNl24ijAfYcoY=
+		uHE9LXu9r7aGZAV0EYDVq2AuDrQ=
 		</data>
 		<key>MSGTravOutgoingCollectionViewSectionHeader.nib</key>
 		<data>
-		cOv0HiJ8tNDNyGaNWUWydevVGN0=
+		iuFW53F+7marWnQaKqHKKm3VOOg=
 		</data>
 		<key>Modules/MessengerKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/MessengerKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		TCJ/KBodjHJ1ckzYXxvtVC6haTc=
+		P2PGkDHbRAmVywGZGGAGaHwp/IM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -135,11 +135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F8D1G7O/f1ivY0rN4shJeQB2ATY=
+			CfPjALLjXctt4FYFXJKTMhser/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			hh3fVIITbnNHW1/GMBQFM+bMd4lQ+e7S+hJZYJyMCq4=
+			h4toawBhTaM25Pug+FYZ51GnoXGAvDc8DZA8kIfrW+M=
 			</data>
 		</dict>
 		<key>Headers/MessengerKit-Swift.h</key>
@@ -168,264 +168,264 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e4vFSR6t4gCGE/4X3yZZ/oP731U=
+			hvW6E1SnW/S8cgAq6rQrRi1eedg=
 			</data>
 			<key>hash2</key>
 			<data>
-			QLE7023UTTFqJWsg/ArKXd3py/WFf1Obz91uPYRk7Vo=
+			yQ1YVdRmgY5os4J8cfkaNg/MkxzgMGLydVOKzFZ6V9I=
 			</data>
 		</dict>
 		<key>MSGImessageIncomingFooterView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NQBGOcSHAUku3puQeH97ygWvACU=
+			4JFdkD6/Jbdi8UwcYS347FA736Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			X5R2xzy1yyBsHt0BCU/iB+Npy42e/oT4A9JLmX74bxY=
+			mDDIhO84FloK26oTOsvN7OnB7WzSs/Kbv437cqkpHF4=
 			</data>
 		</dict>
 		<key>MSGImessageIncomingHeaderView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xPwT/qaB5Zf3ZMMAUE61SumkloE=
+			8EhXoIidsYMo4Rm54We1jc+ceWQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			5nuVtN2FSZpUe5l5/Ft7W8gNuPHKZe6DhFVZLCY7rjk=
+			GDRcLk7mCPs1kHNtSW6bLXlDltc8IaZAG9GgQ3tWXvU=
 			</data>
 		</dict>
 		<key>MSGImessageIncomingHeaderView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V8+GCxqroqzl/b+XRtooGYm2oHk=
+			PWFto9+00jSZKg4X3Qbl4zosWec=
 			</data>
 			<key>hash2</key>
 			<data>
-			fWUiJ/AlOtbbfuh5W6LK25lVvprlTY5Iqbdpd2JpO84=
+			MUEclT63HzeZ0PasmsgHxiwbx1TMoSt6bVqcv2+Rrjo=
 			</data>
 		</dict>
 		<key>MSGImessageInputView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iTBOg5+zdz6mw4n12gxel5HRXxg=
+			XU+jOO9njjNHQnLnrv8jKbI4ICQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			xLY+U1KpoMcMtHIFlM1qAuCpyoadyCaHYYabWsWP6mg=
+			z9dNOhSBhfCH9+6PtgStNjtkCcj+6BpzCuOPUjbJJL8=
 			</data>
 		</dict>
 		<key>MSGImessageInputView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PPfyuyJy5xrWVSciRsHJMQgPcj8=
+			QEXd+ngCu8vqm4SKCy4WcUqSPUo=
 			</data>
 			<key>hash2</key>
 			<data>
-			yyvZZXpUUZA7H4QpWgO8pVt2TvBGWygtR7WD9bRgLFY=
+			zh44c2qgeQRvm8LywYftnSQBCvWLLoMcVO4Fwy+kFBA=
 			</data>
 		</dict>
 		<key>MSGImessageOutgoingFooterView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Gs0WO2JXbv8WmLZt89JgPv6JarE=
+			EtdLL24CNVmIMORMLKBWweEyi2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			yPPp48QyK/bJ9fKd2VpgGzKJ24545ij3HGIZm6hfioA=
+			xMeEya72sCZiuPzj/vmMko8s5y/HOVm75UvZJOBxAzQ=
 			</data>
 		</dict>
 		<key>MSGImessageOutgoingFooterView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aDvZcRTQxWtVlRWm0c+vn3NnBDk=
+			KbNEh6R924On4nH57KOFYgd3yy0=
 			</data>
 			<key>hash2</key>
 			<data>
-			CvtJGHm8fv/6QxXfvHTpNxxZIBA/SYWF3KR2GXaEqxQ=
+			95IZOSpFCJ7T4TI94wBQNx8Iaw6EO1dK0CYgxv/BAlA=
 			</data>
 		</dict>
 		<key>MSGImessageOutgoingHeaderView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XLkrXNCpv1iT/Tq46XFFNg5LlK8=
+			OkTP+IbqZNfh0eQd9byhHKiEUu4=
 			</data>
 			<key>hash2</key>
 			<data>
-			cqtZDOTXaOkrn7HorAZGyWWGDy441fPYArHO7pfyYP0=
+			Mk1LlHThNf2YydYwadZuN4kmDHfIQAM6AmS06S9KYj4=
 			</data>
 		</dict>
 		<key>MSGImessageOutgoingHeaderView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EmkjRWc1lTM4SqDYbNdC9sj7Rw4=
+			jbMaggjgW+6W7f4zK2GlIrypkWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			X6BAJqHC5qn+mJp3sIRv++YgEN/hIdAXouQLCu2LqGw=
+			EewUz9nioDZWC/wUHUTiZQy0828POrwQ8gA7kdpJx0c=
 			</data>
 		</dict>
 		<key>MSGIncomingEmojiCollectionViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eFvI9wBwBdZNJi7YYndVXI5ozs0=
+			u09lWoXt8sHPHpbCYYyBAlk6wOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			XPC7FNEu4kz63nir1NY98Y+F6G5eZ8MPaWa5an0YEYM=
+			zgvbRAuLX6TIxRGxwD5pnCeW5sdk0AoKp2gvLcpdu2U=
 			</data>
 		</dict>
 		<key>MSGIncomingImageCollectionViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IOII8d8JFQG9yneGZTDF3ja7V58=
+			OMVqbHw6CABg7CLuDtaSTdZTw+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			q8AyDwweHPZYWhiNuwMtEvhQT2w9PgkGiFEaFXlWEHs=
+			Wny5zbEKx/cv1xFjGzgl6+kHbp6DDnGRVXwawSvrHwA=
 			</data>
 		</dict>
 		<key>MSGIncomingTailCollectionViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rg41HMFfpty1Gpf1BpDmERay3Gc=
+			sxcqUzbW0DHF53c/YR0S6iRFKX4=
 			</data>
 			<key>hash2</key>
 			<data>
-			WczlOPAGm4igIwQ9Znl6jU9FjL4agLpF1UGd9EAr82Y=
+			qy1p8kRs2HlwHlhe5Q7s8ziQ1XYC09dqHzlaDwlGugs=
 			</data>
 		</dict>
 		<key>MSGIncomingTravCollectionViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F6LTyP6rzpd8WJFXbrKcw0h2Tm4=
+			6K20k19wcIkoZAQqaJMEWnWUmjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Iy9rSE1Rm1mjleZo5ycoSq53JCZmFTizoeWW21tPe9E=
+			WOX1ezRqolq4th8r6bFPBNhF20uklheSHqkOOmJ3nOs=
 			</data>
 		</dict>
 		<key>MSGMessengerView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			whr9r5XY0MOBUI949K2iDplZdUg=
+			UF4JDBM1tNTG+2YaEGK9yw1HkdI=
 			</data>
 			<key>hash2</key>
 			<data>
-			C3w4kGuQGZw/obgVB7c4AKgsjkz2KVjnz2KKm2oarvk=
+			fYtGa1iIAOk0hz42HffdEa5eP1/kYbaRGHlhDD07+z8=
 			</data>
 		</dict>
 		<key>MSGMessengerView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C5wTysN/QxlXhhUpp/lmm0ZKoEE=
+			4RW1OBgg3+xoIvRMzROXZuEP+XA=
 			</data>
 			<key>hash2</key>
 			<data>
-			8RyX8/d/lEOPxiOAsORjbRwdqCQt696l0HnacRmViGg=
+			UQAui2KJnfRxF0GKYP2tNi+Bqm6UScuDvdiGJQqKyx0=
 			</data>
 		</dict>
 		<key>MSGOutgoingEmojiCollectionViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+lx0jr0FBh4e8U2k8WnFc0xE1Xg=
+			+MFxysugTI4SO8+JWtUFSEmfA0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			psBjVlofmq4WMwSF8Wi+/YgXAjCkW3JUwEJmzpRa2lk=
+			XZVpFcc3EX9EUrwWxt29jgab0bIkCaRzwUB5nu0I7YY=
 			</data>
 		</dict>
 		<key>MSGOutgoingImageCollectionViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GurzbMPlHgtOOeC94GpR9MxDEdA=
+			KrlqtrnEnAlH5svduxP6JDgOmcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			cxakZx91Vn7WieBloDXB4w9+EK39yB/01u7FjiDkpBM=
+			M+IxSH4VjoVBbZut7yF9wT38e1d2+EU2F5KLY0UDN3U=
 			</data>
 		</dict>
 		<key>MSGOutgoingTailCollectionViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QkrmkNE0i/QVbLzkMoTiyOjHkoE=
+			XxuzXyJ8e6Rrz53UM58BB1KWoEc=
 			</data>
 			<key>hash2</key>
 			<data>
-			V7RoOAuHp5qIgXdNVx1l8hSQbSpyCUXoNxjGMCIEP/g=
+			8+jMn4/KW9br6CmXtg+QWrTnQJANtBL5n7pNB6zbF1E=
 			</data>
 		</dict>
 		<key>MSGOutgoingTravCollectionViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uM/Q/13+C5hS+lNI5UNdmlElSFQ=
+			/mfDmBm6eBVVrHnoNuWdIymL4Qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			8yxcHQRNWMBC3gjD753aokpioBAY6mnmLm774avKAC8=
+			+xGYp+BBLyhORSv8AZdvj+KbSf3VFQlUNMr+xamzQs4=
 			</data>
 		</dict>
 		<key>MSGTravIncomingCollectionViewSectionFooter.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K38BNXW3h/4WAEiH6q5tEyMwyCo=
+			UnsmU1obBh2HJtZE+Bgvaionzs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LfS8vEna/eNFGjHsKnX0Wte4kIsqmWYJpnTv/ojiLQk=
+			WKFUOZXpb2K1dwumFoPstcxo7DIjm+FASQpXVddiDh8=
 			</data>
 		</dict>
 		<key>MSGTravIncomingCollectionViewSectionHeader.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E5jsnyeZpWwY8OM1cLw/wJXILMI=
+			HJAp0uKyIZh0WNemtUI/o0sC7zM=
 			</data>
 			<key>hash2</key>
 			<data>
-			VdX4I9Q5En+qUOLUYkhepMmGZRalpvX4+rZGSAXNlLo=
+			P4sw9f835bBEovphoAdy6UKBgJpN2uuu1Sh51nK+CK0=
 			</data>
 		</dict>
 		<key>MSGTravOutgoingCollectionViewSectionFooter.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			///77h0BHHWVwKQNl24ijAfYcoY=
+			uHE9LXu9r7aGZAV0EYDVq2AuDrQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			BpDrGIY7yMKvll9VSsRst95fJvWQ1ELNj3fuM0bFJ7A=
+			CxMUqJfrSspQ3p2K155T5QBim39DUR10BCp0GCenVOE=
 			</data>
 		</dict>
 		<key>MSGTravOutgoingCollectionViewSectionHeader.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cOv0HiJ8tNDNyGaNWUWydevVGN0=
+			iuFW53F+7marWnQaKqHKKm3VOOg=
 			</data>
 			<key>hash2</key>
 			<data>
-			haEQNVtONTGPjw9M+Golj2vU6EnymkBjIXgpzHr0tgU=
+			KCk5/zUIY9RzG8M+WHOMaomWdYJhRupBzUPHnq+RAp4=
 			</data>
 		</dict>
 		<key>Modules/MessengerKit.swiftmodule/x86_64.swiftdoc</key>
@@ -443,11 +443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TCJ/KBodjHJ1ckzYXxvtVC6haTc=
+			P2PGkDHbRAmVywGZGGAGaHwp/IM=
 			</data>
 			<key>hash2</key>
 			<data>
-			X/emCohwgLdh0wJx6ObfIYhqynNzsvfe77iuRdTQWg4=
+			1HjqtC6BThUb8NO7b0J7BwFcz1ULPtgJvedr9/Sgx58=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

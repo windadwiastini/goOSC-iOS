@@ -21,7 +21,6 @@ depends-top-level:
 - "HomePage"
 - !private "Login"
 - !private "LoginWireframe"
-- !private "StringLiteralType"
 - "UIViewController"
 depends-member:
 - !private ["11ReactiveKit31BindingExecutionContextProviderP", "present"]

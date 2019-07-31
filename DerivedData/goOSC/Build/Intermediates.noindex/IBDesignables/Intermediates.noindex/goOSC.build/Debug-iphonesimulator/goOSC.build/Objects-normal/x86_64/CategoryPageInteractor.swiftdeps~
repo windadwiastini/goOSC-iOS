@@ -16,6 +16,7 @@ depends-top-level:
 - "Config"
 - !private "JSONDecoder"
 - !private "JSONEncoding"
+- "StringLiteralType"
 - !private "UserDefaults"
 - !private "print"
 - !private "~="

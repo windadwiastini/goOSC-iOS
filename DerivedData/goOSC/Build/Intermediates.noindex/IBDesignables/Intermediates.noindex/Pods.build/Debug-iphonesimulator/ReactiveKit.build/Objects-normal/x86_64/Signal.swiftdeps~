@@ -1,0 +1,282 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Signal"
+- "SafeSignal"
+provides-nominal:
+- "11ReactiveKit6SignalV"
+provides-member:
+- ["11ReactiveKit6SignalV", ""]
+- ["11ReactiveKit6SignalV", "completed"]
+- ["11ReactiveKit6SignalV", "failed"]
+- ["11ReactiveKit6SignalV", "never"]
+- ["11ReactiveKit6SignalV", "withObserver"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+- ["11ReactiveKit6SignalV", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "+"
+- !private "??"
+- "AnyObserver"
+- "AssignmentPrecedence"
+- "AtomicObserver"
+- "Collection"
+- "DispatchQueue"
+- "Disposable"
+- "Double"
+- "FlattenStrategy"
+- "Never"
+- !private "NonDisposable"
+- "Observer"
+- !private "PassthroughSubject"
+- "Result"
+- "SafeSignal"
+- "Sequence"
+- !private "SerialDisposable"
+- "Signal"
+- "SignalProtocol"
+- !private "SimpleDisposable"
+- "Swift"
+- "Void"
+depends-member:
+- !private ["11ReactiveKit11AnyObserverV", "deinit"]
+- !private ["11ReactiveKit11AnyObserverV", "init"]
+- !private ["11ReactiveKit11AnyObserverV", "receive"]
+- !private ["11ReactiveKit14AtomicObserverC", "deinit"]
+- !private ["11ReactiveKit14AtomicObserverC", "disposable"]
+- !private ["11ReactiveKit14AtomicObserverC", "init"]
+- !private ["11ReactiveKit14AtomicObserverC", "receive"]
+- !private ["11ReactiveKit16BindableProtocolP", "init"]
+- !private ["11ReactiveKit16BindableProtocolP", "on"]
+- !private ["11ReactiveKit16BindableProtocolP", "toSignal"]
+- !private ["s7CVarArgP", "after"]
+- !private ["s7CVarArgP", "init"]
+- !private ["Sl", "dropFirst"]
+- !private ["Sl", "first"]
+- !private ["Sl", "reduce"]
+- !private ["11ReactiveKit11SubscribersO10CompletionO", "failure"]
+- !private ["11ReactiveKit11SubscribersO10CompletionO", "finished"]
+- !private ["s28CustomDebugStringConvertibleP", "after"]
+- !private ["s28CustomDebugStringConvertibleP", "combineLatest"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s17CustomReflectableP", "combineLatest"]
+- !private ["s23CustomStringConvertibleP", "after"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "after"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["Se", "combineLatest"]
+- !private ["So18OS_dispatch_objectC", "after"]
+- !private ["So18OS_dispatch_objectC", "init"]
+- !private ["So17OS_dispatch_queueC", "after"]
+- !private ["So17OS_dispatch_queueC", "init"]
+- !private ["11ReactiveKit10DisposableP", "init"]
+- !private ["11ReactiveKit10DisposableP", "instance"]
+- !private ["11ReactiveKit10DisposableP", "isDisposed"]
+- !private ["11ReactiveKit10DisposableP", "otherDisposable"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "after"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["s17DropFirstSequenceV", "reduce"]
+- !private ["SE", "combineLatest"]
+- !private ["SQ", "after"]
+- !private ["SQ", "combineLatest"]
+- !private ["SQ", "failure"]
+- !private ["SQ", "init"]
+- !private ["SQ", "success"]
+- !private ["s23ExpressibleByNilLiteralP", "combineLatest"]
+- !private ["SH", "after"]
+- !private ["SH", "combineLatest"]
+- !private ["SH", "failure"]
+- !private ["SH", "init"]
+- !private ["SH", "success"]
+- !private ["St", "next"]
+- !private ["So8NSObjectC", "after"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "after"]
+- !private ["So8NSObjectP", "init"]
+- !private ["11ReactiveKit13NonDisposableV", "deinit"]
+- !private ["11ReactiveKit13NonDisposableV", "instance"]
+- !private ["So9OS_objectC", "after"]
+- !private ["So9OS_objectC", "init"]
+- !private ["11ReactiveKit16ObserverProtocolP", "disposable"]
+- !private ["11ReactiveKit16ObserverProtocolP", "init"]
+- !private ["11ReactiveKit16ObserverProtocolP", "on"]
+- !private ["11ReactiveKit16ObserverProtocolP", "receive"]
+- !private ["11ReactiveKit16ObserverProtocolP", "toSignal"]
+- !private ["Sq", "combineLatest"]
+- !private ["11ReactiveKit16OptionalProtocolP", "combineLatest"]
+- !private ["11ReactiveKit18PassthroughSubjectC", "deinit"]
+- !private ["11ReactiveKit18PassthroughSubjectC", "init"]
+- !private ["11ReactiveKit18PassthroughSubjectC", "on"]
+- !private ["11ReactiveKit18PassthroughSubjectC", "toSignal"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "after"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["s6ResultO", "failure"]
+- !private ["s6ResultO", "init"]
+- !private ["s6ResultO", "success"]
+- !private ["ST", "Element"]
+- !private ["ST", "dropFirst"]
+- !private ["ST", "first"]
+- !private ["ST", "forEach"]
+- !private ["ST", "makeIterator"]
+- !private ["ST", "reduce"]
+- !private ["11ReactiveKit16SerialDisposableC", "deinit"]
+- !private ["11ReactiveKit16SerialDisposableC", "init"]
+- !private ["11ReactiveKit16SerialDisposableC", "otherDisposable"]
+- ["11ReactiveKit6SignalV", "AnyObserver"]
+- ["11ReactiveKit6SignalV", "AtomicObserver"]
+- ["11ReactiveKit6SignalV", "Collection"]
+- ["11ReactiveKit6SignalV", "DispatchQueue"]
+- ["11ReactiveKit6SignalV", "Disposable"]
+- ["11ReactiveKit6SignalV", "Double"]
+- ["11ReactiveKit6SignalV", "Element"]
+- ["11ReactiveKit6SignalV", "Error"]
+- ["11ReactiveKit6SignalV", "FlattenStrategy"]
+- ["11ReactiveKit6SignalV", "Never"]
+- !private ["11ReactiveKit6SignalV", "NonDisposable"]
+- ["11ReactiveKit6SignalV", "Observer"]
+- !private ["11ReactiveKit6SignalV", "PassthroughSubject"]
+- ["11ReactiveKit6SignalV", "Producer"]
+- ["11ReactiveKit6SignalV", "Result"]
+- ["11ReactiveKit6SignalV", "Sequence"]
+- !private ["11ReactiveKit6SignalV", "SerialDisposable"]
+- ["11ReactiveKit6SignalV", "Signal"]
+- ["11ReactiveKit6SignalV", "SignalProtocol"]
+- !private ["11ReactiveKit6SignalV", "SimpleDisposable"]
+- ["11ReactiveKit6SignalV", "Swift"]
+- ["11ReactiveKit6SignalV", "Void"]
+- ["11ReactiveKit6SignalV", "_Default_Element"]
+- ["11ReactiveKit6SignalV", "_Default_Error"]
+- !private ["11ReactiveKit6SignalV", "combineLatest"]
+- ["11ReactiveKit6SignalV", "completed"]
+- ["11ReactiveKit6SignalV", "deinit"]
+- !private ["11ReactiveKit6SignalV", "delay"]
+- ["11ReactiveKit6SignalV", "failed"]
+- !private ["11ReactiveKit6SignalV", "flatten"]
+- ["11ReactiveKit6SignalV", "init"]
+- !private ["11ReactiveKit6SignalV", "map"]
+- ["11ReactiveKit6SignalV", "never"]
+- ["11ReactiveKit6SignalV", "observe"]
+- !private ["11ReactiveKit6SignalV", "producer"]
+- ["11ReactiveKit6SignalV", "withObserver"]
+- !private ["11ReactiveKit14SignalProtocolP", "AnyObserver"]
+- !private ["11ReactiveKit14SignalProtocolP", "AtomicObserver"]
+- !private ["11ReactiveKit14SignalProtocolP", "DispatchQueue"]
+- ["11ReactiveKit14SignalProtocolP", "Element"]
+- ["11ReactiveKit14SignalProtocolP", "Error"]
+- !private ["11ReactiveKit14SignalProtocolP", "NonDisposable"]
+- !private ["11ReactiveKit14SignalProtocolP", "PassthroughSubject"]
+- !private ["11ReactiveKit14SignalProtocolP", "Result"]
+- !private ["11ReactiveKit14SignalProtocolP", "SerialDisposable"]
+- !private ["11ReactiveKit14SignalProtocolP", "Signal"]
+- !private ["11ReactiveKit14SignalProtocolP", "SimpleDisposable"]
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Element"]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Error"]
+- !private ["11ReactiveKit14SignalProtocolP", "combineLatest"]
+- !private ["11ReactiveKit14SignalProtocolP", "completed"]
+- !private ["11ReactiveKit14SignalProtocolP", "delay"]
+- !private ["11ReactiveKit14SignalProtocolP", "flatten"]
+- !private ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "map"]
+- ["11ReactiveKit14SignalProtocolP", "observe"]
+- !private ["11ReactiveKit14SignalProtocolP", "on"]
+- !private ["11ReactiveKit14SignalProtocolP", "producer"]
+- !private ["11ReactiveKit14SignalProtocolP", "toSignal"]
+- !private ["11ReactiveKit14SignalProtocolP", "withObserver"]
+- !private ["11ReactiveKit16SimpleDisposableC", "deinit"]
+- !private ["11ReactiveKit16SimpleDisposableC", "init"]
+- !private ["11ReactiveKit16SimpleDisposableC", "isDisposed"]
+- !private ["11ReactiveKit7SubjectC", "init"]
+- !private ["11ReactiveKit7SubjectC", "on"]
+- !private ["11ReactiveKit7SubjectC", "toSignal"]
+- !private ["11ReactiveKit15SubjectProtocolP", "init"]
+- !private ["11ReactiveKit15SubjectProtocolP", "on"]
+- !private ["11ReactiveKit15SubjectProtocolP", "toSignal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "after"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "combineLatest"]
+- !private ["11ReactiveKit15_ResultProtocolP", "failure"]
+- !private ["11ReactiveKit15_ResultProtocolP", "init"]
+- !private ["11ReactiveKit15_ResultProtocolP", "success"]
+depends-nominal:
+- !private "11ReactiveKit11AnyObserverV"
+- !private "11ReactiveKit14AtomicObserverC"
+- !private "11ReactiveKit16BindableProtocolP"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "11ReactiveKit11SubscribersO10CompletionO"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "11ReactiveKit13DeallocatableP"
+- !private "Se"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- !private "11ReactiveKit10DisposableP"
+- !private "11ReactiveKit18DisposeBagProviderP"
+- !private "s17DropFirstSequenceV"
+- !private "SE"
+- !private "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
+- !private "St"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "11ReactiveKit13NonDisposableV"
+- !private "So9OS_objectC"
+- !private "11ReactiveKit16ObserverProtocolP"
+- !private "Sq"
+- !private "11ReactiveKit16OptionalProtocolP"
+- !private "11ReactiveKit18PassthroughSubjectC"
+- !private "11ReactiveKit0A18ExtensionsProviderP"
+- !private "s6ResultO"
+- !private "ST"
+- !private "11ReactiveKit16SerialDisposableC"
+- "11ReactiveKit6SignalV"
+- "11ReactiveKit14SignalProtocolP"
+- !private "11ReactiveKit16SimpleDisposableC"
+- !private "11ReactiveKit7SubjectC"
+- !private "11ReactiveKit15SubjectProtocolP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "11ReactiveKit15_ResultProtocolP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "a6d03ca082d4e4eb7cbc40b68808ab0f"

@@ -53,7 +53,6 @@ class DetailView: UIViewController, DetailViewProtocol {
     }
     
     func updateLike(_ data: Detail.ResponseData) {
-        print("update like")
         likeCount.text = String(data.like_count)
     }
     

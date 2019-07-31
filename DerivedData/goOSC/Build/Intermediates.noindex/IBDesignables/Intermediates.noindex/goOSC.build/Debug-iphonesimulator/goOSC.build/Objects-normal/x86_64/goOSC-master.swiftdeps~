@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "0090551263405d0e9b787ef892727881"
-build_time: [1564450114, 629013000]
+build_time: [1564450116, 639545000]
 inputs:
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Search Page/WireFrame/SearchWireFrame.swift": [1560906035, 180778267]
   "/Users/bootcamp/Documents/collab2/goOSC/Guest View/Category Product/Presenter/CategoryProductPresenter.swift": [1560906035, 133402570]

@@ -1,0 +1,406 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TreeChangesetProtocol"
+- "TreeChangeset"
+provides-nominal:
+- "4Bond21TreeChangesetProtocolP"
+- "4Bond13TreeChangesetC"
+provides-member:
+- ["4Bond21TreeChangesetProtocolP", ""]
+- ["4Bond13TreeChangesetC", ""]
+- ["4Bond33MutableChangesetContainerProtocolP", ""]
+- ["4Bond33MutableChangesetContainerProtocolP", "ChildNode"]
+- ["4Bond33MutableChangesetContainerProtocolP", "subscript"]
+- ["4Bond33MutableChangesetContainerProtocolP", "append"]
+- ["4Bond33MutableChangesetContainerProtocolP", "insert"]
+- ["4Bond33MutableChangesetContainerProtocolP", "insert"]
+- ["4Bond33MutableChangesetContainerProtocolP", "move"]
+- ["4Bond33MutableChangesetContainerProtocolP", "move"]
+- ["4Bond33MutableChangesetContainerProtocolP", "remove"]
+- ["4Bond33MutableChangesetContainerProtocolP", "removeAll"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "-"
+- !private ">"
+- !private "AssignmentPrecedence"
+- "Changeset"
+- "ChangesetProtocol"
+- "IndexPath"
+- "MutableChangesetContainerProtocol"
+- "OrderedCollectionDiff"
+- "OrderedCollectionOperation"
+- "RangeReplaceableTreeProtocol"
+- "TreeChangeset"
+- "TreeChangesetProtocol"
+- "TreeProtocol"
+- !private "zip"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "indices"]
+- !private ["Sa", "map"]
+- !private ["SK", "advanced"]
+- !private ["SK", "count"]
+- !private ["SK", "enumerated"]
+- !private ["SK", "indices"]
+- !private ["SK", "map"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "enumerated"]
+- !private ["s7CVarArgP", "indices"]
+- !private ["s7CVarArgP", "map"]
+- ["4Bond9ChangesetC", "Diff"]
+- ["4Bond9ChangesetC", "IndexPath"]
+- ["4Bond9ChangesetC", "OrderedCollectionDiff"]
+- ["4Bond9ChangesetC", "OrderedCollectionOperation"]
+- ["4Bond9ChangesetC", "TreeChangeset"]
+- ["4Bond9ChangesetC", ""]
+- ["4Bond9ChangesetC", "asTreeChangeset"]
+- ["4Bond9ChangesetC", "calculateDiff"]
+- ["4Bond9ChangesetC", "calculatePatch"]
+- !private ["4Bond9ChangesetC", "collection"]
+- !private ["4Bond9ChangesetC", "deinit"]
+- ["4Bond9ChangesetC", "init"]
+- ["4Bond26ChangesetContainerProtocolP", "Changeset"]
+- ["4Bond26ChangesetContainerProtocolP", "ChildNode"]
+- ["4Bond26ChangesetContainerProtocolP", "Collection"]
+- ["4Bond26ChangesetContainerProtocolP", "IndexPath"]
+- !private ["4Bond26ChangesetContainerProtocolP", "Operation"]
+- !private ["4Bond26ChangesetContainerProtocolP", "OrderedCollectionDiff"]
+- ["4Bond26ChangesetContainerProtocolP", "RangeReplaceableTreeProtocol"]
+- ["4Bond26ChangesetContainerProtocolP", "TreeChangesetProtocol"]
+- !private ["4Bond26ChangesetContainerProtocolP", "collection"]
+- !private ["4Bond26ChangesetContainerProtocolP", "descriptiveUpdate"]
+- !private ["4Bond26ChangesetContainerProtocolP", "zip"]
+- ["4Bond17ChangesetProtocolP", "Collection"]
+- ["4Bond17ChangesetProtocolP", "Diff"]
+- ["4Bond17ChangesetProtocolP", "IndexPath"]
+- ["4Bond17ChangesetProtocolP", "Operation"]
+- ["4Bond17ChangesetProtocolP", "OrderedCollectionDiff"]
+- ["4Bond17ChangesetProtocolP", "OrderedCollectionOperation"]
+- ["4Bond17ChangesetProtocolP", "TreeChangeset"]
+- ["4Bond17ChangesetProtocolP", "TreeProtocol"]
+- ["4Bond17ChangesetProtocolP", ""]
+- ["4Bond17ChangesetProtocolP", "asTreeChangeset"]
+- !private ["4Bond17ChangesetProtocolP", "collection"]
+- !private ["4Bond17ChangesetProtocolP", "init"]
+- !private ["Sl", "advanced"]
+- !private ["Sl", "count"]
+- !private ["Sl", "enumerated"]
+- !private ["Sl", "indices"]
+- !private ["Sl", "map"]
+- !private ["Sl", "reversed"]
+- !private ["SL", "advanced"]
+- !private ["SL", "count"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "enumerated"]
+- !private ["10Foundation15ContiguousBytesP", "indices"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "advanced"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "delete"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "generatePatch"]
+- !private ["s28CustomDebugStringConvertibleP", "indices"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insert"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "move"]
+- !private ["s28CustomDebugStringConvertibleP", "update"]
+- !private ["s17CustomReflectableP", "advanced"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "indices"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s23CustomStringConvertibleP", "advanced"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "indices"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "enumerated"]
+- !private ["10Foundation12DataProtocolP", "indices"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["Se", "advanced"]
+- !private ["Se", "count"]
+- !private ["Se", "enumerated"]
+- !private ["Se", "indices"]
+- !private ["Se", "map"]
+- !private ["SE", "advanced"]
+- !private ["SE", "count"]
+- !private ["SE", "enumerated"]
+- !private ["SE", "indices"]
+- !private ["SE", "map"]
+- !private ["s18EnumeratedSequenceV", "map"]
+- !private ["SQ", "advanced"]
+- !private ["SQ", "count"]
+- !private ["SQ", "enumerated"]
+- !private ["SQ", "generatePatch"]
+- !private ["SQ", "indices"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "advanced"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "indices"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "count"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "enumerated"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "indices"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "map"]
+- !private ["4Bond22FlatDataSourceProtocolP", "count"]
+- !private ["4Bond22FlatDataSourceProtocolP", "enumerated"]
+- !private ["4Bond22FlatDataSourceProtocolP", "indices"]
+- !private ["4Bond22FlatDataSourceProtocolP", "map"]
+- !private ["SH", "advanced"]
+- !private ["SH", "count"]
+- !private ["SH", "enumerated"]
+- !private ["SH", "indices"]
+- !private ["SH", "map"]
+- !private ["10Foundation9IndexPathV", "advanced"]
+- !private ["10Foundation9IndexPathV", "count"]
+- !private ["4Bond14InstantiatableP", "generatePatch"]
+- !private ["4Bond14InstantiatableP", "init"]
+- ["4Bond33MutableChangesetContainerProtocolP", "Changeset"]
+- ["4Bond33MutableChangesetContainerProtocolP", "ChildNode"]
+- ["4Bond33MutableChangesetContainerProtocolP", "Collection"]
+- ["4Bond33MutableChangesetContainerProtocolP", "IndexPath"]
+- !private ["4Bond33MutableChangesetContainerProtocolP", "Operation"]
+- !private ["4Bond33MutableChangesetContainerProtocolP", "OrderedCollectionDiff"]
+- ["4Bond33MutableChangesetContainerProtocolP", "RangeReplaceableTreeProtocol"]
+- ["4Bond33MutableChangesetContainerProtocolP", "TreeChangesetProtocol"]
+- ["4Bond33MutableChangesetContainerProtocolP", "append"]
+- !private ["4Bond33MutableChangesetContainerProtocolP", "collection"]
+- !private ["4Bond33MutableChangesetContainerProtocolP", "descriptiveUpdate"]
+- ["4Bond33MutableChangesetContainerProtocolP", "insert"]
+- ["4Bond33MutableChangesetContainerProtocolP", "move"]
+- ["4Bond33MutableChangesetContainerProtocolP", "remove"]
+- ["4Bond33MutableChangesetContainerProtocolP", "removeAll"]
+- ["4Bond33MutableChangesetContainerProtocolP", "subscript"]
+- !private ["4Bond33MutableChangesetContainerProtocolP", "zip"]
+- !private ["SM", "advanced"]
+- !private ["SM", "count"]
+- !private ["SM", "enumerated"]
+- !private ["SM", "indices"]
+- !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "enumerated"]
+- !private ["10Foundation19MutableDataProtocolP", "indices"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["4Bond19MutableTreeProtocolP", "append"]
+- !private ["4Bond19MutableTreeProtocolP", "children"]
+- !private ["4Bond19MutableTreeProtocolP", "insert"]
+- !private ["4Bond19MutableTreeProtocolP", "move"]
+- !private ["4Bond19MutableTreeProtocolP", "remove"]
+- !private ["4Bond19MutableTreeProtocolP", "removeAll"]
+- !private ["4Bond19MutableTreeProtocolP", "subscript"]
+- ["4Bond21OrderedCollectionDiffV", "deinit"]
+- !private ["4Bond21OrderedCollectionDiffV", "generatePatch"]
+- !private ["4Bond21OrderedCollectionDiffV", "init"]
+- !private ["4Bond29OrderedCollectionDiffProtocolP", "generatePatch"]
+- !private ["4Bond29OrderedCollectionDiffProtocolP", "init"]
+- !private ["4Bond26OrderedCollectionOperationO", "delete"]
+- !private ["4Bond26OrderedCollectionOperationO", "insert"]
+- !private ["4Bond26OrderedCollectionOperationO", "move"]
+- !private ["4Bond26OrderedCollectionOperationO", "update"]
+- !private ["4Bond34OrderedCollectionOperationProtocolP", "delete"]
+- !private ["4Bond34OrderedCollectionOperationProtocolP", "insert"]
+- !private ["4Bond34OrderedCollectionOperationProtocolP", "move"]
+- !private ["4Bond34OrderedCollectionOperationProtocolP", "update"]
+- !private ["4Bond27OutlineChangesetConvertibleP", "Diff"]
+- ["4Bond27OutlineChangesetConvertibleP", "asTreeChangeset"]
+- !private ["4Bond27OutlineChangesetConvertibleP", "collection"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "count"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "enumerated"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "indices"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "map"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "count"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "enumerated"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "indices"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "map"]
+- !private ["Sk", "advanced"]
+- !private ["Sk", "count"]
+- !private ["Sk", "enumerated"]
+- !private ["Sk", "indices"]
+- !private ["Sk", "map"]
+- !private ["Sn", "map"]
+- !private ["SX", "map"]
+- !private ["Sm", "count"]
+- !private ["Sm", "enumerated"]
+- !private ["Sm", "indices"]
+- !private ["Sm", "map"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "append"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "children"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "insert"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "move"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "remove"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "removeAll"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "subscript"]
+- !private ["10Foundation20ReferenceConvertibleP", "advanced"]
+- !private ["10Foundation20ReferenceConvertibleP", "count"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "advanced"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "count"]
+- !private ["4Bond28SectionedDataSourceChangesetP", "Diff"]
+- ["4Bond28SectionedDataSourceChangesetP", "asTreeChangeset"]
+- !private ["4Bond28SectionedDataSourceChangesetP", "collection"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "Diff"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "asTreeChangeset"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "collection"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "count"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "enumerated"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "indices"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "map"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "count"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "enumerated"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "indices"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "map"]
+- !private ["ST", "advanced"]
+- !private ["ST", "count"]
+- !private ["ST", "enumerated"]
+- !private ["ST", "indices"]
+- !private ["ST", "map"]
+- !private ["ST", "reversed"]
+- ["4Bond13TreeChangesetC", "Diff"]
+- ["4Bond13TreeChangesetC", "IndexPath"]
+- ["4Bond13TreeChangesetC", "OrderedCollectionDiff"]
+- ["4Bond13TreeChangesetC", "OrderedCollectionOperation"]
+- ["4Bond13TreeChangesetC", "TreeChangeset"]
+- ["4Bond13TreeChangesetC", "asTreeChangeset"]
+- ["4Bond13TreeChangesetC", "calculateDiff"]
+- ["4Bond13TreeChangesetC", "calculatePatch"]
+- !private ["4Bond13TreeChangesetC", "collection"]
+- ["4Bond13TreeChangesetC", "deinit"]
+- ["4Bond13TreeChangesetC", "init"]
+- ["4Bond21TreeChangesetProtocolP", "Collection"]
+- ["4Bond21TreeChangesetProtocolP", "Diff"]
+- ["4Bond21TreeChangesetProtocolP", "IndexPath"]
+- ["4Bond21TreeChangesetProtocolP", "Operation"]
+- ["4Bond21TreeChangesetProtocolP", "OrderedCollectionDiff"]
+- ["4Bond21TreeChangesetProtocolP", "OrderedCollectionOperation"]
+- ["4Bond21TreeChangesetProtocolP", "TreeChangeset"]
+- ["4Bond21TreeChangesetProtocolP", "TreeProtocol"]
+- ["4Bond21TreeChangesetProtocolP", ""]
+- ["4Bond21TreeChangesetProtocolP", "asTreeChangeset"]
+- !private ["4Bond21TreeChangesetProtocolP", "collection"]
+- !private ["4Bond12TreeProtocolP", "append"]
+- !private ["4Bond12TreeProtocolP", "children"]
+- !private ["4Bond12TreeProtocolP", "insert"]
+- !private ["4Bond12TreeProtocolP", "move"]
+- !private ["4Bond12TreeProtocolP", "remove"]
+- !private ["4Bond12TreeProtocolP", "removeAll"]
+- !private ["4Bond12TreeProtocolP", "subscript"]
+- !private ["s12Zip2SequenceV", "map"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "indices"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "indices"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "enumerated"]
+- !private ["s19_HasContiguousBytesP", "indices"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "enumerated"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "indices"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "advanced"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "indices"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- "4Bond9ChangesetC"
+- "4Bond26ChangesetContainerProtocolP"
+- "4Bond17ChangesetProtocolP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "s18EnumeratedSequenceV"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "4Bond34FlatDataSourceChangesetConvertibleP"
+- !private "4Bond22FlatDataSourceProtocolP"
+- !private "SH"
+- !private "10Foundation9IndexPathV"
+- !private "4Bond14InstantiatableP"
+- "4Bond33MutableChangesetContainerProtocolP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "4Bond19MutableTreeProtocolP"
+- "4Bond21OrderedCollectionDiffV"
+- !private "4Bond29OrderedCollectionDiffProtocolP"
+- !private "4Bond26OrderedCollectionOperationO"
+- !private "4Bond34OrderedCollectionOperationProtocolP"
+- "4Bond27OutlineChangesetConvertibleP"
+- !private "4Bond31QueryableFlatDataSourceProtocolP"
+- !private "4Bond36QueryableSectionedDataSourceProtocolP"
+- !private "Sk"
+- !private "Sn"
+- !private "SX"
+- !private "Sm"
+- !private "4Bond28RangeReplaceableTreeProtocolP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "4Bond33SectionedDataIndexPathConvertableP"
+- "4Bond28SectionedDataSourceChangesetP"
+- "4Bond39SectionedDataSourceChangesetConvertibleP"
+- !private "4Bond27SectionedDataSourceProtocolP"
+- !private "ST"
+- "4Bond13TreeChangesetC"
+- "4Bond21TreeChangesetProtocolP"
+- !private "4Bond12TreeProtocolP"
+- !private "s12Zip2SequenceV"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "bca0a9f48e108999de389331dfaeb922"

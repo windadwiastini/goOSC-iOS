@@ -1,0 +1,720 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SectionedDataSourceProtocol"
+- "QueryableSectionedDataSourceProtocol"
+- "SectionedDataIndexPathConvertable"
+- "SectionedDataSourceChangeset"
+- "SectionedDataSourceChangesetConvertible"
+provides-nominal:
+- "4Bond27SectionedDataSourceProtocolP"
+- "4Bond36QueryableSectionedDataSourceProtocolP"
+- "4Bond33SectionedDataIndexPathConvertableP"
+- "4Bond28SectionedDataSourceChangesetP"
+- "4Bond39SectionedDataSourceChangesetConvertibleP"
+- "Sa"
+- "4Bond26OrderedCollectionChangesetC"
+- "4Bond9TreeArrayV"
+- "4Bond7Array2DV"
+- "4Bond13TreeChangesetC"
+- "10Foundation9IndexPathV"
+- "Si"
+provides-member:
+- ["4Bond27SectionedDataSourceProtocolP", ""]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", ""]
+- ["4Bond33SectionedDataIndexPathConvertableP", ""]
+- ["4Bond28SectionedDataSourceChangesetP", ""]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", ""]
+- ["Sa", ""]
+- ["4Bond26OrderedCollectionChangesetC", ""]
+- ["4Bond9TreeArrayV", ""]
+- ["4Bond7Array2DV", ""]
+- ["4Bond13TreeChangesetC", ""]
+- ["10Foundation9IndexPathV", ""]
+- ["Si", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Array"
+- "Array2D"
+- "ChangesetProtocol"
+- "IndexPath"
+- "Int"
+- "OrderedCollectionChangeset"
+- "OrderedCollectionDiffProtocol"
+- "QueryableSectionedDataSourceProtocol"
+- "SectionedDataIndexPathConvertable"
+- "SectionedDataSourceChangeset"
+- "SectionedDataSourceChangesetConvertible"
+- "SectionedDataSourceProtocol"
+- "TreeArray"
+- "TreeChangeset"
+depends-member:
+- ["s18AdditiveArithmeticP", "asSectionDataIndexPath"]
+- ["Sa", "Changeset"]
+- ["Sa", "IndexPath"]
+- ["Sa", "Int"]
+- ["Sa", "Item"]
+- ["Sa", "OrderedCollectionChangeset"]
+- ["Sa", "_Default_Changeset"]
+- ["Sa", "_Default_Item"]
+- ["Sa", "asSectionedDataSourceChangeset"]
+- !private ["Sa", "count"]
+- ["Sa", "deinit"]
+- ["Sa", "item"]
+- ["Sa", "numberOfItems"]
+- ["Sa", "numberOfSections"]
+- !private ["Sa", "subscript"]
+- ["4Bond7Array2DV", "IndexPath"]
+- ["4Bond7Array2DV", "Int"]
+- ["4Bond7Array2DV", "Item"]
+- ["4Bond7Array2DV", "_Default_Item"]
+- ["4Bond7Array2DV", "deinit"]
+- ["4Bond7Array2DV", "item"]
+- ["4Bond7Array2DV", "numberOfItems"]
+- ["4Bond7Array2DV", "numberOfSections"]
+- !private ["4Bond7Array2DV", "sections"]
+- !private ["4Bond7Array2DV", "subscript"]
+- ["4Bond15Array2DProtocolP", "Item"]
+- ["4Bond15Array2DProtocolP", "_Default_Item"]
+- ["4Bond15Array2DProtocolP", "item"]
+- ["4Bond15Array2DProtocolP", "numberOfItems"]
+- ["4Bond15Array2DProtocolP", "numberOfSections"]
+- !private ["4Bond15Array2DProtocolP", "sections"]
+- !private ["4Bond15Array2DProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "children"]
+- !private ["s10ArraySliceV", "items"]
+- ["SK", "Changeset"]
+- ["SK", "Item"]
+- !private ["SK", "OrderedCollectionChangeset"]
+- ["SK", "_Default_Changeset"]
+- ["SK", "_Default_Item"]
+- ["SK", "asSectionDataIndexPath"]
+- ["SK", "asSectionedDataSourceChangeset"]
+- !private ["SK", "children"]
+- !private ["SK", "count"]
+- ["SK", "item"]
+- !private ["SK", "items"]
+- ["SK", "numberOfItems"]
+- ["SK", "numberOfSections"]
+- !private ["SK", "subscript"]
+- ["Sz", "asSectionDataIndexPath"]
+- ["s7CVarArgP", "Changeset"]
+- ["s7CVarArgP", "Item"]
+- !private ["s7CVarArgP", "OrderedCollectionChangeset"]
+- ["s7CVarArgP", "_Default_Changeset"]
+- ["s7CVarArgP", "_Default_Item"]
+- ["s7CVarArgP", "asSectionDataIndexPath"]
+- ["s7CVarArgP", "asSectionedDataSourceChangeset"]
+- !private ["s7CVarArgP", "count"]
+- ["s7CVarArgP", "item"]
+- ["s7CVarArgP", "numberOfItems"]
+- ["s7CVarArgP", "numberOfSections"]
+- !private ["s7CVarArgP", "subscript"]
+- ["4Bond9ChangesetC", "Changeset"]
+- ["4Bond9ChangesetC", "Diff"]
+- ["4Bond9ChangesetC", "OrderedCollectionChangeset"]
+- ["4Bond9ChangesetC", "SectionedDataIndexPathConvertable"]
+- ["4Bond9ChangesetC", "SectionedDataSourceProtocol"]
+- ["4Bond9ChangesetC", "TreeChangeset"]
+- ["4Bond9ChangesetC", "asSectionedDataSourceChangeset"]
+- !private ["4Bond9ChangesetC", "init"]
+- ["4Bond17ChangesetProtocolP", "Changeset"]
+- ["4Bond17ChangesetProtocolP", "Collection"]
+- ["4Bond17ChangesetProtocolP", "Diff"]
+- ["4Bond17ChangesetProtocolP", "OrderedCollectionDiffProtocol"]
+- ["4Bond17ChangesetProtocolP", "SectionedDataIndexPathConvertable"]
+- ["4Bond17ChangesetProtocolP", "SectionedDataSourceProtocol"]
+- ["4Bond17ChangesetProtocolP", ""]
+- ["4Bond17ChangesetProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond17ChangesetProtocolP", "init"]
+- ["Sl", "Changeset"]
+- ["Sl", "Item"]
+- !private ["Sl", "OrderedCollectionChangeset"]
+- ["Sl", "_Default_Changeset"]
+- ["Sl", "_Default_Item"]
+- ["Sl", "asSectionDataIndexPath"]
+- ["Sl", "asSectionedDataSourceChangeset"]
+- !private ["Sl", "children"]
+- !private ["Sl", "count"]
+- ["Sl", "item"]
+- !private ["Sl", "items"]
+- ["Sl", "numberOfItems"]
+- ["Sl", "numberOfSections"]
+- !private ["Sl", "subscript"]
+- ["SL", "asSectionDataIndexPath"]
+- !private ["SL", "subscript"]
+- ["10Foundation15ContiguousBytesP", "Changeset"]
+- ["10Foundation15ContiguousBytesP", "Item"]
+- !private ["10Foundation15ContiguousBytesP", "OrderedCollectionChangeset"]
+- ["10Foundation15ContiguousBytesP", "_Default_Changeset"]
+- ["10Foundation15ContiguousBytesP", "_Default_Item"]
+- ["10Foundation15ContiguousBytesP", "asSectionedDataSourceChangeset"]
+- !private ["10Foundation15ContiguousBytesP", "children"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- ["10Foundation15ContiguousBytesP", "item"]
+- !private ["10Foundation15ContiguousBytesP", "items"]
+- ["10Foundation15ContiguousBytesP", "numberOfItems"]
+- ["10Foundation15ContiguousBytesP", "numberOfSections"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "Changeset"]
+- ["s28CustomDebugStringConvertibleP", "Index"]
+- ["s28CustomDebugStringConvertibleP", "Item"]
+- !private ["s28CustomDebugStringConvertibleP", "OrderedCollectionChangeset"]
+- !private ["s28CustomDebugStringConvertibleP", "TreeChangeset"]
+- ["s28CustomDebugStringConvertibleP", "_Default_Changeset"]
+- ["s28CustomDebugStringConvertibleP", "_Default_Item"]
+- ["s28CustomDebugStringConvertibleP", "asSectionDataIndexPath"]
+- ["s28CustomDebugStringConvertibleP", "asSectionedDataSourceChangeset"]
+- !private ["s28CustomDebugStringConvertibleP", "children"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- ["s28CustomDebugStringConvertibleP", "item"]
+- !private ["s28CustomDebugStringConvertibleP", "items"]
+- ["s28CustomDebugStringConvertibleP", "numberOfItems"]
+- ["s28CustomDebugStringConvertibleP", "numberOfSections"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- ["s17CustomReflectableP", "Changeset"]
+- ["s17CustomReflectableP", "Item"]
+- !private ["s17CustomReflectableP", "OrderedCollectionChangeset"]
+- ["s17CustomReflectableP", "_Default_Changeset"]
+- ["s17CustomReflectableP", "_Default_Item"]
+- ["s17CustomReflectableP", "asSectionDataIndexPath"]
+- ["s17CustomReflectableP", "asSectionedDataSourceChangeset"]
+- !private ["s17CustomReflectableP", "children"]
+- !private ["s17CustomReflectableP", "count"]
+- ["s17CustomReflectableP", "item"]
+- !private ["s17CustomReflectableP", "items"]
+- ["s17CustomReflectableP", "numberOfItems"]
+- ["s17CustomReflectableP", "numberOfSections"]
+- !private ["s17CustomReflectableP", "subscript"]
+- ["s23CustomStringConvertibleP", "Changeset"]
+- ["s23CustomStringConvertibleP", "Item"]
+- !private ["s23CustomStringConvertibleP", "OrderedCollectionChangeset"]
+- ["s23CustomStringConvertibleP", "_Default_Changeset"]
+- ["s23CustomStringConvertibleP", "_Default_Item"]
+- ["s23CustomStringConvertibleP", "asSectionDataIndexPath"]
+- ["s23CustomStringConvertibleP", "asSectionedDataSourceChangeset"]
+- !private ["s23CustomStringConvertibleP", "children"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- ["s23CustomStringConvertibleP", "item"]
+- !private ["s23CustomStringConvertibleP", "items"]
+- ["s23CustomStringConvertibleP", "numberOfItems"]
+- ["s23CustomStringConvertibleP", "numberOfSections"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["10Foundation12DataProtocolP", "Changeset"]
+- ["10Foundation12DataProtocolP", "Item"]
+- !private ["10Foundation12DataProtocolP", "OrderedCollectionChangeset"]
+- ["10Foundation12DataProtocolP", "_Default_Changeset"]
+- ["10Foundation12DataProtocolP", "_Default_Item"]
+- ["10Foundation12DataProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["10Foundation12DataProtocolP", "children"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- ["10Foundation12DataProtocolP", "item"]
+- !private ["10Foundation12DataProtocolP", "items"]
+- ["10Foundation12DataProtocolP", "numberOfItems"]
+- ["10Foundation12DataProtocolP", "numberOfSections"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- ["Se", "Changeset"]
+- ["Se", "Item"]
+- !private ["Se", "OrderedCollectionChangeset"]
+- ["Se", "_Default_Changeset"]
+- ["Se", "_Default_Item"]
+- ["Se", "asSectionDataIndexPath"]
+- ["Se", "asSectionedDataSourceChangeset"]
+- !private ["Se", "count"]
+- ["Se", "item"]
+- ["Se", "numberOfItems"]
+- ["Se", "numberOfSections"]
+- !private ["Se", "subscript"]
+- ["SE", "Changeset"]
+- ["SE", "Item"]
+- !private ["SE", "OrderedCollectionChangeset"]
+- ["SE", "_Default_Changeset"]
+- ["SE", "_Default_Item"]
+- ["SE", "asSectionDataIndexPath"]
+- ["SE", "asSectionedDataSourceChangeset"]
+- !private ["SE", "count"]
+- ["SE", "item"]
+- ["SE", "numberOfItems"]
+- ["SE", "numberOfSections"]
+- !private ["SE", "subscript"]
+- ["SQ", "Changeset"]
+- ["SQ", "Index"]
+- ["SQ", "Item"]
+- !private ["SQ", "OrderedCollectionChangeset"]
+- ["SQ", "_Default_Changeset"]
+- ["SQ", "_Default_Item"]
+- ["SQ", "asSectionDataIndexPath"]
+- ["SQ", "asSectionedDataSourceChangeset"]
+- !private ["SQ", "children"]
+- !private ["SQ", "count"]
+- ["SQ", "item"]
+- !private ["SQ", "items"]
+- ["SQ", "numberOfItems"]
+- ["SQ", "numberOfSections"]
+- !private ["SQ", "subscript"]
+- ["s25ExpressibleByArrayLiteralP", "Changeset"]
+- ["s25ExpressibleByArrayLiteralP", "Item"]
+- !private ["s25ExpressibleByArrayLiteralP", "OrderedCollectionChangeset"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_Changeset"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_Item"]
+- ["s25ExpressibleByArrayLiteralP", "asSectionDataIndexPath"]
+- ["s25ExpressibleByArrayLiteralP", "asSectionedDataSourceChangeset"]
+- !private ["s25ExpressibleByArrayLiteralP", "children"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "item"]
+- !private ["s25ExpressibleByArrayLiteralP", "items"]
+- ["s25ExpressibleByArrayLiteralP", "numberOfItems"]
+- ["s25ExpressibleByArrayLiteralP", "numberOfSections"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- ["s27ExpressibleByIntegerLiteralP", "asSectionDataIndexPath"]
+- ["s17FixedWidthIntegerP", "asSectionDataIndexPath"]
+- ["4Bond24FlatDataIndexConvertableP", "asSectionDataIndexPath"]
+- ["4Bond23FlatDataSourceChangesetP", "Changeset"]
+- ["4Bond23FlatDataSourceChangesetP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond23FlatDataSourceChangesetP", "init"]
+- ["4Bond34FlatDataSourceChangesetConvertibleP", "Changeset"]
+- ["4Bond34FlatDataSourceChangesetConvertibleP", "Item"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "OrderedCollectionChangeset"]
+- ["4Bond34FlatDataSourceChangesetConvertibleP", "_Default_Changeset"]
+- ["4Bond34FlatDataSourceChangesetConvertibleP", "_Default_Item"]
+- ["4Bond34FlatDataSourceChangesetConvertibleP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "count"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "init"]
+- ["4Bond34FlatDataSourceChangesetConvertibleP", "item"]
+- ["4Bond34FlatDataSourceChangesetConvertibleP", "numberOfItems"]
+- ["4Bond34FlatDataSourceChangesetConvertibleP", "numberOfSections"]
+- !private ["4Bond34FlatDataSourceChangesetConvertibleP", "subscript"]
+- ["4Bond22FlatDataSourceProtocolP", "Changeset"]
+- ["4Bond22FlatDataSourceProtocolP", "Item"]
+- !private ["4Bond22FlatDataSourceProtocolP", "OrderedCollectionChangeset"]
+- ["4Bond22FlatDataSourceProtocolP", "_Default_Changeset"]
+- ["4Bond22FlatDataSourceProtocolP", "_Default_Item"]
+- ["4Bond22FlatDataSourceProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond22FlatDataSourceProtocolP", "count"]
+- ["4Bond22FlatDataSourceProtocolP", "item"]
+- ["4Bond22FlatDataSourceProtocolP", "numberOfItems"]
+- ["4Bond22FlatDataSourceProtocolP", "numberOfSections"]
+- !private ["4Bond22FlatDataSourceProtocolP", "subscript"]
+- ["SH", "Changeset"]
+- ["SH", "Item"]
+- !private ["SH", "OrderedCollectionChangeset"]
+- ["SH", "_Default_Changeset"]
+- ["SH", "_Default_Item"]
+- ["SH", "asSectionDataIndexPath"]
+- ["SH", "asSectionedDataSourceChangeset"]
+- !private ["SH", "children"]
+- !private ["SH", "count"]
+- ["SH", "item"]
+- !private ["SH", "items"]
+- ["SH", "numberOfItems"]
+- ["SH", "numberOfSections"]
+- !private ["SH", "subscript"]
+- ["10Foundation9IndexPathV", "IndexPath"]
+- ["10Foundation9IndexPathV", "asSectionDataIndexPath"]
+- ["10Foundation9IndexPathV", "deinit"]
+- !private ["10Foundation9IndexPathV", "subscript"]
+- ["4Bond14InstantiatableP", "Changeset"]
+- ["4Bond14InstantiatableP", "Index"]
+- !private ["4Bond14InstantiatableP", "TreeChangeset"]
+- ["4Bond14InstantiatableP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond14InstantiatableP", "children"]
+- ["4Bond14InstantiatableP", "numberOfItems"]
+- ["4Bond14InstantiatableP", "numberOfSections"]
+- ["Si", "IndexPath"]
+- ["Si", "asSectionDataIndexPath"]
+- ["Si", "deinit"]
+- ["s25LosslessStringConvertibleP", "asSectionDataIndexPath"]
+- ["s10MirrorPathP", "asSectionDataIndexPath"]
+- ["SM", "Changeset"]
+- ["SM", "Item"]
+- !private ["SM", "OrderedCollectionChangeset"]
+- ["SM", "_Default_Changeset"]
+- ["SM", "_Default_Item"]
+- ["SM", "asSectionDataIndexPath"]
+- ["SM", "asSectionedDataSourceChangeset"]
+- !private ["SM", "children"]
+- !private ["SM", "count"]
+- ["SM", "item"]
+- !private ["SM", "items"]
+- ["SM", "numberOfItems"]
+- ["SM", "numberOfSections"]
+- !private ["SM", "subscript"]
+- ["10Foundation19MutableDataProtocolP", "Changeset"]
+- ["10Foundation19MutableDataProtocolP", "Item"]
+- !private ["10Foundation19MutableDataProtocolP", "OrderedCollectionChangeset"]
+- ["10Foundation19MutableDataProtocolP", "_Default_Changeset"]
+- ["10Foundation19MutableDataProtocolP", "_Default_Item"]
+- ["10Foundation19MutableDataProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- ["10Foundation19MutableDataProtocolP", "item"]
+- ["10Foundation19MutableDataProtocolP", "numberOfItems"]
+- ["10Foundation19MutableDataProtocolP", "numberOfSections"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["4Bond19MutableTreeProtocolP", "Changeset"]
+- ["4Bond19MutableTreeProtocolP", "Item"]
+- !private ["4Bond19MutableTreeProtocolP", "TreeChangeset"]
+- ["4Bond19MutableTreeProtocolP", "_Default_Item"]
+- ["4Bond19MutableTreeProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond19MutableTreeProtocolP", "children"]
+- ["4Bond19MutableTreeProtocolP", "item"]
+- ["4Bond19MutableTreeProtocolP", "numberOfItems"]
+- ["4Bond19MutableTreeProtocolP", "numberOfSections"]
+- !private ["4Bond19MutableTreeProtocolP", "sections"]
+- !private ["4Bond19MutableTreeProtocolP", "subscript"]
+- ["Sj", "asSectionDataIndexPath"]
+- ["4Bond26OrderedCollectionChangesetC", "Changeset"]
+- ["4Bond26OrderedCollectionChangesetC", "Diff"]
+- ["4Bond26OrderedCollectionChangesetC", "OrderedCollectionChangeset"]
+- ["4Bond26OrderedCollectionChangesetC", "SectionedDataIndexPathConvertable"]
+- ["4Bond26OrderedCollectionChangesetC", "SectionedDataSourceProtocol"]
+- ["4Bond26OrderedCollectionChangesetC", "asSectionedDataSourceChangeset"]
+- ["4Bond26OrderedCollectionChangesetC", "deinit"]
+- !private ["4Bond26OrderedCollectionChangesetC", "init"]
+- ["4Bond34OrderedCollectionChangesetProtocolP", "Changeset"]
+- ["4Bond34OrderedCollectionChangesetProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond34OrderedCollectionChangesetProtocolP", "init"]
+- ["4Bond21OrderedCollectionDiffV", "Index"]
+- ["4Bond21OrderedCollectionDiffV", "deinit"]
+- ["4Bond29OrderedCollectionDiffProtocolP", "Index"]
+- ["4Bond27OutlineChangesetConvertibleP", "Changeset"]
+- !private ["4Bond27OutlineChangesetConvertibleP", "TreeChangeset"]
+- ["4Bond27OutlineChangesetConvertibleP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond27OutlineChangesetConvertibleP", "children"]
+- !private ["4Bond27OutlineChangesetConvertibleP", "init"]
+- ["4Bond27OutlineChangesetConvertibleP", "numberOfItems"]
+- ["4Bond27OutlineChangesetConvertibleP", "numberOfSections"]
+- ["4Bond31QueryableFlatDataSourceProtocolP", "Changeset"]
+- ["4Bond31QueryableFlatDataSourceProtocolP", "Item"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "OrderedCollectionChangeset"]
+- ["4Bond31QueryableFlatDataSourceProtocolP", "_Default_Changeset"]
+- ["4Bond31QueryableFlatDataSourceProtocolP", "_Default_Item"]
+- ["4Bond31QueryableFlatDataSourceProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "count"]
+- ["4Bond31QueryableFlatDataSourceProtocolP", "item"]
+- ["4Bond31QueryableFlatDataSourceProtocolP", "numberOfItems"]
+- ["4Bond31QueryableFlatDataSourceProtocolP", "numberOfSections"]
+- !private ["4Bond31QueryableFlatDataSourceProtocolP", "subscript"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "Changeset"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "IndexPath"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "Item"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "OrderedCollectionChangeset"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", ""]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "_Default_Changeset"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "_Default_Item"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "count"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "item"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "numberOfItems"]
+- ["4Bond36QueryableSectionedDataSourceProtocolP", "numberOfSections"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "sections"]
+- !private ["4Bond36QueryableSectionedDataSourceProtocolP", "subscript"]
+- ["Sk", "Changeset"]
+- ["Sk", "Item"]
+- !private ["Sk", "OrderedCollectionChangeset"]
+- ["Sk", "_Default_Changeset"]
+- ["Sk", "_Default_Item"]
+- ["Sk", "asSectionDataIndexPath"]
+- ["Sk", "asSectionedDataSourceChangeset"]
+- !private ["Sk", "children"]
+- !private ["Sk", "count"]
+- ["Sk", "item"]
+- !private ["Sk", "items"]
+- ["Sk", "numberOfItems"]
+- ["Sk", "numberOfSections"]
+- !private ["Sk", "subscript"]
+- ["Sm", "Changeset"]
+- ["Sm", "Item"]
+- !private ["Sm", "OrderedCollectionChangeset"]
+- ["Sm", "_Default_Changeset"]
+- ["Sm", "_Default_Item"]
+- ["Sm", "asSectionedDataSourceChangeset"]
+- !private ["Sm", "children"]
+- !private ["Sm", "count"]
+- ["Sm", "item"]
+- !private ["Sm", "items"]
+- ["Sm", "numberOfItems"]
+- ["Sm", "numberOfSections"]
+- !private ["Sm", "subscript"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "Changeset"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "Item"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "TreeChangeset"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "_Default_Item"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "children"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "item"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "numberOfItems"]
+- ["4Bond28RangeReplaceableTreeProtocolP", "numberOfSections"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "sections"]
+- !private ["4Bond28RangeReplaceableTreeProtocolP", "subscript"]
+- ["10Foundation20ReferenceConvertibleP", "asSectionDataIndexPath"]
+- !private ["10Foundation20ReferenceConvertibleP", "subscript"]
+- ["s10SIMDScalarP", "asSectionDataIndexPath"]
+- !private ["4Bond7Array2DV7SectionV", "items"]
+- ["4Bond33SectionedDataIndexPathConvertableP", "IndexPath"]
+- ["4Bond33SectionedDataIndexPathConvertableP", ""]
+- ["4Bond33SectionedDataIndexPathConvertableP", "asSectionDataIndexPath"]
+- !private ["4Bond33SectionedDataIndexPathConvertableP", "subscript"]
+- ["4Bond28SectionedDataSourceChangesetP", "Changeset"]
+- ["4Bond28SectionedDataSourceChangesetP", "Collection"]
+- ["4Bond28SectionedDataSourceChangesetP", "Diff"]
+- ["4Bond28SectionedDataSourceChangesetP", "OrderedCollectionDiffProtocol"]
+- ["4Bond28SectionedDataSourceChangesetP", "SectionedDataIndexPathConvertable"]
+- ["4Bond28SectionedDataSourceChangesetP", "SectionedDataSourceProtocol"]
+- ["4Bond28SectionedDataSourceChangesetP", ""]
+- ["4Bond28SectionedDataSourceChangesetP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond28SectionedDataSourceChangesetP", "init"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "Changeset"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "Item"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "OrderedCollectionChangeset"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "SectionedDataSourceChangeset"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "TreeChangeset"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", ""]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "_Default_Changeset"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "_Default_Item"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "children"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "count"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "init"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "item"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "numberOfItems"]
+- ["4Bond39SectionedDataSourceChangesetConvertibleP", "numberOfSections"]
+- !private ["4Bond39SectionedDataSourceChangesetConvertibleP", "subscript"]
+- ["4Bond27SectionedDataSourceProtocolP", "Changeset"]
+- ["4Bond27SectionedDataSourceProtocolP", "IndexPath"]
+- ["4Bond27SectionedDataSourceProtocolP", "Int"]
+- ["4Bond27SectionedDataSourceProtocolP", "Item"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "OrderedCollectionChangeset"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "TreeChangeset"]
+- ["4Bond27SectionedDataSourceProtocolP", ""]
+- ["4Bond27SectionedDataSourceProtocolP", "_Default_Changeset"]
+- ["4Bond27SectionedDataSourceProtocolP", "_Default_Item"]
+- ["4Bond27SectionedDataSourceProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "children"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "count"]
+- ["4Bond27SectionedDataSourceProtocolP", "item"]
+- ["4Bond27SectionedDataSourceProtocolP", "numberOfItems"]
+- ["4Bond27SectionedDataSourceProtocolP", "numberOfSections"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "sections"]
+- !private ["4Bond27SectionedDataSourceProtocolP", "subscript"]
+- ["ST", "Changeset"]
+- ["ST", "Item"]
+- !private ["ST", "OrderedCollectionChangeset"]
+- ["ST", "_Default_Changeset"]
+- ["ST", "_Default_Item"]
+- ["ST", "asSectionDataIndexPath"]
+- ["ST", "asSectionedDataSourceChangeset"]
+- !private ["ST", "children"]
+- !private ["ST", "count"]
+- ["ST", "item"]
+- !private ["ST", "items"]
+- ["ST", "numberOfItems"]
+- ["ST", "numberOfSections"]
+- !private ["ST", "subscript"]
+- ["SZ", "asSectionDataIndexPath"]
+- ["s13SignedNumericP", "asSectionDataIndexPath"]
+- ["Sx", "asSectionDataIndexPath"]
+- ["4Bond9TreeArrayV", "Changeset"]
+- ["4Bond9TreeArrayV", "Int"]
+- ["4Bond9TreeArrayV", "TreeArray"]
+- ["4Bond9TreeArrayV", "TreeChangeset"]
+- ["4Bond9TreeArrayV", "asSectionedDataSourceChangeset"]
+- !private ["4Bond9TreeArrayV", "children"]
+- ["4Bond9TreeArrayV", "deinit"]
+- ["4Bond9TreeArrayV", "numberOfItems"]
+- ["4Bond9TreeArrayV", "numberOfSections"]
+- ["4Bond13TreeChangesetC", "Changeset"]
+- ["4Bond13TreeChangesetC", "SectionedDataSourceProtocol"]
+- ["4Bond13TreeChangesetC", "TreeChangeset"]
+- ["4Bond13TreeChangesetC", "asSectionedDataSourceChangeset"]
+- ["4Bond13TreeChangesetC", "deinit"]
+- !private ["4Bond13TreeChangesetC", "init"]
+- ["4Bond21TreeChangesetProtocolP", "Changeset"]
+- ["4Bond21TreeChangesetProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond21TreeChangesetProtocolP", "init"]
+- !private ["4Bond8TreeNodeV", "children"]
+- !private ["4Bond8TreeNodeV", "deinit"]
+- !private ["4Bond25TreeNodeWithValueProtocolP", "children"]
+- ["4Bond12TreeProtocolP", "Changeset"]
+- ["4Bond12TreeProtocolP", "Item"]
+- !private ["4Bond12TreeProtocolP", "TreeChangeset"]
+- ["4Bond12TreeProtocolP", "_Default_Item"]
+- ["4Bond12TreeProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["4Bond12TreeProtocolP", "children"]
+- ["4Bond12TreeProtocolP", "item"]
+- ["4Bond12TreeProtocolP", "numberOfItems"]
+- ["4Bond12TreeProtocolP", "numberOfSections"]
+- !private ["4Bond12TreeProtocolP", "sections"]
+- !private ["4Bond12TreeProtocolP", "subscript"]
+- ["s14_ArrayProtocolP", "Changeset"]
+- ["s14_ArrayProtocolP", "Item"]
+- !private ["s14_ArrayProtocolP", "OrderedCollectionChangeset"]
+- ["s14_ArrayProtocolP", "_Default_Changeset"]
+- ["s14_ArrayProtocolP", "_Default_Item"]
+- ["s14_ArrayProtocolP", "asSectionedDataSourceChangeset"]
+- !private ["s14_ArrayProtocolP", "children"]
+- !private ["s14_ArrayProtocolP", "count"]
+- ["s14_ArrayProtocolP", "item"]
+- !private ["s14_ArrayProtocolP", "items"]
+- ["s14_ArrayProtocolP", "numberOfItems"]
+- ["s14_ArrayProtocolP", "numberOfSections"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- ["s30_CustomPlaygroundQuickLookableP", "asSectionDataIndexPath"]
+- ["s24_DestructorSafeContainerP", "Changeset"]
+- ["s24_DestructorSafeContainerP", "Item"]
+- !private ["s24_DestructorSafeContainerP", "OrderedCollectionChangeset"]
+- ["s24_DestructorSafeContainerP", "_Default_Changeset"]
+- ["s24_DestructorSafeContainerP", "_Default_Item"]
+- ["s24_DestructorSafeContainerP", "asSectionedDataSourceChangeset"]
+- !private ["s24_DestructorSafeContainerP", "children"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- ["s24_DestructorSafeContainerP", "item"]
+- !private ["s24_DestructorSafeContainerP", "items"]
+- ["s24_DestructorSafeContainerP", "numberOfItems"]
+- ["s24_DestructorSafeContainerP", "numberOfSections"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "asSectionDataIndexPath"]
+- ["s19_HasContiguousBytesP", "Changeset"]
+- ["s19_HasContiguousBytesP", "Item"]
+- !private ["s19_HasContiguousBytesP", "OrderedCollectionChangeset"]
+- ["s19_HasContiguousBytesP", "_Default_Changeset"]
+- ["s19_HasContiguousBytesP", "_Default_Item"]
+- ["s19_HasContiguousBytesP", "asSectionedDataSourceChangeset"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- ["s19_HasContiguousBytesP", "item"]
+- ["s19_HasContiguousBytesP", "numberOfItems"]
+- ["s19_HasContiguousBytesP", "numberOfSections"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Changeset"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Item"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "OrderedCollectionChangeset"]
+- ["s35_HasCustomAnyHashableRepresentationP", "_Default_Changeset"]
+- ["s35_HasCustomAnyHashableRepresentationP", "_Default_Item"]
+- ["s35_HasCustomAnyHashableRepresentationP", "asSectionDataIndexPath"]
+- ["s35_HasCustomAnyHashableRepresentationP", "asSectionedDataSourceChangeset"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- ["s35_HasCustomAnyHashableRepresentationP", "item"]
+- ["s35_HasCustomAnyHashableRepresentationP", "numberOfItems"]
+- ["s35_HasCustomAnyHashableRepresentationP", "numberOfSections"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["s21_ObjectiveCBridgeableP", "Changeset"]
+- ["s21_ObjectiveCBridgeableP", "Item"]
+- !private ["s21_ObjectiveCBridgeableP", "OrderedCollectionChangeset"]
+- ["s21_ObjectiveCBridgeableP", "_Default_Changeset"]
+- ["s21_ObjectiveCBridgeableP", "_Default_Item"]
+- ["s21_ObjectiveCBridgeableP", "asSectionDataIndexPath"]
+- ["s21_ObjectiveCBridgeableP", "asSectionedDataSourceChangeset"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- ["s21_ObjectiveCBridgeableP", "item"]
+- ["s21_ObjectiveCBridgeableP", "numberOfItems"]
+- ["s21_ObjectiveCBridgeableP", "numberOfSections"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "s18AdditiveArithmeticP"
+- "Sa"
+- "4Bond7Array2DV"
+- "4Bond15Array2DProtocolP"
+- !private "s10ArraySliceV"
+- "SK"
+- "Sz"
+- "s7CVarArgP"
+- "4Bond9ChangesetC"
+- "4Bond17ChangesetProtocolP"
+- "Sl"
+- "SL"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
+- "s17FixedWidthIntegerP"
+- "4Bond24FlatDataIndexConvertableP"
+- "4Bond23FlatDataSourceChangesetP"
+- "4Bond34FlatDataSourceChangesetConvertibleP"
+- "4Bond22FlatDataSourceProtocolP"
+- "SH"
+- "10Foundation9IndexPathV"
+- "4Bond14InstantiatableP"
+- "Si"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- "4Bond19MutableTreeProtocolP"
+- "Sj"
+- "4Bond26OrderedCollectionChangesetC"
+- "4Bond34OrderedCollectionChangesetProtocolP"
+- "4Bond21OrderedCollectionDiffV"
+- "4Bond29OrderedCollectionDiffProtocolP"
+- "4Bond27OutlineChangesetConvertibleP"
+- "4Bond31QueryableFlatDataSourceProtocolP"
+- "4Bond36QueryableSectionedDataSourceProtocolP"
+- "Sk"
+- "Sm"
+- "4Bond28RangeReplaceableTreeProtocolP"
+- "10Foundation20ReferenceConvertibleP"
+- "s10SIMDScalarP"
+- !private "4Bond7Array2DV7SectionV"
+- "4Bond33SectionedDataIndexPathConvertableP"
+- "4Bond28SectionedDataSourceChangesetP"
+- "4Bond39SectionedDataSourceChangesetConvertibleP"
+- "4Bond27SectionedDataSourceProtocolP"
+- "ST"
+- "SZ"
+- "s13SignedNumericP"
+- "Sx"
+- "4Bond9TreeArrayV"
+- "4Bond13TreeChangesetC"
+- "4Bond21TreeChangesetProtocolP"
+- !private "4Bond8TreeNodeV"
+- !private "4Bond25TreeNodeWithValueProtocolP"
+- "4Bond12TreeProtocolP"
+- "s14_ArrayProtocolP"
+- "s30_CustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "98bdf002d09f4a6a3b25a1aec0108b1c"

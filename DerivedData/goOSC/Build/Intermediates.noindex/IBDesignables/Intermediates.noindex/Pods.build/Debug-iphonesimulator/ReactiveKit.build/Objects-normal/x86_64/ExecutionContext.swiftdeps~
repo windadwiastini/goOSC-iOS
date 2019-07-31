@@ -1,0 +1,245 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ExecutionContext"
+provides-nominal:
+- "11ReactiveKit16ExecutionContextV"
+provides-member:
+- ["11ReactiveKit16ExecutionContextV", ""]
+- ["So17OS_dispatch_queueC", ""]
+- ["So17OS_dispatch_queueC", "context"]
+- ["So17OS_dispatch_queueC", "after"]
+- ["So17OS_dispatch_queueC", "disposableAfter"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "+"
+- "AssignmentPrecedence"
+- !private "Bool"
+- "DispatchQoS"
+- "DispatchQueue"
+- "Disposable"
+- "Double"
+- "ExecutionContext"
+- !private "SimpleDisposable"
+- !private "Thread"
+- "Void"
+depends-member:
+- !private ["s7CVarArgP", "ExecutionContext"]
+- !private ["s7CVarArgP", "SimpleDisposable"]
+- !private ["s7CVarArgP", "after"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "asyncAfter"]
+- !private ["s7CVarArgP", "context"]
+- !private ["s7CVarArgP", "global"]
+- !private ["s7CVarArgP", "isMainThread"]
+- !private ["s7CVarArgP", "main"]
+- !private ["SL", "now"]
+- !private ["s28CustomDebugStringConvertibleP", "ExecutionContext"]
+- !private ["s28CustomDebugStringConvertibleP", "SimpleDisposable"]
+- !private ["s28CustomDebugStringConvertibleP", "after"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "asyncAfter"]
+- !private ["s28CustomDebugStringConvertibleP", "context"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
+- !private ["s28CustomDebugStringConvertibleP", "isMainThread"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "ExecutionContext"]
+- !private ["s23CustomStringConvertibleP", "SimpleDisposable"]
+- !private ["s23CustomStringConvertibleP", "after"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "asyncAfter"]
+- !private ["s23CustomStringConvertibleP", "context"]
+- !private ["s23CustomStringConvertibleP", "global"]
+- !private ["s23CustomStringConvertibleP", "isMainThread"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["11ReactiveKit13DeallocatableP", "ExecutionContext"]
+- !private ["11ReactiveKit13DeallocatableP", "SimpleDisposable"]
+- !private ["11ReactiveKit13DeallocatableP", "after"]
+- !private ["11ReactiveKit13DeallocatableP", "async"]
+- !private ["11ReactiveKit13DeallocatableP", "asyncAfter"]
+- !private ["11ReactiveKit13DeallocatableP", "context"]
+- !private ["11ReactiveKit13DeallocatableP", "global"]
+- !private ["11ReactiveKit13DeallocatableP", "isMainThread"]
+- !private ["11ReactiveKit13DeallocatableP", "main"]
+- ["So18OS_dispatch_objectC", "Disposable"]
+- ["So18OS_dispatch_objectC", "Double"]
+- ["So18OS_dispatch_objectC", "ExecutionContext"]
+- !private ["So18OS_dispatch_objectC", "SimpleDisposable"]
+- ["So18OS_dispatch_objectC", "Void"]
+- ["So18OS_dispatch_objectC", "after"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "asyncAfter"]
+- ["So18OS_dispatch_objectC", "context"]
+- ["So18OS_dispatch_objectC", "disposableAfter"]
+- !private ["So18OS_dispatch_objectC", "global"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- ["8Dispatch0A3QoSV", "QoSClass"]
+- ["So17OS_dispatch_queueC", "Disposable"]
+- ["So17OS_dispatch_queueC", "Double"]
+- ["So17OS_dispatch_queueC", "ExecutionContext"]
+- !private ["So17OS_dispatch_queueC", "SimpleDisposable"]
+- ["So17OS_dispatch_queueC", "Void"]
+- ["So17OS_dispatch_queueC", "after"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "asyncAfter"]
+- ["So17OS_dispatch_queueC", "context"]
+- ["So17OS_dispatch_queueC", "disposableAfter"]
+- !private ["So17OS_dispatch_queueC", "global"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["8Dispatch0A4TimeV", "now"]
+- !private ["11ReactiveKit10DisposableP", "init"]
+- !private ["11ReactiveKit10DisposableP", "isDisposed"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "ExecutionContext"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "SimpleDisposable"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "after"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "async"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "asyncAfter"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "context"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "global"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "isMainThread"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "main"]
+- !private ["SQ", "ExecutionContext"]
+- ["SQ", "QoSClass"]
+- !private ["SQ", "SimpleDisposable"]
+- !private ["SQ", "after"]
+- !private ["SQ", "async"]
+- !private ["SQ", "asyncAfter"]
+- !private ["SQ", "context"]
+- !private ["SQ", "default"]
+- !private ["SQ", "global"]
+- !private ["SQ", "isMainThread"]
+- !private ["SQ", "main"]
+- !private ["SQ", "now"]
+- !private ["11ReactiveKit16ExecutionContextV", "Bool"]
+- ["11ReactiveKit16ExecutionContextV", "DispatchQoS"]
+- !private ["11ReactiveKit16ExecutionContextV", "DispatchQueue"]
+- ["11ReactiveKit16ExecutionContextV", "ExecutionContext"]
+- !private ["11ReactiveKit16ExecutionContextV", "Thread"]
+- ["11ReactiveKit16ExecutionContextV", "Void"]
+- !private ["11ReactiveKit16ExecutionContextV", "context"]
+- ["11ReactiveKit16ExecutionContextV", "execute"]
+- ["11ReactiveKit16ExecutionContextV", "global"]
+- ["11ReactiveKit16ExecutionContextV", "immediate"]
+- ["11ReactiveKit16ExecutionContextV", "immediateOnMain"]
+- ["11ReactiveKit16ExecutionContextV", "init"]
+- ["11ReactiveKit16ExecutionContextV", "main"]
+- ["11ReactiveKit16ExecutionContextV", "nonRecursive"]
+- !private ["SH", "ExecutionContext"]
+- !private ["SH", "SimpleDisposable"]
+- !private ["SH", "after"]
+- !private ["SH", "async"]
+- !private ["SH", "asyncAfter"]
+- !private ["SH", "context"]
+- !private ["SH", "default"]
+- !private ["SH", "global"]
+- !private ["SH", "isMainThread"]
+- !private ["SH", "main"]
+- ["So8NSObjectC", "Disposable"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "ExecutionContext"]
+- !private ["So8NSObjectC", "SimpleDisposable"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", "after"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "asyncAfter"]
+- ["So8NSObjectC", "context"]
+- ["So8NSObjectC", "disposableAfter"]
+- !private ["So8NSObjectC", "global"]
+- !private ["So8NSObjectC", "isMainThread"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectP", "ExecutionContext"]
+- !private ["So8NSObjectP", "SimpleDisposable"]
+- !private ["So8NSObjectP", "after"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "asyncAfter"]
+- !private ["So8NSObjectP", "context"]
+- !private ["So8NSObjectP", "global"]
+- !private ["So8NSObjectP", "isMainThread"]
+- !private ["So8NSObjectP", "main"]
+- ["So9OS_objectC", "Disposable"]
+- ["So9OS_objectC", "Double"]
+- ["So9OS_objectC", "ExecutionContext"]
+- !private ["So9OS_objectC", "SimpleDisposable"]
+- ["So9OS_objectC", "Void"]
+- ["So9OS_objectC", "after"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "asyncAfter"]
+- ["So9OS_objectC", "context"]
+- ["So9OS_objectC", "disposableAfter"]
+- !private ["So9OS_objectC", "global"]
+- !private ["So9OS_objectC", "main"]
+- !private ["8Dispatch0A3QoSV0B6SClassO", "default"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "ExecutionContext"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "SimpleDisposable"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "after"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "async"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "asyncAfter"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "context"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "global"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "isMainThread"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "main"]
+- !private ["11ReactiveKit16SimpleDisposableC", "deinit"]
+- !private ["11ReactiveKit16SimpleDisposableC", "init"]
+- !private ["11ReactiveKit16SimpleDisposableC", "isDisposed"]
+- !private ["So8NSThreadC", "isMainThread"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ExecutionContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SimpleDisposable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "after"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "asyncAfter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "context"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isMainThread"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "11ReactiveKit13DeallocatableP"
+- "So18OS_dispatch_objectC"
+- "8Dispatch0A3QoSV"
+- "So17OS_dispatch_queueC"
+- !private "8Dispatch0A4TimeV"
+- !private "11ReactiveKit10DisposableP"
+- !private "11ReactiveKit18DisposeBagProviderP"
+- "SQ"
+- "11ReactiveKit16ExecutionContextV"
+- !private "SH"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- "So9OS_objectC"
+- !private "8Dispatch0A3QoSV0B6SClassO"
+- !private "11ReactiveKit0A18ExtensionsProviderP"
+- !private "11ReactiveKit16SimpleDisposableC"
+- !private "So8NSThreadC"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/bootcamp/Documents/collab2/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/bootcamp/Documents/collab2/DerivedData/goOSC/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReactiveKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ed3db7df5e61154f5204db72148f77a6"
