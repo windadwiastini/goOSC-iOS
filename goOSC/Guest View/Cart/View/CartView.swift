@@ -8,10 +8,11 @@
 
 import UIKit
 import Bond
+import ReactiveKit
 class CartView: UIViewController, CartViewProtocol {
     var presenter: CartPresenterProtocol?
     fileprivate var homePageData = MutableObservableArray([CartEntity.SingleCart]())
-    
+    fileprivate let bagData = DisposeBag()
     @IBOutlet weak var cartButton: UIButton!
     
     
@@ -48,14 +49,18 @@ class CartView: UIViewController, CartViewProtocol {
             } else {
                 self.cartButton.isEnabled = false
             }
-        }
+            }.dispose(in: bagData)
         
         homePageData.bind(to: tableView, animated: true) {dataSource, indexPath, tableView in
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell") as? CartCell else { return UITableViewCell() }
             let data = self.homePageData[indexPath.row]
             cell.configureCell(data: data)
             return cell
-        }
+        }.dispose(in: bagData)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        bagData.dispose()
     }
 }
 

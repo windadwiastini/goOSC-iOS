@@ -32,6 +32,7 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     var presenter: LoginPresenterProtocol?
+    fileprivate let bagData = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
         LoginWireframe.createLoginModule(self)
@@ -48,16 +49,18 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
         btnLogin.isEnabled = false
         combineLatest(usernameField.reactive.text, passwordField.reactive.text) {email, password in
             return email!.count > 0 && password!.count > 0
-            }.bind(to: btnLogin.reactive.isEnabled)
+            }.bind(to: btnLogin.reactive.isEnabled).dispose(in: bagData)
         btnLogin.reactive.controlEvents(.touchUpInside).observeNext { e in
             self.login()
-        }
+        }.dispose(in: bagData)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         presenter?.viewDidLoad()
     }
-    
+    override func viewDidDisappear(_ animated: Bool) {
+        bagData.dispose()
+    }
     @IBAction func redirectToForgotPassword(_ sender: Any) {
         
     }
