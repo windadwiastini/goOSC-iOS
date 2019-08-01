@@ -218,7 +218,7 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "reserveCapacity"]
 - !private ["11ReactiveKit16ObserverProtocolP", "receive"]
 - ["4Bond26OrderedCollectionChangesetC", "Diff"]
-- ["4Bond26OrderedCollectionChangesetC", "deinit"]
+- !private ["4Bond26OrderedCollectionChangesetC", "deinit"]
 - !private ["4Bond26OrderedCollectionChangesetC", "init"]
 - !private ["4Bond34OrderedCollectionChangesetProtocolP", "Collection"]
 - ["4Bond34OrderedCollectionChangesetProtocolP", "Diff"]

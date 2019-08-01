@@ -11,7 +11,6 @@ provides-dynamic-lookup:
 - "inputViewContainer"
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
 - "MSGCollectionView"
 - "MSGInputView"
 - "MSGMessengerView"

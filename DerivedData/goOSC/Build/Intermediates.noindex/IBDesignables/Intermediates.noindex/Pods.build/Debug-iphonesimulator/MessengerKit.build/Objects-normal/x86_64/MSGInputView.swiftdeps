@@ -29,6 +29,7 @@ depends-top-level:
 - "NSCoder"
 - "NSLayoutConstraint"
 - "String"
+- "StringLiteralType"
 - "TernaryPrecedence"
 - "UIButton"
 - "UIColor"

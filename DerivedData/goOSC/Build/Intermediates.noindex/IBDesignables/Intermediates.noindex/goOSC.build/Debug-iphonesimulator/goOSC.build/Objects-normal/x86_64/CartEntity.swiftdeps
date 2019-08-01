@@ -107,7 +107,6 @@ depends-member:
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s22KeyedEncodingContainerV", "encode"]
 - !private ["s30KeyedEncodingContainerProtocolP", "encode"]
-- !private ["5goOSC10CartEntityV8ResponseV", "CodingKeys"]
 - ["5goOSC10CartEntityV8ResponseV", "Int"]
 - ["5goOSC10CartEntityV8ResponseV", "SingleCart"]
 - ["5goOSC10CartEntityV8ResponseV", "String"]

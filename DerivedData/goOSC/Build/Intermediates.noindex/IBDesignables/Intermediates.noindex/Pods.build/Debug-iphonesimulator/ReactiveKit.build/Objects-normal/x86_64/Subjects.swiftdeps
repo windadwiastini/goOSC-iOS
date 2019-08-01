@@ -36,6 +36,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BindableProtocol"
 - !private "BlockDisposable"
+- "BooleanLiteralType"
 - "Disposable"
 - "DisposeBag"
 - "Event"
@@ -277,6 +278,7 @@ depends-member:
 - !private ["11ReactiveKit16ObserverProtocolP", "state"]
 - !private ["11ReactiveKit16ObserverProtocolP", "terminalEvent"]
 - !private ["11ReactiveKit16ObserverProtocolP", "willAdd"]
+- ["11ReactiveKit18PassthroughSubjectC", "deinit"]
 - ["11ReactiveKit18PassthroughSubjectC", "init"]
 - !private ["Sk", "append"]
 - !private ["Sk", "firstIndex"]
@@ -308,6 +310,7 @@ depends-member:
 - ["11ReactiveKit25ReplayLoadingValueSubjectC", "willAdd"]
 - ["11ReactiveKit16ReplayOneSubjectC", "Event"]
 - ["11ReactiveKit16ReplayOneSubjectC", "Observer"]
+- ["11ReactiveKit16ReplayOneSubjectC", "deinit"]
 - ["11ReactiveKit16ReplayOneSubjectC", "init"]
 - !private ["11ReactiveKit16ReplayOneSubjectC", "lastEvent"]
 - !private ["11ReactiveKit16ReplayOneSubjectC", "lock"]

@@ -36,6 +36,7 @@ depends-top-level:
 - !private ">"
 - !private "AssignmentPrecedence"
 - "Bool"
+- !private "BooleanLiteralType"
 - !private "CompositeDisposable"
 - !private "Date"
 - "DispatchQueue"

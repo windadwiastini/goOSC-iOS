@@ -8,6 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - "Category"
 - !private "CategoryPageInteractor"
@@ -21,6 +22,7 @@ depends-top-level:
 - !private "CategoryProductWireFrame"
 - !private "Login"
 - !private "LoginWireframe"
+- !private "StringLiteralType"
 - "UIViewController"
 - !private "print"
 depends-member:

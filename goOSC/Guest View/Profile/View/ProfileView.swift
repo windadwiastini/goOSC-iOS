@@ -17,7 +17,6 @@ class ProfileView: UIViewController, ProfileViewProtocol {
         super.viewDidLoad()
         ProfileWireframe.createProfileModule(self)
         presenter?.viewDidLoad()
-        
         btnLogout.reactive.tap.observeNext{
             SignOut().hitSignOutButton(view: self)
         }

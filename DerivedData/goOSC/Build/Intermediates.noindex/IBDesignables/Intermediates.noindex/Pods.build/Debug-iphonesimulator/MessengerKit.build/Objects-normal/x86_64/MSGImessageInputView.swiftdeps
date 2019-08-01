@@ -15,7 +15,6 @@ depends-top-level:
 - "MSGImessageInputView"
 - "MSGInputView"
 - !private "MessengerKit"
-- !private "StringLiteralType"
 - "UIColor"
 - !private "UIEdgeInsets"
 - "UINib"

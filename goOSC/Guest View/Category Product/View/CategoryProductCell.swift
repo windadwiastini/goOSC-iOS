@@ -8,6 +8,8 @@
 
 import UIKit
 import Alamofire
+import Bond
+import ReactiveKit
 
 class CategoryProductCell: UITableViewCell {
     

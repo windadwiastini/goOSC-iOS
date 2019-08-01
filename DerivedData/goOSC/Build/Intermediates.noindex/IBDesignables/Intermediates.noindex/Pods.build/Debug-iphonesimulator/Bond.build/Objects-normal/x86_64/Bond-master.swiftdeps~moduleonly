@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "5233432f9648a1eb1bcfa59a6e67e39f"
-build_time: [1564537112, 563350000]
+build_time: [1564622782, 12769000]
 inputs:
   "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/Bond/Data Structures/Array2D.swift": [1564378056, 894772929]
   "/Users/bootcamp/Documents/collab2/Pods/Bond/Sources/Bond/BNDInvocation.swift": [1564378056, 910580675]

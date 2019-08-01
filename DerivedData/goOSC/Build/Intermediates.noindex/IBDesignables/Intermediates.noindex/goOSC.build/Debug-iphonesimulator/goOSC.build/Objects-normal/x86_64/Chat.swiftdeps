@@ -17,11 +17,8 @@ depends-top-level:
 - "Bool"
 - "Chat"
 - "Decodable"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "String"
-- !private "StringLiteralType"
 - !private "~="
 depends-member:
 - ["5goOSC4ChatO", "Bool"]

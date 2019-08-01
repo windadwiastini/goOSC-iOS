@@ -26,15 +26,11 @@ depends-top-level:
 - "EqualityChecker"
 - "Equatable"
 - "ExpressibleByArrayLiteral"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "NestedDiff"
 - "NestedElementEqualityChecker"
 - "String"
-- !private "StringLiteralType"
 - !private "Trace"
-- !private "UnicodeScalarType"
 - !private "zip"
 depends-member:
 - !private ["Sa", "filter"]

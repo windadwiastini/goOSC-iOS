@@ -7,58 +7,56 @@
 //
 
 import UIKit
-
+import Bond
+import ReactiveKit
 class CategoryProductView: UIViewController, CategoryProductViewProtocol {
     
     var presenter: CategoryProductPresenterProtocol?
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var categoryNameLabel: UILabel!
-    fileprivate var productList = HomePage.Response(code: 0, message: "", data: [], length: 0)
-    
+    fileprivate var productList = Observable<HomePage.Response>( HomePage.Response(code: 0, message: "", data: [], length: 0))
+    fileprivate var data = MutableObservableArray([HomePage.Product]())
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        tableView.dataSource = self
         presenter?.viewDidLoad()
+        prepareObserve()
     }
-
     func updateData(response: HomePage.Response, category: Category.NewData) {
-        productList = response
+        productList.value = response
         categoryNameLabel.text = category.name
         tableView.reloadData()
     }
-    
     @IBAction func backBtnWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func doSignOut(_ sender: Any) {
-        let domain = Bundle.main.bundleIdentifier!
-        UserDefaults.standard.removePersistentDomain(forName: domain)
-        UserDefaults.standard.synchronize()
-        presenter?.wireframe?.routeToSignIn(from: self)
+        SignOut().hitSignOutButton(view: self)
     }
     
+    fileprivate func prepareObserve() {
+        productList.observeNext { value in
+            self.data.removeAll()
+            value.data.map { e in
+                self.data.append(e!)
+            }
+        }.dispose(in: bag)
+        
+        data.bind(to: tableView, animated: true) { dataSource, indexPath, tableView in
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "productCategoryCell") as? CategoryProductCell else { return UITableViewCell() }
+            cell.configureCell(product: dataSource[indexPath.row])
+            return cell
+        }.dispose(in: bag)
+    }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        bag.dispose()
+    }
 }
 
-extension CategoryProductView: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return productList.data.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "productCategoryCell") as? CategoryProductCell else { return UITableViewCell() }
-        cell.configureCell(product: productList.data[indexPath.row]!)
-        return cell
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
+extension CategoryProductView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.wireframe?.routeToDetail(from: self, with: productList.data[indexPath.row]!)
+        presenter?.wireframe?.routeToDetail(from: self, with: data[indexPath.row])
     }
 }

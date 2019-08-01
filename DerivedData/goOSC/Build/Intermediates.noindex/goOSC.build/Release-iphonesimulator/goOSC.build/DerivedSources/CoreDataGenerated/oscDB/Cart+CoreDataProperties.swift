@@ -2,7 +2,7 @@
 //  Cart+CoreDataProperties.swift
 //  
 //
-//  Created by Bootcamp on 30/07/19.
+//  Created by Bootcamp on 01/08/19.
 //
 //  This file was automatically generated and should not be edited.
 //

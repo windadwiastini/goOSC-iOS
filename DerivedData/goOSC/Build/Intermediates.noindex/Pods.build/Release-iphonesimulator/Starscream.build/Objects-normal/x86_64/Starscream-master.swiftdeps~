@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "7975e5932c8038f22f0dfa95ce9bacf5"
-build_time: [1564378077, 768053000]
+options: "621dfe067a713330a325512cb50380f1"
+build_time: [1564540442, 46398000]
 inputs:
   "/Users/bootcamp/Documents/collab2/Pods/Starscream/Sources/Compression.swift": [9223372036, 854775807]
   "/Users/bootcamp/Documents/collab2/Pods/Starscream/Sources/SSLSecurity.swift": [9223372036, 854775807]

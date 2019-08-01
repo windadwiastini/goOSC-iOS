@@ -9,19 +9,10 @@
 import UIKit
 import Starscream
 import MessengerKit
-
-struct Sender: MSGUser {
-    var displayName: String
-    var avatar: UIImage?
-    var isSender: Bool
-}
-
 class ChatView: MSGMessengerViewController, ChatViewProtocol {
     var presenter: ChatPresenterProtocol?
     
     var messages  = [Chat.Detail]()
-    
-    @IBOutlet weak var msgTextField: UITextField!
 
     fileprivate var socket = WebSocket(url: URL(string: "ws://goosc.herokuapp.com/ws?useremail=\(Auth().email)&destemail=admin@goosc.com&username=renikumalawati&type=admin")!, protocols: ["chat"])
     override func viewDidLoad() {
@@ -43,14 +34,10 @@ class ChatView: MSGMessengerViewController, ChatViewProtocol {
     }
     
     func updateMessage(response resp: Chat.ResponseDetail) {
-//        messages = []
-//        messages = resp.data
-//        collectionView.reloadData()
-        
         for item in resp.data {
             messages.append(item)
         }
-        
+        collectionView.reloadData()
         collectionView.scrollToBottom(animated: false)
     }
     
@@ -63,7 +50,6 @@ class ChatView: MSGMessengerViewController, ChatViewProtocol {
         socket.write(string: stringify)
         collectionView.scrollToBottom(animated: false)
     }
-    
 }
 
 extension ChatView:WebSocketDelegate {
@@ -96,7 +82,7 @@ extension ChatView: MSGDataSource {
             isSender = false
         }
         
-        let sender = Sender(displayName: messageData.username, avatar: nil, isSender: isSender)
+        let sender = Chat.Sender(displayName: messageData.username, avatar: nil, isSender: isSender)
         let msg = MSGMessage(id: 0, body: MSGMessageBody.text(messageData.message), user: sender, sentAt: Date())
         return msg
     }

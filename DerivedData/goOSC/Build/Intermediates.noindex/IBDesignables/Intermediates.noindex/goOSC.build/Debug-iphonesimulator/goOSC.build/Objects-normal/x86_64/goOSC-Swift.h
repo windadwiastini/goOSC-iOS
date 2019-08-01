@@ -299,6 +299,7 @@ SWIFT_CLASS("_TtC5goOSC8CartView")
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (IBAction)doSignOut:(id _Nonnull)sender;
+- (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -353,15 +354,13 @@ SWIFT_CLASS("_TtC5goOSC19CategoryProductView")
 - (void)viewDidLoad;
 - (IBAction)backBtnWasPressed:(id _Nonnull)sender;
 - (IBAction)doSignOut:(id _Nonnull)sender;
+- (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface CategoryProductView (SWIFT_EXTENSION(goOSC)) <UITableViewDataSource, UITableViewDelegate>
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+@interface CategoryProductView (SWIFT_EXTENSION(goOSC)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
@@ -393,10 +392,14 @@ SWIFT_CLASS("_TtC5goOSC10DetailView")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified viewVount;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified playBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified subscribeBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addToCartBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backBtn;
 - (void)viewDidLoad;
 - (IBAction)backBtnWasPressed:(id _Nonnull)sender;
 - (IBAction)likeBtnWasPressed:(UIButton * _Nonnull)sender;
-- (IBAction)showPreview:(id _Nonnull)sender;
 - (IBAction)addToCart:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -430,17 +433,15 @@ SWIFT_CLASS("_TtC5goOSC12HomePageCell")
 SWIFT_CLASS("_TtC5goOSC12HomePageView")
 @interface HomePageView : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signBtn;
 - (void)viewDidLoad;
-- (IBAction)doSignOut:(id _Nonnull)sender;
+- (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface HomePageView (SWIFT_EXTENSION(goOSC)) <UITableViewDataSource, UITableViewDelegate>
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@interface HomePageView (SWIFT_EXTENSION(goOSC)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
@@ -454,6 +455,7 @@ SWIFT_CLASS("_TtC5goOSC5Login")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (IBAction)redirectToForgotPassword:(id _Nonnull)sender;
 - (IBAction)loginWithTwitterBtnWasPressed:(id _Nonnull)sender;
 - (IBAction)loginWithGoogleBtnWasPressed:(id _Nonnull)sender;
@@ -541,22 +543,20 @@ SWIFT_CLASS("_TtC5goOSC10SearchView")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (IBAction)doSignOut:(id _Nonnull)sender;
+- (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface SearchView (SWIFT_EXTENSION(goOSC)) <UITableViewDelegate>
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
 @interface SearchView (SWIFT_EXTENSION(goOSC)) <UISearchBarDelegate>
 - (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
 - (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
-@end
-
-
-@interface SearchView (SWIFT_EXTENSION(goOSC)) <UITableViewDataSource, UITableViewDelegate>
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 

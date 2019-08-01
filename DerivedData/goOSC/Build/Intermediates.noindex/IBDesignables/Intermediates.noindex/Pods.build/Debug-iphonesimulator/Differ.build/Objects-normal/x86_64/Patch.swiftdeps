@@ -17,13 +17,9 @@ depends-top-level:
 - "CustomDebugStringConvertible"
 - "Diff"
 - "Equatable"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "Patch"
 - "String"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
 - "patch"
 depends-member:
 - !private ["Sl", "diff"]

@@ -14,6 +14,7 @@ depends-top-level:
 - "MSGMessageBody"
 - "MSGUser"
 - "NSObject"
+- !private "StringLiteralType"
 depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "body"]

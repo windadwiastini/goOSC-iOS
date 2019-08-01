@@ -24,7 +24,6 @@ depends-top-level:
 - !private "AnyClass"
 - "AssignmentPrecedence"
 - "Bool"
-- "BooleanLiteralType"
 - !private "Bundle"
 - "CastingPrecedence"
 - "Disposable"

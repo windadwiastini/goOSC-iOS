@@ -12,7 +12,6 @@ depends-top-level:
 - !private "=="
 - !private "Alamofire"
 - "Bool"
-- !private "BooleanLiteralType"
 - "Error"
 - !private "JSONDecoder"
 - !private "JSONEncoding"

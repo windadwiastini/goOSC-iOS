@@ -18,6 +18,7 @@ depends-top-level:
 - !private "=="
 - !private ">"
 - "Bool"
+- !private "BooleanLiteralType"
 - "IndexPath"
 - "Int"
 - !private "StringLiteralType"

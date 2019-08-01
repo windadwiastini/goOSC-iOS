@@ -30,10 +30,7 @@ class CartView: UIViewController, CartViewProtocol {
     }
     func updateData(response: CartEntity.Response) {
         homePageData.removeAll()
-        for item in response.data {
-            print(item.product_name)
-            homePageData.append(item)
-        }
+        homePageData.replace(with: response.data)
     }
     @IBAction func doSignOut(_ sender: Any) {
         let domain = Bundle.main.bundleIdentifier!
@@ -53,7 +50,7 @@ class CartView: UIViewController, CartViewProtocol {
         
         homePageData.bind(to: tableView, animated: true) {dataSource, indexPath, tableView in
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell") as? CartCell else { return UITableViewCell() }
-            let data = self.homePageData[indexPath.row]
+            let data = dataSource[indexPath.row]
             cell.configureCell(data: data)
             return cell
         }.dispose(in: bagData)

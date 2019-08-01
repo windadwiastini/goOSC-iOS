@@ -32,6 +32,7 @@ depends-top-level:
 - "ReferenceWritableKeyPath"
 - "Selector"
 - "SelectorProtocolProxyPropertyController"
+- !private "StringLiteralType"
 depends-member:
 - !private ["s10AnyKeyPathC", "hashValue"]
 - ["s7CVarArgP", ""]

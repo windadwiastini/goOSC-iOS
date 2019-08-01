@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		M5gtYSGwrb/NyRKndtJF/swzGog=
+		6CkWwugHhBuYy3l49UvV7OK65u0=
 		</data>
 		<key>Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		2/99JI6xpp9qRaMakNKhTUha+Yk=
+		GfY6e99xhqtqU2F5VombKbKkrIQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2/99JI6xpp9qRaMakNKhTUha+Yk=
+			GfY6e99xhqtqU2F5VombKbKkrIQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			TNbSVAj6iBRAlcPfSlZVVV61gG8GJDtPD+ZGZAcOT64=
+			ISzck10LjW3h1+JIVsRiesh+je2e1jN7xs8BBtZuzqk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

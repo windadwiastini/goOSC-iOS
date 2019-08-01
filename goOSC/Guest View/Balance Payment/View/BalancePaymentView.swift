@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Bond
+import ReactiveKit
 class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
     var presenter: BalancePaymentPresenterProtocol?
     
@@ -14,17 +16,17 @@ class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
     @IBOutlet weak var finalPrice: UILabel!
     @IBOutlet weak var discount: UILabel!
     @IBOutlet weak var total: UILabel!
-    fileprivate var dataSource = [CartEntity.SingleCart]()
+    fileprivate var dataSource = MutableObservableArray([CartEntity.SingleCart]())
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         BalancePaymentWireFrame.createBalancePaymentModule(self)
+        prepareObservable()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         presenter?.viewDidLoad()
-        tableView.dataSource = self
     }
     
     func updateData(response: BalancePayment.Response) {
@@ -33,8 +35,8 @@ class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
         finalPrice.text = String(data!.total)
         discount.text = String(data!.total_discount)
         total.text = String(data!.final_price)
-        dataSource = data!.product_list
-        tableView.reloadData()
+        dataSource.removeAll()
+        dataSource.replace(with: response.data!)
     }
     
     @IBAction func processPayment(_ sender: Any) {
@@ -49,27 +51,21 @@ class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
         self.present(alert, animated: true)
     }
     
+    fileprivate func prepareObservable() {
+        dataSource.bind(to: tableView, animated: true) {dataSource, indexPath, tableView in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell") as! PaymentCell
+            let data = dataSource[indexPath.row]
+            cell.configureCell(data: data)
+            return cell
+        }.dispose(in: bag)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        bag.dispose()
+    }
     
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-    }
-    
-}
-
-extension BalancePaymentView: UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell") as! PaymentCell
-        let data = dataSource[indexPath.row]
-        cell.configureCell(data: data)
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Product List"
     }
     
 }

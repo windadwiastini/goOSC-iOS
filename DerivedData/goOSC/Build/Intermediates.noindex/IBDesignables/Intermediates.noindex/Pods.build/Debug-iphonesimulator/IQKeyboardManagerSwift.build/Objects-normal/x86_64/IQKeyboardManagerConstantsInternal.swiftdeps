@@ -8,8 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
+- "FloatLiteralType"
 - "IQLayoutGuidePosition"
 - "Int"
+- "IntegerLiteralType"
 - !private "~="
 depends-member:
 - ["SQ", "=="]

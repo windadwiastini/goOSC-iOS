@@ -20,6 +20,7 @@ depends-top-level:
 - "DisposeBagProvider"
 - "NSObject"
 - "SafeSignal"
+- "StringLiteralType"
 - "Void"
 - !private "objc_AssociationPolicy"
 - !private "objc_getAssociatedObject"

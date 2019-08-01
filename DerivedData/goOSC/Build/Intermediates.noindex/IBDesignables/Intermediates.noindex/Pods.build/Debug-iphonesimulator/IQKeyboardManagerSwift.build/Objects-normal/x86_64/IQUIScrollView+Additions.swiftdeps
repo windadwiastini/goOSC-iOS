@@ -8,7 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Bool"
+- !private "BooleanLiteralType"
 - "CastingPrecedence"
+- "StringLiteralType"
 - "UIScrollView"
 - !private "kIQShouldIgnoreScrollingAdjustment"
 - !private "kIQShouldRestoreScrollViewContentOffset"

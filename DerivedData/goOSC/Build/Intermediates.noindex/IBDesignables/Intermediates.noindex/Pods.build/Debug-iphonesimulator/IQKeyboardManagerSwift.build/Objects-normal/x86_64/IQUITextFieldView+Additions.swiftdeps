@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - "CGFloat"
 - "CastingPrecedence"
+- "StringLiteralType"
 - "UIView"
 - !private "kIQKeyboardDistanceFromTextField"
 - "kIQUseDefaultKeyboardDistance"

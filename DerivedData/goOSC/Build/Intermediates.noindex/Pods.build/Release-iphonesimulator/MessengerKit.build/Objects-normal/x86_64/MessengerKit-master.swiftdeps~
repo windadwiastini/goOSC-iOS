@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "eca7e2323a2bd25cb7c02cf58db2a912"
-build_time: [1564378077, 773134000]
+options: "d7310f0df30b3d5d2f52dd7a0ecc2d1a"
+build_time: [1564540442, 276509000]
 inputs:
   "/Users/bootcamp/Documents/collab2/Pods/MessengerKit/MessengerKit/Keyboard Utility/KeyboardFrameObserver.swift": [9223372036, 854775807]
   "/Users/bootcamp/Documents/collab2/Pods/MessengerKit/MessengerKit/Keyboard Utility/KeyboardFrameObserversManager.swift": [9223372036, 854775807]

@@ -141,7 +141,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "presenter"]
 - !private ["So16UIStateRestoringP", "storyboard"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
-- !private ["So21UITableViewDataSourceP", "presenter"]
 - !private ["So19UITableViewDelegateP", "presenter"]
 - !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "presenter"]
@@ -195,7 +194,6 @@ depends-nominal:
 - !private "So19UISearchBarDelegateP"
 - !private "So16UIStateRestoringP"
 - !private "So12UIStoryboardC"
-- !private "So21UITableViewDataSourceP"
 - !private "So19UITableViewDelegateP"
 - !private "So18UITraitEnvironmentP"
 - !private "So23UIUserActivityRestoringP"

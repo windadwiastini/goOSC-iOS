@@ -15,19 +15,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - "=="
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
 - "CustomDebugStringConvertible"
 - "Equatable"
-- !private "FloatLiteralType"
 - "IndexPath"
-- !private "IntegerLiteralType"
 - "ObjectTreeNode"
 - "RangeReplaceableTreeProtocol"
 - "String"
-- !private "StringLiteralType"
 - "TreeNode"
 - "TreeNodeWithValueProtocol"
-- !private "UnicodeScalarType"
 depends-member:
 - !private ["Sa", "joined"]
 - !private ["Sa", "map"]

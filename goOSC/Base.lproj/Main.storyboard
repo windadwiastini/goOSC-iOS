@@ -236,9 +236,6 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="playButton"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="showPreview:" destination="fhI-3b-jgB" eventType="touchUpInside" id="MR2-zO-Y4b"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -289,9 +286,6 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="addToCartButton"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="addToCart:" destination="fhI-3b-jgB" eventType="touchUpInside" id="92d-wQ-2Eu"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOO-hZ-x7Y">
                                         <rect key="frame" x="20" y="35" width="20" height="20"/>
@@ -303,9 +297,6 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="backButton"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="backBtnWasPressed:" destination="fhI-3b-jgB" eventType="touchUpInside" id="Xdc-qY-ATn"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -360,9 +351,6 @@
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="loveButton"/>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="likeBtnWasPressed:" destination="fhI-3b-jgB" eventType="touchUpInside" id="tNP-Gy-zdH"/>
-                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u19-vg-eP5">
                                                                 <rect key="frame" x="29" y="0.0" width="50" height="29"/>
@@ -512,11 +500,16 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addToCartBtn" destination="ju6-kI-pql" id="IWH-3b-ltO"/>
+                        <outlet property="backBtn" destination="gOO-hZ-x7Y" id="pMH-xR-ZNu"/>
                         <outlet property="categoryLabel" destination="UNK-RG-THH" id="Xbq-bi-VgN"/>
                         <outlet property="desc" destination="g94-jp-ujy" id="GWi-k6-mS7"/>
                         <outlet property="imageDetail" destination="4fU-yo-ogv" id="Cm6-Fe-I9w"/>
+                        <outlet property="likeBtn" destination="vSO-DL-cQa" id="lLH-MU-Al0"/>
                         <outlet property="likeCount" destination="u19-vg-eP5" id="ea8-7R-438"/>
+                        <outlet property="playBtn" destination="7P6-6X-MGU" id="Wjc-we-AKM"/>
                         <outlet property="priceLabel" destination="xsE-om-sb7" id="0WN-oq-x8W"/>
+                        <outlet property="subscribeBtn" destination="R3z-Vu-HBe" id="Ea9-J4-1Ho"/>
                         <outlet property="titleLabel" destination="V98-Ay-j3q" id="2Cf-Yq-XDB"/>
                         <outlet property="viewVount" destination="xTL-dz-P23" id="zRf-RS-UOf"/>
                     </connections>
@@ -655,9 +648,6 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="signOutButton"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="doSignOut:" destination="D3F-b2-dcL" eventType="touchUpInside" id="Gsk-29-Y1e"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -684,6 +674,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="icons8-home-24" selectedImage="icons8-home-24" id="Kni-bE-TJX"/>
                     <connections>
+                        <outlet property="signBtn" destination="iYr-BN-Lcg" id="Idn-py-2FX"/>
                         <outlet property="tableView" destination="ZTs-ty-f3z" id="QgC-UR-Lah"/>
                     </connections>
                 </viewController>

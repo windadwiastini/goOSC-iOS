@@ -39,17 +39,13 @@ depends-top-level:
 - !private "=="
 - !private "AssignmentPrecedence"
 - !private "Bool"
-- "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "CompositeDisposable"
-- "FloatLiteralType"
-- "IntegerLiteralType"
 - !private "NSRecursiveLock"
 - "Never"
 - !private "SerialDisposable"
 - "Signal"
 - "SignalProtocol"
-- "StringLiteralType"
 - !private "||"
 depends-member:
 - !private ["Sa", "append"]

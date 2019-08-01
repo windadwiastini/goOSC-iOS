@@ -32,9 +32,13 @@ depends-top-level:
 - "EqualityChecker"
 - "Equatable"
 - "ExtendedDiff"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "Set"
 - "String"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
 - !private "fatalError"
 - "flip"
 - !private "zip"
@@ -152,7 +156,7 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - ["6Differ4DiffV", "Element"]
 - ["6Differ4DiffV", "Index"]
-- !private ["6Differ4DiffV", "deinit"]
+- ["6Differ4DiffV", "deinit"]
 - !private ["6Differ4DiffV", "endIndex"]
 - !private ["6Differ4DiffV", "indices"]
 - !private ["6Differ4DiffV", "subscript"]

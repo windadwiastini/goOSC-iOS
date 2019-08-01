@@ -7,47 +7,52 @@
 //
 
 import UIKit
+import Bond
+import ReactiveKit
 class HomePageView: UIViewController, HomePageViewProtocol {
     var presenter: HomePagePresenterProtocol?
-    var homePageData = HomePage.Response(code: 0, message: "", data: [], length: 0)
-    @IBOutlet weak var tableView: UITableView!
+    fileprivate var homePageData = Observable<HomePage.Response>(HomePage.Response(code: 0, message: "", data: [], length: 0))
     
+    fileprivate var data = MutableObservableArray([HomePage.Product]())
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var signBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        tableView.dataSource = self
         HomePageWireFrame.createHomePageModule(self)
         presenter?.viewDidLoad()
+        observeFunction()
     }
     
     func updateData(response: HomePage.Response) {
-        homePageData = response
-        self.tableView.reloadData()
+        homePageData.value = response
     }
     
-    @IBAction func doSignOut(_ sender: Any) {
-        SignOut().hitSignOutButton(view: self)
+    fileprivate func observeFunction() {
+        signBtn.reactive.controlEvents(.touchUpInside).observeNext{ e in
+            SignOut().hitSignOutButton(view: self)
+        }.dispose(in: bag)
+        homePageData.observeNext { value in
+            self.data.removeAll()
+            value.data.map{ e in
+                self.data.append(e!)
+            }
+        }.dispose(in: bag)
+        
+        data.bind(to: tableView, animated: true) {dataSource, indexPath, tableView in
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "homePageCell") as? HomePageCell else { return UITableViewCell() }
+            let data = dataSource[indexPath.row]
+            cell.configureCell(data: data)
+            return cell
+        }.dispose(in: bag)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        bag.dispose()
+    }
 }
-
-extension HomePageView: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return homePageData.data.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "homePageCell") as? HomePageCell else { return UITableViewCell() }
-        let data = homePageData.data[indexPath.row]
-        cell.configureCell(data: data!)
-        return cell
-    }
-    
+extension HomePageView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.wireFrame?.routeToDetail(from: self, with: homePageData.data[indexPath.row]!)
+        presenter?.wireFrame?.routeToDetail(from: self, with: data[indexPath.row])
     }
 }

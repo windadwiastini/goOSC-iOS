@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import MessengerKit
 enum Chat {
     struct ResponseDetail: Decodable {
         var code: Int
@@ -31,5 +31,11 @@ enum Chat {
         var From: String
         var `Type`: String
         var Message: String
+    }
+    
+    struct Sender: MSGUser {
+        var displayName: String
+        var avatar: UIImage?
+        var isSender: Bool
     }
 }
