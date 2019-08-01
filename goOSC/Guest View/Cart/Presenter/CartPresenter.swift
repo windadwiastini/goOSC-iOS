@@ -17,10 +17,7 @@ class CartPresenter: CartPresenterProtocol {
     func viewDidLoad() {
         interactor?.findAllData()
     }
-    
-    
 }
-
 extension CartPresenter: CartOutputInteractorProtocol {
     func response(_ resp : CartEntity.Response) {
         view?.updateData(response: resp)

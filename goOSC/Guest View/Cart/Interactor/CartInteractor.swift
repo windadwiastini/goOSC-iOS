@@ -12,7 +12,7 @@ import Alamofire
 class CartInteractor: CartInputInteractorProtocol {
     var presenter: CartOutputInteractorProtocol?
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    let token = UserDefaults.standard.value(forKey: "token")!
+    let token = Auth().token
     func findAllData() {
         let url = "\(Config().url)/cart"
         let header: HTTPHeaders = [

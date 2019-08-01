@@ -100,9 +100,7 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("Page Did Finished")
         let urlString = webView.url?.absoluteString
-        print(urlString)
         if (urlString?.contains("callback"))! {
         webView.evaluateJavaScript("document.getElementsByTagName('pre')[0].innerHTML.toString()", completionHandler: { result, error in
             print(result)

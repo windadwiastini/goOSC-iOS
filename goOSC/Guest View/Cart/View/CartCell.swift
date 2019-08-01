@@ -14,7 +14,6 @@ class CartCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLable: UILabel!
     func configureCell(data: CartEntity.SingleCart) {
-        print("single")
         let url = Config().url + data.thumbnail
         Alamofire.request(url).responseData { (response) in
             if response.error == nil {

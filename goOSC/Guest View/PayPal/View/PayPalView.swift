@@ -34,8 +34,6 @@ class PayPalView: UIViewController, PayPalPaymentDelegate, PaypalViewProtocol {
     func payPalPaymentViewController(_ paymentViewController: PayPalPaymentViewController, didComplete completedPayment: PayPalPayment) {
         paymentViewController.dismiss(animated: true, completion: {() -> Void in
             self.presenter?.interactor?.doPaymentPaypal(self.data!)
-            
-            print("here us your proof of payment : \n\n \(completedPayment.confirmation) \n \n send this to your server for confirmation and fulfillment.")
         })
     }
     

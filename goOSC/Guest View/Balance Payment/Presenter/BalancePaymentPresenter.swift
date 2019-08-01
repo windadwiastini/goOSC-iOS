@@ -16,7 +16,6 @@ class BalancePaymentPresenter: BalancePaymentPresenterProtocol {
     var interactor: BalancePaymentInputInteractorProtocol?
     
     func viewDidLoad() {
-        print("presenter view did load")
         interactor?.summary()
     }
     

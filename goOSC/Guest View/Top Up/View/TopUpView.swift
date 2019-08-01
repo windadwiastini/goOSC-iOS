@@ -25,7 +25,6 @@ class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDele
         case camera, video, photoLibrary
     }
     fileprivate var currentVC: UIViewController?
-//    static let shared = AttachmentHandler()
     var imagePickedBlock: UIImage?
     
     override func viewDidLoad() {

@@ -23,7 +23,8 @@ class ProfileView: UIViewController, ProfileViewProtocol {
     }
     
     func updateView(response resp: Profile.Response) {
-        emailLabel.text = resp.data[0].user_email
-        nameLabel.text = "\(resp.data[0].first_name) \(resp.data[0].last_name)"
+        let data = resp.data[0]
+        emailLabel.text = data.user_email
+        nameLabel.text = "\(data.first_name) \(data.last_name)"
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 class VoucherInteractor: VoucherInputInteractorProtocol {
     var presenter: VoucherOutputInteractorProtocol?
-    let token = UserDefaults.standard.value(forKey: "token")!
+    let token = Auth().token
     func validateVoucher(voucher data: String) {
         let url = "\(Config().url)/cart/voucher?voucher=\(data)"
         let header: HTTPHeaders = [
@@ -21,9 +21,6 @@ class VoucherInteractor: VoucherInputInteractorProtocol {
             case 500?:
                 let jsonDecode = try! JSONDecoder().decode(VoucherEntity.ResponseFailed.self, from: response.data!)
                 self.presenter?.responseFail(response: jsonDecode)
-            case 401?:
-                print("error")
-//                self.presenter?.signout()
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(VoucherEntity.ResponseSuccess.self, from: response.data!)
                 UserDefaults.standard.set(jsonDecode.data.voucher, forKey: "vch")

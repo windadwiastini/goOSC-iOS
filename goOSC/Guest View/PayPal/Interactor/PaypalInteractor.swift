@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 class PaypalInteractor: PaypalInputInteractorProtocol {
     var presenter: PaypalOutputInteractorProtocol?
-     let token = UserDefaults.standard.value(forKey: "token")!
+     let token = Auth().token
     func doPaymentWithPayPal() {
         let url = "\(Config().url)/cart/dopayment"
         let header: HTTPHeaders = [
@@ -32,14 +32,7 @@ class PaypalInteractor: PaypalInputInteractorProtocol {
                     switch response.response?.statusCode {
                     case 500?:
                         print(response)
-//                        let jsonDecode = try! JSONDecoder().decode(BalancePayment.FailedResponse.self, from: response.data!)
-//                        self.presenter?.responsePaymentWithPayPal()
-                    case 401?:
-                        print(response)
-//                        self.presenter?.signout()
                     case 200?:
-                        print(response.value)
-//                        UserDefaults.standard.removeObject(forKey: "vch")
                         let jsonDecode = try! JSONDecoder().decode(PaypalEntity.Response.self, from: response.data!)
                         self.presenter?.responsePaymentWithPayPal(jsonDecode)
                     case .none:

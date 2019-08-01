@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 class TopUpInteractor: TopUpInputInteractorProtocol {
     var presenter: TopUpOutputInteractorProtocol?
-    let token = UserDefaults.standard.value(forKey: "token")!
+    let token = Auth().token
     func getTopUpAmount() {
         let url = "\(Config().url)/dashboard/user/topupammount"
         let header: HTTPHeaders = [

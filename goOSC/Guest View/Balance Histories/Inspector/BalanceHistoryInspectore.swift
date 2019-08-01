@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 class BalanceHistoryInspector: BalanceHistoryInputInteractorProtocol{
     var presenter: BalanceHistoryOutputInteractorProtocol?
-    let token = UserDefaults.standard.value(forKey: "token")!
+    let token = Auth().token
     func findAllBalance() {
         let url = "\(Config().url)/dashboard/user/balancehistory"
         let header: HTTPHeaders = [

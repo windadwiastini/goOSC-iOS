@@ -17,8 +17,6 @@ class ProfilePresenter: ProfilePresenterProtocol {
     func viewDidLoad() {
         interactor?.getUserDetail()
     }
-    
-    
 }
 
 extension ProfilePresenter: ProfileOutputInteractorProtocol {

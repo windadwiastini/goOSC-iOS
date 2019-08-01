@@ -14,14 +14,12 @@ class PayPalPresenter: PaypalPresenterProtocol {
     func viewDidLoad() {
         interactor?.doPaymentWithPayPal()
     }
-    
 }
 
 extension PayPalPresenter: PaypalOutputInteractorProtocol {
     func responseDoPaymentPaypal(_ resp: PaypalEntity.ResponseDoPayment) {
         view?.dismiss(resp)
     }
-    
     func responsePaymentWithPayPal(_ resp: PaypalEntity.Response) {
         view?.showPaypalLaman(response: resp)
     }

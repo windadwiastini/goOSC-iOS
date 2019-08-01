@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 class ProfileInteractor: ProfileInputInteractorProtocol {
     var presenter: ProfileOutputInteractorProtocol?
-    let token = UserDefaults.standard.value(forKey: "token")!
+    let token = Auth().token
     func getUserDetail() {
         let url = "\(Config().url)/dashboard/user"
         let header: HTTPHeaders = [
@@ -24,9 +24,6 @@ class ProfileInteractor: ProfileInputInteractorProtocol {
             case 500?:
                 let jsonDecode = try! JSONDecoder().decode(Profile.ResponseFail.self, from: response.data!)
                 self.presenter?.responseFail(response: jsonDecode)
-            case 401?:
-                print("error")
-            //                self.presenter?.signout()
             case 200?:
                 let jsonDecode = try! JSONDecoder().decode(Profile.Response.self, from: response.data!)
                 self.presenter?.responSuccess(response: jsonDecode)

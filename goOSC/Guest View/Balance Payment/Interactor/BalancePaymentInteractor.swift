@@ -10,12 +10,10 @@ import Foundation
 import Alamofire
 class BalancePaymentInteractor: BalancePaymentInputInteractorProtocol {
     var presenter: BalancePaymentOutputInteractorProtocol?
-    let token = UserDefaults.standard.value(forKey: "token")!
+    let token = Auth().token
     
     func summary() {
-        
         var vch = UserDefaults.standard.value(forKey: "vch") ?? ""
-        
         let url = "\(Config().url)/cart/summary?payment=balance&voucher=\(vch)"
         let header: HTTPHeaders = [
             "Authorization": "Bearer \(token)",
