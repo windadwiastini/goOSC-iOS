@@ -24,6 +24,7 @@ extension CartPresenter: CartOutputInteractorProtocol {
     }
     
     func signout() {
-        SignOut().viewDidLoad(view: view as! UIViewController)
+        guard let viewComponent = view as? UIViewController else {return}
+        SignOut().viewDidLoad(view: viewComponent)
     }
 }

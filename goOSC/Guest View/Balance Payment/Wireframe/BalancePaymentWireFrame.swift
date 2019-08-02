@@ -6,7 +6,6 @@
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import Foundation
 import UIKit
 class BalancePaymentWireFrame: BalancePaymentWireFrameProtocol {
     func routeToSignIn(from view: UIViewController) {}

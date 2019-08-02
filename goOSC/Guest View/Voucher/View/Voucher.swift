@@ -21,7 +21,9 @@ class Voucher: UIViewController,VoucherViewProtocol {
     }
     
     @IBAction func addVoucher(_ sender: Any) {
-        presenter?.interactor?.validateVoucher(voucher: voucherValue.text!)
+        if let voucher = voucherValue.text {
+          presenter?.interactor?.validateVoucher(voucher: voucher)
+        }
     }
     func showAlertSuccess(response resp: VoucherEntity.ResponseSuccess) {
         let alert = UIAlertController(title: "Voucher", message: resp.message, preferredStyle: .alert)

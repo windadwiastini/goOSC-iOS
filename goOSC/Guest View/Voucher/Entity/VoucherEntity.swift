@@ -14,13 +14,18 @@ struct VoucherEntity {
         var data: Data
     }
     
-    struct Data: Decodable {
+    struct Data: Codable {
         var voucher: String
         var description: String
         var discount: Int
         var nominal: Int
         var total: Int
-        var final_price: Double
+        var finalPrice: Double
+        
+        enum CodingKeys: String, CodingKey {
+            case voucher, description, discount, nominal, total
+            case finalPrice = "final_price"
+        }
     }
     
     struct ResponseFailed: Decodable {

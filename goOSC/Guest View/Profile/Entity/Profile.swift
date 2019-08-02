@@ -14,10 +14,16 @@ struct Profile {
         var data: [Data]
     }
     
-    struct Data: Decodable {
-        var user_email: String
-        var first_name: String
-        var last_name: String
+    struct Data: Codable {
+        var userEmail: String
+        var firstName: String
+        var lastName: String
+        
+        enum CodingKeys: String, CodingKey {
+            case userEmail = "user_email"
+            case firstName = "first_name"
+            case lastName = "last_name"
+        }
     }
     
     struct ResponseFail: Decodable {

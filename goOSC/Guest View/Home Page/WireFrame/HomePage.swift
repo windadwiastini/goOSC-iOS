@@ -23,19 +23,30 @@ enum HomePage {
         }
     }
     
-    struct Product: Decodable {
+    struct Product: Codable {
         var id: String
         var name: String
         var price: Int
-        var promoted_product: Bool
-        var promote_title: String
+        var promotedProduct: Bool
+        var promoteTitle: String
         var thumbnail: String
         var preview: Preview
         
+        enum CodingKeys: String, CodingKey {
+            case id, name, price, thumbnail, preview
+            case promotedProduct = "promoted_product"
+            case promoteTitle = "promote_title"
+        }
+        
     }
     
-    struct Preview: Decodable {
-        var String: String
-        var Valid: Bool
+    struct Preview: Codable {
+        var string: String
+        var valid: Bool
+        
+        enum CodingKeys: String, CodingKey {
+            case string = "String"
+            case valid = "Valid"
+        }
     }
 }

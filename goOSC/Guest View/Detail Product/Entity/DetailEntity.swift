@@ -20,23 +20,34 @@ enum Detail {
         }
     }
     
-    struct ResponseData: Decodable {
+    struct ResponseData: Codable {
         var id: String
         var name: String
         var description: String
-        var view_count: Int
-        var like_count: Int
+        var viewCount: Int
+        var likeCount: Int
         var thumbnail: String
-        var preview_file_type: String
+        var previewFileType: String
         var preview: Preview
         var category: String
         var price: Double
         
+        enum CodingKeys: String, CodingKey {
+            case id, name, description, thumbnail, preview, category, price
+            case viewCount = "view_count"
+            case likeCount = "like_count"
+            case previewFileType = "preview_file_type"
+        }
     }
     
-    struct Preview: Decodable {
-        var String: String
-        var Valid: Bool
+    struct Preview: Codable {
+        var string: String
+        var valid: Bool
+        
+        enum CodingKeys: String, CodingKey {
+            case string = "String"
+            case valid = "Valid"
+        }
     }
     
     struct LikeResponse: Decodable {

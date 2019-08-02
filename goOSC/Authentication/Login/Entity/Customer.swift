@@ -31,15 +31,23 @@ enum Customer {
         var token: String
     }
     
-    struct SingleUser: Decodable {
+    struct SingleUser: Codable {
         var id: Int
         var email: String
         var password: String
-        var firstname: String
-        var lastname: String
-        var role_id: Int
-        var role_name: String
+        var firstName: String
+        var lastName: String
+        var roleID: Int
+        var roleName: String
         var origin: String
+        
+        enum CodingKeys: String, CodingKey {
+            case id, email, password, origin
+            case firstName = "firstname"
+            case lastName = "lastname"
+            case roleID = "role_id"
+            case roleName = "role_name"
+        }
     }
     
 }

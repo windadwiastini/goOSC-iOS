@@ -19,7 +19,9 @@ class ForgotPasswordView: UIViewController, ForgotPasswordViewProtocol {
     }
     
     @IBAction func doActionForgotPassword(_ sender: Any) {
-        presenter?.interactor?.doForgotPassword(ForgotPassword.Request(email: emailText.text!))
+        if let email = emailText.text {
+         presenter?.interactor?.doForgotPassword(ForgotPassword.Request(email: email))
+        }
     }
     
     func dissmiss() {

@@ -8,8 +8,8 @@
 	<string>Foundation</string>
 	<string>Dispatch</string>
 	<string>CoreGraphics</string>
-	<string>Differ</string>
 	<string>AVFoundation</string>
+	<string>Differ</string>
 	<string>WebKit</string>
 	<string>QuartzCore</string>
 	<string>Alamofire</string>
@@ -18,15 +18,15 @@
 	<string>MessengerKit</string>
 	<string>SafariServices</string>
 	<string>SSCommonCrypto</string>
-	<string>UIKit</string>
 	<string>CoreServices</string>
+	<string>UIKit</string>
 	<string>BNDProtocolProxyBase</string>
 	<string>Starscream</string>
 	<string>ObjectiveC</string>
+	<string>Photos</string>
+	<string>XCTest</string>
 	<string>SystemConfiguration</string>
 	<string>SSCZLib</string>
-	<string>XCTest</string>
-	<string>Photos</string>
 	<string>IQKeyboardManagerSwift</string>
 	<string>MobileCoreServices</string>
 	<string>CoreFoundation</string>

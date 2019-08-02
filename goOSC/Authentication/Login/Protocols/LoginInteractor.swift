@@ -20,28 +20,28 @@ class LoginInteractor: LoginInputInteractorProtocol {
         Alamofire.request("\(Config().url)/auth", method: .post, parameters: parameters, encoding: JSONEncoding.default ).responseJSON {response in
             let defaults = UserDefaults.standard
             defaults.set(false, forKey: "loggedIn")
-            print(response.response?.statusCode)
             switch response.response?.statusCode {
             case 401?:
                 let resp = Customer.Response(code: 401, message: "Email or password is not valid", data: nil)
                 self.presenter?.response(resp)
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(Customer.Response.self, from: response.data!)
-                defaults.set(jsonDecode.data!.token, forKey: "token")
-                print(jsonDecode.data!.token)
-                print(jsonDecode)
-                defaults.set(jsonDecode.data!.user!.id, forKey: "userId")
-                defaults.set(jsonDecode.data!.user!.email, forKey: "email")
-                defaults.set(jsonDecode.data!.user!.firstname, forKey: "firstname")
-                defaults.set(jsonDecode.data!.user!.lastname, forKey: "lastname")
-                defaults.set(jsonDecode.data!.user!.role_id, forKey: "roleId")
-                defaults.set(jsonDecode.data!.user!.role_name, forKey: "roleName")
-                defaults.set(true, forKey: "loggedIn")
-                self.presenter?.response(jsonDecode)
-            case .none:
-                let resp = Customer.Response(code: 401, message: "Email or password is not valid", data: nil)
-                self.presenter?.response(resp)
-            case .some(_):
+                do {
+                    if let dataResponse = response.data {
+                        let jsonDecode = try JSONDecoder().decode(Customer.Response.self, from: dataResponse)
+                        defaults.set(jsonDecode.data!.token, forKey: "token")
+                        defaults.set(jsonDecode.data!.user!.id, forKey: "userId")
+                        defaults.set(jsonDecode.data!.user!.email, forKey: "email")
+                        defaults.set(jsonDecode.data!.user!.firstName, forKey: "firstname")
+                        defaults.set(jsonDecode.data!.user!.lastName, forKey: "lastname")
+                        defaults.set(jsonDecode.data!.user!.roleID, forKey: "roleId")
+                        defaults.set(jsonDecode.data!.user!.roleName, forKey: "roleName")
+                        defaults.set(true, forKey: "loggedIn")
+                        self.presenter?.response(jsonDecode)
+                    }
+                } catch {
+                    print("the response can not be decoded")
+                }
+            case .none, .some(_):
                 let resp = Customer.Response(code: 401, message: "Email or password is not valid", data: nil)
                 self.presenter?.response(resp)
             }
@@ -61,12 +61,12 @@ class LoginInteractor: LoginInputInteractorProtocol {
         let delegate = Alamofire.SessionManager.default.delegate
         delegate.taskWillPerformHTTPRedirection = nil
         if type == "google" || type == "facebook" {
-            let urlSend = URL(string: requestUrl)
-            self.presenter?.showWebView(urlSend!)
+            if let urlSend = URL(string: requestUrl) {
+                self.presenter?.showWebView(urlSend)
+            }
         } else {
             Alamofire.request(requestUrl, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { response in
                 guard let url = response.response?.url else { return }
-                print(url)
                 self.presenter?.showWebView(url)
             }
         }

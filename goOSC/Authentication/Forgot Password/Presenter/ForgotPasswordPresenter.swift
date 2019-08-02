@@ -30,7 +30,7 @@ extension ForgotPasswordPresenter: ForgotPasswordOutPutInteractorProtocol {
             }
         }))
         
-        let k = view as! UIViewController
-        k.present(alert, animated: true)
+        guard let viewComponent = view as? UIViewController else {return}
+        viewComponent.present(alert, animated: true)
     }
 }

@@ -40,8 +40,8 @@ class PayPalView: UIViewController, PayPalPaymentDelegate, PaypalViewProtocol {
     func showPaypalLaman(response resp: PaypalEntity.Response) {
         data = resp
         var items = [PayPalItem]()
-        for item in resp.Data.payment_data.product_list {
-            var item1 = PayPalItem(name: item.product_name , withQuantity: 1, withPrice: NSDecimalNumber(string: "\(item.price)"), withCurrency: resp.Data.payment_data.currency, withSku: item.product_id)
+        for item in resp.data.paymentData.productList {
+            let item1 = PayPalItem(name: item.productName , withQuantity: 1, withPrice: NSDecimalNumber(string: "\(item.price)"), withCurrency: resp.data.paymentData.currency, withSku: item.productID)
             items.append(item1)
         }
 
@@ -50,7 +50,7 @@ class PayPalView: UIViewController, PayPalPaymentDelegate, PaypalViewProtocol {
         let tax = NSDecimalNumber(string: "0.0")
         let paymentDetail = PayPalPaymentDetails(subtotal: subtotal, withShipping: shipping, withTax: tax)
         let total = subtotal
-        let payment = PayPalPayment(amount: total, currencyCode: resp.Data.payment_data.currency, shortDescription: "Total", intent: .sale)
+        let payment = PayPalPayment(amount: total, currencyCode: resp.data.paymentData.currency, shortDescription: "Total", intent: .sale)
         payment.items = items
         payment.paymentDetails = paymentDetail
 
@@ -63,7 +63,7 @@ class PayPalView: UIViewController, PayPalPaymentDelegate, PaypalViewProtocol {
     }
     
     func dismiss(_ resp: PaypalEntity.ResponseDoPayment) {
-        Alert().informationAlert(title: "Payment", message: resp.PaymentMessage, ui: self)
+        Alert().informationAlert(title: "Payment", message: resp.paymentMessage, ui: self)
         self.dismiss(animated: true, completion: nil)
     }
     

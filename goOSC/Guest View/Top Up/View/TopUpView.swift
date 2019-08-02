@@ -61,11 +61,15 @@ class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDele
         let actionSheet = UIAlertController(title: TopUp.Constants.actionFileTypeHeading, message: TopUp.Constants.actionFileTypeDescription, preferredStyle: .actionSheet)
         
         actionSheet.addAction(UIAlertAction(title: TopUp.Constants.camera, style: .default, handler: { (action) -> Void in
-            self.authorisationStatus(attachmentTypeEnum: .camera, vc: self.currentVC!)
+            if let currentVC = self.currentVC {
+             self.authorisationStatus(attachmentTypeEnum: .camera, vc: currentVC)
+            }
         }))
         
         actionSheet.addAction(UIAlertAction(title: TopUp.Constants.phoneLibrary, style: .default, handler: { (action) -> Void in
-            self.authorisationStatus(attachmentTypeEnum: .photoLibrary, vc: self.currentVC!)
+            if let currentVC = self.currentVC {
+                self.authorisationStatus(attachmentTypeEnum: .photoLibrary, vc: currentVC)
+            }
         }))
         
         actionSheet.addAction(UIAlertAction(title: TopUp.Constants.cancelBtnTitle, style: .cancel, handler: nil))
@@ -174,8 +178,8 @@ class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDele
     }
     
     func applyUserDashboardData(_ user: TopUp.User) {
-        nameLabel.text = "\(user.first_name) \(user.last_name)"
-        balanceLabel.text = "\(user.user_balance)"
+        nameLabel.text = "\(user.firstName) \(user.lastName)"
+        balanceLabel.text = "\(user.userBalance)"
     }
     
     @IBAction func goBack(_ sender: Any) {
@@ -190,7 +194,7 @@ extension TopUpView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! TopUpCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as? TopUpCell else {return UICollectionViewCell()}
         cell.labelCell.text = String(dataSource[indexPath.row])
         if indexPath.row == 0 {
             cell.contentView.backgroundColor = UIColor(hue: 0.4944, saturation: 1, brightness: 0.88, alpha: 1.0)

@@ -25,11 +25,13 @@ class CategoryPageView: UIViewController, CategoryPageViewProtocol {
     
     func updateData(response: Category.Response) {
         categoryData = response
-        for data in categoryData.data! {
-            let newData = Category.CellData(opened: true, category: data)
-            cellDataList.append(newData)
+        if let categoryData = categoryData.data {
+            for data in categoryData {
+                let newData = Category.CellData(opened: true, category: data)
+                cellDataList.append(newData)
+            }
+            tableView.reloadData()
         }
-        tableView.reloadData()
     }
     
     @IBAction func doSignOut(_ sender: Any) {
@@ -44,11 +46,14 @@ class CategoryPageView: UIViewController, CategoryPageViewProtocol {
 extension CategoryPageView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if cellDataList[section].opened == true {
-            return (cellDataList[section].category.sub_category?.count)! + 1
+            if let count = cellDataList[section].category.subCategory?.count {
+             return count + 1
+            } else {
+                return 1
+            }
         } else {
             return 1
         }
-//        return categoryData.data!.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,11 +63,13 @@ extension CategoryPageView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryPageCell") as? CategoryPageCell else { return UITableViewCell() }
-            cell.configureCell(title: cellDataList[indexPath.section].category.category_name, type: "category")
+            cell.configureCell(title: cellDataList[indexPath.section].category.categoryName, type: "category")
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryPageCell") as? CategoryPageCell else { return UITableViewCell() }
-            cell.configureCell(title: cellDataList[indexPath.section].category.sub_category![indexPath.row - 1].subcategory_name, type: "subcategory")
+            if let subCategory = cellDataList[indexPath.section].category.subCategory {
+             cell.configureCell(title: subCategory[indexPath.row - 1].subcategoryName, type: "subcategory")
+            }
             return cell
         }
         
@@ -71,26 +78,13 @@ extension CategoryPageView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             let category = cellDataList[indexPath.section].category
-            let data = Category.NewData(id: category.category_id, name: category.category_name, type: "category")
+            let data = Category.NewData(id: category.categoryID, name: category.categoryName, type: "category")
             presenter?.showCategoryProduct(with: data, from: self)
         } else {
-            let category = cellDataList[indexPath.section].category.sub_category![indexPath.row-1]
-            let data = Category.NewData(id: category.subcategory_id, name: category.subcategory_name, type: "subcategory")
+            let category = cellDataList[indexPath.section].category.subCategory![indexPath.row-1]
+            let data = Category.NewData(id: category.subcategoryID, name: category.subcategoryName, type: "subcategory")
             presenter?.showCategoryProduct(with: data, from: self)
         }
-        
-        
-//        if indexPath.row == 0 {
-//            if cellDataList[indexPath.section].opened == true {
-//                cellDataList[indexPath.section].opened = false
-//                let sections = IndexSet.init(integer: indexPath.section)
-//                tableView.reloadSections(sections, with: .none)
-//            } else {
-//                cellDataList[indexPath.section].opened = true
-//                let sections = IndexSet.init(integer: indexPath.section)
-//                tableView.reloadSections(sections, with: .none)
-//            }
-//        }
     }
     
 }

@@ -19,13 +19,13 @@ class SearchWireFrame: SearchWireFrameProtocol {
     }
     
     func routeToDetail(from view: UIViewController, with product: HomePage.Product) {
-        let detailPage = view.storyboard?.instantiateViewController(withIdentifier: "productDetail") as! DetailView
+        guard let detailPage = view.storyboard?.instantiateViewController(withIdentifier: "productDetail") as? DetailView else {return}
         DetailWireFrame.createDetailModule(detailPage, product)
         view.present(detailPage, animated: true, completion: nil)
     }
     
     func routeToSignIn(from view: UIViewController) {
-        let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
+        guard let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as? Login else {return}
         LoginWireframe.createLoginModule(signInPage)
         view.present(signInPage, animated: true, completion: nil)
     }

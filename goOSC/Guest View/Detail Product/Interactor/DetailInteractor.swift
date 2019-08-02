@@ -11,8 +11,6 @@ import Alamofire
 import CoreData
 class DetailInteractor: DetailInputInteractorProtocol {
     var presenter: DetailOutputInteractorProtocol?
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
     func findDetail(_ data: HomePage.Product, _ updateLike: Bool) {
         let url = "\(Config().url)/guest/product/detail?id=\(data.id)"
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
@@ -21,12 +19,15 @@ class DetailInteractor: DetailInputInteractorProtocol {
                 let resp = Detail.Response(code: 500, message: "Network Error", data: nil)
                 self.presenter?.response(resp, updateLike)
             case 200?:
-                print(response)
-                let jsonDecode = try! JSONDecoder().decode(Detail.Response.self, from: response.data!)
-                if updateLike {
-                    self.presenter?.response(jsonDecode, updateLike)
-                } else {
-                    self.presenter?.response(jsonDecode, updateLike)
+                do {
+                    let jsonDecode = try JSONDecoder().decode(Detail.Response.self, from: response.data!)
+                    if updateLike {
+                        self.presenter?.response(jsonDecode, updateLike)
+                    } else {
+                        self.presenter?.response(jsonDecode, updateLike)
+                    }
+                } catch {
+                    print("the response can not be decoded")
                 }
             case .none:
                 let resp = Detail.Response(code: 401, message: "Not Found", data: nil)
@@ -42,23 +43,10 @@ class DetailInteractor: DetailInputInteractorProtocol {
         let url = "\(Config().url)/guest/product/like?id=\(product.id)"
         Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             switch response.response?.statusCode {
-            case 500?:
-                let resp = Detail.LikeResponse(code: 500, message: "Network Error", data: nil)
-//                self.presenter?.response(resp)
-                print(resp)
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(Detail.LikeResponse.self, from: response.data!)
-//                self.presenter?.response(jsonDecode)
-                print(jsonDecode)
                 self.findDetail(product, true)
-            case .none:
-                let resp = Detail.LikeResponse(code: 401, message: "Not Found", data: nil)
-//                self.presenter?.response(resp)
-                print(resp)
-            case .some(_):
-                let resp = Detail.LikeResponse(code: 401, message: "Some error occured", data: nil)
-//                self.presenter?.response(resp)
-                print(resp)
+            case 500?, .none, .some(_):
+                print("error")
             }
         }
     }
@@ -70,40 +58,27 @@ class DetailInteractor: DetailInputInteractorProtocol {
             "Authorization": "Bearer \(token)"
         ]
         Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
-            print(response)
             switch response.response?.statusCode {
-            case 500?:
-                print("error")
             case 200?:
                 self.addToDB(data, userId)
             case 201?:
                 self.addToDB(data, userId)
-            case .none:
-                //                let resp = Detail.Response(code: 401, message: "Not Found", data: nil)
-                //                self.presenter?.response(resp, updateLike)
-                print("error")
-            case .some(_):
-                //                let resp = Detail.Response(code: 401, message: "Some error occured", data: nil)
-                //                self.presenter?.response(resp, updateLike)
+            case 500?, .none, .some(_):
                 print("error")
             }
         }
-        
     }
     
-    
     private func addToDB (_ data: HomePage.Product, _ userId: Int) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         let context = appDelegate.persistentContainer.viewContext
         guard let cart = NSEntityDescription.insertNewObject(forEntityName: "Cart", into: context) as? Cart else {
             print("Error : failed to create a new object")
             return
         }
-        
         do {
             try cart.addProperty(data, userId)
-            print("Data successfully inserted")
         } catch {
-            print("Error")
             context.delete(cart)
         }
         

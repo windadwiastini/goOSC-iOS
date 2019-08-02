@@ -13,11 +13,6 @@ class RegisterWireframe: RegisterRouterProtocol {
     
     func pushToLogin(with identifier: String, from view: UIViewController) {
         view.dismiss(animated: true, completion: nil)
-//        print("show login in wireframe. Identifier \(identifier)")
-//        let loginView = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
-//        LoginWireframe.createLoginModule(loginView)
-//        view.present(loginView, animated: true, completion: nil)
-//        view.navigationController?.pushViewController(loginView, animated: true)
     }
     
     static func createRegisterModule(registerViewRef: RegisterView) {

@@ -6,7 +6,6 @@
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import Foundation
 import UIKit
 class BalancePaymentPresenter: BalancePaymentPresenterProtocol {
     var wireFrame: BalancePaymentWireFrameProtocol?
@@ -35,6 +34,7 @@ extension BalancePaymentPresenter: BalancePaymentOutputInteractorProtocol {
        view?.showAlertAndDismis(title: "Payment", message: resp.message)
     }
     func signout() {
-        SignOut().viewDidLoad(view: view as! UIViewController)
+        guard let viewComponent = view as? UIViewController else {return}
+        SignOut().viewDidLoad(view: viewComponent)
     }
 }

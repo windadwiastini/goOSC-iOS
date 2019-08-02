@@ -23,7 +23,7 @@ class CartCell: UITableViewCell {
                 }
             }
         }
-        nameLabel.text = data.product_name
+        nameLabel.text = data.productName
         priceLable.text = "\((Int(data.price)).formattedWithSeparator)"
     }
     

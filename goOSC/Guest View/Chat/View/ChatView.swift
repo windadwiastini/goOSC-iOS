@@ -11,10 +11,8 @@ import Starscream
 import MessengerKit
 class ChatView: MSGMessengerViewController, ChatViewProtocol {
     var presenter: ChatPresenterProtocol?
-    
     var messages  = [Chat.Detail]()
-
-    fileprivate var socket = WebSocket(url: URL(string: "ws://goosc.herokuapp.com/ws?useremail=\(Auth().email)&destemail=admin@goosc.com&username=renikumalawati&type=admin")!, protocols: ["chat"])
+    fileprivate var socket = WebSocket(url: URL(string: "ws://goosc.herokuapp.com/ws?useremail=\(Auth().email)&destemail=admin@goosc.com&username=\(Auth().firstName)&type=admin")!, protocols: ["chat"])
     override func viewDidLoad() {
         super.viewDidLoad()
         ChatWireFrame.createChatModule(self)
@@ -42,7 +40,7 @@ class ChatView: MSGMessengerViewController, ChatViewProtocol {
     }
     
     override func inputViewPrimaryActionTriggered(inputView: MSGInputView) {
-        let newMsg = Chat.Detail(chat_id: "", useremail: Auth().email, username: Auth().firstName, destination_email: "", destination_name: "", message: inputView.message, read: false, type_chat: "chat", chat_date: "")
+        let newMsg = Chat.Detail(chatId: "", userEmail: Auth().email, username: Auth().firstName, destinationEmail: "", destinationName: "", message: inputView.message, read: false, typeChat: "chat", chatDate: "")
         messages.append(newMsg)
         collectionView.reloadData()
         let jsonObject: [String: String] = ["Message": inputView.message]
@@ -58,15 +56,19 @@ extension ChatView:WebSocketDelegate {
     }
 
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
-        print("websocket is disconnected: \(error?.localizedDescription)")
+        print("websocket is disconnected: \(error?.localizedDescription ?? "")")
     }
 
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
-        let jsonDecode = try! JSONDecoder().decode(Chat.MessageDetail.self, from: text.data(using: .utf8)!)
-        let newMsg = Chat.Detail(chat_id: "", useremail: "admin@goosc.com", username: jsonDecode.From, destination_email: "", destination_name: "", message: jsonDecode.Message, read: false, type_chat: jsonDecode.Type, chat_date: "")
-        messages.append(newMsg)
-        collectionView.reloadData()
-        collectionView.scrollToBottom(animated: true)
+        do {
+            let jsonDecode = try JSONDecoder().decode(Chat.MessageDetail.self, from: text.data(using: .utf8)!)
+            let newMsg = Chat.Detail(chatId: "", userEmail: "admin@goosc.com", username: jsonDecode.from, destinationEmail: "", destinationName: "", message: jsonDecode.message, read: false, typeChat: jsonDecode.type, chatDate: "")
+            messages.append(newMsg)
+            collectionView.reloadData()
+            collectionView.scrollToBottom(animated: true)
+        } catch {
+            print("message can not be decoded")
+        }
     }
 
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
@@ -78,7 +80,7 @@ extension ChatView: MSGDataSource {
     func message(for indexPath: IndexPath) -> MSGMessage {
         let messageData = messages[indexPath.item]
         var isSender = true
-        if Auth().email == messageData.useremail {
+        if Auth().email == messageData.userEmail {
             isSender = false
         }
         
@@ -96,7 +98,6 @@ extension ChatView: MSGDataSource {
     }
     
     func numberOfMessages(in section: Int) -> Int {
-        print(messages.count)
         return messages.count
     }
     

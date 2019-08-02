@@ -15,9 +15,9 @@ class LoginPresenter: LoginPresenterProtocol {
     var presenter: LoginPresenterProtocol?
     
     func viewDidLoad() {
-        print(UserDefaults.standard.value(forKey: "userId"))
+        guard let viewComponent = view as? UIViewController else {return}
         if UserDefaults.standard.bool(forKey: "loggedIn") {
-            wireFrame?.routeToHomePage(from: view as! UIViewController)
+            wireFrame?.routeToHomePage(from: viewComponent)
         }
     }
     
@@ -32,8 +32,9 @@ class LoginPresenter: LoginPresenterProtocol {
 
 extension LoginPresenter: LoginOutputInteractorProtocol {
     func response(_ resp: Customer.Response ) {
+        guard let viewComponent = view as? UIViewController else {return}
         if resp.code == 200 {
-            self.wireFrame?.routeToHomePage(from: view as! UIViewController)
+            self.wireFrame?.routeToHomePage(from: viewComponent)
         } else {
             view?.openAlert("Login", resp.message)
         }

@@ -25,17 +25,16 @@ class ChatInteractor: ChatInputInteractorProtocol {
         Alamofire.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: header ).responseJSON {response in
             print(response)
             switch response.response?.statusCode {
-            case 500?:
-                print("error")
-            case 401?:
-//                    self.presenter?.signout()
-                print("error")
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(Chat.ResponseDetail.self, from: response.data!)
-                self.presenter?.responseDetailChat(response: jsonDecode)
-            case .none:
-                print("error")
-            case .some(_):
+                do {
+                    if let dataResponse = response.data {
+                        let jsonDecode = try JSONDecoder().decode(Chat.ResponseDetail.self, from: dataResponse)
+                        self.presenter?.responseDetailChat(response: jsonDecode)
+                    }
+                } catch {
+                        print("the response can not be decoded")
+                }
+            case 500?, 401?, .none, .some(_):
                 print("error")
             }
         }

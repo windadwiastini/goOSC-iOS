@@ -18,7 +18,6 @@ class JsonManipulate {
                 }
             }catch {
                 print("error")
-                //Access error here
             }
         }
         return ""

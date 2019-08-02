@@ -66,8 +66,8 @@ class DetailView: UIViewController, DetailViewProtocol {
     func showItem(_ data: Detail.ResponseData) {
         titleLabel.text = data.name
         desc.text = data.description
-        likeCount.text = String(data.like_count)
-        viewVount.text = String(data.view_count)
+        likeCount.text = String(data.likeCount)
+        viewVount.text = String(data.viewCount)
         categoryLabel.text = data.category
         let priceInt = Int(data.price)
         priceLabel.text = "\((priceInt).formattedWithSeparator)"
@@ -79,12 +79,12 @@ class DetailView: UIViewController, DetailViewProtocol {
             print("error: \(error)")
         }
         
-        let urlAV = URL(string: "\(Config().url)\(data.preview.String)")
+        let urlAV = URL(string: "\(Config().url)\(data.preview.string)")
         let moviePlayer1 = AVPlayer(url: urlAV!)
         playerViewController.player = moviePlayer1
     }
     
     func updateLike(_ data: Detail.ResponseData) {
-        likeCount.text = String(data.like_count)
+        likeCount.text = String(data.likeCount)
     }
 }

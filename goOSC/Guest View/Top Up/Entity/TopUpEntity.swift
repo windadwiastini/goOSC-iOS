@@ -35,11 +35,19 @@ struct TopUp {
         var data: [User]
     }
     
-    struct User: Decodable {
-        var user_id: Int
-        var user_email: String
-        var first_name: String
-        var last_name: String
-        var user_balance: Double
+    struct User: Codable {
+        var userID: Int
+        var userEmail: String
+        var firstName: String
+        var lastName: String
+        var userBalance: Double
+        
+        enum CodingKeys: String, CodingKey {
+            case userID = "user_id"
+            case userEmail = "user_email"
+            case firstName = "first_name"
+            case lastName = "last_name"
+            case userBalance = "user_balance"
+        }
     }
 }

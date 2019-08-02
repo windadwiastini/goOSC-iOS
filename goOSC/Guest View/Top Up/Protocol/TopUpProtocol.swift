@@ -12,7 +12,7 @@ protocol TopUpViewProtocol {
     func updateDataAmount(_ resp: TopUp.ResponseAmount)
     func showSpinner()
     func hideSpinner()
-    func viewAlert(data data: TopUp.ResponseAmount)
+    func viewAlert(data: TopUp.ResponseAmount)
     func closeModal()
     func applyUserDashboardData(_ user: TopUp.User)
 }
@@ -31,7 +31,7 @@ protocol TopUpInputInteractorProtocol {
     var presenter : TopUpOutputInteractorProtocol? {get set}
     func getTopUpAmount()
     func getUserDashboardData()
-    func submitTopup(ammount ammount: Double, file image: UIImage)
+    func submitTopup(ammount: Double, file image: UIImage)
 }
 
 protocol TopUpOutputInteractorProtocol {

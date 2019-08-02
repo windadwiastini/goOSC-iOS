@@ -31,12 +31,12 @@ class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
     
     func updateData(response: BalancePayment.Response) {
         let data = response.data
-        voucher.text = data?.voucher
-        finalPrice.text = String(data!.total)
-        discount.text = String(data!.total_discount)
-        total.text = String(data!.final_price)
+        voucher.text = data.voucher
+        finalPrice.text = String(data.total)
+        discount.text = String(data.totalDiscount)
+        total.text = String(data.finalPrice)
         dataSource.removeAll()
-        dataSource.replace(with: response.data!)
+        dataSource.replaceElements(with: data.productList )
     }
     
     @IBAction func processPayment(_ sender: Any) {
@@ -53,7 +53,7 @@ class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
     
     fileprivate func prepareObservable() {
         dataSource.bind(to: tableView, animated: true) {dataSource, indexPath, tableView in
-            let cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell") as! PaymentCell
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell") as? PaymentCell else {return UITableViewCell()}
             let data = dataSource[indexPath.row]
             cell.configureCell(data: data)
             return cell

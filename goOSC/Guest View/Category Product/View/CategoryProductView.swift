@@ -39,7 +39,9 @@ class CategoryProductView: UIViewController, CategoryProductViewProtocol {
         productList.observeNext { value in
             self.data.removeAll()
             value.data.map { e in
-                self.data.append(e!)
+                if let element = e {
+                 self.data.append(element)
+                }
             }
         }.dispose(in: bag)
         

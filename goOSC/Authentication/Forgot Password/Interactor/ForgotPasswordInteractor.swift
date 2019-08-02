@@ -18,9 +18,14 @@ class ForgotPasswordInteractor: ForgotPasswordInputInteractorProtocol {
         ]
         
         Alamofire.request("\(Config().url)/forgot_password", method: .post, parameters: parameter, encoding: JSONEncoding.default).responseJSON { response in
-            let jsonDecode = try! JSONDecoder().decode(ForgotPassword.Response.self, from: response.data!)
-            
-            self.presenter?.response(jsonDecode)
+            do {
+                if let dataResponse = response.data {
+                    let jsonDecode = try JSONDecoder().decode(ForgotPassword.Response.self, from: dataResponse)
+                    self.presenter?.response(jsonDecode)
+                }
+            } catch {
+                print("the response can not be decoded")
+            }
         }
     }
 }

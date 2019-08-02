@@ -18,7 +18,7 @@ class SignOut {
             let domain = Bundle.main.bundleIdentifier!
             UserDefaults.standard.removePersistentDomain(forName: domain)
             UserDefaults.standard.synchronize()
-            let signInPage = viewVar.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
+            guard let signInPage = viewVar.storyboard?.instantiateViewController(withIdentifier: "LoginView") as? Login else { return }
             LoginWireframe.createLoginModule(signInPage)
             viewVar.present(signInPage, animated: true, completion: nil)
         }))
@@ -32,7 +32,7 @@ class SignOut {
             let domain = Bundle.main.bundleIdentifier!
             UserDefaults.standard.removePersistentDomain(forName: domain)
             UserDefaults.standard.synchronize()
-            let signInPage = viewVar.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
+            guard let signInPage = viewVar.storyboard?.instantiateViewController(withIdentifier: "LoginView") as? Login else {return}
             LoginWireframe.createLoginModule(signInPage)
             viewVar.present(signInPage, animated: true, completion: nil)
         }))

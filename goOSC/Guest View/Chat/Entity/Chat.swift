@@ -15,22 +15,38 @@ enum Chat {
         var data: [Detail]
     }
     
-    struct Detail: Decodable {
-        var chat_id: String
-        var useremail: String
+    struct Detail: Codable {
+        var chatId: String
+        var userEmail: String
         var username: String
-        var destination_email: String
-        var destination_name: String
+        var destinationEmail: String
+        var destinationName: String
         var message: String
         var read: Bool
-        var type_chat: String
-        var chat_date: String
+        var typeChat: String
+        var chatDate: String
+        
+        enum CodingKeys: String, CodingKey {
+            case message, read, username
+            case chatId = "chat_id"
+            case userEmail = "useremail"
+            case destinationEmail = "destination_email"
+            case destinationName = "destination_name"
+            case typeChat = "type_chat"
+            case chatDate = "chat_date"
+        }
     }
     
-    struct MessageDetail: Decodable {
-        var From: String
-        var `Type`: String
-        var Message: String
+    struct MessageDetail: Codable {
+        var from: String
+        var type: String
+        var message: String
+        
+        enum CodingKeys: String, CodingKey {
+            case from = "From"
+            case type = "Type"
+            case message = "Message"
+        }
     }
     
     struct Sender: MSGUser {

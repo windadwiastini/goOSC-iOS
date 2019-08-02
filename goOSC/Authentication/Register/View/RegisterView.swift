@@ -31,9 +31,10 @@ class RegisterView: UIViewController, RegisterViewProtocol, UITextFieldDelegate 
     fileprivate func configureRegister() {
         btnRegister.isEnabled = false
         combineLatest(emailTextField.reactive.text,passwordTextField.reactive.text, repeatPasswordTextField.reactive.text, firstNameTextField.reactive.text, lastNameTextField.reactive.text) { email, password, repeatPassword, firstName, lastNAme in
-            
-            return email!.count > 0 && password!.count > 0 && repeatPassword!.count > 0 && firstName!.count > 0 && lastNAme!.count > 0 && password! == repeatPassword!
-            
+            if let email = email, let password = password, let repeatPassword = repeatPassword, let firstName = firstName, let lastNAme = lastNAme {
+             return email.count > 0 && password.count > 0 && repeatPassword.count > 0 && firstName.count > 0 && lastNAme.count > 0 && password == repeatPassword
+            }
+            return false
         }.bind(to: btnRegister.reactive.isEnabled)
         
         btnRegister.reactive.controlEvents(.touchUpInside).observeNext { e in
@@ -67,7 +68,9 @@ class RegisterView: UIViewController, RegisterViewProtocol, UITextFieldDelegate 
         if let next = view.viewWithTag(newTag) {
             next.becomeFirstResponder()
         } else {
-            presenter?.verifyInput(email: emailTextField.text!, password: passwordTextField.text!, repeatPassword: repeatPasswordTextField.text!, firstName: firstNameTextField.text!, lastName: lastNameTextField.text!)
+            if let email = emailTextField.text, let password = passwordTextField.text, let repeatPassword = repeatPasswordTextField.text, let firstName = firstNameTextField.text, let lastNAme = lastNameTextField.text {
+             presenter?.verifyInput(email: email, password: password, repeatPassword: repeatPassword, firstName: firstName, lastName: lastNAme)
+            }
         }
         return true
     }

@@ -19,16 +19,14 @@ class CategoryPageWireFrame: CategoryPageWireFrameProtocol {
     }
     
     func pushToCategoryProductPage(with category: Category.NewData, from view: UIViewController) {
-        print("masuk push to category")
-        let categoryProductViewController = view.storyboard?.instantiateViewController(withIdentifier: "CategoryProduct") as! CategoryProductView
+        guard let categoryProductViewController = view.storyboard?.instantiateViewController(withIdentifier: "CategoryProduct") as? CategoryProductView else {return}
         CategoryProductWireFrame.createCategoryProductModule(with: categoryProductViewController, and: category)
-//        view.navigationController?.pushViewController(categoryProductViewController, animated: true)
         view.present(categoryProductViewController, animated: true, completion: nil)
         
     }
     
     func routeToSignIn(from view: UIViewController) {
-        let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
+        guard let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as? Login else {return}
         LoginWireframe.createLoginModule(signInPage)
         view.present(signInPage, animated: true, completion: nil)
     }

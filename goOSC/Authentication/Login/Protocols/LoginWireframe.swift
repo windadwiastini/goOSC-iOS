@@ -11,8 +11,8 @@ import Alamofire
 
 class LoginWireframe: LoginWireFrameProtocol {
     func routeToHomePage(from view: UIViewController) {
-        let tabController = view.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! UIViewController
-        let homePageController = view.storyboard?.instantiateViewController(withIdentifier: "HomePage") as! HomePageView
+        guard let tabController = view.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? UIViewController else {return}
+        guard let homePageController = view.storyboard?.instantiateViewController(withIdentifier: "HomePage") as? HomePageView else {return}
         HomePageWireFrame.createHomePageModule(homePageController)
         view.present(tabController , animated: true, completion: nil)
     }

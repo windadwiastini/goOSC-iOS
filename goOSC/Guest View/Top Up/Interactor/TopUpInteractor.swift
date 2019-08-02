@@ -19,16 +19,18 @@ class TopUpInteractor: TopUpInputInteractorProtocol {
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
             print(response)
             switch response.response?.statusCode {
-            case 500?:
-                print("error")
             case 401?:
                 self.presenter?.signout()
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(TopUp.ResponseAmount.self, from: response.data!)
-                self.presenter?.responseAmount(jsonDecode)
-            case .none:
-                print("error")
-            case .some(_):
+                do {
+                    if let dataResponse = response.data {
+                        let jsonDecode = try JSONDecoder().decode(TopUp.ResponseAmount.self, from: dataResponse)
+                        self.presenter?.responseAmount(jsonDecode)
+                    }
+                } catch {
+                    print("the response can not be decoded")
+                }
+            case 500?, .none, .some(_):
                 print("error")
             }
         }
@@ -57,16 +59,18 @@ class TopUpInteractor: TopUpInputInteractorProtocol {
                 
                 upload.responseJSON {response in
                     switch response.response?.statusCode {
-                    case 500?:
-                        print("error")
                     case 401?:
                         self.presenter?.signout()
                     case 200?:
-                        let jsonDecode = try! JSONDecoder().decode(TopUp.ResponseAmount.self, from: response.data!)
-                        self.presenter?.showAlert(jsonDecode)
-                    case .none:
-                        print("error")
-                    case .some(_):
+                        do {
+                            if let dataResponse = response.data {
+                                let jsonDecode = try JSONDecoder().decode(TopUp.ResponseAmount.self, from: dataResponse)
+                                self.presenter?.showAlert(jsonDecode)
+                            }
+                        } catch {
+                            print("the response can not be decoded")
+                        }
+                    case 500?, .none, .some(_):
                         print("error")
                     }
                 }
@@ -82,18 +86,19 @@ class TopUpInteractor: TopUpInputInteractorProtocol {
             "Authorization": "Bearer \(token)"
         ]
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
-            print(response)
             switch response.response?.statusCode {
-            case 500?:
-                print("error")
             case 401?:
                 self.presenter?.signout()
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(TopUp.UserDashboard.self, from: response.data!)
-                self.presenter?.applyUserDashboardData(jsonDecode.data[0])
-            case .none:
-                print("error")
-            case .some(_):
+                do {
+                    if let dataResponse = response.data {
+                        let jsonDecode = try JSONDecoder().decode(TopUp.UserDashboard.self, from: dataResponse)
+                        self.presenter?.applyUserDashboardData(jsonDecode.data[0])
+                    }
+                } catch {
+                  print("the response can not be decoded")
+                }
+            case 500?, .none, .some(_):
                 print("error")
             }
         }

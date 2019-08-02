@@ -5,7 +5,6 @@
 //  Created by Bootcamp on 6/10/19.
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
-
 import Foundation
 import Alamofire
 
@@ -20,10 +19,14 @@ class CategoryPageInteractor: CategoryPageInputInteractorProtocol {
                 let resp = Category.Response(code: 500, message: "Internal server error", data: [])
                 self.presenter?.response(resp)
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(Category.Response.self, from: response.data!)
-                self.presenter?.response(jsonDecode)
-//                print(jsonDecode)
-                print(UserDefaults.standard.string(forKey: "token") as Any)
+                do {
+                    if let dataResponse = response.data {
+                        let jsonDecode = try JSONDecoder().decode(Category.Response.self, from: dataResponse)
+                        self.presenter?.response(jsonDecode)
+                    }
+                } catch {
+                    print("the response can not be decoded")
+                }
             case .none:
                 let resp = Category.Response(code: 401, message: "Not Found", data: [])
                 self.presenter?.response(resp)

@@ -11,7 +11,6 @@ import CoreData
 import Alamofire
 class CartInteractor: CartInputInteractorProtocol {
     var presenter: CartOutputInteractorProtocol?
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let token = Auth().token
     func findAllData() {
         let url = "\(Config().url)/cart"
@@ -21,16 +20,19 @@ class CartInteractor: CartInputInteractorProtocol {
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
             print(response)
             switch response.response?.statusCode {
-            case 500?:
-                print("error")
             case 401?:
                 self.presenter?.signout()
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(CartEntity.Response.self, from: response.data!)
-                self.presenter?.response(jsonDecode)
-            case .none:
-                print("error")
-            case .some(_):
+                do {
+                    if let dataResponse = response.data {
+                        let jsonDecode = try JSONDecoder().decode(CartEntity.Response.self, from: dataResponse)
+                        self.presenter?.response(jsonDecode)
+                    }
+                } catch {
+                    print("the response can not be decoded")
+                }
+                
+            case 500?, .none, .some(_):
                 print("error")
             }
         }
@@ -42,15 +44,10 @@ class CartInteractor: CartInputInteractorProtocol {
             "Authorization": "Bearer \(token)"
         ]
         Alamofire.request(url, method: .delete, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
-            print(response)
             switch response.response?.statusCode {
-            case 500?:
-                print("error")
             case 200?:
                 self.findAllData()
-            case .none:
-                print("error")
-            case .some(_):
+            case 500?, 401?, .none, .some(_):
                 print("error")
             }
         }

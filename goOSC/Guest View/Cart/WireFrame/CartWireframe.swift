@@ -18,7 +18,7 @@ class  CartWireFrame: CartWireFrameProtocol {
     }
     
     func routeToSignIn(from view: UIViewController) {
-        let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! Login
+        guard let signInPage = view.storyboard?.instantiateViewController(withIdentifier: "LoginView") as? Login else {return}
         LoginWireframe.createLoginModule(signInPage)
         view.present(signInPage, animated: true, completion: nil)
     }

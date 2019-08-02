@@ -19,10 +19,15 @@ struct BalancdHistory {
         var list: [SingleData]
     }
     
-    struct SingleData: Decodable {
-        var user_email: String
+    struct SingleData: Codable {
+        var userEmail: String
         var debit: Double
         var credit: Double
         var date: String
+        
+        enum CodingKeys: String, CodingKey {
+            case debit, credit, date
+            case userEmail = "user_email"
+        }
     }
 }

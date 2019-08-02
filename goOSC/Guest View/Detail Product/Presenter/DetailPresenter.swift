@@ -33,7 +33,8 @@ extension DetailPresenter: DetailOutputInteractorProtocol {
                 view?.showItem(data.data!)
             }
         default:
-            Alert().informationAlert(title: "Fetch Detail", message: data.message, ui: view as! UIViewController)
+            guard let viewComponent = view as? UIViewController else {return}
+            Alert().informationAlert(title: "Fetch Detail", message: data.message, ui: viewComponent)
         }
     }
 }

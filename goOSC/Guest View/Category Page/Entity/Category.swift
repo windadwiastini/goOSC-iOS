@@ -32,25 +32,47 @@ enum Category {
         var category: Data
     }
     
-    struct Data: Decodable {
-        var category_id: Int
-        var category_name: String
-        var sub_category: [SubCategory]?
-        var created_at: DateTime
-        var updated_at: DateTime
+    struct Data: Codable {
+        var categoryID: Int
+        var categoryName: String
+        var subCategory: [SubCategory]?
+        var createdAt: DateTime
+        var updatedAt: DateTime
+        
+        enum CodingKeys: String, CodingKey {
+            case categoryID = "category_id"
+            case categoryName = "category_name"
+            case subCategory = "sub_category"
+            case createdAt = "created_at"
+            case updatedAt = "updated_at"
+        }
     }
     
-    struct SubCategory: Decodable {
-        var subcategory_id: Int
-        var category_id: Int
-        var category_name: String
-        var subcategory_name: String
-        var created_at: DateTime
-        var updated_at: DateTime
+    struct SubCategory: Codable {
+        var subcategoryID: Int
+        var categoryID: Int
+        var categoryName: String
+        var subcategoryName: String
+        var createdAt: DateTime
+        var updatedAt: DateTime
+        
+        enum CodingKeys: String, CodingKey {
+            case subcategoryID = "subcategory_id"
+            case categoryID = "category_id"
+            case categoryName = "category_name"
+            case subcategoryName = "subcategory_name"
+            case createdAt = "created_at"
+            case updatedAt = "updated_at"
+        }
     }
     
-    struct DateTime: Decodable {
-        var Time: String
-        var Valid: Bool
+    struct DateTime: Codable {
+        var time: String
+        var valid: Bool
+        
+        enum CodingKeys: String, CodingKey {
+            case time = "Time"
+            case valid = "Valid"
+        }
     }
 }

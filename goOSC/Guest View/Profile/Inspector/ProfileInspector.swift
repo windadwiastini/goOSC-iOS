@@ -17,19 +17,26 @@ class ProfileInteractor: ProfileInputInteractorProtocol {
             "Authorization": "Bearer \(token)"
         ]
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
-            
-            print(response)
-            
             switch response.response?.statusCode {
             case 500?:
-                let jsonDecode = try! JSONDecoder().decode(Profile.ResponseFail.self, from: response.data!)
-                self.presenter?.responseFail(response: jsonDecode)
+                do {
+                    if let dataResponse = response.data {
+                        let jsonDecode = try JSONDecoder().decode(Profile.ResponseFail.self, from: dataResponse)
+                        self.presenter?.responseFail(response: jsonDecode)
+                    }
+                } catch {
+                    print("the response can not be decoded")
+                }
             case 200?:
-                let jsonDecode = try! JSONDecoder().decode(Profile.Response.self, from: response.data!)
-                self.presenter?.responSuccess(response: jsonDecode)
-            case .none:
-                print("error")
-            case .some(_):
+                do {
+                    if let dataResponse = response.data {
+                        let jsonDecode = try JSONDecoder().decode(Profile.Response.self, from: dataResponse)
+                        self.presenter?.responSuccess(response: jsonDecode)
+                    }
+                } catch {
+                    print("the response can not be decoded")
+                }
+            case .none, .some(_):
                 print("error")
             }
         }

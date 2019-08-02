@@ -6,8 +6,6 @@
 //  Copyright © 2019 Swift Bootcamp. All rights reserved.
 //
 
-import UIKit
-
 enum User {
     struct UserData {
         var firstName: String

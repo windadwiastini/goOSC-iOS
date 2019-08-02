@@ -10,19 +10,17 @@ import Foundation
 struct CartEntity {
     struct SingleCart: Codable {
         var id: String
-        var product_name: String
-        var product_id: String
+        var productName: String
+        var productID: String
         var price: Double
         var thumbnail: String
-        var cprovider_email: String
+        var cproviderEmail: String
         
-        init(product_name: String, product_id: String, price: Double, thumbnail: String, cprovider_email: String, id: String) {
-            self.product_name = product_name
-            self.product_id = product_id
-            self.price = price
-            self.thumbnail = thumbnail
-            self.id = id
-            self.cprovider_email = cprovider_email
+        enum CodingKeys: String, CodingKey {
+            case id, thumbnail, price
+            case productName = "product_name"
+            case productID = "product_id"
+            case cproviderEmail = "cprovider_email"
         }
     }
     

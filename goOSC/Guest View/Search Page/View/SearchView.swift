@@ -65,7 +65,9 @@ extension SearchView: UITableViewDelegate {
 extension SearchView: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text != "" {
-            presenter?.interactor?.sendGetProductRequest(with: searchBar.text!)
+            if let text = searchBar.text {
+             presenter?.interactor?.sendGetProductRequest(with: text)
+            }
         } else {
             productList.value = HomePage.Response(code: 0, message: "", data: [], length: 0)
             tableView.reloadData()
