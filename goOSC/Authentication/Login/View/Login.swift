@@ -30,7 +30,7 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
     var webView: WKWebView!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    var presenter: LoginPresenterProtocol?
+    weak var presenter: LoginPresenterProtocol?
     fileprivate let bagData = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +40,6 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
         webView.customUserAgent = "Chrome/56.0.0.0 Mobile"
         usernameField.delegate = self
         passwordField.delegate = self
-        configureAction()
-        
     }
     
     fileprivate func configureAction() {
@@ -55,6 +53,7 @@ class Login: UIViewController, LoginViewProtocol, WKNavigationDelegate, UITextFi
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        configureAction()
         presenter?.viewDidLoad()
     }
     override func viewDidDisappear(_ animated: Bool) {

@@ -20,6 +20,9 @@ class CategoryProductView: UIViewController, CategoryProductViewProtocol {
         super.viewDidLoad()
         tableView.delegate = self
         presenter?.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         prepareObserve()
     }
     func updateData(response: HomePage.Response, category: Category.NewData) {

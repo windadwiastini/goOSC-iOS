@@ -6,6 +6,38 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>03DACF5B-9623-45F4-B018-07B0148109C8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>03DACF5B-9623-45F4-B018-07B0148109C8.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586666526.27757299</real>
+			<key>timeStoppedRecording</key>
+			<real>586666541.83939302</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>03DACF5B-9623-45F4-B018-07B0148109C8</string>
+		</dict>
 		<key>09C156D8-7600-4886-A356-B4E5B492BCE6</key>
 		<dict>
 			<key>className</key>
@@ -69,6 +101,38 @@
 			<string>Build goOSC</string>
 			<key>uniqueIdentifier</key>
 			<string>0D4B358E-28E0-4BF5-B4E4-AAC0E78B7FF7</string>
+		</dict>
+		<key>16D2740F-019F-4301-A5D0-41D7E706245C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>16D2740F-019F-4301-A5D0-41D7E706245C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586666366.26027596</real>
+			<key>timeStoppedRecording</key>
+			<real>586666380.29303598</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>16D2740F-019F-4301-A5D0-41D7E706245C</string>
 		</dict>
 		<key>16F7A840-2E6C-4583-B6D4-BED3658CA47D</key>
 		<dict>
@@ -134,6 +198,38 @@
 			<key>uniqueIdentifier</key>
 			<string>1A327E3F-03ED-466C-8813-B8064C97FE08</string>
 		</dict>
+		<key>2B416A26-AF31-44B6-BF1A-68F0BCEFC713</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2B416A26-AF31-44B6-BF1A-68F0BCEFC713.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586667031.21342695</real>
+			<key>timeStoppedRecording</key>
+			<real>586667042.70710099</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>2B416A26-AF31-44B6-BF1A-68F0BCEFC713</string>
+		</dict>
 		<key>2FE1AA35-1571-47B9-AC91-EE2E76C35D13</key>
 		<dict>
 			<key>className</key>
@@ -198,6 +294,38 @@
 			<key>uniqueIdentifier</key>
 			<string>3B758F5C-AE1F-4631-B896-4A57737AE67E</string>
 		</dict>
+		<key>3E226C66-B1B4-4439-9EF0-576CA2EC17E0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3E226C66-B1B4-4439-9EF0-576CA2EC17E0.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586667113.82592201</real>
+			<key>timeStoppedRecording</key>
+			<real>586667124.45196497</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>3E226C66-B1B4-4439-9EF0-576CA2EC17E0</string>
+		</dict>
 		<key>4395C3D4-B8FB-46E7-AC83-2A0756A43F62</key>
 		<dict>
 			<key>className</key>
@@ -230,6 +358,70 @@
 			<key>uniqueIdentifier</key>
 			<string>4395C3D4-B8FB-46E7-AC83-2A0756A43F62</string>
 		</dict>
+		<key>4491AAAB-3BF2-4AF3-B43E-9A1717354F03</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4491AAAB-3BF2-4AF3-B43E-9A1717354F03.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586666761.28437197</real>
+			<key>timeStoppedRecording</key>
+			<real>586666775.79083598</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>4491AAAB-3BF2-4AF3-B43E-9A1717354F03</string>
+		</dict>
+		<key>7A9C4AD9-4552-4049-8296-559FD85B2BD4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7A9C4AD9-4552-4049-8296-559FD85B2BD4.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586667422.50018406</real>
+			<key>timeStoppedRecording</key>
+			<real>586667435.36293399</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>7A9C4AD9-4552-4049-8296-559FD85B2BD4</string>
+		</dict>
 		<key>7AE6CBE8-6083-4344-864F-7452739CAE5D</key>
 		<dict>
 			<key>className</key>
@@ -261,6 +453,70 @@
 			<string>Build goOSC</string>
 			<key>uniqueIdentifier</key>
 			<string>7AE6CBE8-6083-4344-864F-7452739CAE5D</string>
+		</dict>
+		<key>7E1A0E0C-A0BC-466F-A0F3-62AB159F140D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7E1A0E0C-A0BC-466F-A0F3-62AB159F140D.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586666651.87078404</real>
+			<key>timeStoppedRecording</key>
+			<real>586666664.91601503</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>7E1A0E0C-A0BC-466F-A0F3-62AB159F140D</string>
+		</dict>
+		<key>9E568292-7149-456B-B58E-5FCB4D33D3B7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9E568292-7149-456B-B58E-5FCB4D33D3B7.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586666898.043957</real>
+			<key>timeStoppedRecording</key>
+			<real>586666908.78292096</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>9E568292-7149-456B-B58E-5FCB4D33D3B7</string>
 		</dict>
 		<key>B5077242-511B-405D-B135-2D68959D2213</key>
 		<dict>
@@ -325,6 +581,70 @@
 			<string>Build goOSC</string>
 			<key>uniqueIdentifier</key>
 			<string>B758C678-1E61-4FC8-BC0F-5D7EE4885104</string>
+		</dict>
+		<key>C1D9C50F-BCC7-4480-B54C-908C073B4129</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C1D9C50F-BCC7-4480-B54C-908C073B4129.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586667256.53489399</real>
+			<key>timeStoppedRecording</key>
+			<real>586667272.76668894</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>C1D9C50F-BCC7-4480-B54C-908C073B4129</string>
+		</dict>
+		<key>D626E85D-156D-4D51-8200-740B7F1F84C0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D626E85D-156D-4D51-8200-740B7F1F84C0.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586666215.58359897</real>
+			<key>timeStoppedRecording</key>
+			<real>586666235.85058904</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>D626E85D-156D-4D51-8200-740B7F1F84C0</string>
 		</dict>
 		<key>DC6B5C21-C044-4AB1-8FF5-7CD91E96E898</key>
 		<dict>
@@ -421,6 +741,38 @@
 			<string>Build goOSC</string>
 			<key>uniqueIdentifier</key>
 			<string>E67AE33C-9976-49F0-A076-A05D4540A013</string>
+		</dict>
+		<key>EF90B4FB-9374-422D-A169-F9C9BA5125D7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EF90B4FB-9374-422D-A169-F9C9BA5125D7.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586667315.10799503</real>
+			<key>timeStoppedRecording</key>
+			<real>586667330.95196199</real>
+			<key>title</key>
+			<string>Build goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>EF90B4FB-9374-422D-A169-F9C9BA5125D7</string>
 		</dict>
 		<key>F1312388-5AF6-4936-9091-E9811E2D8798</key>
 		<dict>

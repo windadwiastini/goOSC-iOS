@@ -8,7 +8,7 @@
 
 import UIKit
 class ForgotPasswordView: UIViewController, ForgotPasswordViewProtocol {
-    var presenter: ForgotPasswordPresenterProtocol?
+    weak var presenter: ForgotPasswordPresenterProtocol?
     
     @IBOutlet weak var emailText: UITextField!
     

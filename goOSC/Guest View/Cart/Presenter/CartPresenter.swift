@@ -15,6 +15,7 @@ class CartPresenter: CartPresenterProtocol {
     var interactor: CartInputInteractorProtocol?
     
     func viewDidLoad() {
+        print("print all data")
         interactor?.findAllData()
     }
 }

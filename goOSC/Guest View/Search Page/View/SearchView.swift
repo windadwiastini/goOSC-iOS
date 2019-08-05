@@ -23,6 +23,9 @@ class SearchView: UIViewController, SearchViewProtocol {
         tableView.delegate = self
         searchBar.delegate = self
         SearchWireFrame.createSearchModule(with: self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         prepareObservable()
     }
     

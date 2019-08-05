@@ -21,11 +21,10 @@ class CartView: UIViewController, CartViewProtocol {
         super.viewDidLoad()
         tableView.delegate = self
         CartWireFrame.createCartModule(self)
-        presenter?.viewDidLoad()
-        prepareObservable()
     }
     override func viewDidAppear(_ animated: Bool) {
-        presenter?.interactor?.findAllData()
+        prepareObservable()
+        presenter?.viewDidLoad()
         cartButton.isEnabled = false
     }
     func updateData(response: CartEntity.Response) {

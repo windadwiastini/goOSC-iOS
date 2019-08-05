@@ -22,10 +22,10 @@ class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         BalancePaymentWireFrame.createBalancePaymentModule(self)
-        prepareObservable()
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        prepareObservable()
         presenter?.viewDidLoad()
     }
     

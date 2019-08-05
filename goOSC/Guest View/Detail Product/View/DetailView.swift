@@ -32,6 +32,8 @@ class DetailView: UIViewController, DetailViewProtocol {
         super.viewDidLoad()
         DetailWireFrame.createDetailModule(self, presenter?.product)
         presenter?.viewDidLoad()
+    }
+    override func viewDidAppear(_ animated: Bool) {
         prepareObserve()
     }
     

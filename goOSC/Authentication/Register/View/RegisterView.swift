@@ -25,6 +25,9 @@ class RegisterView: UIViewController, RegisterViewProtocol, UITextFieldDelegate 
         repeatPasswordTextField.delegate = self
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         configureRegister()
     }
     
@@ -35,14 +38,18 @@ class RegisterView: UIViewController, RegisterViewProtocol, UITextFieldDelegate 
              return email.count > 0 && password.count > 0 && repeatPassword.count > 0 && firstName.count > 0 && lastNAme.count > 0 && password == repeatPassword
             }
             return false
-        }.bind(to: btnRegister.reactive.isEnabled)
+        }.bind(to: btnRegister.reactive.isEnabled).dispose(in: bag)
         
         btnRegister.reactive.controlEvents(.touchUpInside).observeNext { e in
             guard let email = self.emailTextField.text, let password = self.passwordTextField.text, let repeatPassword = self.repeatPasswordTextField.text, let firstName = self.firstNameTextField.text, let lastName = self.lastNameTextField.text else {
                 return
             }
             self.presenter?.verifyInput(email: email, password: password, repeatPassword: repeatPassword, firstName: firstName, lastName: lastName)
-        }
+        }.dispose(in: bag)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        bag.dispose()
     }
 
     @IBAction func backBtnWasPressed(_ sender: Any) {

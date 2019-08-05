@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol LoginViewProtocol {
+protocol LoginViewProtocol: class {
     func openAlert(_ title: String, _ context: String)
     func loadWeb(_ url: URL)
 }
 
-protocol LoginPresenterProtocol {
+protocol LoginPresenterProtocol: class {
     var wireFrame : LoginWireFrameProtocol? {get set}
     var view: LoginViewProtocol? {get set}
     var interactor: LoginInputInteractorProtocol? {get set}
@@ -22,17 +22,17 @@ protocol LoginPresenterProtocol {
     func showWebViews(_ web: URL)
 }
 
-protocol LoginWireFrameProtocol {
+protocol LoginWireFrameProtocol: class {
     func routeToHomePage(from view: UIViewController )
 }
 
-protocol LoginInputInteractorProtocol {
+protocol LoginInputInteractorProtocol: class {
     var presenter : LoginOutputInteractorProtocol? {get set}
     func doLogin(_ customer: Customer.Request)
     func loginWithSocialMedia(type: String)
 }
 
-protocol LoginOutputInteractorProtocol {
+protocol LoginOutputInteractorProtocol: class {
     func response(_ resp: Customer.Response )
     func showWebView(_ url: URL)
 }

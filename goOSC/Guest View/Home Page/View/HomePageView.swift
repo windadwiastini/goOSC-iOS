@@ -21,6 +21,9 @@ class HomePageView: UIViewController, HomePageViewProtocol {
         tableView.delegate = self
         HomePageWireFrame.createHomePageModule(self)
         presenter?.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         observeFunction()
     }
     

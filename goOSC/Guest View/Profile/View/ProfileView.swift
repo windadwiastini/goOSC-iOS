@@ -17,9 +17,20 @@ class ProfileView: UIViewController, ProfileViewProtocol {
         super.viewDidLoad()
         ProfileWireframe.createProfileModule(self)
         presenter?.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        prepareObservable()
+    }
+    
+    fileprivate func prepareObservable() {
         btnLogout.reactive.tap.observeNext{
             SignOut().hitSignOutButton(view: self)
-        }
+        }.dispose(in: bag)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        bag.dispose()
     }
     
     func updateView(response resp: Profile.Response) {

@@ -24,6 +24,9 @@ class PayPalView: UIViewController, PayPalPaymentDelegate, PaypalViewProtocol {
         payPalConfig.acceptCreditCards = acceptCreditCard
         payPalConfig.merchantName = "goOSC"
         PayPalMobile.preconnect(withEnvironment: PayPalEnvironmentSandbox)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         presenter?.viewDidLoad()
     }
     
