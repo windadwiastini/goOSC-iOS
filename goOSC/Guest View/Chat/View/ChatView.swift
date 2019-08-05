@@ -10,8 +10,8 @@ import UIKit
 import Starscream
 import MessengerKit
 class ChatView: MSGMessengerViewController, ChatViewProtocol {
-    var presenter: ChatPresenterProtocol?
-    var messages  = [Chat.Detail]()
+    weak var presenter: ChatPresenterProtocol?
+    fileprivate var messages  = [Chat.Detail]()
     fileprivate var socket = WebSocket(url: URL(string: "ws://goosc.herokuapp.com/ws?useremail=\(Auth().email)&destemail=admin@goosc.com&username=\(Auth().firstName)&type=admin")!, protocols: ["chat"])
     override func viewDidLoad() {
         super.viewDidLoad()

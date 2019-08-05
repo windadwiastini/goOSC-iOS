@@ -16,7 +16,7 @@ class PayPalView: UIViewController, PayPalPaymentDelegate, PaypalViewProtocol {
             payPalConfig.acceptCreditCards = acceptCreditCard
         }
     }
-    var presenter: PaypalPresenterProtocol?
+    weak var presenter: PaypalPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()

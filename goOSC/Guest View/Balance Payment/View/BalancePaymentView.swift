@@ -10,7 +10,7 @@ import UIKit
 import Bond
 import ReactiveKit
 class BalancePaymentView: UIViewController, BalancePaymentViewProtocol {
-    var presenter: BalancePaymentPresenterProtocol?
+    weak var presenter: BalancePaymentPresenterProtocol?
     
     @IBOutlet weak var voucher: UILabel!
     @IBOutlet weak var finalPrice: UILabel!

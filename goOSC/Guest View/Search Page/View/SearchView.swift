@@ -11,7 +11,7 @@ import Bond
 import ReactiveKit
 
 class SearchView: UIViewController, SearchViewProtocol {
-    var presenter: SearchPresenterProtocol?
+    weak var presenter: SearchPresenterProtocol?
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!

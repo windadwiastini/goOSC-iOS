@@ -9,7 +9,7 @@
 import UIKit
 
 class ProfileView: UIViewController, ProfileViewProtocol {
-    var presenter: ProfilePresenterProtocol?
+    weak var presenter: ProfilePresenterProtocol?
     @IBOutlet weak var btnLogout: UIButton!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!

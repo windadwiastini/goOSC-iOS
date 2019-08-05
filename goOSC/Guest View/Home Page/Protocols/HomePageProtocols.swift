@@ -8,29 +8,28 @@
 
 import UIKit
 
-protocol HomePageViewProtocol {
-//    func openAlert(_ title: String, _ context: String)
+protocol HomePageViewProtocol: class {
     func updateData(response: HomePage.Response)
 }
 
-protocol HomePagePresenterProtocol {
+protocol HomePagePresenterProtocol: class {
     var wireFrame : HomePageWireFrameProtocol? {get set}
     var view: HomePageViewProtocol? {get set}
     var interactor: HomePageInputInteractorProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol HomePageWireFrameProtocol {
+protocol HomePageWireFrameProtocol: class {
     func routeToSignIn(from view: UIViewController)
     func routeToDetail(from view: UIViewController, with product: HomePage.Product)
 }
 
-protocol HomePageInputInteractorProtocol {
+protocol HomePageInputInteractorProtocol: class {
     var presenter : HomePageOutputInteractorProtocol? {get set}
     
     func sendHomePageRequest()
 }
 
-protocol HomePageOutputInteractorProtocol {
+protocol HomePageOutputInteractorProtocol: class {
     func response(_ response: HomePage.Response)
 }

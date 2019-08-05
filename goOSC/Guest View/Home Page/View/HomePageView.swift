@@ -10,7 +10,7 @@ import UIKit
 import Bond
 import ReactiveKit
 class HomePageView: UIViewController, HomePageViewProtocol {
-    var presenter: HomePagePresenterProtocol?
+    weak var presenter: HomePagePresenterProtocol?
     fileprivate var homePageData = Observable<HomePage.Response>(HomePage.Response(code: 0, message: "", data: [], length: 0))
     
     fileprivate var data = MutableObservableArray([HomePage.Product]())

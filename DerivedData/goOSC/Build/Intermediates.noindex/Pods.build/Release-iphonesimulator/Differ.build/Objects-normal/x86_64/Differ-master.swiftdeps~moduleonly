@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "1ddb68e154fc42aaa61aaafbc1ee6028"
-build_time: [1564708002, 885824000]
+build_time: [1564968898, 923584000]
 inputs:
   "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/BatchUpdate.swift": [9223372036, 854775807]
   "/Users/bootcamp/Documents/collab2/Pods/Differ/Sources/Differ/Diff+UIKit.swift": [9223372036, 854775807]

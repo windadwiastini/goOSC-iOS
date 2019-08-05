@@ -8,29 +8,29 @@
 
 import UIKit
 
-protocol BalancePaymentViewProtocol {
+protocol BalancePaymentViewProtocol: class {
     func updateData(response: BalancePayment.Response)
     func showAlertAndDismis(title titleData: String, message messageData: String)
 }
 
-protocol BalancePaymentPresenterProtocol {
+protocol BalancePaymentPresenterProtocol: class {
     var wireFrame : BalancePaymentWireFrameProtocol? {get set}
     var view: BalancePaymentViewProtocol? {get set}
     var interactor: BalancePaymentInputInteractorProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol BalancePaymentWireFrameProtocol {
+protocol BalancePaymentWireFrameProtocol: class {
     func routeToSignIn(from view: UIViewController)
 }
 
-protocol BalancePaymentInputInteractorProtocol {
+protocol BalancePaymentInputInteractorProtocol: class {
     var presenter : BalancePaymentOutputInteractorProtocol? {get set}
     func summary()
     func doPaymentBalance()
 }
 
-protocol BalancePaymentOutputInteractorProtocol {
+protocol BalancePaymentOutputInteractorProtocol: class {
     func response(_ resp : BalancePayment.Response)
     func errorAlert(_ resp: BalancePayment.FailedResponse)
     func responseSuccessAlert(paymentResponse resp: BalancePayment.PaymentResponse)

@@ -10,7 +10,7 @@ import UIKit
 
 class CategoryPageView: UIViewController, CategoryPageViewProtocol {
 
-    var presenter: CategoryPagePresenterProtocol?
+    weak var presenter: CategoryPagePresenterProtocol?
     @IBOutlet weak var tableView: UITableView!
     fileprivate var categoryData = Category.Response(code: 0, message: "", data: [])
     fileprivate var cellDataList = [Category.CellData]()

@@ -10,7 +10,7 @@ import UIKit
 
 class Voucher: UIViewController,VoucherViewProtocol {
     @IBOutlet weak var voucherValue: UITextField!
-    var presenter: VoucherPresenterProtocol?
+    weak var presenter: VoucherPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()

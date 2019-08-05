@@ -11,7 +11,7 @@ import AVKit
 import AVFoundation
 
 class DetailView: UIViewController, DetailViewProtocol {
-    var presenter: DetailPresenterProtocol?
+    weak var presenter: DetailPresenterProtocol?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageDetail: UIImageView!
     @IBOutlet weak var desc: UITextView!

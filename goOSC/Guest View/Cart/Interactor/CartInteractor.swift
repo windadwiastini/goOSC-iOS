@@ -18,7 +18,6 @@ class CartInteractor: CartInputInteractorProtocol {
             "Authorization": "Bearer \(token)"
         ]
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
-            print(response)
             switch response.response?.statusCode {
             case 401?:
                 self.presenter?.signout()

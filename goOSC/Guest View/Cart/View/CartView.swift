@@ -10,7 +10,7 @@ import UIKit
 import Bond
 import ReactiveKit
 class CartView: UIViewController, CartViewProtocol {
-    var presenter: CartPresenterProtocol?
+    weak var presenter: CartPresenterProtocol?
     fileprivate var homePageData = MutableObservableArray([CartEntity.SingleCart]())
     fileprivate let bagData = DisposeBag()
     @IBOutlet weak var cartButton: UIButton!

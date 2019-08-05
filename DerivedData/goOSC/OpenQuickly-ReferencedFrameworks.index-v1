@@ -4,12 +4,12 @@
 <array>
 	<string>ReactiveKit</string>
 	<string>CoreData</string>
-	<string>AppKit</string>
 	<string>Foundation</string>
+	<string>AppKit</string>
 	<string>Dispatch</string>
 	<string>CoreGraphics</string>
-	<string>AVFoundation</string>
 	<string>Differ</string>
+	<string>AVFoundation</string>
 	<string>WebKit</string>
 	<string>QuartzCore</string>
 	<string>Alamofire</string>
@@ -18,8 +18,8 @@
 	<string>MessengerKit</string>
 	<string>SafariServices</string>
 	<string>SSCommonCrypto</string>
-	<string>CoreServices</string>
 	<string>UIKit</string>
+	<string>CoreServices</string>
 	<string>BNDProtocolProxyBase</string>
 	<string>Starscream</string>
 	<string>ObjectiveC</string>

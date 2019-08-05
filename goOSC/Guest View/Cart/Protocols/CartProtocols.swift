@@ -8,28 +8,28 @@
 
 import UIKit
 
-protocol CartViewProtocol {
+protocol CartViewProtocol: class {
     func updateData(response: CartEntity.Response)
 }
 
-protocol CartPresenterProtocol {
+protocol CartPresenterProtocol: class {
     var wireFrame : CartWireFrameProtocol? {get set}
     var view: CartViewProtocol? {get set}
     var interactor: CartInputInteractorProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol CartWireFrameProtocol {
+protocol CartWireFrameProtocol: class {
     func routeToSignIn(from view: UIViewController)
 }
 
-protocol CartInputInteractorProtocol {
+protocol CartInputInteractorProtocol: class {
     var presenter : CartOutputInteractorProtocol? {get set}
     func findAllData()
     func deleteData(_ data: CartEntity.SingleCart) 
 }
 
-protocol CartOutputInteractorProtocol {
+protocol CartOutputInteractorProtocol: class {
     func response(_ resp : CartEntity.Response)
     func signout()
 }

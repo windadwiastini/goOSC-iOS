@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "df2962fa1ede8088e19fd77ff136b36e"
-build_time: [1564707984, 632591000]
+build_time: [1564968863, 209959000]
 inputs:
   "/Users/bootcamp/Documents/collab2/Pods/ReactiveKit/Sources/Bindable.swift": [9223372036, 854775807]
   "/Users/bootcamp/Documents/collab2/Pods/ReactiveKit/Sources/Connectable.swift": [9223372036, 854775807]

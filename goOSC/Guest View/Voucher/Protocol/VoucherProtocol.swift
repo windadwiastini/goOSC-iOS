@@ -8,27 +8,27 @@
 
 import UIKit
 
-protocol VoucherViewProtocol {
+protocol VoucherViewProtocol: class {
     func showAlertSuccess(response resp: VoucherEntity.ResponseSuccess)
     func showAlertFail(response resp: VoucherEntity.ResponseFailed)
 }
 
-protocol VoucherPresenterProtocol {
+protocol VoucherPresenterProtocol: class {
     var wireFrame : VoucherWireFrameProtocol? {get set}
     var view: VoucherViewProtocol? {get set}
     var interactor: VoucherInputInteractorProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol VoucherWireFrameProtocol {
+protocol VoucherWireFrameProtocol: class {
 }
 
-protocol VoucherInputInteractorProtocol {
+protocol VoucherInputInteractorProtocol: class {
     var presenter : VoucherOutputInteractorProtocol? {get set}
     func validateVoucher(voucher data: String)
 }
 
-protocol VoucherOutputInteractorProtocol {
+protocol VoucherOutputInteractorProtocol: class {
     func responSuccess(response resp: VoucherEntity.ResponseSuccess)
     func responseFail(response resp: VoucherEntity.ResponseFailed)
 }

@@ -16,7 +16,7 @@ class RegisterView: UIViewController, RegisterViewProtocol, UITextFieldDelegate 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var btnRegister: UIButton!
-    var presenter: RegisterPresenterProtocol?
+    weak var presenter: RegisterPresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         RegisterWireframe.createRegisterModule(registerViewRef: self)

@@ -8,7 +8,7 @@
 
 import UIKit
 class BalanceHistoryView: UIViewController, BalanceHistoryViewProtocol {
-    var presenter: BalanceHistoryPresenterProtocol?
+    weak var presenter: BalanceHistoryPresenterProtocol?
     fileprivate var dataSource = [BalancdHistory.SingleData]()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {

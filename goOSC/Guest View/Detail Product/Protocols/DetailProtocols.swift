@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol DetailViewProtocol {
+protocol DetailViewProtocol: class {
     func showItem(_ data: Detail.ResponseData)
     func updateLike(_ data: Detail.ResponseData)
 }
 
-protocol DetailPresenterProtocol {
+protocol DetailPresenterProtocol: class {
     var wireFrame : DetailWireFrameProtocol? {get set}
     var view: DetailViewProtocol? {get set}
     var interactor: DetailInputInteractorProtocol? {get set}
@@ -21,11 +21,11 @@ protocol DetailPresenterProtocol {
     func viewDidLoad()
 }
 
-protocol DetailWireFrameProtocol {
+protocol DetailWireFrameProtocol: class {
     func routeToHomePage(from view: UIViewController)
 }
 
-protocol DetailInputInteractorProtocol {
+protocol DetailInputInteractorProtocol: class {
     var presenter : DetailOutputInteractorProtocol? {get set}
 
     func insertCartToDB(_ data: HomePage.Product, _ userId: Int)
@@ -33,6 +33,6 @@ protocol DetailInputInteractorProtocol {
     func likeProduct(_ product: HomePage.Product)
 }
 
-protocol DetailOutputInteractorProtocol {
+protocol DetailOutputInteractorProtocol: class {
     func response(_ data: Detail.Response,  _ updateLike: Bool)
 }

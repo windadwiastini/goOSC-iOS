@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 class PaypalInteractor: PaypalInputInteractorProtocol {
-    var presenter: PaypalOutputInteractorProtocol?
+     var presenter: PaypalOutputInteractorProtocol?
      let token = Auth().token
     func doPaymentWithPayPal() {
         let url = "\(Config().url)/cart/dopayment"

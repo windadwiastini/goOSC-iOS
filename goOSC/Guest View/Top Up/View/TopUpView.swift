@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import Photos
 class TopUpView: UIViewController, TopUpViewProtocol,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    var presenter: TopUpPresenterProtocol?
+    weak var presenter: TopUpPresenterProtocol?
     fileprivate var vSpinner:UIView?
     @IBOutlet weak var balanceLabel: UILabel!
     

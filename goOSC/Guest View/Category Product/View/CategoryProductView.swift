@@ -11,7 +11,7 @@ import Bond
 import ReactiveKit
 class CategoryProductView: UIViewController, CategoryProductViewProtocol {
     
-    var presenter: CategoryProductPresenterProtocol?
+    weak var presenter: CategoryProductPresenterProtocol?
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var categoryNameLabel: UILabel!
     fileprivate var productList = Observable<HomePage.Response>( HomePage.Response(code: 0, message: "", data: [], length: 0))

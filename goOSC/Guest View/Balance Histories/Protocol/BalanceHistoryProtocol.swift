@@ -8,26 +8,26 @@
 
 import UIKit
 
-protocol BalanceHistoryViewProtocol {
+protocol BalanceHistoryViewProtocol: class {
     func updateView(response resp: BalancdHistory.Response)
 }
 
-protocol BalanceHistoryPresenterProtocol {
+protocol BalanceHistoryPresenterProtocol: class {
     var wireFrame : BalanceHistoryWireFrameProtocol? {get set}
     var view: BalanceHistoryViewProtocol? {get set}
     var interactor: BalanceHistoryInputInteractorProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol BalanceHistoryWireFrameProtocol {
+protocol BalanceHistoryWireFrameProtocol: class {
 }
 
-protocol BalanceHistoryInputInteractorProtocol {
+protocol BalanceHistoryInputInteractorProtocol: class {
     var presenter : BalanceHistoryOutputInteractorProtocol? {get set}
     func findAllBalance()
 }
 
-protocol BalanceHistoryOutputInteractorProtocol {
+protocol BalanceHistoryOutputInteractorProtocol: class {
     func response(response resp: BalancdHistory.Response)
     func signout()
 }

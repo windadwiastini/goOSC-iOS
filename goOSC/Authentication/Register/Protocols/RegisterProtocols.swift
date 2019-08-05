@@ -13,7 +13,7 @@ protocol RegisterViewProtocol {
     func showLoginView()
 }
 
-protocol RegisterPresenterProtocol {
+protocol RegisterPresenterProtocol: class {
     var interactor: RegisterInteractorProtocol? { get set }
     var view: RegisterViewProtocol? { get set }
     var wireframe: RegisterRouterProtocol? { get set }
