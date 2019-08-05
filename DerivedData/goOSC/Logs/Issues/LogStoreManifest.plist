@@ -58,6 +58,32 @@
 			<key>uniqueIdentifier</key>
 			<string>2E876180-DA2D-4595-8CEF-C81016E769E9</string>
 		</dict>
+		<key>307276C4-9352-46C1-AC15-4C1FBDE3189C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>307276C4-9352-46C1-AC15-4C1FBDE3189C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>goOSC-giizsftvtwgeehbkuphpjmffslue</string>
+			<key>timeStartedRecording</key>
+			<real>586670107.87613702</real>
+			<key>timeStoppedRecording</key>
+			<real>586670122.99074101</real>
+			<key>title</key>
+			<string>Build target goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>307276C4-9352-46C1-AC15-4C1FBDE3189C</string>
+		</dict>
 		<key>4E3663D2-C89C-4081-84C8-68223AA40091</key>
 		<dict>
 			<key>className</key>
@@ -109,32 +135,6 @@
 			<string>Build target ReactiveKit</string>
 			<key>uniqueIdentifier</key>
 			<string>6DE8315F-33FA-4884-892A-3C5C6297AAA8</string>
-		</dict>
-		<key>C5526148-B3EB-4DDF-836A-2EA95EF8D8FE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>C5526148-B3EB-4DDF-836A-2EA95EF8D8FE.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>goOSC-giizsftvtwgeehbkuphpjmffslue</string>
-			<key>timeStartedRecording</key>
-			<real>586667422.86345994</real>
-			<key>timeStoppedRecording</key>
-			<real>586667435.28058505</real>
-			<key>title</key>
-			<string>Build target goOSC</string>
-			<key>uniqueIdentifier</key>
-			<string>C5526148-B3EB-4DDF-836A-2EA95EF8D8FE</string>
 		</dict>
 		<key>CC189066-8674-4720-8864-637084351C0A</key>
 		<dict>

@@ -166,6 +166,70 @@
 			<key>uniqueIdentifier</key>
 			<string>2210CC13-4A5C-415A-98FC-12287DE12160</string>
 		</dict>
+		<key>282695B6-B97B-4B57-AAD7-39999F553DB6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>282695B6-B97B-4B57-AAD7-39999F553DB6.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669033.88799095</real>
+			<key>timeStoppedRecording</key>
+			<real>586669102.51259696</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>282695B6-B97B-4B57-AAD7-39999F553DB6</string>
+		</dict>
+		<key>2C948E08-ECD5-43B3-B1BF-1EBB97792866</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2C948E08-ECD5-43B3-B1BF-1EBB97792866.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586667435.32653403</real>
+			<key>timeStoppedRecording</key>
+			<real>586668674.84825301</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>2C948E08-ECD5-43B3-B1BF-1EBB97792866</string>
+		</dict>
 		<key>2D2026D1-0B78-4621-B00B-D018FE18B4E6</key>
 		<dict>
 			<key>className</key>
@@ -229,6 +293,70 @@
 			<string>Debug goOSC</string>
 			<key>uniqueIdentifier</key>
 			<string>2DAC72A7-309B-4686-97C1-C4EF407538E7</string>
+		</dict>
+		<key>37E228E8-E2C8-4334-B060-02F2AE0869D6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>37E228E8-E2C8-4334-B060-02F2AE0869D6.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586668939.94350004</real>
+			<key>timeStoppedRecording</key>
+			<real>586669020.30681098</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>37E228E8-E2C8-4334-B060-02F2AE0869D6</string>
+		</dict>
+		<key>3AFDA335-9789-40B8-AB55-7807B886CAAC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3AFDA335-9789-40B8-AB55-7807B886CAAC.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669701.41755605</real>
+			<key>timeStoppedRecording</key>
+			<real>586669797.40973997</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>3AFDA335-9789-40B8-AB55-7807B886CAAC</string>
 		</dict>
 		<key>45D6EFE0-203C-4E6D-A2CE-8EBFDEEC1BD3</key>
 		<dict>
@@ -358,6 +486,38 @@
 			<key>uniqueIdentifier</key>
 			<string>55B08804-4C2B-4E4C-B73B-C25A99EE8B3A</string>
 		</dict>
+		<key>5C9CE7CC-47B4-4F2B-9AD0-25DD37469E18</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5C9CE7CC-47B4-4F2B-9AD0-25DD37469E18.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586670009.87520802</real>
+			<key>timeStoppedRecording</key>
+			<real>586670107.19547701</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>5C9CE7CC-47B4-4F2B-9AD0-25DD37469E18</string>
+		</dict>
 		<key>6DFFC644-50E9-41D7-8943-65EE0B2A82DD</key>
 		<dict>
 			<key>className</key>
@@ -421,6 +581,102 @@
 			<string>Debug goOSC</string>
 			<key>uniqueIdentifier</key>
 			<string>763BC393-3B97-427E-8864-97620049F471</string>
+		</dict>
+		<key>7B516310-611D-4B4C-971F-6A2E6B979B20</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7B516310-611D-4B4C-971F-6A2E6B979B20.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669114.63285398</real>
+			<key>timeStoppedRecording</key>
+			<real>586669167.78952599</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>7B516310-611D-4B4C-971F-6A2E6B979B20</string>
+		</dict>
+		<key>9660BCC6-9E74-4743-964C-3F01BD92E313</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>9660BCC6-9E74-4743-964C-3F01BD92E313.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586668840.50574803</real>
+			<key>timeStoppedRecording</key>
+			<real>586668927.54896796</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>9660BCC6-9E74-4743-964C-3F01BD92E313</string>
+		</dict>
+		<key>A09648A7-5708-4B76-9A7F-DDC1DDCFAABA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A09648A7-5708-4B76-9A7F-DDC1DDCFAABA.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669882.84813297</real>
+			<key>timeStoppedRecording</key>
+			<real>586669994.83487594</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>A09648A7-5708-4B76-9A7F-DDC1DDCFAABA</string>
 		</dict>
 		<key>A372816B-65C3-44E6-BACA-A1A40A977E2A</key>
 		<dict>
@@ -486,6 +742,70 @@
 			<key>uniqueIdentifier</key>
 			<string>A4E23433-8A05-4DCF-B2BB-46DC8FAE5ADB</string>
 		</dict>
+		<key>BB8FE874-8266-4E44-A8CC-345F40701335</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BB8FE874-8266-4E44-A8CC-345F40701335.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669448.77145803</real>
+			<key>timeStoppedRecording</key>
+			<real>586669496.76727605</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>BB8FE874-8266-4E44-A8CC-345F40701335</string>
+		</dict>
+		<key>BE643A5C-2D36-4E0A-A5BB-6F19923ECE83</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BE643A5C-2D36-4E0A-A5BB-6F19923ECE83.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669509.81612098</real>
+			<key>timeStoppedRecording</key>
+			<real>586669684.94244206</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>BE643A5C-2D36-4E0A-A5BB-6F19923ECE83</string>
+		</dict>
 		<key>C8919156-009D-4528-8C44-2591A2A1AAA6</key>
 		<dict>
 			<key>className</key>
@@ -549,6 +869,134 @@
 			<string>Debug goOSC</string>
 			<key>uniqueIdentifier</key>
 			<string>CAD67B65-C350-4D82-9F1C-D65D3D973E33</string>
+		</dict>
+		<key>D040EF1C-82CB-4483-85D4-E83DAA6EC72B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D040EF1C-82CB-4483-85D4-E83DAA6EC72B.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586668697.86287999</real>
+			<key>timeStoppedRecording</key>
+			<real>586668828.37356102</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>D040EF1C-82CB-4483-85D4-E83DAA6EC72B</string>
+		</dict>
+		<key>E5750699-BA05-4A3F-83F8-1FF741E5A017</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E5750699-BA05-4A3F-83F8-1FF741E5A017.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669811.11384702</real>
+			<key>timeStoppedRecording</key>
+			<real>586669867.43733895</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>E5750699-BA05-4A3F-83F8-1FF741E5A017</string>
+		</dict>
+		<key>E7B3155C-325C-4B0C-A87A-A95ABC4235D9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E7B3155C-325C-4B0C-A87A-A95ABC4235D9.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669180.31048906</real>
+			<key>timeStoppedRecording</key>
+			<real>586669281.85692894</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>E7B3155C-325C-4B0C-A87A-A95ABC4235D9</string>
+		</dict>
+		<key>F622CEDD-B01D-487A-BE7C-A49540167878</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F622CEDD-B01D-487A-BE7C-A49540167878.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>goOSC project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>goOSC</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug goOSC</string>
+			<key>timeStartedRecording</key>
+			<real>586669294.48171306</real>
+			<key>timeStoppedRecording</key>
+			<real>586669433.31289196</real>
+			<key>title</key>
+			<string>Debug goOSC</string>
+			<key>uniqueIdentifier</key>
+			<string>F622CEDD-B01D-487A-BE7C-A49540167878</string>
 		</dict>
 	</dict>
 </dict>

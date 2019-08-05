@@ -40,8 +40,10 @@ class SearchView: UIViewController, SearchViewProtocol {
     fileprivate func prepareObservable() {
         productList.observeNext { value in
             self.data.removeAll()
-            value.data.map { dt in
-                self.data.append(dt!)
+            value.data.map{ e in
+                if let element = e {
+                 self.data.append(element)
+                }
             }
         }.dispose(in: bag)
         
@@ -60,20 +62,18 @@ class SearchView: UIViewController, SearchViewProtocol {
 
 extension SearchView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
         presenter?.wireframe?.routeToDetail(from: self, with: data[indexPath.row])
     }
 }
 
 extension SearchView: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text != "" {
+        if searchBar.text != "" && searchBar.text?.count ?? 0 > 2 {
             if let text = searchBar.text {
              presenter?.interactor?.sendGetProductRequest(with: text)
             }
         } else {
             productList.value = HomePage.Response(code: 0, message: "", data: [], length: 0)
-            tableView.reloadData()
         }
         
     }

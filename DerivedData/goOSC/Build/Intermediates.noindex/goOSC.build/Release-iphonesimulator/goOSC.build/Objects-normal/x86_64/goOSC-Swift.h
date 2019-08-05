@@ -346,6 +346,7 @@ SWIFT_CLASS("_TtC5goOSC19CategoryProductView")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryNameLabel;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)backBtnWasPressed:(id _Nonnull)sender;
 - (IBAction)doSignOut:(id _Nonnull)sender;
 - (void)viewDidDisappear:(BOOL)animated;
@@ -390,6 +391,7 @@ SWIFT_CLASS("_TtC5goOSC10DetailView")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addToCartBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backBtn;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -426,6 +428,7 @@ SWIFT_CLASS("_TtC5goOSC12HomePageView")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signBtn;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -472,6 +475,7 @@ SWIFT_CLASS("_TtC5goOSC10OptionView")
 SWIFT_CLASS("_TtC5goOSC10PayPalView")
 @interface PayPalView : UIViewController <PayPalPaymentDelegate>
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)payPalPaymentDidCancel:(PayPalPaymentViewController * _Nonnull)paymentViewController;
 - (void)payPalPaymentViewController:(PayPalPaymentViewController * _Nonnull)paymentViewController didCompletePayment:(PayPalPayment * _Nonnull)completedPayment;
 - (IBAction)goBack:(id _Nonnull)sender;
@@ -496,6 +500,8 @@ SWIFT_CLASS("_TtC5goOSC11ProfileView")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -510,6 +516,8 @@ SWIFT_CLASS("_TtC5goOSC12RegisterView")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lastNameTextField;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnRegister;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (IBAction)backBtnWasPressed:(id _Nonnull)sender;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -533,6 +541,7 @@ SWIFT_CLASS("_TtC5goOSC10SearchView")
 @property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)doSignOut:(id _Nonnull)sender;
 - (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
