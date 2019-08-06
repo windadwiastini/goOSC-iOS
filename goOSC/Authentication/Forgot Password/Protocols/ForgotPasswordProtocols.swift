@@ -12,7 +12,7 @@ protocol ForgotPasswordViewProtocol {
     func dissmiss()
 }
 
-protocol ForgotPasswordPresenterProtocol: class {
+protocol ForgotPasswordPresenterProtocol: AnyObject {
     var view: ForgotPasswordViewProtocol? {get set}
     var wireFrame: ForgotPasswordWireFrameProtocol? {get set}
     var interactor: ForgotPasswordInputInteractorProtocol? {get set}
@@ -20,14 +20,14 @@ protocol ForgotPasswordPresenterProtocol: class {
     
 }
 
-protocol ForgotPasswordWireFrameProtocol: class {}
+protocol ForgotPasswordWireFrameProtocol: AnyObject {}
 
-protocol ForgotPasswordInputInteractorProtocol: class {
+protocol ForgotPasswordInputInteractorProtocol: AnyObject {
     var presenter: ForgotPasswordOutPutInteractorProtocol? {get set}
     
     func doForgotPassword(_ req: ForgotPassword.Request)
 }
 
-protocol ForgotPasswordOutPutInteractorProtocol: class {
+protocol ForgotPasswordOutPutInteractorProtocol: AnyObject {
     func response(_ response: ForgotPassword.Response)
 }

@@ -8,25 +8,25 @@
 
 import UIKit
 
-protocol ChatViewProtocol: class {
+protocol ChatViewProtocol: AnyObject {
     func updateMessage(response resp: Chat.ResponseDetail)
 }
 
-protocol ChatInputInteractorProtocol: class {
+protocol ChatInputInteractorProtocol: AnyObject {
     var presenter: ChatOutputInteractorProtocol? { get set }
     func detailChat(from userEmail: String, to destinationEmail: String)
 }
 
-protocol ChatOutputInteractorProtocol: class {
+protocol ChatOutputInteractorProtocol: AnyObject {
     func responseDetailChat(response resp: Chat.ResponseDetail)
 }
 
-protocol ChatPresenterProtocol: class {
+protocol ChatPresenterProtocol: AnyObject {
     var wireFrame : ChatWireFrameProtocol? {get set}
     var view: ChatViewProtocol? {get set}
     var interactor: ChatInputInteractorProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol ChatWireFrameProtocol: class {
+protocol ChatWireFrameProtocol: AnyObject {
 }

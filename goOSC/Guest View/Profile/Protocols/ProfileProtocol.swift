@@ -8,26 +8,26 @@
 
 import UIKit
 
-protocol ProfileViewProtocol: class {
+protocol ProfileViewProtocol: AnyObject {
     func updateView(response resp: Profile.Response)
 }
 
-protocol ProfilePresenterProtocol: class {
+protocol ProfilePresenterProtocol: AnyObject {
     var wireFrame : ProfileWireFrameProtocol? {get set}
     var view: ProfileViewProtocol? {get set}
     var interactor: ProfileInputInteractorProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol ProfileWireFrameProtocol: class {
+protocol ProfileWireFrameProtocol: AnyObject {
 }
 
-protocol ProfileInputInteractorProtocol: class {
+protocol ProfileInputInteractorProtocol: AnyObject {
     var presenter : ProfileOutputInteractorProtocol? {get set}
     func getUserDetail()
 }
 
-protocol ProfileOutputInteractorProtocol: class {
+protocol ProfileOutputInteractorProtocol: AnyObject {
     func responSuccess(response resp: Profile.Response)
     func responseFail(response resp: Profile.ResponseFail)
 }

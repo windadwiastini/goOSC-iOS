@@ -8,21 +8,21 @@
 
 import UIKit
 
-protocol SearchViewProtocol: class {
+protocol SearchViewProtocol: AnyObject {
     var presenter: SearchPresenterProtocol? { get set }
     func updateData(response: HomePage.Response)
 }
 
-protocol SearchInputInteractorProtocol: class {
+protocol SearchInputInteractorProtocol: AnyObject {
     var presenter: SearchOutputInteractorProtocol? { get set }
     func sendGetProductRequest(with keyword: String)
 }
 
-protocol SearchOutputInteractorProtocol: class {
+protocol SearchOutputInteractorProtocol: AnyObject {
     func response(_ response: HomePage.Response)
 }
 
-protocol SearchPresenterProtocol: class {
+protocol SearchPresenterProtocol: AnyObject {
     var view: SearchViewProtocol? { get set }
     var interactor: SearchInputInteractorProtocol? { get set }
     var wireframe: SearchWireFrameProtocol? { get set }
@@ -30,7 +30,7 @@ protocol SearchPresenterProtocol: class {
     
 }
 
-protocol SearchWireFrameProtocol: class {
+protocol SearchWireFrameProtocol: AnyObject {
     static func createSearchModule(with searchRef: SearchView)
     func routeToDetail(from view: UIViewController, with product: HomePage.Product)
     func routeToSignIn(from view: UIViewController)

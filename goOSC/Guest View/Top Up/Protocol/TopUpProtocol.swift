@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol TopUpViewProtocol: class {
+protocol TopUpViewProtocol: AnyObject {
     func updateDataAmount(_ resp: TopUp.ResponseAmount)
     func showSpinner()
     func hideSpinner()
@@ -17,24 +17,24 @@ protocol TopUpViewProtocol: class {
     func applyUserDashboardData(_ user: TopUp.User)
 }
 
-protocol TopUpPresenterProtocol: class {
+protocol TopUpPresenterProtocol: AnyObject {
     var wireFrame : TopUpWireFrameProtocol? {get set}
     var view: TopUpViewProtocol? {get set}
     var interactor: TopUpInputInteractorProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol TopUpWireFrameProtocol: class {
+protocol TopUpWireFrameProtocol: AnyObject {
 }
 
-protocol TopUpInputInteractorProtocol: class {
+protocol TopUpInputInteractorProtocol: AnyObject {
     var presenter : TopUpOutputInteractorProtocol? {get set}
     func getTopUpAmount()
     func getUserDashboardData()
     func submitTopup(ammount: Double, file image: UIImage)
 }
 
-protocol TopUpOutputInteractorProtocol: class {
+protocol TopUpOutputInteractorProtocol: AnyObject {
     func responseAmount( _ resp: TopUp.ResponseAmount )
     func showAlert( _ resp: TopUp.ResponseAmount )
     func showLoading()

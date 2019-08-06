@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol RegisterViewProtocol {
+protocol RegisterViewProtocol: AnyObject {
     func lauchAlert(_ title: String, _ context: String, _ withClosure: Bool)
     func showLoginView()
 }
 
-protocol RegisterPresenterProtocol: class {
+protocol RegisterPresenterProtocol: AnyObject {
     var interactor: RegisterInteractorProtocol? { get set }
     var view: RegisterViewProtocol? { get set }
     var wireframe: RegisterRouterProtocol? { get set }
@@ -22,7 +22,7 @@ protocol RegisterPresenterProtocol: class {
     func showLoginView(from view: UIViewController)
 }
 
-protocol RegisterInteractorProtocol {
+protocol RegisterInteractorProtocol: AnyObject {
     var presenter: RegisterPresenterProtocol? { get set }
     
     func checkPassword(password: String, repeatPassword: String) -> Bool
@@ -30,7 +30,7 @@ protocol RegisterInteractorProtocol {
     func sendRegistrationRequest(endpoint: String, user: User.UserData, handler: @escaping (_ success: Bool, _ error: Error?, _ message: String) -> ())
 }
 
-protocol RegisterRouterProtocol {
+protocol RegisterRouterProtocol: AnyObject {
     func pushToLogin(with identifier: String, from view: UIViewController)
     static func createRegisterModule(registerViewRef: RegisterView)
 }
